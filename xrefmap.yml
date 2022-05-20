@@ -1,3 +1,1836 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: Lachee.Utilities
+  name: Lachee.Utilities
+  href: api/Lachee.Utilities.html
+  commentId: N:Lachee.Utilities
+  fullName: Lachee.Utilities
+  nameWithType: Lachee.Utilities
+- uid: Lachee.Utilities.AutoAttribute
+  name: AutoAttribute
+  href: api/Lachee.Utilities.AutoAttribute.html
+  commentId: T:Lachee.Utilities.AutoAttribute
+  fullName: Lachee.Utilities.AutoAttribute
+  nameWithType: AutoAttribute
+- uid: Lachee.Utilities.AutoAttribute.Hidden
+  name: Hidden
+  href: api/Lachee.Utilities.AutoAttribute.html#Lachee_Utilities_AutoAttribute_Hidden
+  commentId: P:Lachee.Utilities.AutoAttribute.Hidden
+  fullName: Lachee.Utilities.AutoAttribute.Hidden
+  nameWithType: AutoAttribute.Hidden
+- uid: Lachee.Utilities.AutoAttribute.Hidden*
+  name: Hidden
+  href: api/Lachee.Utilities.AutoAttribute.html#Lachee_Utilities_AutoAttribute_Hidden_
+  commentId: Overload:Lachee.Utilities.AutoAttribute.Hidden
+  isSpec: "True"
+  fullName: Lachee.Utilities.AutoAttribute.Hidden
+  nameWithType: AutoAttribute.Hidden
+- uid: Lachee.Utilities.AutoAttribute.IncludeChildren
+  name: IncludeChildren
+  href: api/Lachee.Utilities.AutoAttribute.html#Lachee_Utilities_AutoAttribute_IncludeChildren
+  commentId: P:Lachee.Utilities.AutoAttribute.IncludeChildren
+  fullName: Lachee.Utilities.AutoAttribute.IncludeChildren
+  nameWithType: AutoAttribute.IncludeChildren
+- uid: Lachee.Utilities.AutoAttribute.IncludeChildren*
+  name: IncludeChildren
+  href: api/Lachee.Utilities.AutoAttribute.html#Lachee_Utilities_AutoAttribute_IncludeChildren_
+  commentId: Overload:Lachee.Utilities.AutoAttribute.IncludeChildren
+  isSpec: "True"
+  fullName: Lachee.Utilities.AutoAttribute.IncludeChildren
+  nameWithType: AutoAttribute.IncludeChildren
+- uid: Lachee.Utilities.AutoAttribute.IncludeChildrenWithTag
+  name: IncludeChildrenWithTag
+  href: api/Lachee.Utilities.AutoAttribute.html#Lachee_Utilities_AutoAttribute_IncludeChildrenWithTag
+  commentId: P:Lachee.Utilities.AutoAttribute.IncludeChildrenWithTag
+  fullName: Lachee.Utilities.AutoAttribute.IncludeChildrenWithTag
+  nameWithType: AutoAttribute.IncludeChildrenWithTag
+- uid: Lachee.Utilities.AutoAttribute.IncludeChildrenWithTag*
+  name: IncludeChildrenWithTag
+  href: api/Lachee.Utilities.AutoAttribute.html#Lachee_Utilities_AutoAttribute_IncludeChildrenWithTag_
+  commentId: Overload:Lachee.Utilities.AutoAttribute.IncludeChildrenWithTag
+  isSpec: "True"
+  fullName: Lachee.Utilities.AutoAttribute.IncludeChildrenWithTag
+  nameWithType: AutoAttribute.IncludeChildrenWithTag
+- uid: Lachee.Utilities.Circle
+  name: Circle
+  href: api/Lachee.Utilities.Circle.html
+  commentId: T:Lachee.Utilities.Circle
+  fullName: Lachee.Utilities.Circle
+  nameWithType: Circle
+- uid: Lachee.Utilities.Circle.lineRenderer
+  name: lineRenderer
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_lineRenderer
+  commentId: P:Lachee.Utilities.Circle.lineRenderer
+  fullName: Lachee.Utilities.Circle.lineRenderer
+  nameWithType: Circle.lineRenderer
+- uid: Lachee.Utilities.Circle.lineRenderer*
+  name: lineRenderer
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_lineRenderer_
+  commentId: Overload:Lachee.Utilities.Circle.lineRenderer
+  isSpec: "True"
+  fullName: Lachee.Utilities.Circle.lineRenderer
+  nameWithType: Circle.lineRenderer
+- uid: Lachee.Utilities.Circle.mode
+  name: mode
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_mode
+  commentId: P:Lachee.Utilities.Circle.mode
+  fullName: Lachee.Utilities.Circle.mode
+  nameWithType: Circle.mode
+- uid: Lachee.Utilities.Circle.Mode
+  name: Circle.Mode
+  href: api/Lachee.Utilities.Circle.Mode.html
+  commentId: T:Lachee.Utilities.Circle.Mode
+  fullName: Lachee.Utilities.Circle.Mode
+  nameWithType: Circle.Mode
+- uid: Lachee.Utilities.Circle.mode*
+  name: mode
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_mode_
+  commentId: Overload:Lachee.Utilities.Circle.mode
+  isSpec: "True"
+  fullName: Lachee.Utilities.Circle.mode
+  nameWithType: Circle.mode
+- uid: Lachee.Utilities.Circle.Mode.XY
+  name: XY
+  href: api/Lachee.Utilities.Circle.Mode.html#Lachee_Utilities_Circle_Mode_XY
+  commentId: F:Lachee.Utilities.Circle.Mode.XY
+  fullName: Lachee.Utilities.Circle.Mode.XY
+  nameWithType: Circle.Mode.XY
+- uid: Lachee.Utilities.Circle.Mode.XZ
+  name: XZ
+  href: api/Lachee.Utilities.Circle.Mode.html#Lachee_Utilities_Circle_Mode_XZ
+  commentId: F:Lachee.Utilities.Circle.Mode.XZ
+  fullName: Lachee.Utilities.Circle.Mode.XZ
+  nameWithType: Circle.Mode.XZ
+- uid: Lachee.Utilities.Circle.Mode.ZY
+  name: ZY
+  href: api/Lachee.Utilities.Circle.Mode.html#Lachee_Utilities_Circle_Mode_ZY
+  commentId: F:Lachee.Utilities.Circle.Mode.ZY
+  fullName: Lachee.Utilities.Circle.Mode.ZY
+  nameWithType: Circle.Mode.ZY
+- uid: Lachee.Utilities.Circle.offset
+  name: offset
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_offset
+  commentId: P:Lachee.Utilities.Circle.offset
+  fullName: Lachee.Utilities.Circle.offset
+  nameWithType: Circle.offset
+- uid: Lachee.Utilities.Circle.offset*
+  name: offset
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_offset_
+  commentId: Overload:Lachee.Utilities.Circle.offset
+  isSpec: "True"
+  fullName: Lachee.Utilities.Circle.offset
+  nameWithType: Circle.offset
+- uid: Lachee.Utilities.Circle.points
+  name: points
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_points
+  commentId: P:Lachee.Utilities.Circle.points
+  fullName: Lachee.Utilities.Circle.points
+  nameWithType: Circle.points
+- uid: Lachee.Utilities.Circle.points*
+  name: points
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_points_
+  commentId: Overload:Lachee.Utilities.Circle.points
+  isSpec: "True"
+  fullName: Lachee.Utilities.Circle.points
+  nameWithType: Circle.points
+- uid: Lachee.Utilities.Circle.radius
+  name: radius
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_radius
+  commentId: P:Lachee.Utilities.Circle.radius
+  fullName: Lachee.Utilities.Circle.radius
+  nameWithType: Circle.radius
+- uid: Lachee.Utilities.Circle.radius*
+  name: radius
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_radius_
+  commentId: Overload:Lachee.Utilities.Circle.radius
+  isSpec: "True"
+  fullName: Lachee.Utilities.Circle.radius
+  nameWithType: Circle.radius
+- uid: Lachee.Utilities.Circle.UpdatePoints
+  name: UpdatePoints()
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_UpdatePoints
+  commentId: M:Lachee.Utilities.Circle.UpdatePoints
+  fullName: Lachee.Utilities.Circle.UpdatePoints()
+  nameWithType: Circle.UpdatePoints()
+- uid: Lachee.Utilities.Circle.UpdatePoints*
+  name: UpdatePoints
+  href: api/Lachee.Utilities.Circle.html#Lachee_Utilities_Circle_UpdatePoints_
+  commentId: Overload:Lachee.Utilities.Circle.UpdatePoints
+  isSpec: "True"
+  fullName: Lachee.Utilities.Circle.UpdatePoints
+  nameWithType: Circle.UpdatePoints
+- uid: Lachee.Utilities.Editor
+  name: Lachee.Utilities.Editor
+  href: api/Lachee.Utilities.Editor.html
+  commentId: N:Lachee.Utilities.Editor
+  fullName: Lachee.Utilities.Editor
+  nameWithType: Lachee.Utilities.Editor
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer
+  name: AutoAttributeDrawer
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html
+  commentId: T:Lachee.Utilities.Editor.AutoAttributeDrawer
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer
+  nameWithType: AutoAttributeDrawer
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent(SerializedProperty,Lachee.Utilities.AutoAttribute)
+  name: FindComponent(SerializedProperty, AutoAttribute)
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_FindComponent_SerializedProperty_Lachee_Utilities_AutoAttribute_
+  commentId: M:Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent(SerializedProperty,Lachee.Utilities.AutoAttribute)
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent(SerializedProperty, Lachee.Utilities.AutoAttribute)
+  nameWithType: AutoAttributeDrawer.FindComponent(SerializedProperty, AutoAttribute)
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent*
+  name: FindComponent
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_FindComponent_
+  commentId: Overload:Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent
+  nameWithType: AutoAttributeDrawer.FindComponent
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Utilities.Editor.AutoAttributeDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: AutoAttributeDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_GetPropertyHeight_
+  commentId: Overload:Lachee.Utilities.Editor.AutoAttributeDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.GetPropertyHeight
+  nameWithType: AutoAttributeDrawer.GetPropertyHeight
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Utilities.Editor.AutoAttributeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: AutoAttributeDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.OnGUI*
+  name: OnGUI
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_OnGUI_
+  commentId: Overload:Lachee.Utilities.Editor.AutoAttributeDrawer.OnGUI
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.OnGUI
+  nameWithType: AutoAttributeDrawer.OnGUI
+- uid: Lachee.Utilities.Editor.AutoAttributeObserver
+  name: AutoAttributeObserver
+  href: api/Lachee.Utilities.Editor.AutoAttributeObserver.html
+  commentId: T:Lachee.Utilities.Editor.AutoAttributeObserver
+  fullName: Lachee.Utilities.Editor.AutoAttributeObserver
+  nameWithType: AutoAttributeObserver
+- uid: Lachee.Utilities.GameObjectExtensions
+  name: GameObjectExtensions
+  href: api/Lachee.Utilities.GameObjectExtensions.html
+  commentId: T:Lachee.Utilities.GameObjectExtensions
+  fullName: Lachee.Utilities.GameObjectExtensions
+  nameWithType: GameObjectExtensions
+- uid: Lachee.Utilities.GameObjectExtensions.SetLayer(GameObject,System.Int32,LayerMask)
+  name: SetLayer(GameObject, Int32, LayerMask)
+  href: api/Lachee.Utilities.GameObjectExtensions.html#Lachee_Utilities_GameObjectExtensions_SetLayer_GameObject_System_Int32_LayerMask_
+  commentId: M:Lachee.Utilities.GameObjectExtensions.SetLayer(GameObject,System.Int32,LayerMask)
+  fullName: Lachee.Utilities.GameObjectExtensions.SetLayer(GameObject, System.Int32, LayerMask)
+  nameWithType: GameObjectExtensions.SetLayer(GameObject, Int32, LayerMask)
+- uid: Lachee.Utilities.GameObjectExtensions.SetLayer*
+  name: SetLayer
+  href: api/Lachee.Utilities.GameObjectExtensions.html#Lachee_Utilities_GameObjectExtensions_SetLayer_
+  commentId: Overload:Lachee.Utilities.GameObjectExtensions.SetLayer
+  isSpec: "True"
+  fullName: Lachee.Utilities.GameObjectExtensions.SetLayer
+  nameWithType: GameObjectExtensions.SetLayer
+- uid: Lachee.Utilities.GameObjectExtensions.SetLayerRecursive(GameObject,System.Int32,LayerMask,System.Boolean)
+  name: SetLayerRecursive(GameObject, Int32, LayerMask, Boolean)
+  href: api/Lachee.Utilities.GameObjectExtensions.html#Lachee_Utilities_GameObjectExtensions_SetLayerRecursive_GameObject_System_Int32_LayerMask_System_Boolean_
+  commentId: M:Lachee.Utilities.GameObjectExtensions.SetLayerRecursive(GameObject,System.Int32,LayerMask,System.Boolean)
+  fullName: Lachee.Utilities.GameObjectExtensions.SetLayerRecursive(GameObject, System.Int32, LayerMask, System.Boolean)
+  nameWithType: GameObjectExtensions.SetLayerRecursive(GameObject, Int32, LayerMask, Boolean)
+- uid: Lachee.Utilities.GameObjectExtensions.SetLayerRecursive*
+  name: SetLayerRecursive
+  href: api/Lachee.Utilities.GameObjectExtensions.html#Lachee_Utilities_GameObjectExtensions_SetLayerRecursive_
+  commentId: Overload:Lachee.Utilities.GameObjectExtensions.SetLayerRecursive
+  isSpec: "True"
+  fullName: Lachee.Utilities.GameObjectExtensions.SetLayerRecursive
+  nameWithType: GameObjectExtensions.SetLayerRecursive
+- uid: Lachee.Utilities.Gizmol
+  name: Gizmol
+  href: api/Lachee.Utilities.Gizmol.html
+  commentId: T:Lachee.Utilities.Gizmol
+  fullName: Lachee.Utilities.Gizmol
+  nameWithType: Gizmol
+- uid: Lachee.Utilities.Gizmol.DrawExclamation(Vector3,System.Single)
+  name: DrawExclamation(Vector3, Single)
+  href: api/Lachee.Utilities.Gizmol.html#Lachee_Utilities_Gizmol_DrawExclamation_Vector3_System_Single_
+  commentId: M:Lachee.Utilities.Gizmol.DrawExclamation(Vector3,System.Single)
+  fullName: Lachee.Utilities.Gizmol.DrawExclamation(Vector3, System.Single)
+  nameWithType: Gizmol.DrawExclamation(Vector3, Single)
+- uid: Lachee.Utilities.Gizmol.DrawExclamation*
+  name: DrawExclamation
+  href: api/Lachee.Utilities.Gizmol.html#Lachee_Utilities_Gizmol_DrawExclamation_
+  commentId: Overload:Lachee.Utilities.Gizmol.DrawExclamation
+  isSpec: "True"
+  fullName: Lachee.Utilities.Gizmol.DrawExclamation
+  nameWithType: Gizmol.DrawExclamation
+- uid: Lachee.Utilities.Gizmol.Label(Vector3,System.String)
+  name: Label(Vector3, String)
+  href: api/Lachee.Utilities.Gizmol.html#Lachee_Utilities_Gizmol_Label_Vector3_System_String_
+  commentId: M:Lachee.Utilities.Gizmol.Label(Vector3,System.String)
+  fullName: Lachee.Utilities.Gizmol.Label(Vector3, System.String)
+  nameWithType: Gizmol.Label(Vector3, String)
+- uid: Lachee.Utilities.Gizmol.Label(Vector3,System.String,System.Object[])
+  name: Label(Vector3, String, Object[])
+  href: api/Lachee.Utilities.Gizmol.html#Lachee_Utilities_Gizmol_Label_Vector3_System_String_System_Object___
+  commentId: M:Lachee.Utilities.Gizmol.Label(Vector3,System.String,System.Object[])
+  name.vb: Label(Vector3, String, Object())
+  fullName: Lachee.Utilities.Gizmol.Label(Vector3, System.String, System.Object[])
+  fullName.vb: Lachee.Utilities.Gizmol.Label(Vector3, System.String, System.Object())
+  nameWithType: Gizmol.Label(Vector3, String, Object[])
+  nameWithType.vb: Gizmol.Label(Vector3, String, Object())
+- uid: Lachee.Utilities.Gizmol.Label*
+  name: Label
+  href: api/Lachee.Utilities.Gizmol.html#Lachee_Utilities_Gizmol_Label_
+  commentId: Overload:Lachee.Utilities.Gizmol.Label
+  isSpec: "True"
+  fullName: Lachee.Utilities.Gizmol.Label
+  nameWithType: Gizmol.Label
+- uid: Lachee.Utilities.GLUtils
+  name: GLUtils
+  href: api/Lachee.Utilities.GLUtils.html
+  commentId: T:Lachee.Utilities.GLUtils
+  fullName: Lachee.Utilities.GLUtils
+  nameWithType: GLUtils
+- uid: Lachee.Utilities.GLUtils.DrawBox(Color,Vector3,Vector2)
+  name: DrawBox(Color, Vector3, Vector2)
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawBox_Color_Vector3_Vector2_
+  commentId: M:Lachee.Utilities.GLUtils.DrawBox(Color,Vector3,Vector2)
+  fullName: Lachee.Utilities.GLUtils.DrawBox(Color, Vector3, Vector2)
+  nameWithType: GLUtils.DrawBox(Color, Vector3, Vector2)
+- uid: Lachee.Utilities.GLUtils.DrawBox(Material,Color,Vector3,Vector2)
+  name: DrawBox(Material, Color, Vector3, Vector2)
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawBox_Material_Color_Vector3_Vector2_
+  commentId: M:Lachee.Utilities.GLUtils.DrawBox(Material,Color,Vector3,Vector2)
+  fullName: Lachee.Utilities.GLUtils.DrawBox(Material, Color, Vector3, Vector2)
+  nameWithType: GLUtils.DrawBox(Material, Color, Vector3, Vector2)
+- uid: Lachee.Utilities.GLUtils.DrawBox*
+  name: DrawBox
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawBox_
+  commentId: Overload:Lachee.Utilities.GLUtils.DrawBox
+  isSpec: "True"
+  fullName: Lachee.Utilities.GLUtils.DrawBox
+  nameWithType: GLUtils.DrawBox
+- uid: Lachee.Utilities.GLUtils.DrawCircle(Color,Vector3,System.Single,System.Int32)
+  name: DrawCircle(Color, Vector3, Single, Int32)
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawCircle_Color_Vector3_System_Single_System_Int32_
+  commentId: M:Lachee.Utilities.GLUtils.DrawCircle(Color,Vector3,System.Single,System.Int32)
+  fullName: Lachee.Utilities.GLUtils.DrawCircle(Color, Vector3, System.Single, System.Int32)
+  nameWithType: GLUtils.DrawCircle(Color, Vector3, Single, Int32)
+- uid: Lachee.Utilities.GLUtils.DrawCircle(Material,Color,Vector3,System.Single,System.Int32)
+  name: DrawCircle(Material, Color, Vector3, Single, Int32)
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawCircle_Material_Color_Vector3_System_Single_System_Int32_
+  commentId: M:Lachee.Utilities.GLUtils.DrawCircle(Material,Color,Vector3,System.Single,System.Int32)
+  fullName: Lachee.Utilities.GLUtils.DrawCircle(Material, Color, Vector3, System.Single, System.Int32)
+  nameWithType: GLUtils.DrawCircle(Material, Color, Vector3, Single, Int32)
+- uid: Lachee.Utilities.GLUtils.DrawCircle*
+  name: DrawCircle
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawCircle_
+  commentId: Overload:Lachee.Utilities.GLUtils.DrawCircle
+  isSpec: "True"
+  fullName: Lachee.Utilities.GLUtils.DrawCircle
+  nameWithType: GLUtils.DrawCircle
+- uid: Lachee.Utilities.GLUtils.DrawLines(Color,Vector3[])
+  name: DrawLines(Color, Vector3[])
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawLines_Color_Vector3___
+  commentId: M:Lachee.Utilities.GLUtils.DrawLines(Color,Vector3[])
+  name.vb: DrawLines(Color, Vector3())
+  fullName: Lachee.Utilities.GLUtils.DrawLines(Color, Vector3[])
+  fullName.vb: Lachee.Utilities.GLUtils.DrawLines(Color, Vector3())
+  nameWithType: GLUtils.DrawLines(Color, Vector3[])
+  nameWithType.vb: GLUtils.DrawLines(Color, Vector3())
+- uid: Lachee.Utilities.GLUtils.DrawLines(Material,Color,Vector3[])
+  name: DrawLines(Material, Color, Vector3[])
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawLines_Material_Color_Vector3___
+  commentId: M:Lachee.Utilities.GLUtils.DrawLines(Material,Color,Vector3[])
+  name.vb: DrawLines(Material, Color, Vector3())
+  fullName: Lachee.Utilities.GLUtils.DrawLines(Material, Color, Vector3[])
+  fullName.vb: Lachee.Utilities.GLUtils.DrawLines(Material, Color, Vector3())
+  nameWithType: GLUtils.DrawLines(Material, Color, Vector3[])
+  nameWithType.vb: GLUtils.DrawLines(Material, Color, Vector3())
+- uid: Lachee.Utilities.GLUtils.DrawLines*
+  name: DrawLines
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawLines_
+  commentId: Overload:Lachee.Utilities.GLUtils.DrawLines
+  isSpec: "True"
+  fullName: Lachee.Utilities.GLUtils.DrawLines
+  nameWithType: GLUtils.DrawLines
+- uid: Lachee.Utilities.GLUtils.DrawTest(Transform,Color)
+  name: DrawTest(Transform, Color)
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawTest_Transform_Color_
+  commentId: M:Lachee.Utilities.GLUtils.DrawTest(Transform,Color)
+  fullName: Lachee.Utilities.GLUtils.DrawTest(Transform, Color)
+  nameWithType: GLUtils.DrawTest(Transform, Color)
+- uid: Lachee.Utilities.GLUtils.DrawTest(Transform,Material,Color)
+  name: DrawTest(Transform, Material, Color)
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawTest_Transform_Material_Color_
+  commentId: M:Lachee.Utilities.GLUtils.DrawTest(Transform,Material,Color)
+  fullName: Lachee.Utilities.GLUtils.DrawTest(Transform, Material, Color)
+  nameWithType: GLUtils.DrawTest(Transform, Material, Color)
+- uid: Lachee.Utilities.GLUtils.DrawTest*
+  name: DrawTest
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_DrawTest_
+  commentId: Overload:Lachee.Utilities.GLUtils.DrawTest
+  isSpec: "True"
+  fullName: Lachee.Utilities.GLUtils.DrawTest
+  nameWithType: GLUtils.DrawTest
+- uid: Lachee.Utilities.GLUtils.transform
+  name: transform
+  href: api/Lachee.Utilities.GLUtils.html#Lachee_Utilities_GLUtils_transform
+  commentId: F:Lachee.Utilities.GLUtils.transform
+  fullName: Lachee.Utilities.GLUtils.transform
+  nameWithType: GLUtils.transform
+- uid: Lachee.Utilities.Instantiator`1
+  name: Instantiator<T>
+  href: api/Lachee.Utilities.Instantiator-1.html
+  commentId: T:Lachee.Utilities.Instantiator`1
+  name.vb: Instantiator(Of T)
+  fullName: Lachee.Utilities.Instantiator<T>
+  fullName.vb: Lachee.Utilities.Instantiator(Of T)
+  nameWithType: Instantiator<T>
+  nameWithType.vb: Instantiator(Of T)
+- uid: Lachee.Utilities.Instantiator`1.#ctor(GameObject,System.Func{GameObject,`0})
+  name: Instantiator(GameObject, Func<GameObject, T>)
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1__ctor_GameObject_System_Func_GameObject__0__
+  commentId: M:Lachee.Utilities.Instantiator`1.#ctor(GameObject,System.Func{GameObject,`0})
+  name.vb: Instantiator(GameObject, Func(Of GameObject, T))
+  fullName: Lachee.Utilities.Instantiator<T>.Instantiator(GameObject, System.Func<GameObject, T>)
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).Instantiator(GameObject, System.Func(Of GameObject, T))
+  nameWithType: Instantiator<T>.Instantiator(GameObject, Func<GameObject, T>)
+  nameWithType.vb: Instantiator(Of T).Instantiator(GameObject, Func(Of GameObject, T))
+- uid: Lachee.Utilities.Instantiator`1.#ctor*
+  name: Instantiator
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1__ctor_
+  commentId: Overload:Lachee.Utilities.Instantiator`1.#ctor
+  isSpec: "True"
+  fullName: Lachee.Utilities.Instantiator<T>.Instantiator
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).Instantiator
+  nameWithType: Instantiator<T>.Instantiator
+  nameWithType.vb: Instantiator(Of T).Instantiator
+- uid: Lachee.Utilities.Instantiator`1.Instantiate
+  name: Instantiate()
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_Instantiate
+  commentId: M:Lachee.Utilities.Instantiator`1.Instantiate
+  fullName: Lachee.Utilities.Instantiator<T>.Instantiate()
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).Instantiate()
+  nameWithType: Instantiator<T>.Instantiate()
+  nameWithType.vb: Instantiator(Of T).Instantiate()
+- uid: Lachee.Utilities.Instantiator`1.Instantiate*
+  name: Instantiate
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_Instantiate_
+  commentId: Overload:Lachee.Utilities.Instantiator`1.Instantiate
+  isSpec: "True"
+  fullName: Lachee.Utilities.Instantiator<T>.Instantiate
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).Instantiate
+  nameWithType: Instantiator<T>.Instantiate
+  nameWithType.vb: Instantiator(Of T).Instantiate
+- uid: Lachee.Utilities.Instantiator`1.localPosition
+  name: localPosition
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_localPosition
+  commentId: P:Lachee.Utilities.Instantiator`1.localPosition
+  fullName: Lachee.Utilities.Instantiator<T>.localPosition
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).localPosition
+  nameWithType: Instantiator<T>.localPosition
+  nameWithType.vb: Instantiator(Of T).localPosition
+- uid: Lachee.Utilities.Instantiator`1.localPosition*
+  name: localPosition
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_localPosition_
+  commentId: Overload:Lachee.Utilities.Instantiator`1.localPosition
+  isSpec: "True"
+  fullName: Lachee.Utilities.Instantiator<T>.localPosition
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).localPosition
+  nameWithType: Instantiator<T>.localPosition
+  nameWithType.vb: Instantiator(Of T).localPosition
+- uid: Lachee.Utilities.Instantiator`1.parent
+  name: parent
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_parent
+  commentId: P:Lachee.Utilities.Instantiator`1.parent
+  fullName: Lachee.Utilities.Instantiator<T>.parent
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).parent
+  nameWithType: Instantiator<T>.parent
+  nameWithType.vb: Instantiator(Of T).parent
+- uid: Lachee.Utilities.Instantiator`1.parent*
+  name: parent
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_parent_
+  commentId: Overload:Lachee.Utilities.Instantiator`1.parent
+  isSpec: "True"
+  fullName: Lachee.Utilities.Instantiator<T>.parent
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).parent
+  nameWithType: Instantiator<T>.parent
+  nameWithType.vb: Instantiator(Of T).parent
+- uid: Lachee.Utilities.Instantiator`1.prefab
+  name: prefab
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_prefab
+  commentId: P:Lachee.Utilities.Instantiator`1.prefab
+  fullName: Lachee.Utilities.Instantiator<T>.prefab
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).prefab
+  nameWithType: Instantiator<T>.prefab
+  nameWithType.vb: Instantiator(Of T).prefab
+- uid: Lachee.Utilities.Instantiator`1.prefab*
+  name: prefab
+  href: api/Lachee.Utilities.Instantiator-1.html#Lachee_Utilities_Instantiator_1_prefab_
+  commentId: Overload:Lachee.Utilities.Instantiator`1.prefab
+  isSpec: "True"
+  fullName: Lachee.Utilities.Instantiator<T>.prefab
+  fullName.vb: Lachee.Utilities.Instantiator(Of T).prefab
+  nameWithType: Instantiator<T>.prefab
+  nameWithType.vb: Instantiator(Of T).prefab
+- uid: Lachee.Utilities.Lazy`1
+  name: Lazy<T>
+  href: api/Lachee.Utilities.Lazy-1.html
+  commentId: T:Lachee.Utilities.Lazy`1
+  name.vb: Lazy(Of T)
+  fullName: Lachee.Utilities.Lazy<T>
+  fullName.vb: Lachee.Utilities.Lazy(Of T)
+  nameWithType: Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+- uid: Lachee.Utilities.Lazy`1.#ctor(Component)
+  name: Lazy(Component)
+  href: api/Lachee.Utilities.Lazy-1.html#Lachee_Utilities_Lazy_1__ctor_Component_
+  commentId: M:Lachee.Utilities.Lazy`1.#ctor(Component)
+  fullName: Lachee.Utilities.Lazy<T>.Lazy(Component)
+  fullName.vb: Lachee.Utilities.Lazy(Of T).Lazy(Component)
+  nameWithType: Lazy<T>.Lazy(Component)
+  nameWithType.vb: Lazy(Of T).Lazy(Component)
+- uid: Lachee.Utilities.Lazy`1.#ctor*
+  name: Lazy
+  href: api/Lachee.Utilities.Lazy-1.html#Lachee_Utilities_Lazy_1__ctor_
+  commentId: Overload:Lachee.Utilities.Lazy`1.#ctor
+  isSpec: "True"
+  fullName: Lachee.Utilities.Lazy<T>.Lazy
+  fullName.vb: Lachee.Utilities.Lazy(Of T).Lazy
+  nameWithType: Lazy<T>.Lazy
+  nameWithType.vb: Lazy(Of T).Lazy
+- uid: Lachee.Utilities.Lazy`1.Value
+  name: Value
+  href: api/Lachee.Utilities.Lazy-1.html#Lachee_Utilities_Lazy_1_Value
+  commentId: P:Lachee.Utilities.Lazy`1.Value
+  fullName: Lachee.Utilities.Lazy<T>.Value
+  fullName.vb: Lachee.Utilities.Lazy(Of T).Value
+  nameWithType: Lazy<T>.Value
+  nameWithType.vb: Lazy(Of T).Value
+- uid: Lachee.Utilities.Lazy`1.Value*
+  name: Value
+  href: api/Lachee.Utilities.Lazy-1.html#Lachee_Utilities_Lazy_1_Value_
+  commentId: Overload:Lachee.Utilities.Lazy`1.Value
+  isSpec: "True"
+  fullName: Lachee.Utilities.Lazy<T>.Value
+  fullName.vb: Lachee.Utilities.Lazy(Of T).Value
+  nameWithType: Lazy<T>.Value
+  nameWithType.vb: Lazy(Of T).Value
+- uid: Lachee.Utilities.Linql
+  name: Linql
+  href: api/Lachee.Utilities.Linql.html
+  commentId: T:Lachee.Utilities.Linql
+  fullName: Lachee.Utilities.Linql
+  nameWithType: Linql
+- uid: Lachee.Utilities.Linql.AsEnumerable*
+  name: AsEnumerable
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AsEnumerable_
+  commentId: Overload:Lachee.Utilities.Linql.AsEnumerable
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linql.AsEnumerable
+  nameWithType: Linql.AsEnumerable
+- uid: Lachee.Utilities.Linql.AsEnumerable``1(ArraySegment{``0})
+  name: AsEnumerable<T>(ArraySegment<T>)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AsEnumerable__1_ArraySegment___0__
+  commentId: M:Lachee.Utilities.Linql.AsEnumerable``1(ArraySegment{``0})
+  name.vb: AsEnumerable(Of T)(ArraySegment(Of T))
+  fullName: Lachee.Utilities.Linql.AsEnumerable<T>(ArraySegment<T>)
+  fullName.vb: Lachee.Utilities.Linql.AsEnumerable(Of T)(ArraySegment(Of T))
+  nameWithType: Linql.AsEnumerable<T>(ArraySegment<T>)
+  nameWithType.vb: Linql.AsEnumerable(Of T)(ArraySegment(Of T))
+- uid: Lachee.Utilities.Linql.Cut*
+  name: Cut
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Cut_
+  commentId: Overload:Lachee.Utilities.Linql.Cut
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linql.Cut
+  nameWithType: Linql.Cut
+- uid: Lachee.Utilities.Linql.Cut``1(``0[],System.Int32,System.Int32)
+  name: Cut<T>(T[], Int32, Int32)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Cut__1___0___System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Linql.Cut``1(``0[],System.Int32,System.Int32)
+  name.vb: Cut(Of T)(T(), Int32, Int32)
+  fullName: Lachee.Utilities.Linql.Cut<T>(T[], System.Int32, System.Int32)
+  fullName.vb: Lachee.Utilities.Linql.Cut(Of T)(T(), System.Int32, System.Int32)
+  nameWithType: Linql.Cut<T>(T[], Int32, Int32)
+  nameWithType.vb: Linql.Cut(Of T)(T(), Int32, Int32)
+- uid: Lachee.Utilities.Linql.GetSegment*
+  name: GetSegment
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment_
+  commentId: Overload:Lachee.Utilities.Linql.GetSegment
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linql.GetSegment
+  nameWithType: Linql.GetSegment
+- uid: Lachee.Utilities.Linql.GetSegment``1(``0[])
+  name: GetSegment<T>(T[])
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment__1___0___
+  commentId: M:Lachee.Utilities.Linql.GetSegment``1(``0[])
+  name.vb: GetSegment(Of T)(T())
+  fullName: Lachee.Utilities.Linql.GetSegment<T>(T[])
+  fullName.vb: Lachee.Utilities.Linql.GetSegment(Of T)(T())
+  nameWithType: Linql.GetSegment<T>(T[])
+  nameWithType.vb: Linql.GetSegment(Of T)(T())
+- uid: Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32)
+  name: GetSegment<T>(T[], Int32)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment__1___0___System_Int32_
+  commentId: M:Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32)
+  name.vb: GetSegment(Of T)(T(), Int32)
+  fullName: Lachee.Utilities.Linql.GetSegment<T>(T[], System.Int32)
+  fullName.vb: Lachee.Utilities.Linql.GetSegment(Of T)(T(), System.Int32)
+  nameWithType: Linql.GetSegment<T>(T[], Int32)
+  nameWithType.vb: Linql.GetSegment(Of T)(T(), Int32)
+- uid: Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32,System.Int32)
+  name: GetSegment<T>(T[], Int32, Int32)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment__1___0___System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32,System.Int32)
+  name.vb: GetSegment(Of T)(T(), Int32, Int32)
+  fullName: Lachee.Utilities.Linql.GetSegment<T>(T[], System.Int32, System.Int32)
+  fullName.vb: Lachee.Utilities.Linql.GetSegment(Of T)(T(), System.Int32, System.Int32)
+  nameWithType: Linql.GetSegment<T>(T[], Int32, Int32)
+  nameWithType.vb: Linql.GetSegment(Of T)(T(), Int32, Int32)
+- uid: Lachee.Utilities.Linql.Random*
+  name: Random
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Random_
+  commentId: Overload:Lachee.Utilities.Linql.Random
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linql.Random
+  nameWithType: Linql.Random
+- uid: Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name: Random<TSource>(IEnumerable<TSource>, Int32)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Random__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  name.vb: Random(Of TSource)(IEnumerable(Of TSource), Int32)
+  fullName: Lachee.Utilities.Linql.Random<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Int32)
+  fullName.vb: Lachee.Utilities.Linql.Random(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Int32)
+  nameWithType: Linql.Random<TSource>(IEnumerable<TSource>, Int32)
+  nameWithType.vb: Linql.Random(Of TSource)(IEnumerable(Of TSource), Int32)
+- uid: Lachee.Utilities.Linql.ToArray*
+  name: ToArray
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_ToArray_
+  commentId: Overload:Lachee.Utilities.Linql.ToArray
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linql.ToArray
+  nameWithType: Linql.ToArray
+- uid: Lachee.Utilities.Linql.ToArray``1(ArraySegment{``0})
+  name: ToArray<T>(ArraySegment<T>)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_ToArray__1_ArraySegment___0__
+  commentId: M:Lachee.Utilities.Linql.ToArray``1(ArraySegment{``0})
+  name.vb: ToArray(Of T)(ArraySegment(Of T))
+  fullName: Lachee.Utilities.Linql.ToArray<T>(ArraySegment<T>)
+  fullName.vb: Lachee.Utilities.Linql.ToArray(Of T)(ArraySegment(Of T))
+  nameWithType: Linql.ToArray<T>(ArraySegment<T>)
+  nameWithType.vb: Linql.ToArray(Of T)(ArraySegment(Of T))
+- uid: Lachee.Utilities.Logger
+  name: Logger
+  href: api/Lachee.Utilities.Logger.html
+  commentId: T:Lachee.Utilities.Logger
+  fullName: Lachee.Utilities.Logger
+  nameWithType: Logger
+- uid: Lachee.Utilities.Logger.#ctor(Lachee.Utilities.Logger,System.String)
+  name: Logger(Logger, String)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger__ctor_Lachee_Utilities_Logger_System_String_
+  commentId: M:Lachee.Utilities.Logger.#ctor(Lachee.Utilities.Logger,System.String)
+  fullName: Lachee.Utilities.Logger.Logger(Lachee.Utilities.Logger, System.String)
+  nameWithType: Logger.Logger(Logger, String)
+- uid: Lachee.Utilities.Logger.#ctor(System.String)
+  name: Logger(String)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger__ctor_System_String_
+  commentId: M:Lachee.Utilities.Logger.#ctor(System.String)
+  fullName: Lachee.Utilities.Logger.Logger(System.String)
+  nameWithType: Logger.Logger(String)
+- uid: Lachee.Utilities.Logger.#ctor*
+  name: Logger
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger__ctor_
+  commentId: Overload:Lachee.Utilities.Logger.#ctor
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.Logger
+  nameWithType: Logger.Logger
+- uid: Lachee.Utilities.Logger.Error(System.Object)
+  name: Error(Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Error_System_Object_
+  commentId: M:Lachee.Utilities.Logger.Error(System.Object)
+  fullName: Lachee.Utilities.Logger.Error(System.Object)
+  nameWithType: Logger.Error(Object)
+- uid: Lachee.Utilities.Logger.Error(System.Object,UnityEngine.Object)
+  name: Error(Object, UnityEngine.Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Error_System_Object_UnityEngine_Object_
+  commentId: M:Lachee.Utilities.Logger.Error(System.Object,UnityEngine.Object)
+  fullName: Lachee.Utilities.Logger.Error(System.Object, UnityEngine.Object)
+  nameWithType: Logger.Error(Object, UnityEngine.Object)
+- uid: Lachee.Utilities.Logger.Error(System.String,System.Object[])
+  name: Error(String, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Error_System_String_System_Object___
+  commentId: M:Lachee.Utilities.Logger.Error(System.String,System.Object[])
+  name.vb: Error(String, Object())
+  fullName: Lachee.Utilities.Logger.Error(System.String, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.Error(System.String, System.Object())
+  nameWithType: Logger.Error(String, Object[])
+  nameWithType.vb: Logger.Error(String, Object())
+- uid: Lachee.Utilities.Logger.Error(System.String,UnityEngine.Object,System.Object[])
+  name: Error(String, UnityEngine.Object, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Error_System_String_UnityEngine_Object_System_Object___
+  commentId: M:Lachee.Utilities.Logger.Error(System.String,UnityEngine.Object,System.Object[])
+  name.vb: Error(String, UnityEngine.Object, Object())
+  fullName: Lachee.Utilities.Logger.Error(System.String, UnityEngine.Object, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.Error(System.String, UnityEngine.Object, System.Object())
+  nameWithType: Logger.Error(String, UnityEngine.Object, Object[])
+  nameWithType.vb: Logger.Error(String, UnityEngine.Object, Object())
+- uid: Lachee.Utilities.Logger.Error*
+  name: Error
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Error_
+  commentId: Overload:Lachee.Utilities.Logger.Error
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.Error
+  nameWithType: Logger.Error
+- uid: Lachee.Utilities.Logger.Info(System.Object)
+  name: Info(Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Info_System_Object_
+  commentId: M:Lachee.Utilities.Logger.Info(System.Object)
+  fullName: Lachee.Utilities.Logger.Info(System.Object)
+  nameWithType: Logger.Info(Object)
+- uid: Lachee.Utilities.Logger.Info(System.Object,UnityEngine.Object)
+  name: Info(Object, UnityEngine.Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Info_System_Object_UnityEngine_Object_
+  commentId: M:Lachee.Utilities.Logger.Info(System.Object,UnityEngine.Object)
+  fullName: Lachee.Utilities.Logger.Info(System.Object, UnityEngine.Object)
+  nameWithType: Logger.Info(Object, UnityEngine.Object)
+- uid: Lachee.Utilities.Logger.Info(System.String,System.Object[])
+  name: Info(String, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Info_System_String_System_Object___
+  commentId: M:Lachee.Utilities.Logger.Info(System.String,System.Object[])
+  name.vb: Info(String, Object())
+  fullName: Lachee.Utilities.Logger.Info(System.String, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.Info(System.String, System.Object())
+  nameWithType: Logger.Info(String, Object[])
+  nameWithType.vb: Logger.Info(String, Object())
+- uid: Lachee.Utilities.Logger.Info(System.String,UnityEngine.Object,System.Object[])
+  name: Info(String, UnityEngine.Object, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Info_System_String_UnityEngine_Object_System_Object___
+  commentId: M:Lachee.Utilities.Logger.Info(System.String,UnityEngine.Object,System.Object[])
+  name.vb: Info(String, UnityEngine.Object, Object())
+  fullName: Lachee.Utilities.Logger.Info(System.String, UnityEngine.Object, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.Info(System.String, UnityEngine.Object, System.Object())
+  nameWithType: Logger.Info(String, UnityEngine.Object, Object[])
+  nameWithType.vb: Logger.Info(String, UnityEngine.Object, Object())
+- uid: Lachee.Utilities.Logger.Info*
+  name: Info
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Info_
+  commentId: Overload:Lachee.Utilities.Logger.Info
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.Info
+  nameWithType: Logger.Info
+- uid: Lachee.Utilities.Logger.LogException(Exception,UnityEngine.Object)
+  name: LogException(Exception, UnityEngine.Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_LogException_Exception_UnityEngine_Object_
+  commentId: M:Lachee.Utilities.Logger.LogException(Exception,UnityEngine.Object)
+  fullName: Lachee.Utilities.Logger.LogException(Exception, UnityEngine.Object)
+  nameWithType: Logger.LogException(Exception, UnityEngine.Object)
+- uid: Lachee.Utilities.Logger.LogException*
+  name: LogException
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_LogException_
+  commentId: Overload:Lachee.Utilities.Logger.LogException
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.LogException
+  nameWithType: Logger.LogException
+- uid: Lachee.Utilities.Logger.LogFormat(LogType,UnityEngine.Object,System.String,System.Object[])
+  name: LogFormat(LogType, UnityEngine.Object, String, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_LogFormat_LogType_UnityEngine_Object_System_String_System_Object___
+  commentId: M:Lachee.Utilities.Logger.LogFormat(LogType,UnityEngine.Object,System.String,System.Object[])
+  name.vb: LogFormat(LogType, UnityEngine.Object, String, Object())
+  fullName: Lachee.Utilities.Logger.LogFormat(LogType, UnityEngine.Object, System.String, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.LogFormat(LogType, UnityEngine.Object, System.String, System.Object())
+  nameWithType: Logger.LogFormat(LogType, UnityEngine.Object, String, Object[])
+  nameWithType.vb: Logger.LogFormat(LogType, UnityEngine.Object, String, Object())
+- uid: Lachee.Utilities.Logger.LogFormat*
+  name: LogFormat
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_LogFormat_
+  commentId: Overload:Lachee.Utilities.Logger.LogFormat
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.LogFormat
+  nameWithType: Logger.LogFormat
+- uid: Lachee.Utilities.Logger.Parent
+  name: Parent
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Parent
+  commentId: P:Lachee.Utilities.Logger.Parent
+  fullName: Lachee.Utilities.Logger.Parent
+  nameWithType: Logger.Parent
+- uid: Lachee.Utilities.Logger.Parent*
+  name: Parent
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Parent_
+  commentId: Overload:Lachee.Utilities.Logger.Parent
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.Parent
+  nameWithType: Logger.Parent
+- uid: Lachee.Utilities.Logger.Tag
+  name: Tag
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Tag
+  commentId: P:Lachee.Utilities.Logger.Tag
+  fullName: Lachee.Utilities.Logger.Tag
+  nameWithType: Logger.Tag
+- uid: Lachee.Utilities.Logger.Tag*
+  name: Tag
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Tag_
+  commentId: Overload:Lachee.Utilities.Logger.Tag
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.Tag
+  nameWithType: Logger.Tag
+- uid: Lachee.Utilities.Logger.Warning(System.Object)
+  name: Warning(Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Warning_System_Object_
+  commentId: M:Lachee.Utilities.Logger.Warning(System.Object)
+  fullName: Lachee.Utilities.Logger.Warning(System.Object)
+  nameWithType: Logger.Warning(Object)
+- uid: Lachee.Utilities.Logger.Warning(System.Object,UnityEngine.Object)
+  name: Warning(Object, UnityEngine.Object)
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Warning_System_Object_UnityEngine_Object_
+  commentId: M:Lachee.Utilities.Logger.Warning(System.Object,UnityEngine.Object)
+  fullName: Lachee.Utilities.Logger.Warning(System.Object, UnityEngine.Object)
+  nameWithType: Logger.Warning(Object, UnityEngine.Object)
+- uid: Lachee.Utilities.Logger.Warning(System.String,System.Object[])
+  name: Warning(String, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Warning_System_String_System_Object___
+  commentId: M:Lachee.Utilities.Logger.Warning(System.String,System.Object[])
+  name.vb: Warning(String, Object())
+  fullName: Lachee.Utilities.Logger.Warning(System.String, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.Warning(System.String, System.Object())
+  nameWithType: Logger.Warning(String, Object[])
+  nameWithType.vb: Logger.Warning(String, Object())
+- uid: Lachee.Utilities.Logger.Warning(System.String,UnityEngine.Object,System.Object[])
+  name: Warning(String, UnityEngine.Object, Object[])
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Warning_System_String_UnityEngine_Object_System_Object___
+  commentId: M:Lachee.Utilities.Logger.Warning(System.String,UnityEngine.Object,System.Object[])
+  name.vb: Warning(String, UnityEngine.Object, Object())
+  fullName: Lachee.Utilities.Logger.Warning(System.String, UnityEngine.Object, System.Object[])
+  fullName.vb: Lachee.Utilities.Logger.Warning(System.String, UnityEngine.Object, System.Object())
+  nameWithType: Logger.Warning(String, UnityEngine.Object, Object[])
+  nameWithType.vb: Logger.Warning(String, UnityEngine.Object, Object())
+- uid: Lachee.Utilities.Logger.Warning*
+  name: Warning
+  href: api/Lachee.Utilities.Logger.html#Lachee_Utilities_Logger_Warning_
+  commentId: Overload:Lachee.Utilities.Logger.Warning
+  isSpec: "True"
+  fullName: Lachee.Utilities.Logger.Warning
+  nameWithType: Logger.Warning
+- uid: Lachee.Utilities.Mathl
+  name: Mathl
+  href: api/Lachee.Utilities.Mathl.html
+  commentId: T:Lachee.Utilities.Mathl
+  fullName: Lachee.Utilities.Mathl
+  nameWithType: Mathl
+- uid: Lachee.Utilities.Mathl.BitsSet(System.Int32)
+  name: BitsSet(Int32)
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_BitsSet_System_Int32_
+  commentId: M:Lachee.Utilities.Mathl.BitsSet(System.Int32)
+  fullName: Lachee.Utilities.Mathl.BitsSet(System.Int32)
+  nameWithType: Mathl.BitsSet(Int32)
+- uid: Lachee.Utilities.Mathl.BitsSet*
+  name: BitsSet
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_BitsSet_
+  commentId: Overload:Lachee.Utilities.Mathl.BitsSet
+  isSpec: "True"
+  fullName: Lachee.Utilities.Mathl.BitsSet
+  nameWithType: Mathl.BitsSet
+- uid: Lachee.Utilities.Mathl.Mod(System.Int32,System.Int32)
+  name: Mod(Int32, Int32)
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Mod_System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Mathl.Mod(System.Int32,System.Int32)
+  fullName: Lachee.Utilities.Mathl.Mod(System.Int32, System.Int32)
+  nameWithType: Mathl.Mod(Int32, Int32)
+- uid: Lachee.Utilities.Mathl.Mod*
+  name: Mod
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Mod_
+  commentId: Overload:Lachee.Utilities.Mathl.Mod
+  isSpec: "True"
+  fullName: Lachee.Utilities.Mathl.Mod
+  nameWithType: Mathl.Mod
+- uid: Lachee.Utilities.Mathl.Overlaps(Rect,Rect,Rect@)
+  name: Overlaps(Rect, Rect, out Rect)
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Overlaps_Rect_Rect_Rect__
+  commentId: M:Lachee.Utilities.Mathl.Overlaps(Rect,Rect,Rect@)
+  name.vb: Overlaps(Rect, Rect, ByRef Rect)
+  fullName: Lachee.Utilities.Mathl.Overlaps(Rect, Rect, out Rect)
+  fullName.vb: Lachee.Utilities.Mathl.Overlaps(Rect, Rect, ByRef Rect)
+  nameWithType: Mathl.Overlaps(Rect, Rect, out Rect)
+  nameWithType.vb: Mathl.Overlaps(Rect, Rect, ByRef Rect)
+- uid: Lachee.Utilities.Mathl.Overlaps*
+  name: Overlaps
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Overlaps_
+  commentId: Overload:Lachee.Utilities.Mathl.Overlaps
+  isSpec: "True"
+  fullName: Lachee.Utilities.Mathl.Overlaps
+  nameWithType: Mathl.Overlaps
+- uid: Lachee.Utilities.ParticleExtensions
+  name: ParticleExtensions
+  href: api/Lachee.Utilities.ParticleExtensions.html
+  commentId: T:Lachee.Utilities.ParticleExtensions
+  fullName: Lachee.Utilities.ParticleExtensions
+  nameWithType: ParticleExtensions
+- uid: Lachee.Utilities.ParticleExtensions.SetMaxParticles(ParticleSystem,System.Int32)
+  name: SetMaxParticles(ParticleSystem, Int32)
+  href: api/Lachee.Utilities.ParticleExtensions.html#Lachee_Utilities_ParticleExtensions_SetMaxParticles_ParticleSystem_System_Int32_
+  commentId: M:Lachee.Utilities.ParticleExtensions.SetMaxParticles(ParticleSystem,System.Int32)
+  fullName: Lachee.Utilities.ParticleExtensions.SetMaxParticles(ParticleSystem, System.Int32)
+  nameWithType: ParticleExtensions.SetMaxParticles(ParticleSystem, Int32)
+- uid: Lachee.Utilities.ParticleExtensions.SetMaxParticles*
+  name: SetMaxParticles
+  href: api/Lachee.Utilities.ParticleExtensions.html#Lachee_Utilities_ParticleExtensions_SetMaxParticles_
+  commentId: Overload:Lachee.Utilities.ParticleExtensions.SetMaxParticles
+  isSpec: "True"
+  fullName: Lachee.Utilities.ParticleExtensions.SetMaxParticles
+  nameWithType: ParticleExtensions.SetMaxParticles
+- uid: Lachee.Utilities.RectTransformExtensions
+  name: RectTransformExtensions
+  href: api/Lachee.Utilities.RectTransformExtensions.html
+  commentId: T:Lachee.Utilities.RectTransformExtensions
+  fullName: Lachee.Utilities.RectTransformExtensions
+  nameWithType: RectTransformExtensions
+- uid: Lachee.Utilities.RectTransformExtensions.ToScreenSpace(RectTransform)
+  name: ToScreenSpace(RectTransform)
+  href: api/Lachee.Utilities.RectTransformExtensions.html#Lachee_Utilities_RectTransformExtensions_ToScreenSpace_RectTransform_
+  commentId: M:Lachee.Utilities.RectTransformExtensions.ToScreenSpace(RectTransform)
+  fullName: Lachee.Utilities.RectTransformExtensions.ToScreenSpace(RectTransform)
+  nameWithType: RectTransformExtensions.ToScreenSpace(RectTransform)
+- uid: Lachee.Utilities.RectTransformExtensions.ToScreenSpace*
+  name: ToScreenSpace
+  href: api/Lachee.Utilities.RectTransformExtensions.html#Lachee_Utilities_RectTransformExtensions_ToScreenSpace_
+  commentId: Overload:Lachee.Utilities.RectTransformExtensions.ToScreenSpace
+  isSpec: "True"
+  fullName: Lachee.Utilities.RectTransformExtensions.ToScreenSpace
+  nameWithType: RectTransformExtensions.ToScreenSpace
+- uid: Lachee.Utilities.Rist`1
+  name: Rist<T>
+  href: api/Lachee.Utilities.Rist-1.html
+  commentId: T:Lachee.Utilities.Rist`1
+  name.vb: Rist(Of T)
+  fullName: Lachee.Utilities.Rist<T>
+  fullName.vb: Lachee.Utilities.Rist(Of T)
+  nameWithType: Rist<T>
+  nameWithType.vb: Rist(Of T)
+- uid: Lachee.Utilities.Rist`1.#ctor
+  name: Rist()
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1__ctor
+  commentId: M:Lachee.Utilities.Rist`1.#ctor
+  fullName: Lachee.Utilities.Rist<T>.Rist()
+  fullName.vb: Lachee.Utilities.Rist(Of T).Rist()
+  nameWithType: Rist<T>.Rist()
+  nameWithType.vb: Rist(Of T).Rist()
+- uid: Lachee.Utilities.Rist`1.#ctor(System.Int32)
+  name: Rist(Int32)
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1__ctor_System_Int32_
+  commentId: M:Lachee.Utilities.Rist`1.#ctor(System.Int32)
+  fullName: Lachee.Utilities.Rist<T>.Rist(System.Int32)
+  fullName.vb: Lachee.Utilities.Rist(Of T).Rist(System.Int32)
+  nameWithType: Rist<T>.Rist(Int32)
+  nameWithType.vb: Rist(Of T).Rist(Int32)
+- uid: Lachee.Utilities.Rist`1.#ctor*
+  name: Rist
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1__ctor_
+  commentId: Overload:Lachee.Utilities.Rist`1.#ctor
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.Rist
+  fullName.vb: Lachee.Utilities.Rist(Of T).Rist
+  nameWithType: Rist<T>.Rist
+  nameWithType.vb: Rist(Of T).Rist
+- uid: Lachee.Utilities.Rist`1.Add(`0,System.Single)
+  name: Add(T, Single)
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Add__0_System_Single_
+  commentId: M:Lachee.Utilities.Rist`1.Add(`0,System.Single)
+  fullName: Lachee.Utilities.Rist<T>.Add(T, System.Single)
+  fullName.vb: Lachee.Utilities.Rist(Of T).Add(T, System.Single)
+  nameWithType: Rist<T>.Add(T, Single)
+  nameWithType.vb: Rist(Of T).Add(T, Single)
+- uid: Lachee.Utilities.Rist`1.Add*
+  name: Add
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Add_
+  commentId: Overload:Lachee.Utilities.Rist`1.Add
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.Add
+  fullName.vb: Lachee.Utilities.Rist(Of T).Add
+  nameWithType: Rist<T>.Add
+  nameWithType.vb: Rist(Of T).Add
+- uid: Lachee.Utilities.Rist`1.Clear
+  name: Clear()
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Clear
+  commentId: M:Lachee.Utilities.Rist`1.Clear
+  fullName: Lachee.Utilities.Rist<T>.Clear()
+  fullName.vb: Lachee.Utilities.Rist(Of T).Clear()
+  nameWithType: Rist<T>.Clear()
+  nameWithType.vb: Rist(Of T).Clear()
+- uid: Lachee.Utilities.Rist`1.Clear*
+  name: Clear
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Clear_
+  commentId: Overload:Lachee.Utilities.Rist`1.Clear
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.Clear
+  fullName.vb: Lachee.Utilities.Rist(Of T).Clear
+  nameWithType: Rist<T>.Clear
+  nameWithType.vb: Rist(Of T).Clear
+- uid: Lachee.Utilities.Rist`1.Count
+  name: Count
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Count
+  commentId: P:Lachee.Utilities.Rist`1.Count
+  fullName: Lachee.Utilities.Rist<T>.Count
+  fullName.vb: Lachee.Utilities.Rist(Of T).Count
+  nameWithType: Rist<T>.Count
+  nameWithType.vb: Rist(Of T).Count
+- uid: Lachee.Utilities.Rist`1.Count*
+  name: Count
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Count_
+  commentId: Overload:Lachee.Utilities.Rist`1.Count
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.Count
+  fullName.vb: Lachee.Utilities.Rist(Of T).Count
+  nameWithType: Rist<T>.Count
+  nameWithType.vb: Rist(Of T).Count
+- uid: Lachee.Utilities.Rist`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_GetEnumerator
+  commentId: M:Lachee.Utilities.Rist`1.GetEnumerator
+  fullName: Lachee.Utilities.Rist<T>.GetEnumerator()
+  fullName.vb: Lachee.Utilities.Rist(Of T).GetEnumerator()
+  nameWithType: Rist<T>.GetEnumerator()
+  nameWithType.vb: Rist(Of T).GetEnumerator()
+- uid: Lachee.Utilities.Rist`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_GetEnumerator_
+  commentId: Overload:Lachee.Utilities.Rist`1.GetEnumerator
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.GetEnumerator
+  fullName.vb: Lachee.Utilities.Rist(Of T).GetEnumerator
+  nameWithType: Rist<T>.GetEnumerator
+  nameWithType.vb: Rist(Of T).GetEnumerator
+- uid: Lachee.Utilities.Rist`1.Randomise(System.Single,`0@)
+  name: Randomise(Single, out T)
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Randomise_System_Single__0__
+  commentId: M:Lachee.Utilities.Rist`1.Randomise(System.Single,`0@)
+  name.vb: Randomise(Single, ByRef T)
+  fullName: Lachee.Utilities.Rist<T>.Randomise(System.Single, out T)
+  fullName.vb: Lachee.Utilities.Rist(Of T).Randomise(System.Single, ByRef T)
+  nameWithType: Rist<T>.Randomise(Single, out T)
+  nameWithType.vb: Rist(Of T).Randomise(Single, ByRef T)
+- uid: Lachee.Utilities.Rist`1.Randomise*
+  name: Randomise
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Randomise_
+  commentId: Overload:Lachee.Utilities.Rist`1.Randomise
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.Randomise
+  fullName.vb: Lachee.Utilities.Rist(Of T).Randomise
+  nameWithType: Rist<T>.Randomise
+  nameWithType.vb: Rist(Of T).Randomise
+- uid: Lachee.Utilities.Rist`1.RecalculateWeights
+  name: RecalculateWeights()
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_RecalculateWeights
+  commentId: M:Lachee.Utilities.Rist`1.RecalculateWeights
+  fullName: Lachee.Utilities.Rist<T>.RecalculateWeights()
+  fullName.vb: Lachee.Utilities.Rist(Of T).RecalculateWeights()
+  nameWithType: Rist<T>.RecalculateWeights()
+  nameWithType.vb: Rist(Of T).RecalculateWeights()
+- uid: Lachee.Utilities.Rist`1.RecalculateWeights*
+  name: RecalculateWeights
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_RecalculateWeights_
+  commentId: Overload:Lachee.Utilities.Rist`1.RecalculateWeights
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.RecalculateWeights
+  fullName.vb: Lachee.Utilities.Rist(Of T).RecalculateWeights
+  nameWithType: Rist<T>.RecalculateWeights
+  nameWithType.vb: Rist(Of T).RecalculateWeights
+- uid: Lachee.Utilities.Rist`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Lachee.Utilities.Rist`1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Lachee.Utilities.Rist<T>.System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: Lachee.Utilities.Rist(Of T).System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Rist<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: Rist(Of T).System.Collections.IEnumerable.GetEnumerator()
+- uid: Lachee.Utilities.Rist`1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Lachee.Utilities.Rist`1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Lachee.Utilities.Rist<T>.System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: Lachee.Utilities.Rist(Of T).System.Collections.IEnumerable.GetEnumerator
+  nameWithType: Rist<T>.IEnumerable.GetEnumerator
+  nameWithType.vb: Rist(Of T).System.Collections.IEnumerable.GetEnumerator
+- uid: Lachee.Utilities.Rist`1.TotalWeight
+  name: TotalWeight
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_TotalWeight
+  commentId: P:Lachee.Utilities.Rist`1.TotalWeight
+  fullName: Lachee.Utilities.Rist<T>.TotalWeight
+  fullName.vb: Lachee.Utilities.Rist(Of T).TotalWeight
+  nameWithType: Rist<T>.TotalWeight
+  nameWithType.vb: Rist(Of T).TotalWeight
+- uid: Lachee.Utilities.Rist`1.TotalWeight*
+  name: TotalWeight
+  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_TotalWeight_
+  commentId: Overload:Lachee.Utilities.Rist`1.TotalWeight
+  isSpec: "True"
+  fullName: Lachee.Utilities.Rist<T>.TotalWeight
+  fullName.vb: Lachee.Utilities.Rist(Of T).TotalWeight
+  nameWithType: Rist<T>.TotalWeight
+  nameWithType.vb: Rist(Of T).TotalWeight
+- uid: Lachee.Utilities.Singleton`1
+  name: Singleton<T>
+  href: api/Lachee.Utilities.Singleton-1.html
+  commentId: T:Lachee.Utilities.Singleton`1
+  name.vb: Singleton(Of T)
+  fullName: Lachee.Utilities.Singleton<T>
+  fullName.vb: Lachee.Utilities.Singleton(Of T)
+  nameWithType: Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+- uid: Lachee.Utilities.Singleton`1.available
+  name: available
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_available
+  commentId: P:Lachee.Utilities.Singleton`1.available
+  fullName: Lachee.Utilities.Singleton<T>.available
+  fullName.vb: Lachee.Utilities.Singleton(Of T).available
+  nameWithType: Singleton<T>.available
+  nameWithType.vb: Singleton(Of T).available
+- uid: Lachee.Utilities.Singleton`1.available*
+  name: available
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_available_
+  commentId: Overload:Lachee.Utilities.Singleton`1.available
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.available
+  fullName.vb: Lachee.Utilities.Singleton(Of T).available
+  nameWithType: Singleton<T>.available
+  nameWithType.vb: Singleton(Of T).available
+- uid: Lachee.Utilities.Singleton`1.exists
+  name: exists
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_exists
+  commentId: P:Lachee.Utilities.Singleton`1.exists
+  fullName: Lachee.Utilities.Singleton<T>.exists
+  fullName.vb: Lachee.Utilities.Singleton(Of T).exists
+  nameWithType: Singleton<T>.exists
+  nameWithType.vb: Singleton(Of T).exists
+- uid: Lachee.Utilities.Singleton`1.exists*
+  name: exists
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_exists_
+  commentId: Overload:Lachee.Utilities.Singleton`1.exists
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.exists
+  fullName.vb: Lachee.Utilities.Singleton(Of T).exists
+  nameWithType: Singleton<T>.exists
+  nameWithType.vb: Singleton(Of T).exists
+- uid: Lachee.Utilities.Singleton`1.instance
+  name: instance
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_instance
+  commentId: P:Lachee.Utilities.Singleton`1.instance
+  fullName: Lachee.Utilities.Singleton<T>.instance
+  fullName.vb: Lachee.Utilities.Singleton(Of T).instance
+  nameWithType: Singleton<T>.instance
+  nameWithType.vb: Singleton(Of T).instance
+- uid: Lachee.Utilities.Singleton`1.instance*
+  name: instance
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_instance_
+  commentId: Overload:Lachee.Utilities.Singleton`1.instance
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.instance
+  fullName.vb: Lachee.Utilities.Singleton(Of T).instance
+  nameWithType: Singleton<T>.instance
+  nameWithType.vb: Singleton(Of T).instance
+- uid: Lachee.Utilities.Singleton`1.logger
+  name: logger
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_logger
+  commentId: F:Lachee.Utilities.Singleton`1.logger
+  fullName: Lachee.Utilities.Singleton<T>.logger
+  fullName.vb: Lachee.Utilities.Singleton(Of T).logger
+  nameWithType: Singleton<T>.logger
+  nameWithType.vb: Singleton(Of T).logger
+- uid: Lachee.Utilities.Singleton`1.OnApplicationQuit
+  name: OnApplicationQuit()
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_OnApplicationQuit
+  commentId: M:Lachee.Utilities.Singleton`1.OnApplicationQuit
+  fullName: Lachee.Utilities.Singleton<T>.OnApplicationQuit()
+  fullName.vb: Lachee.Utilities.Singleton(Of T).OnApplicationQuit()
+  nameWithType: Singleton<T>.OnApplicationQuit()
+  nameWithType.vb: Singleton(Of T).OnApplicationQuit()
+- uid: Lachee.Utilities.Singleton`1.OnApplicationQuit*
+  name: OnApplicationQuit
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_OnApplicationQuit_
+  commentId: Overload:Lachee.Utilities.Singleton`1.OnApplicationQuit
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.OnApplicationQuit
+  fullName.vb: Lachee.Utilities.Singleton(Of T).OnApplicationQuit
+  nameWithType: Singleton<T>.OnApplicationQuit
+  nameWithType.vb: Singleton(Of T).OnApplicationQuit
+- uid: Lachee.Utilities.Singleton`1.referenced
+  name: referenced
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_referenced
+  commentId: P:Lachee.Utilities.Singleton`1.referenced
+  fullName: Lachee.Utilities.Singleton<T>.referenced
+  fullName.vb: Lachee.Utilities.Singleton(Of T).referenced
+  nameWithType: Singleton<T>.referenced
+  nameWithType.vb: Singleton(Of T).referenced
+- uid: Lachee.Utilities.Singleton`1.referenced*
+  name: referenced
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_referenced_
+  commentId: Overload:Lachee.Utilities.Singleton`1.referenced
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.referenced
+  fullName.vb: Lachee.Utilities.Singleton(Of T).referenced
+  nameWithType: Singleton<T>.referenced
+  nameWithType.vb: Singleton(Of T).referenced
+- uid: Lachee.Utilities.Singleton`1.type
+  name: type
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_type
+  commentId: P:Lachee.Utilities.Singleton`1.type
+  fullName: Lachee.Utilities.Singleton<T>.type
+  fullName.vb: Lachee.Utilities.Singleton(Of T).type
+  nameWithType: Singleton<T>.type
+  nameWithType.vb: Singleton(Of T).type
+- uid: Lachee.Utilities.Singleton`1.type*
+  name: type
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_type_
+  commentId: Overload:Lachee.Utilities.Singleton`1.type
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.type
+  fullName.vb: Lachee.Utilities.Singleton(Of T).type
+  nameWithType: Singleton<T>.type
+  nameWithType.vb: Singleton(Of T).type
+- uid: Lachee.Utilities.Singleton`1.wait
+  name: wait
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_wait
+  commentId: F:Lachee.Utilities.Singleton`1.wait
+  fullName: Lachee.Utilities.Singleton<T>.wait
+  fullName.vb: Lachee.Utilities.Singleton(Of T).wait
+  nameWithType: Singleton<T>.wait
+  nameWithType.vb: Singleton(Of T).wait
+- uid: Lachee.Utilities.Singleton`1.waitForReference
+  name: waitForReference
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_waitForReference
+  commentId: F:Lachee.Utilities.Singleton`1.waitForReference
+  fullName: Lachee.Utilities.Singleton<T>.waitForReference
+  fullName.vb: Lachee.Utilities.Singleton(Of T).waitForReference
+  nameWithType: Singleton<T>.waitForReference
+  nameWithType.vb: Singleton(Of T).waitForReference
+- uid: Lachee.Utilities.SortedGizmos
+  name: SortedGizmos
+  href: api/Lachee.Utilities.SortedGizmos.html
+  commentId: T:Lachee.Utilities.SortedGizmos
+  fullName: Lachee.Utilities.SortedGizmos
+  nameWithType: SortedGizmos
+- uid: Lachee.Utilities.SortedGizmos.BatchCommit
+  name: BatchCommit()
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_BatchCommit
+  commentId: M:Lachee.Utilities.SortedGizmos.BatchCommit
+  fullName: Lachee.Utilities.SortedGizmos.BatchCommit()
+  nameWithType: SortedGizmos.BatchCommit()
+- uid: Lachee.Utilities.SortedGizmos.BatchCommit*
+  name: BatchCommit
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_BatchCommit_
+  commentId: Overload:Lachee.Utilities.SortedGizmos.BatchCommit
+  isSpec: "True"
+  fullName: Lachee.Utilities.SortedGizmos.BatchCommit
+  nameWithType: SortedGizmos.BatchCommit
+- uid: Lachee.Utilities.SortedGizmos.color
+  name: color
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_color
+  commentId: P:Lachee.Utilities.SortedGizmos.color
+  fullName: Lachee.Utilities.SortedGizmos.color
+  nameWithType: SortedGizmos.color
+- uid: Lachee.Utilities.SortedGizmos.color*
+  name: color
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_color_
+  commentId: Overload:Lachee.Utilities.SortedGizmos.color
+  isSpec: "True"
+  fullName: Lachee.Utilities.SortedGizmos.color
+  nameWithType: SortedGizmos.color
+- uid: Lachee.Utilities.SortedGizmos.correctColor
+  name: correctColor
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_correctColor
+  commentId: F:Lachee.Utilities.SortedGizmos.correctColor
+  fullName: Lachee.Utilities.SortedGizmos.correctColor
+  nameWithType: SortedGizmos.correctColor
+- uid: Lachee.Utilities.SortedGizmos.DrawCube(Vector3,Vector3)
+  name: DrawCube(Vector3, Vector3)
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawCube_Vector3_Vector3_
+  commentId: M:Lachee.Utilities.SortedGizmos.DrawCube(Vector3,Vector3)
+  fullName: Lachee.Utilities.SortedGizmos.DrawCube(Vector3, Vector3)
+  nameWithType: SortedGizmos.DrawCube(Vector3, Vector3)
+- uid: Lachee.Utilities.SortedGizmos.DrawCube*
+  name: DrawCube
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawCube_
+  commentId: Overload:Lachee.Utilities.SortedGizmos.DrawCube
+  isSpec: "True"
+  fullName: Lachee.Utilities.SortedGizmos.DrawCube
+  nameWithType: SortedGizmos.DrawCube
+- uid: Lachee.Utilities.SortedGizmos.DrawSphere(Vector3,System.Single)
+  name: DrawSphere(Vector3, Single)
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawSphere_Vector3_System_Single_
+  commentId: M:Lachee.Utilities.SortedGizmos.DrawSphere(Vector3,System.Single)
+  fullName: Lachee.Utilities.SortedGizmos.DrawSphere(Vector3, System.Single)
+  nameWithType: SortedGizmos.DrawSphere(Vector3, Single)
+- uid: Lachee.Utilities.SortedGizmos.DrawSphere*
+  name: DrawSphere
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawSphere_
+  commentId: Overload:Lachee.Utilities.SortedGizmos.DrawSphere
+  isSpec: "True"
+  fullName: Lachee.Utilities.SortedGizmos.DrawSphere
+  nameWithType: SortedGizmos.DrawSphere
+- uid: Lachee.Utilities.SortedGizmos.DrawWireCube(Vector3,Vector3)
+  name: DrawWireCube(Vector3, Vector3)
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawWireCube_Vector3_Vector3_
+  commentId: M:Lachee.Utilities.SortedGizmos.DrawWireCube(Vector3,Vector3)
+  fullName: Lachee.Utilities.SortedGizmos.DrawWireCube(Vector3, Vector3)
+  nameWithType: SortedGizmos.DrawWireCube(Vector3, Vector3)
+- uid: Lachee.Utilities.SortedGizmos.DrawWireCube*
+  name: DrawWireCube
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawWireCube_
+  commentId: Overload:Lachee.Utilities.SortedGizmos.DrawWireCube
+  isSpec: "True"
+  fullName: Lachee.Utilities.SortedGizmos.DrawWireCube
+  nameWithType: SortedGizmos.DrawWireCube
+- uid: Lachee.Utilities.SortedGizmos.DrawWireSphere(Vector3,System.Single)
+  name: DrawWireSphere(Vector3, Single)
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawWireSphere_Vector3_System_Single_
+  commentId: M:Lachee.Utilities.SortedGizmos.DrawWireSphere(Vector3,System.Single)
+  fullName: Lachee.Utilities.SortedGizmos.DrawWireSphere(Vector3, System.Single)
+  nameWithType: SortedGizmos.DrawWireSphere(Vector3, Single)
+- uid: Lachee.Utilities.SortedGizmos.DrawWireSphere*
+  name: DrawWireSphere
+  href: api/Lachee.Utilities.SortedGizmos.html#Lachee_Utilities_SortedGizmos_DrawWireSphere_
+  commentId: Overload:Lachee.Utilities.SortedGizmos.DrawWireSphere
+  isSpec: "True"
+  fullName: Lachee.Utilities.SortedGizmos.DrawWireSphere
+  nameWithType: SortedGizmos.DrawWireSphere
+- uid: Lachee.Utilities.Spin
+  name: Spin
+  href: api/Lachee.Utilities.Spin.html
+  commentId: T:Lachee.Utilities.Spin
+  fullName: Lachee.Utilities.Spin
+  nameWithType: Spin
+- uid: Lachee.Utilities.Spin.speed
+  name: speed
+  href: api/Lachee.Utilities.Spin.html#Lachee_Utilities_Spin_speed
+  commentId: F:Lachee.Utilities.Spin.speed
+  fullName: Lachee.Utilities.Spin.speed
+  nameWithType: Spin.speed
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities
+  name: Lachee.UtilitiesAssets.Lachee.Utilities
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.html
+  commentId: N:Lachee.UtilitiesAssets.Lachee.Utilities
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities
+  nameWithType: Lachee.UtilitiesAssets.Lachee.Utilities
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails
+  name: MeshDetails
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html
+  commentId: T:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails
+  nameWithType: MeshDetails
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor
+  name: MeshDetails()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails__ctor
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.MeshDetails()
+  nameWithType: MeshDetails.MeshDetails()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails,Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  name: MeshDetails(MeshDetails, MeshDetails)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails__ctor_Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails,Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.MeshDetails(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails, Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  nameWithType: MeshDetails.MeshDetails(MeshDetails, MeshDetails)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor(Mesh)
+  name: MeshDetails(Mesh)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails__ctor_Mesh_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor(Mesh)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.MeshDetails(Mesh)
+  nameWithType: MeshDetails.MeshDetails(Mesh)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor*
+  name: MeshDetails
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails__ctor_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.#ctor
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.MeshDetails
+  nameWithType: MeshDetails.MeshDetails
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddColor(Color)
+  name: AddColor(Color)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddColor_Color_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddColor(Color)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddColor(Color)
+  nameWithType: MeshDetails.AddColor(Color)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddColor*
+  name: AddColor
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddColor_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddColor
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddColor
+  nameWithType: MeshDetails.AddColor
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddRectangle(Vector3,Vector3,Vector3,Vector3)
+  name: AddRectangle(Vector3, Vector3, Vector3, Vector3)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddRectangle_Vector3_Vector3_Vector3_Vector3_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddRectangle(Vector3,Vector3,Vector3,Vector3)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddRectangle(Vector3, Vector3, Vector3, Vector3)
+  nameWithType: MeshDetails.AddRectangle(Vector3, Vector3, Vector3, Vector3)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddRectangle*
+  name: AddRectangle
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddRectangle_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddRectangle
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddRectangle
+  nameWithType: MeshDetails.AddRectangle
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTri(System.Int32,System.Int32)
+  name: AddTri(Int32, Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddTri_System_Int32_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTri(System.Int32,System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTri(System.Int32, System.Int32)
+  nameWithType: MeshDetails.AddTri(Int32, Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTri*
+  name: AddTri
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddTri_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTri
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTri
+  nameWithType: MeshDetails.AddTri
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTriangle(Vector3,Vector3,Vector3)
+  name: AddTriangle(Vector3, Vector3, Vector3)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddTriangle_Vector3_Vector3_Vector3_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTriangle(Vector3,Vector3,Vector3)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTriangle(Vector3, Vector3, Vector3)
+  nameWithType: MeshDetails.AddTriangle(Vector3, Vector3, Vector3)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTriangle*
+  name: AddTriangle
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddTriangle_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTriangle
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTriangle
+  nameWithType: MeshDetails.AddTriangle
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTris(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: AddTris(Int32, Int32, Int32, Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddTris_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTris(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTris(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: MeshDetails.AddTris(Int32, Int32, Int32, Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTris*
+  name: AddTris
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddTris_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTris
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddTris
+  nameWithType: MeshDetails.AddTris
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2)
+  name: AddUV(Vector2)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddUV_Vector2_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2)
+  nameWithType: MeshDetails.AddUV(Vector2)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2[])
+  name: AddUV(Vector2[])
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddUV_Vector2___
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2[])
+  name.vb: AddUV(Vector2())
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2[])
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV(Vector2())
+  nameWithType: MeshDetails.AddUV(Vector2[])
+  nameWithType.vb: MeshDetails.AddUV(Vector2())
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV*
+  name: AddUV
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddUV_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddUV
+  nameWithType: MeshDetails.AddUV
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3)
+  name: AddVert(Vector3)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddVert_Vector3_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3)
+  nameWithType: MeshDetails.AddVert(Vector3)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3[])
+  name: AddVert(Vector3[])
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddVert_Vector3___
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3[])
+  name.vb: AddVert(Vector3())
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3[])
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert(Vector3())
+  nameWithType: MeshDetails.AddVert(Vector3[])
+  nameWithType.vb: MeshDetails.AddVert(Vector3())
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert*
+  name: AddVert
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_AddVert_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.AddVert
+  nameWithType: MeshDetails.AddVert
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Apply(Mesh,System.Boolean)
+  name: Apply(Mesh, Boolean)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Apply_Mesh_System_Boolean_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Apply(Mesh,System.Boolean)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Apply(Mesh, System.Boolean)
+  nameWithType: MeshDetails.Apply(Mesh, Boolean)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Apply*
+  name: Apply
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Apply_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Apply
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Apply
+  nameWithType: MeshDetails.Apply
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CalculateCenter
+  name: CalculateCenter()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CalculateCenter
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CalculateCenter
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CalculateCenter()
+  nameWithType: MeshDetails.CalculateCenter()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CalculateCenter*
+  name: CalculateCenter
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CalculateCenter_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CalculateCenter
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CalculateCenter
+  nameWithType: MeshDetails.CalculateCenter
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.center
+  name: center
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_center
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.center
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.center
+  nameWithType: MeshDetails.center
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CenterMesh(Vector3)
+  name: CenterMesh(Vector3)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CenterMesh_Vector3_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CenterMesh(Vector3)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CenterMesh(Vector3)
+  nameWithType: MeshDetails.CenterMesh(Vector3)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CenterMesh*
+  name: CenterMesh
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CenterMesh_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CenterMesh
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CenterMesh
+  nameWithType: MeshDetails.CenterMesh
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.colors
+  name: colors
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_colors
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.colors
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.colors
+  nameWithType: MeshDetails.colors
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountColors
+  name: CountColors()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountColors
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountColors
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountColors()
+  nameWithType: MeshDetails.CountColors()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountColors*
+  name: CountColors
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountColors_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountColors
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountColors
+  nameWithType: MeshDetails.CountColors
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountTris
+  name: CountTris()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountTris
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountTris
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountTris()
+  nameWithType: MeshDetails.CountTris()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountTris*
+  name: CountTris
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountTris_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountTris
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountTris
+  nameWithType: MeshDetails.CountTris
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountUVs
+  name: CountUVs()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountUVs
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountUVs
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountUVs()
+  nameWithType: MeshDetails.CountUVs()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountUVs*
+  name: CountUVs
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountUVs_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountUVs
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountUVs
+  nameWithType: MeshDetails.CountUVs
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountVerts
+  name: CountVerts()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountVerts
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountVerts
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountVerts()
+  nameWithType: MeshDetails.CountVerts()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountVerts*
+  name: CountVerts
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CountVerts_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountVerts
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CountVerts
+  nameWithType: MeshDetails.CountVerts
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Create(System.String,System.Boolean,System.Boolean)
+  name: Create(String, Boolean, Boolean)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Create_System_String_System_Boolean_System_Boolean_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Create(System.String,System.Boolean,System.Boolean)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Create(System.String, System.Boolean, System.Boolean)
+  nameWithType: MeshDetails.Create(String, Boolean, Boolean)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Create*
+  name: Create
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Create_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Create
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Create
+  nameWithType: MeshDetails.Create
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle
+  name: CreateTriangle()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CreateTriangle
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle()
+  nameWithType: MeshDetails.CreateTriangle()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle(System.Int32,System.Int32,System.Int32)
+  name: CreateTriangle(Int32, Int32, Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CreateTriangle_System_Int32_System_Int32_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle(System.Int32,System.Int32,System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle(System.Int32, System.Int32, System.Int32)
+  nameWithType: MeshDetails.CreateTriangle(Int32, Int32, Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle*
+  name: CreateTriangle
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_CreateTriangle_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.CreateTriangle
+  nameWithType: MeshDetails.CreateTriangle
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetCenter
+  name: GetCenter()
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetCenter
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetCenter
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetCenter()
+  nameWithType: MeshDetails.GetCenter()
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetCenter*
+  name: GetCenter
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetCenter_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetCenter
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetCenter
+  nameWithType: MeshDetails.GetCenter
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetColor(System.Int32)
+  name: GetColor(Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetColor_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetColor(System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetColor(System.Int32)
+  nameWithType: MeshDetails.GetColor(Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetColor*
+  name: GetColor
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetColor_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetColor
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetColor
+  nameWithType: MeshDetails.GetColor
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTri(System.Int32)
+  name: GetTri(Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetTri_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTri(System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTri(System.Int32)
+  nameWithType: MeshDetails.GetTri(Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTri*
+  name: GetTri
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetTri_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTri
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTri
+  nameWithType: MeshDetails.GetTri
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTris(System.Int32)
+  name: GetTris(Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetTris_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTris(System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTris(System.Int32)
+  nameWithType: MeshDetails.GetTris(Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTris*
+  name: GetTris
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetTris_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTris
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetTris
+  nameWithType: MeshDetails.GetTris
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetUV(System.Int32)
+  name: GetUV(Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetUV_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetUV(System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetUV(System.Int32)
+  nameWithType: MeshDetails.GetUV(Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetUV*
+  name: GetUV
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetUV_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetUV
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetUV
+  nameWithType: MeshDetails.GetUV
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVert(System.Int32)
+  name: GetVert(Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetVert_System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVert(System.Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVert(System.Int32)
+  nameWithType: MeshDetails.GetVert(Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVert*
+  name: GetVert
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetVert_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVert
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVert
+  nameWithType: MeshDetails.GetVert
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts(System.Int32[])
+  name: GetVerts(Int32[])
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetVerts_System_Int32___
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts(System.Int32[])
+  name.vb: GetVerts(Int32())
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts(System.Int32[])
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts(System.Int32())
+  nameWithType: MeshDetails.GetVerts(Int32[])
+  nameWithType.vb: MeshDetails.GetVerts(Int32())
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts*
+  name: GetVerts
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_GetVerts_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.GetVerts
+  nameWithType: MeshDetails.GetVerts
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.hasCenter
+  name: hasCenter
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_hasCenter
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.hasCenter
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.hasCenter
+  nameWithType: MeshDetails.hasCenter
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Merge(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails,Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  name: Merge(MeshDetails, MeshDetails)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Merge_Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Merge(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails,Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Merge(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails, Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  nameWithType: MeshDetails.Merge(MeshDetails, MeshDetails)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Merge*
+  name: Merge
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Merge_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Merge
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Merge
+  nameWithType: MeshDetails.Merge
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.op_Addition(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails,Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  name: Addition(MeshDetails, MeshDetails)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_op_Addition_Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.op_Addition(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails,Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Addition(Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails, Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails)
+  nameWithType: MeshDetails.Addition(MeshDetails, MeshDetails)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.op_Addition*
+  name: Addition
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_op_Addition_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.op_Addition
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.Addition
+  nameWithType: MeshDetails.Addition
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColor(Color)
+  name: SetColor(Color)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetColor_Color_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColor(Color)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColor(Color)
+  nameWithType: MeshDetails.SetColor(Color)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColor*
+  name: SetColor
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetColor_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColor
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColor
+  nameWithType: MeshDetails.SetColor
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors(System.Collections.Generic.IEnumerable{Color})
+  name: SetColors(IEnumerable<Color>)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetColors_System_Collections_Generic_IEnumerable_Color__
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors(System.Collections.Generic.IEnumerable{Color})
+  name.vb: SetColors(IEnumerable(Of Color))
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors(System.Collections.Generic.IEnumerable<Color>)
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors(System.Collections.Generic.IEnumerable(Of Color))
+  nameWithType: MeshDetails.SetColors(IEnumerable<Color>)
+  nameWithType.vb: MeshDetails.SetColors(IEnumerable(Of Color))
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors*
+  name: SetColors
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetColors_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetColors
+  nameWithType: MeshDetails.SetColors
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris(System.Collections.Generic.IEnumerable{System.Int32},System.Int32)
+  name: SetTris(IEnumerable<Int32>, Int32)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetTris_System_Collections_Generic_IEnumerable_System_Int32__System_Int32_
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris(System.Collections.Generic.IEnumerable{System.Int32},System.Int32)
+  name.vb: SetTris(IEnumerable(Of Int32), Int32)
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris(System.Collections.Generic.IEnumerable<System.Int32>, System.Int32)
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris(System.Collections.Generic.IEnumerable(Of System.Int32), System.Int32)
+  nameWithType: MeshDetails.SetTris(IEnumerable<Int32>, Int32)
+  nameWithType.vb: MeshDetails.SetTris(IEnumerable(Of Int32), Int32)
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris*
+  name: SetTris
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetTris_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetTris
+  nameWithType: MeshDetails.SetTris
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs(System.Collections.Generic.IEnumerable{Vector2})
+  name: SetUVs(IEnumerable<Vector2>)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetUVs_System_Collections_Generic_IEnumerable_Vector2__
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs(System.Collections.Generic.IEnumerable{Vector2})
+  name.vb: SetUVs(IEnumerable(Of Vector2))
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs(System.Collections.Generic.IEnumerable<Vector2>)
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs(System.Collections.Generic.IEnumerable(Of Vector2))
+  nameWithType: MeshDetails.SetUVs(IEnumerable<Vector2>)
+  nameWithType.vb: MeshDetails.SetUVs(IEnumerable(Of Vector2))
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs*
+  name: SetUVs
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetUVs_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetUVs
+  nameWithType: MeshDetails.SetUVs
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts(System.Collections.Generic.IEnumerable{Vector3})
+  name: SetVerts(IEnumerable<Vector3>)
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetVerts_System_Collections_Generic_IEnumerable_Vector3__
+  commentId: M:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts(System.Collections.Generic.IEnumerable{Vector3})
+  name.vb: SetVerts(IEnumerable(Of Vector3))
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts(System.Collections.Generic.IEnumerable<Vector3>)
+  fullName.vb: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts(System.Collections.Generic.IEnumerable(Of Vector3))
+  nameWithType: MeshDetails.SetVerts(IEnumerable<Vector3>)
+  nameWithType.vb: MeshDetails.SetVerts(IEnumerable(Of Vector3))
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts*
+  name: SetVerts
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_SetVerts_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.SetVerts
+  nameWithType: MeshDetails.SetVerts
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submesh
+  name: submesh
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_submesh
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submesh
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submesh
+  nameWithType: MeshDetails.submesh
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submeshCount
+  name: submeshCount
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_submeshCount
+  commentId: P:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submeshCount
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submeshCount
+  nameWithType: MeshDetails.submeshCount
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submeshCount*
+  name: submeshCount
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_submeshCount_
+  commentId: Overload:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submeshCount
+  isSpec: "True"
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.submeshCount
+  nameWithType: MeshDetails.submeshCount
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.tris
+  name: tris
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_tris
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.tris
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.tris
+  nameWithType: MeshDetails.tris
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.uvs
+  name: uvs
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_uvs
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.uvs
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.uvs
+  nameWithType: MeshDetails.uvs
+- uid: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.verts
+  name: verts
+  href: api/Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.html#Lachee_UtilitiesAssets_Lachee_Utilities_MeshDetails_verts
+  commentId: F:Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.verts
+  fullName: Lachee.UtilitiesAssets.Lachee.Utilities.MeshDetails.verts
+  nameWithType: MeshDetails.verts
