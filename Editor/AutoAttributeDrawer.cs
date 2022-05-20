@@ -9,6 +9,8 @@ namespace Lachee.Utilities.Editor
     [CustomPropertyDrawer(typeof(AutoAttribute))]
     public class AutoAttributeDrawer : PropertyDrawer
     {
+        const string PREF_ALWAYS_SCAN = "autoattr_scan";
+
         public static dynamic FindComponent(SerializedProperty property, AutoAttribute options)
         {
             var baseComponent = property.serializedObject.targetObject as Component;
@@ -16,17 +18,23 @@ namespace Lachee.Utilities.Editor
                 throw new System.InvalidOperationException("Cannot find a component on a non-component object");
 
             var componentType = GetSerializedPropertyType(property);
-            if (!typeof(Component).IsAssignableFrom(componentType))
-                throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
-
             if (componentType.IsArray)
             {
+                // Validate it is an array of components
+                if (!typeof(Component).IsAssignableFrom(componentType.GetElementType()))
+                    throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
+
+
                 if (options.IncludeChildren)
-                    return baseComponent.GetComponentsInChildren(componentType);
-                return baseComponent.GetComponents(componentType);
+                    return baseComponent.GetComponentsInChildren(componentType.GetElementType());
+                return baseComponent.GetComponents(componentType.GetElementType());
             }
             else
             {
+                // Validate it is a component
+                if (!typeof(Component).IsAssignableFrom(componentType))
+                    throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
+
                 var component = baseComponent.GetComponent(componentType);
                 if (component != null)
                     return component;
@@ -38,32 +46,40 @@ namespace Lachee.Utilities.Editor
             return null;
         }
 
+        /// <summary>Searches and applies components for the serialized proeprty</summary>
+        public static bool ApplyToSerialziedProperty(SerializedProperty property, AutoAttribute attribute)
+        {
+            var component = FindComponent(property, attribute);
+            if (component is Object comObject)
+            {
+                property.objectReferenceValue = comObject;
+                return true;
+            }
+            else if (component is Object[] comArray)
+            {
+                if (!property.isArray)
+                    throw new System.InvalidOperationException("Cannot pass array to non-array field");
+                property.ClearArray();
+                property.arraySize = comArray.Length;
+                for (int i = 0; i < comArray.Length; i++)
+                {
+                    var element = property.GetArrayElementAtIndex(i);
+                    element.objectReferenceValue = comArray[i];
+                }
+                return comArray.Length > 0;
+            }
+            return false;
+        }
+
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             var attr = attribute as AutoAttribute;
 
             // Null, so lets assign it
-            if (property.objectReferenceValue == null)
+            if (EditorPrefs.GetBool(PREF_ALWAYS_SCAN, false))
             {
-                var component = FindComponent(property, attr);
-                if (component is Object comObject)
-                {
-                    property.objectReferenceValue = comObject;
-                }
-                else if (component is Object[] comArray)
-                {
-                    if (!property.isArray)
-                        throw new System.InvalidOperationException("Cannot pass array to non-array field");
-                    property.ClearArray();
-                    property.arraySize = comArray.Length;
-                    for (int i = 0; i < comArray.Length; i++)
-                    {
-                        property.InsertArrayElementAtIndex(i);
-                        var element = property.GetArrayElementAtIndex(i);
-                        element.objectReferenceValue = comArray[i];
-                    }
-
-                }
+                if (property.objectReferenceValue == null || (property.isArray && property.arraySize == 0))
+                    ApplyToSerialziedProperty(property, attr);
             }
 
             if (attr.Hidden)
@@ -71,14 +87,21 @@ namespace Lachee.Utilities.Editor
                 // Hidden but we cannot find one!
                 if (ShouldShow(property))
                 {
+                    string errmsg;
                     if (property.objectReferenceValue == null)
                     {
-                        GUI.color = Color.red;
-                        label.tooltip = $"[BAD COMPONENT] " + label.tooltip;
+                        errmsg = $"{property.name} [Missing Component]";
+                        EditorGUI.HelpBox(position, errmsg, MessageType.Error);
+                    } 
+                    else
+                    {
+                        errmsg = $"{property.name} [Wrong GameObject]";
+                        EditorGUI.HelpBox(position, errmsg, MessageType.Warning);
                     }
 
-                    EditorGUI.PropertyField(position, property, label);
+                    EditorGUI.PropertyField(position, property);
                     GUI.color = Color.white;
+
                 }
             }
             else
@@ -133,14 +156,65 @@ namespace Lachee.Utilities.Editor
 
         private static void OnHierarchyChanged()
         {
+            // Scan every MonoBehaviour for Auto Attribute fields
+            var processQueue = new Dictionary<Object, List<SearchRequest>>();
+            var components = Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)); // Use MonoBehaviour as a slightly more optimised search
 
-            var components = Resources.FindObjectsOfTypeAll(typeof(Component));
-            var fieldAttribs = components.Select(component => (component, component.GetType()
-                                                                                    .GetFields(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic)
-                                                                                    .Select(field => (field, field.GetCustomAttributes(typeof(AutoAttribute), true)))
-                                                                                    .Where(touple => touple.Item2 != null)
-                                                               )
-                                                 );
+            foreach (var component in components)
+            {
+
+                bool addedComponentToProcess = false;
+                var fields = component.GetType().GetFields();
+                foreach (var field in fields)
+                {
+                    var attributes = field.GetCustomAttributes(typeof(AutoAttribute), true);
+                    if (attributes.Length > 0)
+                    {
+                        if (!addedComponentToProcess)
+                        {
+                            addedComponentToProcess = true;
+                            processQueue.Add(component, new List<SearchRequest>(fields.Length));
+                        }
+
+                        // While the attribuite doesnt actually support multiple on one field, 
+                        // we do this just to future proof. Performance is neglegitable.
+                        foreach (var attribute in attributes)
+                        {
+                            processQueue[component].Add(new SearchRequest()
+                            {
+                                propertyPath = field.Name,
+                                attribute = (AutoAttribute)attribute
+                            });
+                        }
+                    }
+                }
+            }
+
+            // Now process all the components
+            // We are going to create a serialized object then call the ApplyToSerialized the drawer has to all the 
+            //  appropriate properites of that serialized object
+            foreach (var kp in processQueue)
+            {
+                bool hasMadeChanges = false;
+                var serializedObject = new SerializedObject(kp.Key);
+                foreach (var request in kp.Value)
+                {
+                    var property = serializedObject.FindProperty(request.propertyPath);
+                    if (AutoAttributeDrawer.ApplyToSerialziedProperty(property, request.attribute))
+                        hasMadeChanges = true;
+                }
+
+                if (hasMadeChanges)
+                    serializedObject.ApplyModifiedProperties();
+            }
+
+            // Done
+        }
+
+        struct SearchRequest
+        {
+            public string propertyPath;
+            public AutoAttribute attribute;
         }
     }
 }
