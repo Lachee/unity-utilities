@@ -7,7 +7,9 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
-    ///<summary>LINQ for Lachee's. Provides a collection of LINQ and Enumeration related utilities </summary>
+    ///<summary>
+    /// LINQ for Lachee's. Provides a collection of LINQ and Enumeration related utilities
+    ///</summary>
     public static class Linql
     {
         /// <summary>

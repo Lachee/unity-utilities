@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
+    /// <summary>
+    /// Custom Logger for Unity that handles parenting and hierarchy of logs
+    /// </summary>
     public class Logger : ILogHandler
     {
         public Logger Parent { get; }

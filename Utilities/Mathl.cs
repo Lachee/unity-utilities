@@ -4,7 +4,10 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
-    ///<summary>Maths for Lachee's. Provides a collection of math related utilities </summary>
+    /// <summary>
+    /// Wet Maths a.k.a MathLake MathLachee, or MathLoony... however you want it.
+    /// Bunch of static maths functions that are useful, like Cyclic Modulo
+    /// </summary>
     public static class Mathl
     {
         /// <summary>
@@ -14,7 +17,9 @@ namespace Lachee.Utilities
         /// <param name="x"></param>
         /// <param name="m"></param>
         /// <returns></returns>
-        public static int Mod(int x, int m) { return (x % m + m) % m; }
+        public static int Mod(int x, int m) { 
+            return (x % m + m) % m; 
+        }
     
         /// <summary>
         /// Counts the number of bits set in the bitflag.

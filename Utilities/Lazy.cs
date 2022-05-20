@@ -7,6 +7,12 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
+    /// <summary>
+    /// Lazy fetching of components.
+    /// The component will not be fetched wtih GetComponent until .Value is called for the first time.
+    /// </summary>
+    /// <typeparam name="T">Component to fetch</typeparam>
+    [System.Obsolete("Use Auto Attributes now")]
     public class Lazy<T> where T : Component
     {
         private Component parent;

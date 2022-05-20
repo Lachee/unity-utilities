@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
+    /// <summary>
+    /// Collection of tools to draw GL lines directly in the scene view
+    /// </summary>
     public static class GLUtils
     {
         private static Material _lineMaterial;

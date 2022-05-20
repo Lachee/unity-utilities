@@ -3,8 +3,11 @@ using System.Collections.Generic;
 
 namespace Lachee.UtilitiesAssets.Lachee.Utilities
 {
-
-    public class MeshDetails
+    /// <summary>
+    /// The MeshBuilder allows for easier manipulation and creation of meshes.
+    /// <para>This used to be called the MeshDetails</para>
+    /// </summary>
+    public class MeshBuilder
     {
         protected List<Vector3> verts;
         protected List<Vector2> uvs;
@@ -18,7 +21,7 @@ namespace Lachee.UtilitiesAssets.Lachee.Utilities
         protected bool hasCenter = true;
 
         #region Constructor
-        public MeshDetails()
+        public MeshBuilder()
         {
             verts = new List<Vector3>();
             tris = new List<int>();
@@ -28,7 +31,7 @@ namespace Lachee.UtilitiesAssets.Lachee.Utilities
 
             hasCenter = false;
         }
-        public MeshDetails(Mesh m)
+        public MeshBuilder(Mesh m)
         {
 
             verts = new List<Vector3>();
@@ -48,7 +51,7 @@ namespace Lachee.UtilitiesAssets.Lachee.Utilities
 
             hasCenter = false;
         }
-        public MeshDetails(MeshDetails a, MeshDetails b)
+        public MeshBuilder(MeshBuilder a, MeshBuilder b)
         {
             //Add A's vertex, triangles, uvs, colors and submeshes
             verts = a.verts;
@@ -288,12 +291,12 @@ namespace Lachee.UtilitiesAssets.Lachee.Utilities
             for (int i = 0; i < CountVerts(); i++)
                 colors.Add(c);
         }
-        public static MeshDetails operator +(MeshDetails a, MeshDetails b)
+        public static MeshBuilder operator +(MeshBuilder a, MeshBuilder b)
         {
             if (b == null)
                 return a;
 
-            return new MeshDetails(a, b);
+            return new MeshBuilder(a, b);
         }
 
 
@@ -338,9 +341,9 @@ namespace Lachee.UtilitiesAssets.Lachee.Utilities
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        public static Mesh Merge(MeshDetails a, MeshDetails b)
+        public static Mesh Merge(MeshBuilder a, MeshBuilder b)
         {
-            MeshDetails q = new MeshDetails();
+            MeshBuilder q = new MeshBuilder();
             q.verts = a.verts;
             q.uvs = a.uvs;
             q.colors = a.colors;
@@ -368,4 +371,6 @@ namespace Lachee.UtilitiesAssets.Lachee.Utilities
         #endregion
     }
 
+    [System.Obsolete("Renamed to MeshBuilder", true)]
+    public class MeshDetails { }
 }

@@ -2,7 +2,10 @@
 
 namespace Lachee.Utilities
 {
-    public static class GameObjectExtensions
+    /// <summary>
+    /// Extends GameObject functionality with a collection of utlities
+    /// </summary>
+    public static class GameObjectExtension
     {
         /// <summary>
         /// Sets the layer of the game object and its children
@@ -38,13 +41,30 @@ namespace Lachee.Utilities
         }
     }
 
-    public static class RectTransformExtensions
+    /// <summary>
+    /// Extends RectRectangle
+    /// </summary>
+    public static class RectTransformExtension
     {
         /// <summary>Converts this rect transform to screen space</summary>
         public static Rect ToScreenSpace(this RectTransform transform)
         {
             Vector2 size = Vector2.Scale(transform.rect.size, transform.lossyScale);
             return new Rect((Vector2)transform.position - (size * 0.5f), size);
+        }
+    }
+
+    /// <summary>
+    /// Extends Particle Systems
+    /// </summary>
+    public static class ParticleSystemExtension
+    {
+        /// <summary>Sets the max number of particles</summary>
+        public static void SetMaxParticles(this ParticleSystem system, int count)
+        {
+            // Structs are referenced!?
+            var module = system.main;
+            module.maxParticles = count;
         }
     }
 }
