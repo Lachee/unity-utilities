@@ -27,7 +27,7 @@ jobs:
         
       # Pack the assets
       - name: Package Project
-        run: dotnet ../tools/UnityPackageExporter.dll -project ./ -output "$github:RUNNER_TEMP/lachee-utilities.unitypackage" -dir ./
+        run: dotnet ../tools/UnityPackageExporter.dll -project ./ -output ${{github.RUNNER_TEMP}}/lachee-utilities.unitypackage -dir ./
         
       # 
       - name: Upload Artifact
