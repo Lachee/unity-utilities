@@ -4,11 +4,10 @@
             "src": [
                 {
                     "src": "..",
-                    "files": [ "**.cs" ]
+                    "files": [ "Utilities/**/*.cs", "Editor/**/*.cs" ]
                 }
             ],
             "globalNamespaceId": "Global",
-            "filter": "filterConfig.yml",
             "dest": "api"
         }
     ],
@@ -20,12 +19,25 @@
         },
         "content": [
             {
-                "files": [ "toc.yml", "index.md" ]
+                "files": [
+                    "toc.yml",
+                    "index.md"
+                ]
             },
             {
                 "src": "api",
-                "files": [ "*.yml" ],
+                "files": [
+                    "*.yml"
+                ],
                 "dest": "api"
+            },
+            {
+                "src": "manual",
+                "files": [
+                    "toc.yml",
+                    "*.md"
+                ],
+                "dest": "manual"
             }
         ],
         "overwrite": [

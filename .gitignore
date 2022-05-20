@@ -73,6 +73,6 @@ VSCode/*
 *.~*#*
 /_site
 */obj/*
-Documentation~/api/*
-Documentation~/manual/changelog.*
-Documentation~/index.*
+Documentation/api/*
+Documentation/manual/changelog.*
+Documentation/index.*
