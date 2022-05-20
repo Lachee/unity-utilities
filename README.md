@@ -8,8 +8,12 @@ Since it is just a "collection of scripts", there isn't much in the ways of a ma
 # Installation
 There are 3 methods you can use to importing this package:
 1. You can download this as a zip and import it directly into unity
-2. You can download the `.unitypackage` generated in the artifacts here [todo: build unitypackage]
-3. You can add the package to unity via Unity Package Manager, under the "add git package"
+2. You can download the `.unitypackage` generated in the artifacts.
+    a. Github -> Actions
+    b. Generate Unity Package
+    c. Select last succesfull build
+    d. Artifacts -> Unity Package 
+4. You can add the package to unity via Unity Package Manager, under the "add git package"
 
 # Usage
 Since this is just a folder of scripts, you can use it how you need it. Check out the documentation for more information.
