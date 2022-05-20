@@ -30,8 +30,8 @@ jobs:
         
       # Pack the assets
       - name: Package Project
-        run: 
-          echo "Publishing to "
+        run: |
+          echo "Creating package ${{env.package_path}}"
           dotnet ../tools/UnityPackageExporter.dll -project ./ -output ${{env.package_path}} -dir ./
         
       # 
