@@ -90,12 +90,12 @@ namespace Lachee.Utilities.Editor
                     string errmsg;
                     if (property.objectReferenceValue == null)
                     {
-                        errmsg = $"{property.name} [Missing Component]";
+                        errmsg = $" {label.text} [Missing Component]";
                         EditorGUI.HelpBox(position, errmsg, MessageType.Error);
                     } 
                     else
                     {
-                        errmsg = $"{property.name} [Wrong GameObject]";
+                        errmsg = $" {label.text} [Wrong GameObject]";
                         EditorGUI.HelpBox(position, errmsg, MessageType.Warning);
                     }
 
