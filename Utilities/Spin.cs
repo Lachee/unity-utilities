@@ -13,7 +13,6 @@ namespace Lachee.Utilities
         {
             transform.Rotate(speed * Time.deltaTime);
         }
-
     }
 
 }

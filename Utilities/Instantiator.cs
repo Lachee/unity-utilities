@@ -8,6 +8,16 @@ namespace Lachee.Utilities
     /// This functionality is useful when you have a list of objects spawning and they have pointers to their own functions to customise their end result.
     /// For example: List of Tower Defense Pieces, with some pieces with special post-placement rules like "shift to the left"
     /// </para>
+    /// <example>
+    ///            
+    /// var spawner = new Instantiator<Spin>(gameObject, (obj) =>
+    /// {
+    ///    return obj.GetComponent<Spin>();
+    /// });
+    ///
+    /// // Later:
+    /// spawner.Instantiate();
+    /// </example>
     /// </summary>
     public class Instantiator<T> where T : Object  
     {
