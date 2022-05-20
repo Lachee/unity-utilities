@@ -27,11 +27,11 @@ jobs:
         
       # Pack the assets
       - name: Package Project
-        run: dotnet ../tools/UnityPackageExporter.dll -project ./ -output ../lachee-utilities.unitypackage -dir ./
+        run: dotnet ../tools/UnityPackageExporter.dll -project ./ -output ${RUNNER_TEMP}/lachee-utilities.unitypackage -dir ./
         
       # 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
           name: Unity Package
-          path: ../lachee-utilities.unitypackage
+          path: ${{RUNNER_TeMP}}/lachee-utilities.unitypackage
