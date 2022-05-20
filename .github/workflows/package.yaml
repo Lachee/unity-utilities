@@ -32,7 +32,7 @@ jobs:
       - name: Package Project
         run: |
           echo "Creating package ${{env.package_path}}"
-          dotnet tools/UnityPackageExporter.dll --project ./ --output package.unitypackage --exclude ".*" --exclude "Documentation" --exclude "tools"
+          dotnet tools/UnityPackageExporter.dll --project ./ --output ${{env.package_path}} --exclude ".*" --exclude "Documentation" --exclude "tools"
         
       # Upload artifact
       - name: Upload Artifact
