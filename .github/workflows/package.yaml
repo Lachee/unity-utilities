@@ -22,16 +22,16 @@ jobs:
       # Install the packager
       - name: Install Unity Packager
         run: |
-          git clone https://github.com/Lachee/Unity-Package-Exporter.git "tools/unity-package-exporter"
-          dotnet publish -c Release -o tools "tools/unity-package-exporter/UnityPackageExporter"
+          git clone https://github.com/Lachee/Unity-Package-Exporter.git "../tools/unity-package-exporter"
+          dotnet publish -c Release -o ../tools "../tools/unity-package-exporter/UnityPackageExporter"
         
       # Pack the assets
       - name: Package Project
-        run: dotnet tools/UnityPackageExporter.dll -a -project ./ -output ./lachee-utilities.unitypackage
+        run: dotnet ../tools/UnityPackageExporter.dll -project ./ -output ../lachee-utilities.unitypackage -dir ./
         
       # 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
           name: Unity Package
-          path: ./lachee-utilities.unitypackage
+          path: ../lachee-utilities.unitypackage
