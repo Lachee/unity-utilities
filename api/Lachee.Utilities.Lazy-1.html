@@ -83,7 +83,9 @@
   
   <h1 id="Lachee_Utilities_Lazy_1" data-uid="Lachee.Utilities.Lazy`1" class="text-break">Class Lazy&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Lazy fetching of components.
+The component will not be fetched wtih GetComponent until .Value is called for the first time.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -118,7 +120,8 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Lachee_Utilities_Lazy_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Lazy&lt;T&gt;
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Auto Attributes now&quot;)]
+public class Lazy&lt;T&gt;
     where T : Component</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
@@ -132,7 +135,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Component to fetch</p>
+</td>
       </tr>
     </tbody>
   </table>
