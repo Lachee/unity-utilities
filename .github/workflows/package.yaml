@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  package_path: "~/lachee-utilities.unitypackage"
+  package_path: "lachee-utilities.unitypackage"
 
 jobs:
   build:
@@ -25,14 +25,14 @@ jobs:
       # Install the packager
       - name: Install Unity Packager
         run: |
-          git clone https://github.com/Lachee/Unity-Package-Exporter.git "../tools/unity-package-exporter"
-          dotnet publish -c Release -o ../tools "../tools/unity-package-exporter/UnityPackageExporter"
+          git clone https://github.com/Lachee/Unity-Package-Exporter.git tools/unity-package-exporter
+          dotnet publish -c Release -o tools tools/unity-package-exporter/UnityPackageExporter
         
       # Pack the assets
       - name: Package Project
         run: |
           echo "Creating package ${{env.package_path}}"
-          dotnet ../tools/UnityPackageExporter.dll --project ./ --output package.unitypackage --exclude ".*" --exclude "Documentation"
+          dotnet tools/UnityPackageExporter.dll --project ./ --output package.unitypackage --exclude ".*" --exclude "Documentation" --exclude "tools"
         
       # Upload artifact
       - name: Upload Artifact
