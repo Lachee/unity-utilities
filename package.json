@@ -1,0 +1,19 @@
+{
+    "name": "dev.lachee.utilities",
+    "version": "1.0.0",
+    "displayName": "Lachee's Utilities",
+    "description": "Bunch of utility functionality",
+    "unity": "2019.1",
+    "documentationUrl": "https://github.com/lachee/",
+    "changelogUrl": "https://github.com/lachee/",
+    "license": "MIT",
+    "dependencies": { },
+   "keywords": [
+      "Singleton",
+      "Utility"
+    ],
+    "author": {
+      "name": "Lachee",
+      "url": "https://lachee.dev"
+    }
+  }
