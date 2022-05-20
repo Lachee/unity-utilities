@@ -172,6 +172,19 @@ references:
   commentId: T:Lachee.Utilities.Editor.AutoAttributeDrawer
   fullName: Lachee.Utilities.Editor.AutoAttributeDrawer
   nameWithType: AutoAttributeDrawer
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.ApplyToSerialziedProperty(SerializedProperty,Lachee.Utilities.AutoAttribute)
+  name: ApplyToSerialziedProperty(SerializedProperty, AutoAttribute)
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_ApplyToSerialziedProperty_SerializedProperty_Lachee_Utilities_AutoAttribute_
+  commentId: M:Lachee.Utilities.Editor.AutoAttributeDrawer.ApplyToSerialziedProperty(SerializedProperty,Lachee.Utilities.AutoAttribute)
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.ApplyToSerialziedProperty(SerializedProperty, Lachee.Utilities.AutoAttribute)
+  nameWithType: AutoAttributeDrawer.ApplyToSerialziedProperty(SerializedProperty, AutoAttribute)
+- uid: Lachee.Utilities.Editor.AutoAttributeDrawer.ApplyToSerialziedProperty*
+  name: ApplyToSerialziedProperty
+  href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_ApplyToSerialziedProperty_
+  commentId: Overload:Lachee.Utilities.Editor.AutoAttributeDrawer.ApplyToSerialziedProperty
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.AutoAttributeDrawer.ApplyToSerialziedProperty
+  nameWithType: AutoAttributeDrawer.ApplyToSerialziedProperty
 - uid: Lachee.Utilities.Editor.AutoAttributeDrawer.FindComponent(SerializedProperty,Lachee.Utilities.AutoAttribute)
   name: FindComponent(SerializedProperty, AutoAttribute)
   href: api/Lachee.Utilities.Editor.AutoAttributeDrawer.html#Lachee_Utilities_Editor_AutoAttributeDrawer_FindComponent_SerializedProperty_Lachee_Utilities_AutoAttribute_
