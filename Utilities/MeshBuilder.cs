@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Lachee.UtilitiesAssets.Lachee.Utilities
+namespace Lachee.Utilities
 {
     /// <summary>
     /// The MeshBuilder allows for easier manipulation and creation of meshes.
