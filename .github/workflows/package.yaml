@@ -11,6 +11,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  package_path: "~/lachee-utilities.unitypackage"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,11 +30,13 @@ jobs:
         
       # Pack the assets
       - name: Package Project
-        run: dotnet ../tools/UnityPackageExporter.dll -project ./ -output ${{github.RUNNER_TEMP}}/lachee-utilities.unitypackage -dir ./
+        run: 
+          echo "Publishing to "
+          dotnet ../tools/UnityPackageExporter.dll -project ./ -output ${{env.package_path}} -dir ./
         
       # 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
           name: Unity Package
-          path: ${{github.RUNNER_TEMP}}/lachee-utilities.unitypackage
+          path: ${{env.package_path}}
