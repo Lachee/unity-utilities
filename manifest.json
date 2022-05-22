@@ -60,18 +60,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Attributes.MinimumAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Lachee.Attributes.MinimumAttribute.html",
-          "hash": "EKm9WinPEZYLMAyr6P+lKHVTKA/lYtfCJIt3lW8Z5uY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.ReadonlyAttribute.yml",
       "output": {
         ".html": {
@@ -88,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "TNR+UuIujNG5TxA1Te//gXjFCswoZ/7JPSm+0S2cSDo="
+          "hash": "O/5cr6y6mD5MsJu/tuY8C+SCO5iLzXd9asufR6sPPlo="
         }
       },
       "is_incremental": false,
@@ -328,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "IAX1UdwDlbH6pj86hCYHlRT7vUiBZuxAElS03Qtks7Y="
+          "hash": "f/r0XsMFKDL8dvHg1SaUyPETUDUfnYK9zkTtA1lMnUs="
         }
       },
       "is_incremental": false,
@@ -394,7 +382,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 25,
+          "total_file_count": 24,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

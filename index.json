@@ -17,12 +17,7 @@
   "api/Lachee.Attributes.html": {
     "href": "api/Lachee.Attributes.html",
     "title": "Namespace Lachee.Attributes | Utilities",
-    "keywords": "Namespace Lachee.Attributes Classes AutoAttribute Automatically fetches attached components ButtonAttribute This attribute gives methods buttons within the editor inspector. This will allow for quick execution of the method within the editor. Similar to how ContexMenu works. EnumFlagAttribute Assign this attribute to FlagsAttribute enums to give them a mask popup within unity. MinimumAttribute Gives attributes a minimum value they can be ReadonlyAttribute Makes object readonly in the editor."
-  },
-  "api/Lachee.Attributes.MinimumAttribute.html": {
-    "href": "api/Lachee.Attributes.MinimumAttribute.html",
-    "title": "Class MinimumAttribute | Utilities",
-    "keywords": "Class MinimumAttribute Gives attributes a minimum value they can be Inheritance Object MinimumAttribute Namespace : Lachee.Attributes Assembly : cs.temp.dll.dll Syntax public class MinimumAttribute : PropertyAttribute Constructors MinimumAttribute() Stops the field from going bellow 0 in the editor. Declaration public MinimumAttribute() MinimumAttribute(Int32) Stops the field from going below the minimum value in the editor. Declaration public MinimumAttribute(int minimum) Parameters Type Name Description Int32 minimum The inclusive minimum value. MinimumAttribute(Single) Stops the field from going below the minimum value in the editor. Declaration public MinimumAttribute(float minimum) Parameters Type Name Description Single minimum The inclusive minimum value. Fields floatMin Minimum float value Declaration public float floatMin Field Value Type Description Single intMin Minimum int value Declaration public int intMin Field Value Type Description Int32"
+    "keywords": "Namespace Lachee.Attributes Classes AutoAttribute Automatically fetches attached components ButtonAttribute This attribute gives methods buttons within the editor inspector. This will allow for quick execution of the method within the editor. Similar to how ContexMenu works. EnumFlagAttribute Assign this attribute to FlagsAttribute enums to give them a mask popup within unity. ReadonlyAttribute Makes object readonly in the editor."
   },
   "api/Lachee.Attributes.ReadonlyAttribute.html": {
     "href": "api/Lachee.Attributes.ReadonlyAttribute.html",

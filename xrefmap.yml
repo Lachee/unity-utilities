@@ -152,49 +152,6 @@ references:
   commentId: F:Lachee.Attributes.EnumFlagAttribute.isReadonly
   fullName: Lachee.Attributes.EnumFlagAttribute.isReadonly
   nameWithType: EnumFlagAttribute.isReadonly
-- uid: Lachee.Attributes.MinimumAttribute
-  name: MinimumAttribute
-  href: api/Lachee.Attributes.MinimumAttribute.html
-  commentId: T:Lachee.Attributes.MinimumAttribute
-  fullName: Lachee.Attributes.MinimumAttribute
-  nameWithType: MinimumAttribute
-- uid: Lachee.Attributes.MinimumAttribute.#ctor
-  name: MinimumAttribute()
-  href: api/Lachee.Attributes.MinimumAttribute.html#Lachee_Attributes_MinimumAttribute__ctor
-  commentId: M:Lachee.Attributes.MinimumAttribute.#ctor
-  fullName: Lachee.Attributes.MinimumAttribute.MinimumAttribute()
-  nameWithType: MinimumAttribute.MinimumAttribute()
-- uid: Lachee.Attributes.MinimumAttribute.#ctor(System.Int32)
-  name: MinimumAttribute(Int32)
-  href: api/Lachee.Attributes.MinimumAttribute.html#Lachee_Attributes_MinimumAttribute__ctor_System_Int32_
-  commentId: M:Lachee.Attributes.MinimumAttribute.#ctor(System.Int32)
-  fullName: Lachee.Attributes.MinimumAttribute.MinimumAttribute(System.Int32)
-  nameWithType: MinimumAttribute.MinimumAttribute(Int32)
-- uid: Lachee.Attributes.MinimumAttribute.#ctor(System.Single)
-  name: MinimumAttribute(Single)
-  href: api/Lachee.Attributes.MinimumAttribute.html#Lachee_Attributes_MinimumAttribute__ctor_System_Single_
-  commentId: M:Lachee.Attributes.MinimumAttribute.#ctor(System.Single)
-  fullName: Lachee.Attributes.MinimumAttribute.MinimumAttribute(System.Single)
-  nameWithType: MinimumAttribute.MinimumAttribute(Single)
-- uid: Lachee.Attributes.MinimumAttribute.#ctor*
-  name: MinimumAttribute
-  href: api/Lachee.Attributes.MinimumAttribute.html#Lachee_Attributes_MinimumAttribute__ctor_
-  commentId: Overload:Lachee.Attributes.MinimumAttribute.#ctor
-  isSpec: "True"
-  fullName: Lachee.Attributes.MinimumAttribute.MinimumAttribute
-  nameWithType: MinimumAttribute.MinimumAttribute
-- uid: Lachee.Attributes.MinimumAttribute.floatMin
-  name: floatMin
-  href: api/Lachee.Attributes.MinimumAttribute.html#Lachee_Attributes_MinimumAttribute_floatMin
-  commentId: F:Lachee.Attributes.MinimumAttribute.floatMin
-  fullName: Lachee.Attributes.MinimumAttribute.floatMin
-  nameWithType: MinimumAttribute.floatMin
-- uid: Lachee.Attributes.MinimumAttribute.intMin
-  name: intMin
-  href: api/Lachee.Attributes.MinimumAttribute.html#Lachee_Attributes_MinimumAttribute_intMin
-  commentId: F:Lachee.Attributes.MinimumAttribute.intMin
-  fullName: Lachee.Attributes.MinimumAttribute.intMin
-  nameWithType: MinimumAttribute.intMin
 - uid: Lachee.Attributes.ReadonlyAttribute
   name: ReadonlyAttribute
   href: api/Lachee.Attributes.ReadonlyAttribute.html
