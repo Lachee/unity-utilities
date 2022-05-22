@@ -2,6 +2,7 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
+        "baseUrl": "https://lachee.github.io/unity-utilities/",
         "changefreq": "daily"
       }
     },
@@ -20,6 +21,318 @@
         }
       },
       "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.AutoAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.AutoAttribute.html",
+          "hash": "neVImSIXZW5I+wsxyQNM3l5do/KKADua0to0KMJIN/o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.ButtonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.ButtonAttribute.html",
+          "hash": "x7cP5hWRwy8iiATehOeEHL1+/VhETgj3fq2uqsH8Cds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.EnumFlagAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.EnumFlagAttribute.html",
+          "hash": "O10VYGYV/fKlop3vT1vxj9iV9g0xyuCq3r7rj7bNtrU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.MinimumAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.MinimumAttribute.html",
+          "hash": "e+flzUbWgeBOHKPhQLMkwJTWWADTqIysuhW/E+wUtnk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.ReadonlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.ReadonlyAttribute.html",
+          "hash": "Hp3jmsTIDux58N+7o3u18tytiS8ry+MJT+ELj69ydSo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.html",
+          "hash": "VhsKj5VkhcHj2PXXiMg2zYuECtfTTu1BDmMbB9WZWpc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.Rotate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.Rotate.html",
+          "hash": "tz1gVqkSAGdBTRgZDYHCytXXCrHA+L+GUJD+MvEHSvo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.html",
+          "hash": "tINc9SgZn2RHgISnlntiUpA1bWkc/yUgBrbXpiwTLr4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Circle.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Circle.Mode.html",
+          "hash": "vhSn8tjZC9gYP0wRcExq+RR1TO/POttoD54beJ47sLA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Circle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Circle.html",
+          "hash": "LXzVJmF76DZCqJdwoSz5Rz0YA0+znSBuBPhcsIzvLrY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.GLUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.GLUtils.html",
+          "hash": "bccdg8eumQPQjVFa0hObvOPMHYmq1uNrCEv73bYB404="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.GameObjectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.GameObjectExtension.html",
+          "hash": "CVuCCiIDw+UrRnFXpgPEwlmeo5US8/XRNRgi/SmF54k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Gizmol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Gizmol.html",
+          "hash": "W7z/W/MNwGm7leYJ3oT+jfnZ8H1jfN80szlxymZZFPY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Instantiator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Instantiator-1.html",
+          "hash": "/31s2ZCj4D/ABsObFA1ebX7VD8ysV0g/fnDq1BrTdV4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Lazy-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Lazy-1.html",
+          "hash": "3ZrQWkzjaH74+aZjAcQsZiGHcLihciFo8UP46By2vkg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Linql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Linql.html",
+          "hash": "95Yp4OpMLq6WdRGOD3v2SJrPRehyijSBQnpdRMRz1Wc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Logger.html",
+          "hash": "ghy5fonJXof2z8IKW9yi4a8q6Osp0AcTKvQ5xRijGaY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Mathl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Mathl.html",
+          "hash": "YeCXb3YXHIyZC8AFwm5OP5XS40p2ec6fH0A+Ogg/rTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.MeshBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.MeshBuilder.html",
+          "hash": "n33riEma+x3uRn68853yXHRv+Wf8rlQTyJB7c46SxL4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.ParticleSystemExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.ParticleSystemExtension.html",
+          "hash": "I7RRBg6ZSC2c+cWg9OKhXoI6F1AQxPN7SGx+8CPwREk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.RectTransformExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.RectTransformExtension.html",
+          "hash": "h03BWNmcOCC8tJB6qtll5Zd9q9YuEuEgw6a6GC8VIsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Rist-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Rist-1.html",
+          "hash": "SZkPh174vQ+sVH16f8qf8ZNiAWy6QSicJJDpKmdLL08="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Singleton-1.html",
+          "hash": "9kAkWYbLWC7TirMpt2+B1Dlo7mCMc8FmeQ8DgifpouY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.SortedGizmos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.SortedGizmos.html",
+          "hash": "8BLSPUluTDawwJWlnX5pv94PKfgwRuZbuAdKSA/+gbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.html",
+          "hash": "OL2Tr7i4EAECtFquELHHbyFLerPnOjAA4PlABAZ9N0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "IAX1UdwDlbH6pj86hCYHlRT7vUiBZuxAElS03Qtks7Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
     },
     {
       "type": "Conceptual",
@@ -54,7 +367,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "853pVJ4Kwlqaj65D94MhY/8tVf7Y/hdepkyPkx/A5l4="
+          "hash": "isDqlJq02+Jq7/Woc37XQ420LH4icqLlS7cysaDx36o="
         }
       },
       "is_incremental": false,
@@ -76,6 +389,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 25,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
