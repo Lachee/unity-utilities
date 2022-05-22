@@ -26,10 +26,10 @@ jobs:
       - name: Setup Theme
         run: |
           git clone https://github.com/code-beans/UnityFX.git UnityFX
-          mv UnityFX/templates templates
+          mv UnityFX/templates Documentation/templates
 
       - name: Build
-        run: docfx Documentation/docfx.json -t default,templates/unity
+        run: docfx Documentation/docfx.json -t staticdoc,default,Documentation/templates/unity
 
       # Upload the generated documentation
       - name: Upload site artifact
