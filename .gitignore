@@ -77,3 +77,4 @@ VSCode/*
 Documentation/api/*
 Documentation/manual/changelog.*
 Documentation/index.*
+!.github/workflows/increment_version.sh
