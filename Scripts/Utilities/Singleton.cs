@@ -15,6 +15,19 @@ namespace Lachee.Utilities
     ///<para>NOTE: A subclasses must pass in its own Type as the T parameter, this is so the singleton
     ///can typecast the instance member variable to the corrent class.</para>
     /// </summary>
+    /// <example>
+    /// public class GameManager : Singleton<GameManager>
+    /// {
+    ///     public void StartGame() { }
+    /// }
+    /// 
+    /// public class UIButton : MonoBehaviour 
+    /// {
+    ///     public void OnButtonPress() {
+    ///         GameManager.instance.StartGame();
+    ///     }
+    /// }
+    /// </example>
     /// <typeparam name="T"></typeparam>
     public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
