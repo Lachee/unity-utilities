@@ -24,7 +24,7 @@ jobs:
         run: cp README.md Documentation/index.md
 
       - name: Build
-        run: docfx Documentation/docfx.json -t staticdoc,default,templates/unity
+        run: docfx Documentation/docfx.json -t default,templates/darkfx
 
       # Upload the generated documentation
       - name: Upload site artifact
