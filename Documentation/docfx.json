@@ -8,7 +8,10 @@
                 }
             ],
             "globalNamespaceId": "Global",
-            "dest": "api"
+            "dest": "api",
+            "properties": {
+                "DefineConstants": "UNITY_EDITOR=1"
+            }
         }
     ],
     "build": {
