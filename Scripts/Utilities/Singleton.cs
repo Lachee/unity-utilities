@@ -5,8 +5,8 @@ using UnityEngine;
 namespace Lachee.Utilities
 {
     /// <summary>
-    ///<para>This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or,
-    ///grabbed from the scene if an instance already exists.</para>
+    ///This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or,
+    ///grabbed from the scene if an instance already exists.
     ///<para>It derives from MonoBehaviour allowing for all of the usual Unity systems to be used.</para>
     ///<para>The GameObject is NOT persistent and WILL be destroyed when a new scene is loaded.</para>
     ///
