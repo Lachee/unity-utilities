@@ -1,6 +1,6 @@
 {
-    "name": "Lachee.Utilities",
-    "rootNamespace": "Lachee.Utilities",
+    "name": "Assembly-Lachee",
+    "rootNamespace": "Lachee",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

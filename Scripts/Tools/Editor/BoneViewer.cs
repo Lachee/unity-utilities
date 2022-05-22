@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Linq;
 
-namespace Lachee.Utilities.Editor
+namespace Lachee.Tools.Editor
 {
     /// <summary>
     /// Previews bones on a skinned mesh. 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Lachee.Utilities
+namespace Lachee.Attributes
 {
     /// <summary>
     /// Automatically fetches attached components

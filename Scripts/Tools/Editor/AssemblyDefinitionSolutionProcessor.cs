@@ -1,7 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 
-namespace Lachee.Utilities.Editor
+namespace Lachee.Tools.Editor
 {
     /// <summary>
     /// Fixes Unity generating incorrect solutions for Assembly Definitions.

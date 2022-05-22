@@ -1,3 +1,4 @@
+using Lachee.Attributes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +16,10 @@ namespace Lachee.Utilities
             ZY,
         }
 
-        public LineRenderer lineRenderer => _lineRenderer;
-        private LineRenderer _lineRenderer;
+
+        /// <summary>Current line renderer</summary>
+        [Auto]
+        public LineRenderer lineRenderer;
 
         [Tooltip("Radius of the circle")]
         [SerializeField]
@@ -54,12 +57,12 @@ namespace Lachee.Utilities
         [ContextMenu("Update Points")]
         public void UpdatePoints()
         {
-            if (_lineRenderer == null)
-                _lineRenderer = GetComponent<LineRenderer>();
+            if (lineRenderer == null)
+                return;
 
-            _lineRenderer.positionCount = _points;
-            _lineRenderer.useWorldSpace = false;
-            _lineRenderer.loop = true;
+            lineRenderer.positionCount = _points;
+            lineRenderer.useWorldSpace = false;
+            lineRenderer.loop = true;
 
             float angleOffset = 360f / _points;
             for (int i = 0; i < _points; i++)
@@ -85,7 +88,7 @@ namespace Lachee.Utilities
                         break;
                 }
 
-                _lineRenderer.SetPosition(i, vector + _offset);
+                lineRenderer.SetPosition(i, vector + _offset);
             }
         }
     }

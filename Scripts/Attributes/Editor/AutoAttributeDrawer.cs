@@ -1,10 +1,11 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Lachee.Utilities.Editor
+namespace Lachee.Attributes.Editor
 {
     [CustomPropertyDrawer(typeof(AutoAttribute))]
     public class AutoAttributeDrawer : PropertyDrawer
@@ -218,3 +219,4 @@ namespace Lachee.Utilities.Editor
         }
     }
 }
+#endif

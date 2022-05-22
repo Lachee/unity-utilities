@@ -4,7 +4,7 @@
             "src": [
                 {
                     "src": "..",
-                    "files": [ "Utilities/**/*.cs", "Editor/**/*.cs" ]
+                    "files": [ "Attributes/**/*.cs", "Utilities/**/*.cs", "Editor/**/*.cs" ]
                 }
             ],
             "globalNamespaceId": "Global",

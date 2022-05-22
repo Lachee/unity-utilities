@@ -9,16 +9,16 @@ namespace Lachee.Utilities
     /// </summary>
     public class MeshBuilder
     {
-        protected List<Vector3> verts;
-        protected List<Vector2> uvs;
-        protected List<int> tris;
-        protected List<Color> colors;
+        private List<Vector3> verts;
+        private List<Vector2> uvs;
+        private List<int> tris;
+        private List<Color> colors;
 
-        protected Dictionary<int, List<int>> submesh;
+        private Dictionary<int, List<int>> submesh;
         public int submeshCount { get { return submesh.Count; } }
 
-        protected Vector3 center;
-        protected bool hasCenter = true;
+        private Vector3 center;
+        private bool hasCenter = true;
 
         #region Constructor
         public MeshBuilder()
@@ -370,7 +370,4 @@ namespace Lachee.Utilities
 
         #endregion
     }
-
-    [System.Obsolete("Renamed to MeshBuilder", true)]
-    public class MeshDetails { }
 }

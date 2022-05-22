@@ -4,7 +4,8 @@ using System.Text.RegularExpressions;
 using UnityEditor;
 using System.IO;
 
-namespace Lachee.Utilities.Editor {
+namespace Lachee.Tools.Editor 
+{
     /// <summary>
     /// Provides tools to convert line endings
     /// </summary>
