@@ -97,7 +97,7 @@ namespace Lachee.Attributes.Editor
                 foreach (var request in kp.Value)
                 {
                     var property = serializedObject.FindProperty(request.propertyPath);
-                    if (AutoAttributeDrawer.ApplyToSerialziedProperty(property, request.attribute))
+                    if (ApplyAttributeToSerializedProperty(property, request.attribute))
                         hasMadeChanges = true;
                 }
 
