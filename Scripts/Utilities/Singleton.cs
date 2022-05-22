@@ -140,8 +140,9 @@ namespace Lachee.Utilities
         public static bool exists { get { return available != null; } }
 
         /// <summary>
-        /// When Unity quits, it destroys objects in a random order.
+        /// 
         /// <para>
+        ///     When Unity quits, it destroys objects in a random order.
         ///     In principle, a Singleton is only destroyed when application quits.
         /// </para>
         /// <para>
@@ -153,6 +154,17 @@ namespace Lachee.Utilities
         protected virtual void OnApplicationQuit()
         {
             _isquitting = true;
+        }
+
+        /// <summary>
+        /// Called when the object is first initialized in the scene.
+        /// <para>
+        /// Singleton overrides this to ensure the object does not get destroyed on Load.
+        /// </para>
+        /// </summary>
+        protected virtual void Awake()
+        {
+            DontDestroyOnLoad(gameObject);
         }
     }
 }
