@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Lachee.Utilities
+namespace Lachee.Behaviours
 {
     /// <summary>
     /// Spins an object at the given speed
