@@ -41,7 +41,7 @@ namespace Lachee.Attributes.Editor
                     return component;
 
                 if (options.IncludeChildren)
-                    return baseComponent.GetComponentsInChildren(componentType);
+                    return baseComponent.GetComponentsInChildren(componentType).FirstOrDefault();
             }
 
             return null;
