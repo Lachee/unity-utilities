@@ -1,6 +1,6 @@
 apiRules:
 - include:
-    uidRegex: ^DocFxForUnity
+    uidRegex: ^Lachee
     type: Namespace
 - include:
     uidRegex: ^Global
