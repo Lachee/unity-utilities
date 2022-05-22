@@ -23,13 +23,8 @@ jobs:
       - name: Use README.md as index.md
         run: cp README.md Documentation/index.md
 
-      - name: Setup Theme
-        run: |
-          git clone https://github.com/code-beans/UnityFX.git UnityFX
-          mv UnityFX/templates Documentation/templates
-
       - name: Build
-        run: docfx Documentation/docfx.json -t staticdoc,default,Documentation/templates/unity
+        run: docfx Documentation/docfx.json -t staticdoc,default,templates/unity
 
       # Upload the generated documentation
       - name: Upload site artifact

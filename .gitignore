@@ -78,3 +78,10 @@ Documentation/api/*
 Documentation/manual/changelog.*
 Documentation/index.*
 !.github/workflows/increment_version.sh
+
+
+_site.meta
+Documentation/**/*.meta
+Documentation/obj
+Documentation/api
+Scripts/Attributes/obj*
