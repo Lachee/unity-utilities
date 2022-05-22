@@ -12,65 +12,28 @@ namespace Lachee.Attributes.Editor
     {
         const string PREF_ALWAYS_SCAN = "autoattr_scan";
 
-        public static dynamic FindComponent(SerializedProperty property, AutoAttribute options)
+        /// <summary>Gets the error associated with the property</summary>
+        private string GetError(SerializedProperty property)
         {
-            var baseComponent = property.serializedObject.targetObject as Component;
-            if (baseComponent == null)
-                throw new System.InvalidOperationException("Cannot find a component on a non-component object");
+            if (property.objectReferenceValue == null)
+                return "Component not found";
 
-            var componentType = GetSerializedPropertyType(property);
-            if (componentType.IsArray)
-            {
-                // Validate it is an array of components
-                if (!typeof(Component).IsAssignableFrom(componentType.GetElementType()))
-                    throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
+            var componentReferenceValue = property.objectReferenceValue as Component;
+            if (componentReferenceValue.gameObject != (property.serializedObject.targetObject as Component).gameObject)
+                return "Component is not attached";
 
-
-                if (options.IncludeChildren)
-                    return baseComponent.GetComponentsInChildren(componentType.GetElementType());
-                return baseComponent.GetComponents(componentType.GetElementType());
-            }
-            else
-            {
-                // Validate it is a component
-                if (!typeof(Component).IsAssignableFrom(componentType))
-                    throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
-
-                var component = baseComponent.GetComponent(componentType);
-                if (component != null)
-                    return component;
-
-                if (options.IncludeChildren)
-                    return baseComponent.GetComponentsInChildren(componentType).FirstOrDefault();
-            }
+            if (property.isArray && property.arraySize == 0)
+                return "No children";
 
             return null;
         }
 
-        /// <summary>Searches and applies components for the serialized proeprty</summary>
-        public static bool ApplyToSerialziedProperty(SerializedProperty property, AutoAttribute attribute)
+        /// <summary>Should the property be showing</summary>
+        private bool ShouldShow(SerializedProperty property)
         {
-            var component = FindComponent(property, attribute);
-            if (component is Object comObject)
-            {
-                property.objectReferenceValue = comObject;
-                return true;
-            }
-            else if (component is Object[] comArray)
-            {
-                if (!property.isArray)
-                    throw new System.InvalidOperationException("Cannot pass array to non-array field");
-
-                property.ClearArray();
-                property.arraySize = comArray.Length;
-                for (int i = 0; i < comArray.Length; i++)
-                {
-                    var element = property.GetArrayElementAtIndex(i);
-                    element.objectReferenceValue = comArray[i];
-                }
-                return comArray.Length > 0;
-            }
-            return false;
+            var attr = attribute as AutoAttribute;
+            if (!attr.Hidden) return true;
+            return GetError(property) != null;
         }
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
@@ -81,7 +44,7 @@ namespace Lachee.Attributes.Editor
             if (EditorPrefs.GetBool(PREF_ALWAYS_SCAN, false))
             {
                 if (property.objectReferenceValue == null || (property.isArray && property.arraySize == 0))
-                    ApplyToSerialziedProperty(property, attr);
+                    AutoAttributeObserver.ApplyAttributeToSerializedProperty(property, attr);
             }
 
             if (attr.Hidden)
@@ -89,21 +52,15 @@ namespace Lachee.Attributes.Editor
                 // Hidden but we cannot find one!
                 if (ShouldShow(property))
                 {
-                    string errmsg;
-                    if (property.objectReferenceValue == null)
-                    {
-                        errmsg = $" {label.text} [Missing Component]";
-                        EditorGUI.HelpBox(position, errmsg, MessageType.Error);
-                    } 
-                    else
-                    {
-                        errmsg = $" {label.text} [Wrong GameObject]";
-                        EditorGUI.HelpBox(position, errmsg, MessageType.Warning);
-                    }
+                    string error = label.text + "\n" + GetError(property);                    
+                    EditorGUI.HelpBox(position, error, property.objectReferenceValue == null ? MessageType.Error : MessageType.Warning);
 
-                    EditorGUI.PropertyField(position, property);
+                    Rect centerBox = new Rect(position);
+                    centerBox.height = base.GetPropertyHeight(property, label);
+                    centerBox.width -= 5;
+                    centerBox.y += position.height / 2f - centerBox.height / 2f;
+                    EditorGUI.PropertyField(centerBox, property);
                     GUI.color = Color.white;
-
                 }
             }
             else
@@ -117,32 +74,12 @@ namespace Lachee.Attributes.Editor
 
         }
 
-        private bool ShouldShow(SerializedProperty property)
-        {
-            var attr = attribute as AutoAttribute;
-            if (!attr.Hidden)
-                return true;
-
-            if (property.objectReferenceValue == null)
-                return true;
-
-            var componentReferenceValue = property.objectReferenceValue as Component;
-            if (componentReferenceValue.gameObject != (property.serializedObject.targetObject as Component).gameObject)
-                return true;
-
-            return false;
-        }
-
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            return !ShouldShow(property) ? 0 : base.GetPropertyHeight(property, label);
-        }
+            if (!ShouldShow(property))
+                return 0;
 
-        private static System.Type GetSerializedPropertyType(SerializedProperty property)
-        {
-            System.Type parentType = property.serializedObject.targetObject.GetType();
-            System.Reflection.FieldInfo fi = parentType.GetField(property.propertyPath);
-            return fi.FieldType;
+            return base.GetPropertyHeight(property, label) + 20;
         }
     }
 }

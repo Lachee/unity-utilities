@@ -16,6 +16,41 @@ namespace Lachee.Attributes.Editor
             EditorApplication.hierarchyChanged += OnHierarchyChanged;
         }
 
+
+        /// <summary>
+        /// Applies the Attribute to the Serialized Property
+        /// </summary>
+        /// <param name="property"></param>
+        /// <param name="attribute"></param>
+        /// <returns></returns>
+        public static bool ApplyAttributeToSerializedProperty(SerializedProperty property, AutoAttribute attribute)
+        {
+            var component = attribute.FindReferenceForProperty(property);
+            if (component is Object comObject)
+            {
+                property.objectReferenceValue = comObject;
+                return true;
+            }
+            else if (component is Object[] comArray)
+            {
+                if (!property.isArray)
+                    throw new System.InvalidOperationException("Cannot pass array to non-array field");
+
+                property.ClearArray();
+                property.arraySize = comArray.Length;
+                for (int i = 0; i < comArray.Length; i++)
+                {
+                    var element = property.GetArrayElementAtIndex(i);
+                    element.objectReferenceValue = comArray[i];
+                }
+                return comArray.Length > 0;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Called when hierarchy changed.
+        /// </summary>
         private static void OnHierarchyChanged()
         {
             // Scan every MonoBehaviour for Auto Attribute fields
