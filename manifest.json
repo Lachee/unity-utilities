@@ -24,11 +24,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Attributes.AutoAttribute.ChildMode.yml",
+      "source_relative_path": "api/Lachee.Attributes.AutoAttribute.SearchFlag.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Lachee.Attributes.AutoAttribute.ChildMode.html",
-          "hash": "zz5/V9AD/f7IYpYNrO/G6+ofeJTbGJR0JyZfNO0cLxc="
+          "relative_path": "api/Lachee.Attributes.AutoAttribute.SearchFlag.html",
+          "hash": "xNwS9iqyBOwk4O84KjiiTuUdme4eHMjz/VqzjMiRTIM="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.AutoAttribute.html",
-          "hash": "UpANZ2A/SY3YgRGLc1eOPA8X/uBjCmbPHx6jVYcDZx8="
+          "hash": "ZQXo8KtUHwPSMJ5tyx45LryV24N9C7LNmfNOq7cbLZU="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "6wKiiT5uXgITEZNOJI+6rr+Wq0uW5MfXuvbpS3UMnUM="
+          "hash": "C4rCJNv63Iuco4ZZjxieLXxaW73U2a26ppfkzlG2Z3Y="
         }
       },
       "is_incremental": false,
@@ -208,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Linql.html",
-          "hash": "FOTTCWsC4BgK/WdVZdp+EdGv6SI2+uEtZpukUYyaxXQ="
+          "hash": "w6HRmR0fRZ25jwHYSTbMc5c1d5n4tZ6E3HEYyDHb7uk="
         }
       },
       "is_incremental": false,
@@ -244,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.MeshBuilder.html",
-          "hash": "HxAfWQyzTbvOs6kpNEqko/922Qn8+SWC2DihrC9nQqo="
+          "hash": "WuW7TYWGojuEg+5U49mCp3JSAFWgLS0mMg+A1tXPA9A="
         }
       },
       "is_incremental": false,
@@ -280,7 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Rist-1.html",
-          "hash": "ebEXFyEv/YWMt9n7od8TgNDXagDqTEPIWMEkndMZ5K4="
+          "hash": "LkUX8gx5wacpaWWGRvICBXzaks5moLok5jk3BdENbN0="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xhruwKiAtnWLSYX46gI3K5COF5+8Xt8BtaYQAXHMkXg="
+          "hash": "m15pTH4iYRTnieFyLHjuaQJV8OouE2tuxPIdGrrhMxs="
         }
       },
       "is_incremental": false,

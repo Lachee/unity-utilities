@@ -13,30 +13,37 @@ references:
   commentId: T:Lachee.Attributes.AutoAttribute
   fullName: Lachee.Attributes.AutoAttribute
   nameWithType: AutoAttribute
-- uid: Lachee.Attributes.AutoAttribute.ChildMode
-  name: AutoAttribute.ChildMode
-  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html
-  commentId: T:Lachee.Attributes.AutoAttribute.ChildMode
-  fullName: Lachee.Attributes.AutoAttribute.ChildMode
-  nameWithType: AutoAttribute.ChildMode
-- uid: Lachee.Attributes.AutoAttribute.ChildMode.IgnoreChildren
-  name: IgnoreChildren
-  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html#Lachee_Attributes_AutoAttribute_ChildMode_IgnoreChildren
-  commentId: F:Lachee.Attributes.AutoAttribute.ChildMode.IgnoreChildren
-  fullName: Lachee.Attributes.AutoAttribute.ChildMode.IgnoreChildren
-  nameWithType: AutoAttribute.ChildMode.IgnoreChildren
-- uid: Lachee.Attributes.AutoAttribute.ChildMode.IncludeChildren
-  name: IncludeChildren
-  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html#Lachee_Attributes_AutoAttribute_ChildMode_IncludeChildren
-  commentId: F:Lachee.Attributes.AutoAttribute.ChildMode.IncludeChildren
-  fullName: Lachee.Attributes.AutoAttribute.ChildMode.IncludeChildren
-  nameWithType: AutoAttribute.ChildMode.IncludeChildren
-- uid: Lachee.Attributes.AutoAttribute.ChildMode.OnlyChildren
-  name: OnlyChildren
-  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html#Lachee_Attributes_AutoAttribute_ChildMode_OnlyChildren
-  commentId: F:Lachee.Attributes.AutoAttribute.ChildMode.OnlyChildren
-  fullName: Lachee.Attributes.AutoAttribute.ChildMode.OnlyChildren
-  nameWithType: AutoAttribute.ChildMode.OnlyChildren
+- uid: Lachee.Attributes.AutoAttribute.#ctor
+  name: AutoAttribute()
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor
+  commentId: M:Lachee.Attributes.AutoAttribute.#ctor
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute()
+  nameWithType: AutoAttribute.AutoAttribute()
+- uid: Lachee.Attributes.AutoAttribute.#ctor(Lachee.Attributes.AutoAttribute.SearchFlag)
+  name: AutoAttribute(AutoAttribute.SearchFlag)
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_Lachee_Attributes_AutoAttribute_SearchFlag_
+  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(Lachee.Attributes.AutoAttribute.SearchFlag)
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(Lachee.Attributes.AutoAttribute.SearchFlag)
+  nameWithType: AutoAttribute.AutoAttribute(AutoAttribute.SearchFlag)
+- uid: Lachee.Attributes.AutoAttribute.#ctor(System.Boolean)
+  name: AutoAttribute(Boolean)
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_System_Boolean_
+  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(System.Boolean)
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(System.Boolean)
+  nameWithType: AutoAttribute.AutoAttribute(Boolean)
+- uid: Lachee.Attributes.AutoAttribute.#ctor(System.Boolean,Lachee.Attributes.AutoAttribute.SearchFlag)
+  name: AutoAttribute(Boolean, AutoAttribute.SearchFlag)
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_System_Boolean_Lachee_Attributes_AutoAttribute_SearchFlag_
+  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(System.Boolean,Lachee.Attributes.AutoAttribute.SearchFlag)
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(System.Boolean, Lachee.Attributes.AutoAttribute.SearchFlag)
+  nameWithType: AutoAttribute.AutoAttribute(Boolean, AutoAttribute.SearchFlag)
+- uid: Lachee.Attributes.AutoAttribute.#ctor*
+  name: AutoAttribute
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_
+  commentId: Overload:Lachee.Attributes.AutoAttribute.#ctor
+  isSpec: "True"
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute
+  nameWithType: AutoAttribute.AutoAttribute
 - uid: Lachee.Attributes.AutoAttribute.Hidden
   name: Hidden
   href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_Hidden
@@ -50,19 +57,43 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.AutoAttribute.Hidden
   nameWithType: AutoAttribute.Hidden
-- uid: Lachee.Attributes.AutoAttribute.IncludeChildren
-  name: IncludeChildren
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_IncludeChildren
-  commentId: P:Lachee.Attributes.AutoAttribute.IncludeChildren
-  fullName: Lachee.Attributes.AutoAttribute.IncludeChildren
-  nameWithType: AutoAttribute.IncludeChildren
-- uid: Lachee.Attributes.AutoAttribute.IncludeChildren*
-  name: IncludeChildren
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_IncludeChildren_
-  commentId: Overload:Lachee.Attributes.AutoAttribute.IncludeChildren
+- uid: Lachee.Attributes.AutoAttribute.SearchFlag
+  name: AutoAttribute.SearchFlag
+  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html
+  commentId: T:Lachee.Attributes.AutoAttribute.SearchFlag
+  fullName: Lachee.Attributes.AutoAttribute.SearchFlag
+  nameWithType: AutoAttribute.SearchFlag
+- uid: Lachee.Attributes.AutoAttribute.SearchFlag.Children
+  name: Children
+  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html#Lachee_Attributes_AutoAttribute_SearchFlag_Children
+  commentId: F:Lachee.Attributes.AutoAttribute.SearchFlag.Children
+  fullName: Lachee.Attributes.AutoAttribute.SearchFlag.Children
+  nameWithType: AutoAttribute.SearchFlag.Children
+- uid: Lachee.Attributes.AutoAttribute.SearchFlag.GameObject
+  name: GameObject
+  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html#Lachee_Attributes_AutoAttribute_SearchFlag_GameObject
+  commentId: F:Lachee.Attributes.AutoAttribute.SearchFlag.GameObject
+  fullName: Lachee.Attributes.AutoAttribute.SearchFlag.GameObject
+  nameWithType: AutoAttribute.SearchFlag.GameObject
+- uid: Lachee.Attributes.AutoAttribute.SearchFlag.Scene
+  name: Scene
+  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html#Lachee_Attributes_AutoAttribute_SearchFlag_Scene
+  commentId: F:Lachee.Attributes.AutoAttribute.SearchFlag.Scene
+  fullName: Lachee.Attributes.AutoAttribute.SearchFlag.Scene
+  nameWithType: AutoAttribute.SearchFlag.Scene
+- uid: Lachee.Attributes.AutoAttribute.SearchMode
+  name: SearchMode
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_SearchMode
+  commentId: P:Lachee.Attributes.AutoAttribute.SearchMode
+  fullName: Lachee.Attributes.AutoAttribute.SearchMode
+  nameWithType: AutoAttribute.SearchMode
+- uid: Lachee.Attributes.AutoAttribute.SearchMode*
+  name: SearchMode
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_SearchMode_
+  commentId: Overload:Lachee.Attributes.AutoAttribute.SearchMode
   isSpec: "True"
-  fullName: Lachee.Attributes.AutoAttribute.IncludeChildren
-  nameWithType: AutoAttribute.IncludeChildren
+  fullName: Lachee.Attributes.AutoAttribute.SearchMode
+  nameWithType: AutoAttribute.SearchMode
 - uid: Lachee.Attributes.ButtonAttribute
   name: ButtonAttribute
   href: api/Lachee.Attributes.ButtonAttribute.html
@@ -630,6 +661,22 @@ references:
   commentId: T:Lachee.Utilities.Linql
   fullName: Lachee.Utilities.Linql
   nameWithType: Linql
+- uid: Lachee.Utilities.Linql.AddRange*
+  name: AddRange
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AddRange_
+  commentId: Overload:Lachee.Utilities.Linql.AddRange
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linql.AddRange
+  nameWithType: Linql.AddRange
+- uid: Lachee.Utilities.Linql.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})
+  name: AddRange<T>(HashSet<T>, IEnumerable<T>)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AddRange__1_HashSet___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:Lachee.Utilities.Linql.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})
+  name.vb: AddRange(Of T)(HashSet(Of T), IEnumerable(Of T))
+  fullName: Lachee.Utilities.Linql.AddRange<T>(HashSet<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Lachee.Utilities.Linql.AddRange(Of T)(HashSet(Of T), System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: Linql.AddRange<T>(HashSet<T>, IEnumerable<T>)
+  nameWithType.vb: Linql.AddRange(Of T)(HashSet(Of T), IEnumerable(Of T))
 - uid: Lachee.Utilities.Linql.AsEnumerable*
   name: AsEnumerable
   href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AsEnumerable_
@@ -703,13 +750,13 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Linql.Random
   nameWithType: Linql.Random
-- uid: Lachee.Utilities.Linql.Random``1(IEnumerable{``0},System.Int32)
+- uid: Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   name: Random<TSource>(IEnumerable<TSource>, Int32)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Random__1_IEnumerable___0__System_Int32_
-  commentId: M:Lachee.Utilities.Linql.Random``1(IEnumerable{``0},System.Int32)
+  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Random__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   name.vb: Random(Of TSource)(IEnumerable(Of TSource), Int32)
-  fullName: Lachee.Utilities.Linql.Random<TSource>(IEnumerable<TSource>, System.Int32)
-  fullName.vb: Lachee.Utilities.Linql.Random(Of TSource)(IEnumerable(Of TSource), System.Int32)
+  fullName: Lachee.Utilities.Linql.Random<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Int32)
+  fullName.vb: Lachee.Utilities.Linql.Random(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Int32)
   nameWithType: Linql.Random<TSource>(IEnumerable<TSource>, Int32)
   nameWithType.vb: Linql.Random(Of TSource)(IEnumerable(Of TSource), Int32)
 - uid: Lachee.Utilities.Linql.ToArray*
@@ -1363,13 +1410,13 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.SetColor
   nameWithType: MeshBuilder.SetColor
-- uid: Lachee.Utilities.MeshBuilder.SetColors(IEnumerable{Color})
+- uid: Lachee.Utilities.MeshBuilder.SetColors(System.Collections.Generic.IEnumerable{Color})
   name: SetColors(IEnumerable<Color>)
-  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetColors_IEnumerable_Color__
-  commentId: M:Lachee.Utilities.MeshBuilder.SetColors(IEnumerable{Color})
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetColors_System_Collections_Generic_IEnumerable_Color__
+  commentId: M:Lachee.Utilities.MeshBuilder.SetColors(System.Collections.Generic.IEnumerable{Color})
   name.vb: SetColors(IEnumerable(Of Color))
-  fullName: Lachee.Utilities.MeshBuilder.SetColors(IEnumerable<Color>)
-  fullName.vb: Lachee.Utilities.MeshBuilder.SetColors(IEnumerable(Of Color))
+  fullName: Lachee.Utilities.MeshBuilder.SetColors(System.Collections.Generic.IEnumerable<Color>)
+  fullName.vb: Lachee.Utilities.MeshBuilder.SetColors(System.Collections.Generic.IEnumerable(Of Color))
   nameWithType: MeshBuilder.SetColors(IEnumerable<Color>)
   nameWithType.vb: MeshBuilder.SetColors(IEnumerable(Of Color))
 - uid: Lachee.Utilities.MeshBuilder.SetColors*
@@ -1379,13 +1426,13 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.SetColors
   nameWithType: MeshBuilder.SetColors
-- uid: Lachee.Utilities.MeshBuilder.SetTris(IEnumerable{System.Int32},System.Int32)
+- uid: Lachee.Utilities.MeshBuilder.SetTris(System.Collections.Generic.IEnumerable{System.Int32},System.Int32)
   name: SetTris(IEnumerable<Int32>, Int32)
-  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetTris_IEnumerable_System_Int32__System_Int32_
-  commentId: M:Lachee.Utilities.MeshBuilder.SetTris(IEnumerable{System.Int32},System.Int32)
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetTris_System_Collections_Generic_IEnumerable_System_Int32__System_Int32_
+  commentId: M:Lachee.Utilities.MeshBuilder.SetTris(System.Collections.Generic.IEnumerable{System.Int32},System.Int32)
   name.vb: SetTris(IEnumerable(Of Int32), Int32)
-  fullName: Lachee.Utilities.MeshBuilder.SetTris(IEnumerable<System.Int32>, System.Int32)
-  fullName.vb: Lachee.Utilities.MeshBuilder.SetTris(IEnumerable(Of System.Int32), System.Int32)
+  fullName: Lachee.Utilities.MeshBuilder.SetTris(System.Collections.Generic.IEnumerable<System.Int32>, System.Int32)
+  fullName.vb: Lachee.Utilities.MeshBuilder.SetTris(System.Collections.Generic.IEnumerable(Of System.Int32), System.Int32)
   nameWithType: MeshBuilder.SetTris(IEnumerable<Int32>, Int32)
   nameWithType.vb: MeshBuilder.SetTris(IEnumerable(Of Int32), Int32)
 - uid: Lachee.Utilities.MeshBuilder.SetTris*
@@ -1395,13 +1442,13 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.SetTris
   nameWithType: MeshBuilder.SetTris
-- uid: Lachee.Utilities.MeshBuilder.SetUVs(IEnumerable{Vector2})
+- uid: Lachee.Utilities.MeshBuilder.SetUVs(System.Collections.Generic.IEnumerable{Vector2})
   name: SetUVs(IEnumerable<Vector2>)
-  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetUVs_IEnumerable_Vector2__
-  commentId: M:Lachee.Utilities.MeshBuilder.SetUVs(IEnumerable{Vector2})
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetUVs_System_Collections_Generic_IEnumerable_Vector2__
+  commentId: M:Lachee.Utilities.MeshBuilder.SetUVs(System.Collections.Generic.IEnumerable{Vector2})
   name.vb: SetUVs(IEnumerable(Of Vector2))
-  fullName: Lachee.Utilities.MeshBuilder.SetUVs(IEnumerable<Vector2>)
-  fullName.vb: Lachee.Utilities.MeshBuilder.SetUVs(IEnumerable(Of Vector2))
+  fullName: Lachee.Utilities.MeshBuilder.SetUVs(System.Collections.Generic.IEnumerable<Vector2>)
+  fullName.vb: Lachee.Utilities.MeshBuilder.SetUVs(System.Collections.Generic.IEnumerable(Of Vector2))
   nameWithType: MeshBuilder.SetUVs(IEnumerable<Vector2>)
   nameWithType.vb: MeshBuilder.SetUVs(IEnumerable(Of Vector2))
 - uid: Lachee.Utilities.MeshBuilder.SetUVs*
@@ -1411,13 +1458,13 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.SetUVs
   nameWithType: MeshBuilder.SetUVs
-- uid: Lachee.Utilities.MeshBuilder.SetVerts(IEnumerable{Vector3})
+- uid: Lachee.Utilities.MeshBuilder.SetVerts(System.Collections.Generic.IEnumerable{Vector3})
   name: SetVerts(IEnumerable<Vector3>)
-  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetVerts_IEnumerable_Vector3__
-  commentId: M:Lachee.Utilities.MeshBuilder.SetVerts(IEnumerable{Vector3})
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_SetVerts_System_Collections_Generic_IEnumerable_Vector3__
+  commentId: M:Lachee.Utilities.MeshBuilder.SetVerts(System.Collections.Generic.IEnumerable{Vector3})
   name.vb: SetVerts(IEnumerable(Of Vector3))
-  fullName: Lachee.Utilities.MeshBuilder.SetVerts(IEnumerable<Vector3>)
-  fullName.vb: Lachee.Utilities.MeshBuilder.SetVerts(IEnumerable(Of Vector3))
+  fullName: Lachee.Utilities.MeshBuilder.SetVerts(System.Collections.Generic.IEnumerable<Vector3>)
+  fullName.vb: Lachee.Utilities.MeshBuilder.SetVerts(System.Collections.Generic.IEnumerable(Of Vector3))
   nameWithType: MeshBuilder.SetVerts(IEnumerable<Vector3>)
   nameWithType.vb: MeshBuilder.SetVerts(IEnumerable(Of Vector3))
 - uid: Lachee.Utilities.MeshBuilder.SetVerts*

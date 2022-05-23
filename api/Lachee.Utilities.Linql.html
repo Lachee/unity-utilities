@@ -124,6 +124,55 @@
   </h3>
   
   
+  <a id="Lachee_Utilities_Linql_AddRange_" data-uid="Lachee.Utilities.Linql.AddRange*"></a>
+  <h4 id="Lachee_Utilities_Linql_AddRange__1_HashSet___0__System_Collections_Generic_IEnumerable___0__" data-uid="Lachee.Utilities.Linql.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})">AddRange&lt;T&gt;(HashSet&lt;T&gt;, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a range to the HashSet. Duplicates are ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddRange&lt;T&gt;(this HashSet&lt;T&gt; hashSet, IEnumerable&lt;T&gt; items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;T&gt;</td>
+        <td><span class="parametername">hashSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>Enumerable list of items</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Lachee_Utilities_Linql_AsEnumerable_" data-uid="Lachee.Utilities.Linql.AsEnumerable*"></a>
   <h4 id="Lachee_Utilities_Linql_AsEnumerable__1_ArraySegment___0__" data-uid="Lachee.Utilities.Linql.AsEnumerable``1(ArraySegment{``0})">AsEnumerable&lt;T&gt;(ArraySegment&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates an enumeration of the array segment from the offset to the count</p>
@@ -160,7 +209,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -440,7 +489,7 @@
   
   
   <a id="Lachee_Utilities_Linql_Random_" data-uid="Lachee.Utilities.Linql.Random*"></a>
-  <h4 id="Lachee_Utilities_Linql_Random__1_IEnumerable___0__System_Int32_" data-uid="Lachee.Utilities.Linql.Random``1(IEnumerable{``0},System.Int32)">Random&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Int32)</h4>
+  <h4 id="Lachee_Utilities_Linql_Random__1_System_Collections_Generic_IEnumerable___0__System_Int32_" data-uid="Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">Random&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Picks a random item from the enumerator by enumerating over a random amount.
 Do not use this on fixed length arrays or lists, as it is less efficient than a direct lookup.
 This isn&apos;t perfect, and using a flat lookup will have a more distributed random, but this is a useful utility regardless.
@@ -462,7 +511,7 @@ For more evenly distributed random selection of items, use a Rist</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;TSource&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TSource&gt;</td>
         <td><span class="parametername">source</span></td>
         <td><p>The source enumerable</p>
 </td>
