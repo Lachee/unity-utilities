@@ -56,6 +56,22 @@ namespace Lachee.Utilities
             return enumerator.Current;
         }
 
+        #region HashSet
+
+        /// <summary>
+        /// Adds a range to the HashSet. Duplicates are ignored.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="hashSet"></param>
+        /// <param name="items">Enumerable list of items</param>
+        public static void AddRange<T>(this HashSet<T> hashSet, IEnumerable<T> items)
+        {
+            foreach (var item in items)
+                hashSet.Add(item);
+        }
+
+        #endregion
+
         #region Array Segments
         /// <summary>
         /// Segments and the copies the segmented data into the new array

@@ -1,3 +1,5 @@
+using Lachee.Utilities;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -11,27 +13,54 @@ namespace Lachee.Attributes
     public class AutoAttribute : PropertyAttribute
     {
         /// <summary>Controls how to search with children</summary>
-        public enum ChildMode
+        [System.Flags]
+        public enum SearchFlag
         {
-            /// <summary>Ignores children when searching</summary>
-            IgnoreChildren,
-            /// <summary>Include children and ourselves when searching</summary>
-            IncludeChildren,
-            /// <summary>Only include children in the search</summary>
-            OnlyChildren
+            /// <summary>Search the GameObject</summary>
+            GameObject = 1,
+            /// <summary>Search the children for the component</summary>
+            Children = 2,
+            /// <summary>Search the scene for the component</summary>
+            Scene = 4,
         }
 
         /// <summary>
         /// Hides the field from the inspector if the value is set.
         /// </summary>
-        public bool Hidden { get; set; } = true;
+        public bool Hidden { get; set; }
 
         /// <summary>
         /// Include children in the search for components 
         /// <para>If applied to an array, then all components found will be used</para>
         /// <para>If not applied to an array, then the first component found will be used</para>
         /// </summary>
-        public ChildMode IncludeChildren { get; set; } = ChildMode.IgnoreChildren;
+        public SearchFlag SearchMode { get; set; }
+
+        /// <summary>Automatically fetches components and hides them in the inspector from this game object</summary>
+        public AutoAttribute() : this(true, SearchFlag.GameObject) { }
+
+        /// <summary>
+        /// Automatically fetches components from this game object.
+        /// </summary>
+        /// <param name="hidden"></param>
+        public AutoAttribute(bool hidden) : this(hidden, SearchFlag.GameObject) { }
+
+        /// <summary>
+        /// Automatically fetches the components and hides them from the inspector
+        /// </summary>
+        /// <param name="mode"></param>
+        public AutoAttribute(SearchFlag mode) : this(true, mode) { }
+
+        /// <summary>
+        /// Automatically fetches the components
+        /// </summary>
+        /// <param name="hidden"></param>
+        /// <param name="mode"></param>
+        public AutoAttribute(bool hidden, SearchFlag mode)
+        {
+            this.Hidden = hidden;
+            this.SearchMode = mode;
+        }
 
         #if UNITY_EDITOR
         /// <summary>
@@ -42,46 +71,68 @@ namespace Lachee.Attributes
         public virtual dynamic FindReferenceForProperty(UnityEditor.SerializedProperty property)
         {
             // Get the base component attached to this property
-            var baseComponent = property.serializedObject.targetObject as Component;
-            if (baseComponent == null)
+            var component = property.serializedObject.targetObject as Component;
+            if (component == null)
                 throw new System.InvalidOperationException("Cannot find a component on a non-component object");
 
             // Get the component type.
             // Calling the extension directly here to avoid having to put scripting defines in the top
-            var componentType = Utilities.Editor.SerializedPropertyExtensions.GetSerializedType(property);
-            if (componentType.IsArray)
+            var propertyType = Utilities.Editor.SerializedPropertyExtensions.GetSerializedType(property);
+            if (propertyType.IsArray)
             {
+                // This version will pull all the components we find and unions them in a hashset first to avoid duplicates
+
                 // Validate it is an array of components
-                if (!typeof(Component).IsAssignableFrom(componentType.GetElementType()))
+                if (!typeof(Component).IsAssignableFrom(propertyType.GetElementType()))
                     throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
 
-                // Find the component in ourselves, then apply to the children
-                switch(IncludeChildren)
-                {
-                    case ChildMode.OnlyChildren:
-                        return baseComponent.GetComponentsInChildren(componentType.GetElementType());
-                    case ChildMode.IgnoreChildren:
-                        return baseComponent.GetComponents(componentType.GetElementType());
-                    case ChildMode.IncludeChildren:
-                        return baseComponent.GetComponents(componentType.GetElementType()).Union(baseComponent.GetComponentsInChildren(componentType.GetElementType()));
+                HashSet<Object> results = new HashSet<Object>();
+
+                // Find all the results
+                Object[] found;
+                if ((SearchMode & SearchFlag.GameObject) != 0) {
+                    found = component.GetComponents(propertyType);
+                    results.AddRange(found);
                 }
+
+                if ((SearchMode & SearchFlag.Children) != 0) {
+                    found = component.GetComponentsInChildren(propertyType);
+                    results.AddRange(found);
+                }
+
+                if ((SearchMode & SearchFlag.Scene) != 0) {
+                    found = GameObject.FindObjectsOfType(propertyType);
+                    results.AddRange(found);
+                }
+
+                // Convert to array
+                return results.ToArray();
             }
             else
             {
+
+                // This is a more optimised version.
+                // Duplicated code for the most part, but it is done so we only call GetComponent once for non-arrrays
+
+
                 // Validate it is a component
-                if (!typeof(Component).IsAssignableFrom(componentType))
+                if (!typeof(Component).IsAssignableFrom(propertyType))
                     throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
 
-                switch(IncludeChildren)
-                {
-                    case ChildMode.OnlyChildren:
-                        return baseComponent.GetComponentsInChildren(componentType).FirstOrDefault();
-                    case ChildMode.IgnoreChildren:
-                        return baseComponent.GetComponent(componentType);
-                    case ChildMode.IncludeChildren:
-                        var component = baseComponent.GetComponent(componentType);
-                        if (component) return component;
-                        return baseComponent.GetComponentsInChildren(componentType).FirstOrDefault();
+                Object found = null;
+                if ((SearchMode & SearchFlag.GameObject) != 0) {
+                    found = component.GetComponent(propertyType);
+                    if (found) return found;
+                }
+
+                if ((SearchMode & SearchFlag.Children) != 0) {
+                    found = component.GetComponentInChildren(propertyType);
+                    if (found) return found;
+                }
+
+                if ((SearchMode & SearchFlag.Scene) != 0) {
+                    found = GameObject.FindObjectOfType(propertyType);
+                    if (found) return found;
                 }
             }
 

@@ -2,6 +2,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -78,7 +79,7 @@ namespace Lachee.Attributes.Editor
             if (stateChange == PlayModeStateChange.ExitingEditMode)
             {
                 CheckAttributes();
-                if (Errors.Count > 0)
+                if (Errors.Any(errors => errors.Values.Any(error => error.blocks)))
                 {
                     AutoAttributeWindow.ShowWindow();
                     if (PreventPlayMode)
