@@ -11,9 +11,52 @@ namespace Lachee.Attributes.Editor
     [InitializeOnLoad]
     public static class AutoAttributeObserver
     {
+        public const string PREF_PREVENT_PLAYMODE = "AUTO_ATTR_PREVENT_PLAYMODE";
+
+        public struct PropertyAttributePair
+        {
+            public string propertyPath;
+            public AutoAttribute attribute;
+        }
+
+        public struct ObjectError
+        {
+            public Object component;
+            public IReadOnlyDictionary<PropertyAttributePair, string> errors;
+        }
+
+        private static List<ObjectError> _errors = new List<ObjectError>();
+        public static IReadOnlyList<ObjectError> errors => _errors;
+
         static AutoAttributeObserver()
         {
             EditorApplication.hierarchyChanged += OnHierarchyChanged;
+            EditorApplication.playModeStateChanged += OnPlayModeChange;
+        }
+
+        private static void OnPlayModeChange(PlayModeStateChange stateChange)
+        {
+            if (stateChange == PlayModeStateChange.ExitingEditMode)
+            {
+                ProcessAttributes();
+                if (errors.Count > 0)
+                {
+                    AutoAttributeErrorWindow.ShowWindow();
+                    if (EditorPrefs.GetBool(PREF_PREVENT_PLAYMODE, true))
+                    {
+                        Debug.LogError("Cannot enter play mode because the scene has missing auto components");
+                        EditorApplication.ExitPlaymode();
+                    } else
+                    {
+                        Debug.LogError("The scene contains missing components");
+                    }
+                }
+            }
+        }
+
+        private static void OnHierarchyChanged()
+        {
+            ProcessAttributes();
         }
 
 
@@ -49,12 +92,34 @@ namespace Lachee.Attributes.Editor
         }
 
         /// <summary>
-        /// Called when hierarchy changed.
+        /// Checks if the serialized component is missing anything
         /// </summary>
-        private static void OnHierarchyChanged()
+        /// <param name="property"></param>
+        /// <returns></returns>
+        public static string CheckError(SerializedProperty property)
         {
+            if (property.objectReferenceValue == null)
+                return "Component not found";
+
+            var componentReferenceValue = property.objectReferenceValue as Component;
+            if (componentReferenceValue.gameObject != (property.serializedObject.targetObject as Component).gameObject)
+                return "Component is not attached";
+
+            if (property.isArray && property.arraySize == 0)
+                return "No children";
+
+            return null;
+        }
+
+        /// <summary>
+        /// Searches the entire scene and applies all attributes in the scene
+        /// </summary>
+        public static void ProcessAttributes()
+        {
+            _errors.Clear();
+
             // Scan every MonoBehaviour for Auto Attribute fields
-            var processQueue = new Dictionary<Object, List<SearchRequest>>();
+            var processQueue = new Dictionary<Object, List<PropertyAttributePair>>();
             var components = Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)); // Use MonoBehaviour as a slightly more optimised search
 
             foreach (var component in components)
@@ -70,14 +135,14 @@ namespace Lachee.Attributes.Editor
                         if (!addedComponentToProcess)
                         {
                             addedComponentToProcess = true;
-                            processQueue.Add(component, new List<SearchRequest>(fields.Length));
+                            processQueue.Add(component, new List<PropertyAttributePair>(fields.Length));
                         }
 
                         // While the attribuite doesnt actually support multiple on one field, 
                         // we do this just to future proof. Performance is neglegitable.
                         foreach (var attribute in attributes)
                         {
-                            processQueue[component].Add(new SearchRequest()
+                            processQueue[component].Add(new PropertyAttributePair()
                             {
                                 propertyPath = field.Name,
                                 attribute = (AutoAttribute)attribute
@@ -87,29 +152,54 @@ namespace Lachee.Attributes.Editor
                 }
             }
 
+
             // Now process all the components
             // We are going to create a serialized object then call the ApplyToSerialized the drawer has to all the 
             //  appropriate properites of that serialized object
             foreach (var kp in processQueue)
             {
-                bool hasMadeChanges = false;
                 var serializedObject = new SerializedObject(kp.Key);
-                foreach (var request in kp.Value)
+
+                // Iterate over every property in thsi component. 
+                // we will keep track of property pairs and their errors
+                bool hasMadeChanges = false;
+                Dictionary<PropertyAttributePair, string> objectErrors = null;
+
+                foreach (var propertyPair in kp.Value)
                 {
-                    var property = serializedObject.FindProperty(request.propertyPath);
-                    if (ApplyAttributeToSerializedProperty(property, request.attribute))
+                    var property = serializedObject.FindProperty(propertyPair.propertyPath);
+                    if (ApplyAttributeToSerializedProperty(property, propertyPair.attribute))
                         hasMadeChanges = true;
+
+                    // Get the error and append it to the list of all errors for thsi game object
+                    string err = CheckError(property);
+                    if (err != null)
+                    {
+                        if (objectErrors == null)
+                            objectErrors = new Dictionary<PropertyAttributePair, string>(kp.Value.Count);
+
+                        objectErrors.Add(propertyPair, err);
+                    }
                 }
 
+                // Add all the errors
+                if (objectErrors != null)
+                {
+                    _errors.Add(new ObjectError()
+                    {
+                        component = kp.Key,
+                        errors = objectErrors
+                    });
+                }
+
+                // if we modified, update the serialized object
                 if (hasMadeChanges)
                     serializedObject.ApplyModifiedProperties();
             }
-        }
 
-        struct SearchRequest
-        {
-            public string propertyPath;
-            public AutoAttribute attribute;
+            // Finally, tell the editor to repaint
+            if (AutoAttributeErrorWindow.Instance)
+                AutoAttributeErrorWindow.Instance.Repaint();
         }
     }
 }

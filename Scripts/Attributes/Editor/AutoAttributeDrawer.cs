@@ -12,28 +12,12 @@ namespace Lachee.Attributes.Editor
     {
         const string PREF_ALWAYS_SCAN = "autoattr_scan";
 
-        /// <summary>Gets the error associated with the property</summary>
-        private string GetError(SerializedProperty property)
-        {
-            if (property.objectReferenceValue == null)
-                return "Component not found";
-
-            var componentReferenceValue = property.objectReferenceValue as Component;
-            if (componentReferenceValue.gameObject != (property.serializedObject.targetObject as Component).gameObject)
-                return "Component is not attached";
-
-            if (property.isArray && property.arraySize == 0)
-                return "No children";
-
-            return null;
-        }
-
         /// <summary>Should the property be showing</summary>
         private bool ShouldShow(SerializedProperty property)
         {
             var attr = attribute as AutoAttribute;
             if (!attr.Hidden) return true;
-            return GetError(property) != null;
+            return AutoAttributeObserver.CheckError(property) != null;
         }
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
@@ -52,7 +36,7 @@ namespace Lachee.Attributes.Editor
                 // Hidden but we cannot find one!
                 if (ShouldShow(property))
                 {
-                    string error = label.text + "\n" + GetError(property);                    
+                    string error = label.text + "\n" + AutoAttributeObserver.CheckError(property);                    
                     EditorGUI.HelpBox(position, error, property.objectReferenceValue == null ? MessageType.Error : MessageType.Warning);
 
                     Rect centerBox = new Rect(position);
