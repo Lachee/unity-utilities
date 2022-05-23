@@ -19,24 +19,24 @@ references:
   commentId: M:Lachee.Attributes.AutoAttribute.#ctor
   fullName: Lachee.Attributes.AutoAttribute.AutoAttribute()
   nameWithType: AutoAttribute.AutoAttribute()
-- uid: Lachee.Attributes.AutoAttribute.#ctor(Lachee.Attributes.AutoAttribute.SearchFlag)
-  name: AutoAttribute(AutoAttribute.SearchFlag)
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_Lachee_Attributes_AutoAttribute_SearchFlag_
-  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(Lachee.Attributes.AutoAttribute.SearchFlag)
-  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(Lachee.Attributes.AutoAttribute.SearchFlag)
-  nameWithType: AutoAttribute.AutoAttribute(AutoAttribute.SearchFlag)
+- uid: Lachee.Attributes.AutoAttribute.#ctor(Lachee.Attributes.AutoSearchFlag)
+  name: AutoAttribute(AutoSearchFlag)
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_Lachee_Attributes_AutoSearchFlag_
+  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(Lachee.Attributes.AutoSearchFlag)
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(Lachee.Attributes.AutoSearchFlag)
+  nameWithType: AutoAttribute.AutoAttribute(AutoSearchFlag)
 - uid: Lachee.Attributes.AutoAttribute.#ctor(System.Boolean)
   name: AutoAttribute(Boolean)
   href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_System_Boolean_
   commentId: M:Lachee.Attributes.AutoAttribute.#ctor(System.Boolean)
   fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(System.Boolean)
   nameWithType: AutoAttribute.AutoAttribute(Boolean)
-- uid: Lachee.Attributes.AutoAttribute.#ctor(System.Boolean,Lachee.Attributes.AutoAttribute.SearchFlag)
-  name: AutoAttribute(Boolean, AutoAttribute.SearchFlag)
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_System_Boolean_Lachee_Attributes_AutoAttribute_SearchFlag_
-  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(System.Boolean,Lachee.Attributes.AutoAttribute.SearchFlag)
-  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(System.Boolean, Lachee.Attributes.AutoAttribute.SearchFlag)
-  nameWithType: AutoAttribute.AutoAttribute(Boolean, AutoAttribute.SearchFlag)
+- uid: Lachee.Attributes.AutoAttribute.#ctor(System.Boolean,Lachee.Attributes.AutoSearchFlag)
+  name: AutoAttribute(Boolean, AutoSearchFlag)
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_System_Boolean_Lachee_Attributes_AutoSearchFlag_
+  commentId: M:Lachee.Attributes.AutoAttribute.#ctor(System.Boolean,Lachee.Attributes.AutoSearchFlag)
+  fullName: Lachee.Attributes.AutoAttribute.AutoAttribute(System.Boolean, Lachee.Attributes.AutoSearchFlag)
+  nameWithType: AutoAttribute.AutoAttribute(Boolean, AutoSearchFlag)
 - uid: Lachee.Attributes.AutoAttribute.#ctor*
   name: AutoAttribute
   href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute__ctor_
@@ -58,42 +58,42 @@ references:
   fullName: Lachee.Attributes.AutoAttribute.Hidden
   nameWithType: AutoAttribute.Hidden
 - uid: Lachee.Attributes.AutoAttribute.SearchFlag
-  name: AutoAttribute.SearchFlag
-  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html
-  commentId: T:Lachee.Attributes.AutoAttribute.SearchFlag
+  name: SearchFlag
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_SearchFlag
+  commentId: P:Lachee.Attributes.AutoAttribute.SearchFlag
   fullName: Lachee.Attributes.AutoAttribute.SearchFlag
   nameWithType: AutoAttribute.SearchFlag
-- uid: Lachee.Attributes.AutoAttribute.SearchFlag.Children
-  name: Children
-  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html#Lachee_Attributes_AutoAttribute_SearchFlag_Children
-  commentId: F:Lachee.Attributes.AutoAttribute.SearchFlag.Children
-  fullName: Lachee.Attributes.AutoAttribute.SearchFlag.Children
-  nameWithType: AutoAttribute.SearchFlag.Children
-- uid: Lachee.Attributes.AutoAttribute.SearchFlag.GameObject
-  name: GameObject
-  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html#Lachee_Attributes_AutoAttribute_SearchFlag_GameObject
-  commentId: F:Lachee.Attributes.AutoAttribute.SearchFlag.GameObject
-  fullName: Lachee.Attributes.AutoAttribute.SearchFlag.GameObject
-  nameWithType: AutoAttribute.SearchFlag.GameObject
-- uid: Lachee.Attributes.AutoAttribute.SearchFlag.Scene
-  name: Scene
-  href: api/Lachee.Attributes.AutoAttribute.SearchFlag.html#Lachee_Attributes_AutoAttribute_SearchFlag_Scene
-  commentId: F:Lachee.Attributes.AutoAttribute.SearchFlag.Scene
-  fullName: Lachee.Attributes.AutoAttribute.SearchFlag.Scene
-  nameWithType: AutoAttribute.SearchFlag.Scene
-- uid: Lachee.Attributes.AutoAttribute.SearchMode
-  name: SearchMode
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_SearchMode
-  commentId: P:Lachee.Attributes.AutoAttribute.SearchMode
-  fullName: Lachee.Attributes.AutoAttribute.SearchMode
-  nameWithType: AutoAttribute.SearchMode
-- uid: Lachee.Attributes.AutoAttribute.SearchMode*
-  name: SearchMode
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_SearchMode_
-  commentId: Overload:Lachee.Attributes.AutoAttribute.SearchMode
+- uid: Lachee.Attributes.AutoAttribute.SearchFlag*
+  name: SearchFlag
+  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_SearchFlag_
+  commentId: Overload:Lachee.Attributes.AutoAttribute.SearchFlag
   isSpec: "True"
-  fullName: Lachee.Attributes.AutoAttribute.SearchMode
-  nameWithType: AutoAttribute.SearchMode
+  fullName: Lachee.Attributes.AutoAttribute.SearchFlag
+  nameWithType: AutoAttribute.SearchFlag
+- uid: Lachee.Attributes.AutoSearchFlag
+  name: AutoSearchFlag
+  href: api/Lachee.Attributes.AutoSearchFlag.html
+  commentId: T:Lachee.Attributes.AutoSearchFlag
+  fullName: Lachee.Attributes.AutoSearchFlag
+  nameWithType: AutoSearchFlag
+- uid: Lachee.Attributes.AutoSearchFlag.Children
+  name: Children
+  href: api/Lachee.Attributes.AutoSearchFlag.html#Lachee_Attributes_AutoSearchFlag_Children
+  commentId: F:Lachee.Attributes.AutoSearchFlag.Children
+  fullName: Lachee.Attributes.AutoSearchFlag.Children
+  nameWithType: AutoSearchFlag.Children
+- uid: Lachee.Attributes.AutoSearchFlag.GameObject
+  name: GameObject
+  href: api/Lachee.Attributes.AutoSearchFlag.html#Lachee_Attributes_AutoSearchFlag_GameObject
+  commentId: F:Lachee.Attributes.AutoSearchFlag.GameObject
+  fullName: Lachee.Attributes.AutoSearchFlag.GameObject
+  nameWithType: AutoSearchFlag.GameObject
+- uid: Lachee.Attributes.AutoSearchFlag.Scene
+  name: Scene
+  href: api/Lachee.Attributes.AutoSearchFlag.html#Lachee_Attributes_AutoSearchFlag_Scene
+  commentId: F:Lachee.Attributes.AutoSearchFlag.Scene
+  fullName: Lachee.Attributes.AutoSearchFlag.Scene
+  nameWithType: AutoSearchFlag.Scene
 - uid: Lachee.Attributes.ButtonAttribute
   name: ButtonAttribute
   href: api/Lachee.Attributes.ButtonAttribute.html
