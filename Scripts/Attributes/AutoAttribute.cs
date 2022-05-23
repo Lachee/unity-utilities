@@ -6,24 +6,24 @@ using UnityEngine;
 
 namespace Lachee.Attributes
 {
+    /// <summary>Flag that controls how searching is handled within the <see cref="AutoAttribute"/></summary>
+    [System.Flags]
+    public enum AutoSearchFlag
+    {
+        /// <summary>Search the GameObject</summary>
+        GameObject = 1,
+        /// <summary>Search the children for the component</summary>
+        Children = 2,
+        /// <summary>Search the scene for the component</summary>
+        Scene = 4,
+    }
+
     /// <summary>
     /// Automatically fetches attached components
     /// </summary>
     [System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple = false)]
     public class AutoAttribute : PropertyAttribute
     {
-        /// <summary>Controls how to search with children</summary>
-        [System.Flags]
-        public enum SearchFlag
-        {
-            /// <summary>Search the GameObject</summary>
-            GameObject = 1,
-            /// <summary>Search the children for the component</summary>
-            Children = 2,
-            /// <summary>Search the scene for the component</summary>
-            Scene = 4,
-        }
-
         /// <summary>
         /// Hides the field from the inspector if the value is set.
         /// </summary>
@@ -34,32 +34,32 @@ namespace Lachee.Attributes
         /// <para>If applied to an array, then all components found will be used</para>
         /// <para>If not applied to an array, then the first component found will be used</para>
         /// </summary>
-        public SearchFlag SearchMode { get; set; }
+        public AutoSearchFlag SearchFlag { get; set; }
 
         /// <summary>Automatically fetches components and hides them in the inspector from this game object</summary>
-        public AutoAttribute() : this(true, SearchFlag.GameObject) { }
+        public AutoAttribute() : this(true, AutoSearchFlag.GameObject) { }
 
         /// <summary>
         /// Automatically fetches components from this game object.
         /// </summary>
         /// <param name="hidden"></param>
-        public AutoAttribute(bool hidden) : this(hidden, SearchFlag.GameObject) { }
+        public AutoAttribute(bool hidden) : this(hidden, AutoSearchFlag.GameObject) { }
 
         /// <summary>
         /// Automatically fetches the components and hides them from the inspector
         /// </summary>
         /// <param name="mode"></param>
-        public AutoAttribute(SearchFlag mode) : this(true, mode) { }
+        public AutoAttribute(AutoSearchFlag mode) : this(true, mode) { }
 
         /// <summary>
         /// Automatically fetches the components
         /// </summary>
         /// <param name="hidden"></param>
         /// <param name="mode"></param>
-        public AutoAttribute(bool hidden, SearchFlag mode)
+        public AutoAttribute(bool hidden, AutoSearchFlag mode)
         {
             this.Hidden = hidden;
-            this.SearchMode = mode;
+            this.SearchFlag = mode;
         }
 
         #if UNITY_EDITOR
@@ -90,17 +90,17 @@ namespace Lachee.Attributes
 
                 // Find all the results
                 Object[] found;
-                if ((SearchMode & SearchFlag.GameObject) != 0) {
+                if ((SearchFlag & AutoSearchFlag.GameObject) != 0) {
                     found = component.GetComponents(propertyType);
                     results.AddRange(found);
                 }
 
-                if ((SearchMode & SearchFlag.Children) != 0) {
+                if ((SearchFlag & AutoSearchFlag.Children) != 0) {
                     found = component.GetComponentsInChildren(propertyType);
                     results.AddRange(found);
                 }
 
-                if ((SearchMode & SearchFlag.Scene) != 0) {
+                if ((SearchFlag & AutoSearchFlag.Scene) != 0) {
                     found = GameObject.FindObjectsOfType(propertyType);
                     results.AddRange(found);
                 }
@@ -120,17 +120,17 @@ namespace Lachee.Attributes
                     throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
 
                 Object found = null;
-                if ((SearchMode & SearchFlag.GameObject) != 0) {
+                if ((SearchFlag & AutoSearchFlag.GameObject) != 0) {
                     found = component.GetComponent(propertyType);
                     if (found) return found;
                 }
 
-                if ((SearchMode & SearchFlag.Children) != 0) {
+                if ((SearchFlag & AutoSearchFlag.Children) != 0) {
                     found = component.GetComponentInChildren(propertyType);
                     if (found) return found;
                 }
 
-                if ((SearchMode & SearchFlag.Scene) != 0) {
+                if ((SearchFlag & AutoSearchFlag.Scene) != 0) {
                     found = GameObject.FindObjectOfType(propertyType);
                     if (found) return found;
                 }
