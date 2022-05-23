@@ -13,6 +13,30 @@ references:
   commentId: T:Lachee.Attributes.AutoAttribute
   fullName: Lachee.Attributes.AutoAttribute
   nameWithType: AutoAttribute
+- uid: Lachee.Attributes.AutoAttribute.ChildMode
+  name: AutoAttribute.ChildMode
+  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html
+  commentId: T:Lachee.Attributes.AutoAttribute.ChildMode
+  fullName: Lachee.Attributes.AutoAttribute.ChildMode
+  nameWithType: AutoAttribute.ChildMode
+- uid: Lachee.Attributes.AutoAttribute.ChildMode.IgnoreChildren
+  name: IgnoreChildren
+  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html#Lachee_Attributes_AutoAttribute_ChildMode_IgnoreChildren
+  commentId: F:Lachee.Attributes.AutoAttribute.ChildMode.IgnoreChildren
+  fullName: Lachee.Attributes.AutoAttribute.ChildMode.IgnoreChildren
+  nameWithType: AutoAttribute.ChildMode.IgnoreChildren
+- uid: Lachee.Attributes.AutoAttribute.ChildMode.IncludeChildren
+  name: IncludeChildren
+  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html#Lachee_Attributes_AutoAttribute_ChildMode_IncludeChildren
+  commentId: F:Lachee.Attributes.AutoAttribute.ChildMode.IncludeChildren
+  fullName: Lachee.Attributes.AutoAttribute.ChildMode.IncludeChildren
+  nameWithType: AutoAttribute.ChildMode.IncludeChildren
+- uid: Lachee.Attributes.AutoAttribute.ChildMode.OnlyChildren
+  name: OnlyChildren
+  href: api/Lachee.Attributes.AutoAttribute.ChildMode.html#Lachee_Attributes_AutoAttribute_ChildMode_OnlyChildren
+  commentId: F:Lachee.Attributes.AutoAttribute.ChildMode.OnlyChildren
+  fullName: Lachee.Attributes.AutoAttribute.ChildMode.OnlyChildren
+  nameWithType: AutoAttribute.ChildMode.OnlyChildren
 - uid: Lachee.Attributes.AutoAttribute.Hidden
   name: Hidden
   href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_Hidden
@@ -39,19 +63,6 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.AutoAttribute.IncludeChildren
   nameWithType: AutoAttribute.IncludeChildren
-- uid: Lachee.Attributes.AutoAttribute.IncludeChildrenWithTag
-  name: IncludeChildrenWithTag
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_IncludeChildrenWithTag
-  commentId: P:Lachee.Attributes.AutoAttribute.IncludeChildrenWithTag
-  fullName: Lachee.Attributes.AutoAttribute.IncludeChildrenWithTag
-  nameWithType: AutoAttribute.IncludeChildrenWithTag
-- uid: Lachee.Attributes.AutoAttribute.IncludeChildrenWithTag*
-  name: IncludeChildrenWithTag
-  href: api/Lachee.Attributes.AutoAttribute.html#Lachee_Attributes_AutoAttribute_IncludeChildrenWithTag_
-  commentId: Overload:Lachee.Attributes.AutoAttribute.IncludeChildrenWithTag
-  isSpec: "True"
-  fullName: Lachee.Attributes.AutoAttribute.IncludeChildrenWithTag
-  nameWithType: AutoAttribute.IncludeChildrenWithTag
 - uid: Lachee.Attributes.ButtonAttribute
   name: ButtonAttribute
   href: api/Lachee.Attributes.ButtonAttribute.html

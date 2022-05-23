@@ -24,11 +24,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.AutoAttribute.ChildMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.AutoAttribute.ChildMode.html",
+          "hash": "zz5/V9AD/f7IYpYNrO/G6+ofeJTbGJR0JyZfNO0cLxc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.AutoAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.AutoAttribute.html",
-          "hash": "Fye4sgYiayM3t9sflfdYuzrDBGD8lNrNb6nXdwPyOtY="
+          "hash": "UpANZ2A/SY3YgRGLc1eOPA8X/uBjCmbPHx6jVYcDZx8="
         }
       },
       "is_incremental": false,
@@ -76,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "nnl9Zt1jdhskB8wl5jgQcaBLoBGGjt3Z6J/sTaRT/tU="
+          "hash": "6wKiiT5uXgITEZNOJI+6rr+Wq0uW5MfXuvbpS3UMnUM="
         }
       },
       "is_incremental": false,
@@ -316,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "f/r0XsMFKDL8dvHg1SaUyPETUDUfnYK9zkTtA1lMnUs="
+          "hash": "xhruwKiAtnWLSYX46gI3K5COF5+8Xt8BtaYQAXHMkXg="
         }
       },
       "is_incremental": false,
@@ -382,7 +394,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 24,
+          "total_file_count": 25,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
