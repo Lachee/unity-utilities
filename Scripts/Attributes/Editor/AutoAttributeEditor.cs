@@ -1,5 +1,6 @@
 ﻿#if UNITY_EDITOR
 
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -9,40 +10,78 @@ namespace Lachee.Attributes.Editor
 
     /// <summary>Observes the Auto-Attribute to rebuild lists.</summary>
     [InitializeOnLoad]
-    public static class AutoAttributeObserver
+    public static class AutoAttributeEditor
     {
-        public const string PREF_PREVENT_PLAYMODE = "AUTO_ATTR_PREVENT_PLAYMODE";
+        private const string PREF_PREVENT_PLAYMODE = "AUTO_ATTR_PREVENT_PLAYMODE";
+        private const string PREF_AUTO_REFRESH = "AUTO_ATTR_AUTO_REFRESH";
 
-        public struct PropertyAttributePair
+        /// <summary>Error state about an attribute</summary>
+        public struct Error
+        {
+            public readonly string message;
+            public readonly bool blocks;
+            public Error(string message, bool blocks)
+            {
+                this.message = message;
+                this.blocks = blocks;
+            }
+        }
+        /// <summary>Path of the attribute with a reference to the attribute itself</summary>
+        public struct AttributeProperty
         {
             public string propertyPath;
             public AutoAttribute attribute;
         }
-
-        public struct ObjectError
+        /// <summary></summary>
+        public class ObjectErrors : IReadOnlyDictionary<AttributeProperty, Error>
         {
-            public Object component;
-            public IReadOnlyDictionary<PropertyAttributePair, string> errors;
+            public Object Component => m_Component;
+            private Object m_Component;
+            private Dictionary<AttributeProperty, Error> m_Errors;
+
+            public ObjectErrors(Object component, Dictionary<AttributeProperty, Error> errors)
+            {
+                m_Component = component;
+                m_Errors = errors;
+            }
+
+            #region Dictionary Interface
+            public Error this[AttributeProperty key] => m_Errors[key];
+            public IEnumerable<AttributeProperty> Keys => m_Errors.Keys;
+            public IEnumerable<Error> Values => m_Errors.Values;
+            public int Count => m_Errors.Count;
+            public bool ContainsKey(AttributeProperty key) => m_Errors.ContainsKey(key);
+            public IEnumerator<KeyValuePair<AttributeProperty, Error>> GetEnumerator() => m_Errors.GetEnumerator();
+            public bool TryGetValue(AttributeProperty key, out Error value) => m_Errors.TryGetValue(key, out value);
+            IEnumerator IEnumerable.GetEnumerator() => m_Errors.GetEnumerator();
+            #endregion
         }
+        /// <summary>List of errors from the last check. Call CheckAttribute to update this list.</summary>
+        public static IReadOnlyList<ObjectErrors> Errors => _errors;
+        private static List<ObjectErrors> _errors = new List<ObjectErrors>();
 
-        private static List<ObjectError> _errors = new List<ObjectError>();
-        public static IReadOnlyList<ObjectError> errors => _errors;
+        public static Texture2D IconAuto_32 { get; private set; }
+        public static Texture2D IconAuto_16 { get; private set; }
 
-        static AutoAttributeObserver()
+        static AutoAttributeEditor()
         {
             EditorApplication.hierarchyChanged += OnHierarchyChanged;
             EditorApplication.playModeStateChanged += OnPlayModeChange;
+
+            IconAuto_32 = (Texture2D)AssetDatabase.LoadAssetAtPath("Packages/com.lachee.utilities/Editor Resources/auto_32.png", typeof(Texture2D));
+            IconAuto_16 = (Texture2D)AssetDatabase.LoadAssetAtPath("Packages/com.lachee.utilities/Editor Resources/auto_16.png", typeof(Texture2D));
         }
 
+        #region Event Listeners
         private static void OnPlayModeChange(PlayModeStateChange stateChange)
         {
             if (stateChange == PlayModeStateChange.ExitingEditMode)
             {
-                ProcessAttributes();
-                if (errors.Count > 0)
+                CheckAttributes();
+                if (Errors.Count > 0)
                 {
-                    AutoAttributeErrorWindow.ShowWindow();
-                    if (EditorPrefs.GetBool(PREF_PREVENT_PLAYMODE, true))
+                    AutoAttributeWindow.ShowWindow();
+                    if (PreventPlayMode)
                     {
                         Debug.LogError("Cannot enter play mode because the scene has missing auto components");
                         EditorApplication.ExitPlaymode();
@@ -53,12 +92,26 @@ namespace Lachee.Attributes.Editor
                 }
             }
         }
-
         private static void OnHierarchyChanged()
         {
-            ProcessAttributes();
+            CheckAttributes();
         }
+        #endregion
 
+        #region Properties
+        /// <summary>Prevents PlayMode if there is an error</summary>
+        public static bool PreventPlayMode
+        {
+            get => EditorPrefs.GetBool(PREF_PREVENT_PLAYMODE, true);
+            set => EditorPrefs.SetBool(PREF_PREVENT_PLAYMODE, value);
+        }
+        /// <summary>Shoudl components auto refresh once per GUI frame when inspecting</summary>
+        public static bool AutoRefreshInspector
+        {
+            get => EditorPrefs.GetBool(PREF_AUTO_REFRESH, true);
+            set => EditorPrefs.SetBool(PREF_AUTO_REFRESH, value);
+        }
+        #endregion
 
         /// <summary>
         /// Applies the Attribute to the Serialized Property
@@ -92,21 +145,25 @@ namespace Lachee.Attributes.Editor
         }
 
         /// <summary>
-        /// Checks if the serialized component is missing anything
+        /// Checks if the serialized component is missing anything.
+        /// <para>Note that this does not actually add the property to the error list.</para>
         /// </summary>
-        /// <param name="property"></param>
-        /// <returns></returns>
-        public static string CheckError(SerializedProperty property)
+        /// <param name="property">The serialized property with the <see cref="AutoAttribute"/></param>
+        /// <returns>The error, other null.</returns>
+        public static Error? Validate(SerializedProperty property)
         {
+            if (property == null)
+                throw new System.Exception("Property is null");
+
             if (property.objectReferenceValue == null)
-                return "Component not found";
+                return new Error("Component not found", true);
 
             var componentReferenceValue = property.objectReferenceValue as Component;
             if (componentReferenceValue.gameObject != (property.serializedObject.targetObject as Component).gameObject)
-                return "Component is not attached";
+                return new Error("Component not attached to gameObject", false);
 
             if (property.isArray && property.arraySize == 0)
-                return "No children";
+                return new Error("Components not found", true);
 
             return null;
         }
@@ -114,12 +171,12 @@ namespace Lachee.Attributes.Editor
         /// <summary>
         /// Searches the entire scene and applies all attributes in the scene
         /// </summary>
-        public static void ProcessAttributes()
+        public static void CheckAttributes()
         {
             _errors.Clear();
 
             // Scan every MonoBehaviour for Auto Attribute fields
-            var processQueue = new Dictionary<Object, List<PropertyAttributePair>>();
+            var processQueue = new Dictionary<Object, List<AttributeProperty>>();
             var components = Resources.FindObjectsOfTypeAll(typeof(MonoBehaviour)); // Use MonoBehaviour as a slightly more optimised search
 
             foreach (var component in components)
@@ -135,14 +192,14 @@ namespace Lachee.Attributes.Editor
                         if (!addedComponentToProcess)
                         {
                             addedComponentToProcess = true;
-                            processQueue.Add(component, new List<PropertyAttributePair>(fields.Length));
+                            processQueue.Add(component, new List<AttributeProperty>(fields.Length));
                         }
 
                         // While the attribuite doesnt actually support multiple on one field, 
                         // we do this just to future proof. Performance is neglegitable.
                         foreach (var attribute in attributes)
                         {
-                            processQueue[component].Add(new PropertyAttributePair()
+                            processQueue[component].Add(new AttributeProperty()
                             {
                                 propertyPath = field.Name,
                                 attribute = (AutoAttribute)attribute
@@ -163,7 +220,7 @@ namespace Lachee.Attributes.Editor
                 // Iterate over every property in thsi component. 
                 // we will keep track of property pairs and their errors
                 bool hasMadeChanges = false;
-                Dictionary<PropertyAttributePair, string> objectErrors = null;
+                Dictionary<AttributeProperty, Error> errors = null;
 
                 foreach (var propertyPair in kp.Value)
                 {
@@ -172,34 +229,26 @@ namespace Lachee.Attributes.Editor
                         hasMadeChanges = true;
 
                     // Get the error and append it to the list of all errors for thsi game object
-                    string err = CheckError(property);
-                    if (err != null)
+                    if (Validate(property) is Error error)
                     {
-                        if (objectErrors == null)
-                            objectErrors = new Dictionary<PropertyAttributePair, string>(kp.Value.Count);
-
-                        objectErrors.Add(propertyPair, err);
+                        if (errors == null)
+                            errors = new Dictionary<AttributeProperty, Error>(kp.Value.Count);
+                        errors.Add(propertyPair, error);
                     }
                 }
 
                 // Add all the errors
-                if (objectErrors != null)
-                {
-                    _errors.Add(new ObjectError()
-                    {
-                        component = kp.Key,
-                        errors = objectErrors
-                    });
-                }
-
+                if (errors != null)
+                    _errors.Add(new ObjectErrors(kp.Key, errors));
+            
                 // if we modified, update the serialized object
                 if (hasMadeChanges)
                     serializedObject.ApplyModifiedProperties();
             }
 
-            // Finally, tell the editor to repaint
-            if (AutoAttributeErrorWindow.Instance)
-                AutoAttributeErrorWindow.Instance.Repaint();
+            // Tell the window we shoudl repaint if its open
+            if (AutoAttributeWindow.Instance)
+                AutoAttributeWindow.Instance.Repaint();
         }
     }
 }

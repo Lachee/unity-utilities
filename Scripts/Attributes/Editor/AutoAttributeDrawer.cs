@@ -10,60 +10,56 @@ namespace Lachee.Attributes.Editor
     [CustomPropertyDrawer(typeof(AutoAttribute))]
     public class AutoAttributeDrawer : PropertyDrawer
     {
-        const string PREF_ALWAYS_SCAN = "autoattr_scan";
-
-        /// <summary>Should the property be showing</summary>
-        private bool ShouldShow(SerializedProperty property)
-        {
-            var attr = attribute as AutoAttribute;
-            if (!attr.Hidden) return true;
-            return AutoAttributeObserver.CheckError(property) != null;
-        }
+        const float ICON_LABEL_OFFSET = 1.5f;
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             var attr = attribute as AutoAttribute;
 
             // Null, so lets assign it
-            if (EditorPrefs.GetBool(PREF_ALWAYS_SCAN, false))
-            {
-                if (property.objectReferenceValue == null || (property.isArray && property.arraySize == 0))
-                    AutoAttributeObserver.ApplyAttributeToSerializedProperty(property, attr);
-            }
+            if (AutoAttributeEditor.AutoRefreshInspector)
+                AutoAttributeEditor.ApplyAttributeToSerializedProperty(property, attr);
 
-            if (attr.Hidden)
-            {
-                // Hidden but we cannot find one!
-                if (ShouldShow(property))
-                {
-                    string error = label.text + "\n" + AutoAttributeObserver.CheckError(property);                    
-                    EditorGUI.HelpBox(position, error, property.objectReferenceValue == null ? MessageType.Error : MessageType.Warning);
+            var optionalError = AutoAttributeEditor.Validate(property);
 
-                    Rect centerBox = new Rect(position);
-                    centerBox.height = base.GetPropertyHeight(property, label);
-                    centerBox.width -= 5;
-                    centerBox.y += position.height / 2f - centerBox.height / 2f;
-                    EditorGUI.PropertyField(centerBox, property);
-                    GUI.color = Color.white;
-                }
-            }
-            else
+
+
+            if (!attr.Hidden || optionalError.HasValue)
+                PropertyGUI(position, property, label);
+
+            // If we have an error, render the error stuff
+            if (optionalError is AutoAttributeEditor.Error error)
             {
-                // Not hidden, lets just display it
-                GUI.color = Color.gray;
-                label.tooltip = $"[Automatically Fetched] " + label.tooltip;
-                EditorGUI.PropertyField(position, property, label);
-                GUI.color = Color.white;
+                var baseHeight = base.GetPropertyHeight(property, label);
+
+                Rect errorBox = new Rect(position.x + EditorGUIUtility.labelWidth + 1f, position.y + baseHeight + 1, position.width - EditorGUIUtility.labelWidth, position.height - baseHeight - 1);
+                EditorGUI.HelpBox(errorBox, error.message, error.blocks ? MessageType.Error : MessageType.Warning);
             }
 
         }
 
+        private void PropertyGUI(Rect position, SerializedProperty property, GUIContent label)
+        {
+            // Ensure regardless of height we still have a regular sized box
+            position.height = base.GetPropertyHeight(property, label);
+
+            // Not hidden, lets just display it
+            var iconLabel = new GUIContent(AutoAttributeEditor.IconAuto_16);
+            iconLabel.tooltip = "Automatically Linked Component";
+            Rect iconBox = new Rect(position.x - (position.height - 3.5f), position.y + 1.5f, position.height - 3, position.height - 3);
+            EditorGUI.LabelField(iconBox, iconLabel);
+
+            EditorGUI.PropertyField(position, property, label);
+            GUI.color = Color.white;
+        }
+
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            if (!ShouldShow(property))
-                return 0;
+            if (AutoAttributeEditor.Validate(property).HasValue)
+                return base.GetPropertyHeight(property, label) + 20;
 
-            return base.GetPropertyHeight(property, label) + 20;
+            var attr = attribute as AutoAttribute;
+            return attr.Hidden ? 0 : base.GetPropertyHeight(property, label);
         }
     }
 }
