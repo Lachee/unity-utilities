@@ -46,7 +46,7 @@ namespace Lachee.Attributes.Editor
             // Not hidden, lets just display it
             var iconLabel = new GUIContent(AutoAttributeEditor.IconAuto_16);
             iconLabel.tooltip = "Automatically Linked Component";
-            Rect iconBox = new Rect(position.x - (position.height - 3.5f), position.y + 1.5f, position.height - 3, position.height - 3);
+            Rect iconBox = new Rect(position.x + EditorGUIUtility.labelWidth - position.height - 1.5f, position.y + 1.5f, position.height - 3, position.height - 3);
             EditorGUI.LabelField(iconBox, iconLabel);
 
             EditorGUI.PropertyField(position, property, label);

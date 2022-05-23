@@ -81,7 +81,7 @@ namespace Lachee.Attributes.Editor
 
             GUILayout.BeginHorizontal();
             {
-                GUILayout.Space(EditorGUIUtility.labelWidth + 25f);
+                GUILayout.Space(EditorGUIUtility.labelWidth + 5f);
                 EditorGUILayout.BeginVertical();
                 {
                     var originalLabelWidth = EditorGUIUtility.labelWidth;
