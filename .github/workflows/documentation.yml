@@ -18,7 +18,9 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Install DocFX
-        run: choco install -y docfx
+        run: | 
+          choco install -y docfx
+          docfx --version
 
       - name: Use README.md as index.md
         run: cp README.md Documentation/index.md
