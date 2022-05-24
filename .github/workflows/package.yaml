@@ -12,14 +12,12 @@ env:
   package_path: "lachee-utilities.unitypackage"
 
 jobs:
-  build:
+  # Increments the version
+  increment:
+    if: github.repository == 'lachee/unity-utilities'
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: actions/setup-dotnet@v2
-
-      # Increment the version before we do anything
       - name: Increment Version
         run: |
           chmod 774 .github/workflows/increment_version.sh
@@ -32,6 +30,34 @@ jobs:
           git tag v$(cat $1 | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[", \]//g')
           git push
 
+  # Package the assets
+  package:
+    runs-on: ubuntu-latest
+    needs: increment
+    strategy:
+      matrix:
+        feature: 
+          - name: All Utilities ( complete set )
+            package: lachee-utilities-complete.unitypackage
+            assets: [ "**/*.cs"]
+            exclude: [ "Documentation", "tools", ".*" ]
+          - name: Auto Attribute
+            package: lachee-utilities-only-auto-attributes.unitypackage
+            assets: [ "Scripts/Attributes/**/AutoAttribute*.cs"]
+            exclude: [ ]
+          - name: Singletons
+            package: lachee-utilities-only-singletons.unitypackage
+            assets: [ "Scripts/Utilities/Singleton.cs", "Scripts/Utilities/Logger.cs" ]
+            exclude: [ ]
+          - name: End Of Line Converter
+            package: lachee-utilities-only-eol-converter.unitypackage
+            assets: [ "Scripts/Tools/Editor/EOLConversion.cs" ]
+            exclude: [ ]
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v2
+
       # Install the packager
       - name: Install Unity Packager
         run: |
@@ -39,32 +65,37 @@ jobs:
           dotnet publish -c Release -o tools tools/unity-package-exporter/UnityPackageExporter
         
       # Pack the assets
-      - name: Package Project
+      - name: Package ${{matrix.feature.name}}
         run: |
-          echo "Creating package ${{env.package_path}}"
-          dotnet tools/UnityPackageExporter.dll --project ./ --output ${{env.package_path}} --exclude ".*" --exclude "Documentation" --exclude "tools"
+          echo "Creating package ${{matrix.feature.name}} at ${{matrix.feature.package}}"
+          dotnet tools/UnityPackageExporter.dll \
+            --project ./ \
+            --output ${{matrix.feature.package}} \
+            --exclude "${{ join(matrix.feature.exclude, '" --exclude "')}}" \
+            --assets "${{ join(matrix.feature.assets, '" --assets "')}}" \
+            --assets "Scripts/Tools/Editor/HelpContext.cs"
         
       # Upload artifact
       - name: Upload Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
-          name: Unity Package
-          path: ${{env.package_path}}
+          name: ${{matrix.feature.name}}
+          path: ${{matrix.feature.package}}
 
+  # Update the release
   release:
     runs-on: ubuntu-latest
-    needs: build
+    needs: package
     steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
         with:
-          name: Unity Package
-          path: ${{env.package_path}}
+          path: artifacts
+
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: true
           title: "Latest Build"
-          files: |
-            ${{env.package_path}}
+          files: artifacts/**/*.unitypackage
