@@ -161,7 +161,7 @@ namespace Lachee.Attributes.Editor
 
             var componentReferenceValue = property.objectReferenceValue as Component;
             if (componentReferenceValue.gameObject != (property.serializedObject.targetObject as Component).gameObject)
-                return new Error("Component not attached to gameObject", false);
+                return new Error($"Detatched Component found on {componentReferenceValue.gameObject.name}", false);
 
             if (property.isArray && property.arraySize == 0)
                 return new Error("Components not found", true);
