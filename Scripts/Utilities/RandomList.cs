@@ -5,10 +5,19 @@ using UnityEngine;
 namespace Lachee.Utilities
 {
     /// <summary>
+    /// Weighted randomised list of items.
+    /// </summary>
+    /// <seealso cref="RandomList{T}"/>
+    /// <typeparam name="T"></typeparam>
+    [System.Obsolete("Rist has been renamed to RandomList")]
+    public class Rist<T> : RandomList<T> { }
+
+    /// <summary>
     /// A randomised list. It will store a collection of values with specified weights and provide functionallity to select randomly from the list.
     /// </summary>
     /// <typeparam name="T">Type to store as the value.</typeparam>
-    public class Rist<T> : IEnumerable<T>
+    [System.Serializable]
+    public class RandomList<T> : IEnumerable<T>
     {
         private List<T> _list;
         private List<float> _weights;
@@ -20,14 +29,14 @@ namespace Lachee.Utilities
         public int Count { get { return _list.Count; } }
 
         /// <summary>
-        /// The total tally of the weights. Use RecalculateWeights(); to update this value.
+        /// The total tally of the weights.
         /// </summary>
         public float TotalWeight { get { return _weight; } }
 
         /// <summary>
         /// Creates a new Random List
         /// </summary>
-        public Rist()
+        public RandomList()
         {
             _list = new List<T>();
             _weights = new List<float>();
@@ -37,7 +46,7 @@ namespace Lachee.Utilities
         /// Creates a new Random List with a set capacity.
         /// </summary>
         /// <param name="capacity"></param>
-        public Rist(int capacity)
+        public RandomList(int capacity)
         {
             _list = new List<T>(capacity);
             _weights = new List<float>(capacity);
@@ -63,6 +72,70 @@ namespace Lachee.Utilities
             _list.Add(item);
             _weights.Add(weight);
             _weight += weight;
+        }
+
+        /// <summary>
+        /// Removes an item and its weight
+        /// </summary>
+        /// <param name="item">The item to remove</param>
+        public void Remove(T item)
+        {
+            Debug.Assert(_list.Count == _weights.Count);
+
+            var index = _list.IndexOf(item);
+            if (index >= 0)
+            {
+                _list.RemoveAt(index);
+                _weight -= _weights[index];
+                _weights.RemoveAt(index);
+            }
+        }
+
+        /// <summary>
+        /// Updates the weight of a specific item
+        /// </summary>
+        /// <param name="item">The item to update</param>
+        /// <param name="weight">Weight of the item</param>
+        /// <returns>If the item exists and was updated</returns>
+        public bool SetWeight(T item, float weight)
+        {
+            Debug.Assert(_list.Count == _weights.Count);
+            
+            var index = _list.IndexOf(item);
+            if (index < 0) return false;
+
+            _weight -= _weights[index];
+            _weight += weight;
+            _weights[index] = weight;
+            return true;
+        }
+
+        /// <summary>
+        /// Gets the weight of a specific item
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        public float GetWeight(T item)
+        {
+            var index = _list.IndexOf(item);
+            if (index < 0)
+                throw new System.ArgumentOutOfRangeException("item", "The item does not exist within the collection");
+            return _weights[index];
+        }
+
+        /// <summary>
+        /// Tries to get the weight of a specific item
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="weight"></param>
+        /// <returns></returns>
+        public bool TryGetWeight(T item, out float weight)
+        {
+            weight = 0;
+            var index = _list.IndexOf(item);
+            if (index < 0) return false;
+            weight = _weights[index];
+            return true;
         }
 
         /// <summary>
@@ -93,7 +166,7 @@ namespace Lachee.Utilities
         /// <summary>
         /// Recalculates the total weights
         /// </summary>
-        public float RecalculateWeights()
+        protected float RecalculateWeights()
         {
             Debug.Assert(_list.Count == _weights.Count);
 
