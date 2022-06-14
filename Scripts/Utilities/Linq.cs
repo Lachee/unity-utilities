@@ -10,7 +10,7 @@ namespace Lachee.Utilities
     ///<summary>
     /// LINQ for Lachee's. Provides a collection of LINQ and Enumeration related utilities
     ///</summary>
-    public static class Linql
+    public static class Linq
     {
         /// <summary>
         /// Picks a random item from the enumerator by enumerating over a random amount.
