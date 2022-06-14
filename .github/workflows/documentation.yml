@@ -23,10 +23,10 @@ jobs:
           docfx --version
 
       - name: Use README.md as index.md
-        run: cp README.md Documentation/index.md
+        run: cp README.md Documentation~/index.md
 
       - name: Build
-        run: docfx Documentation/docfx.json -t default,templates/darkfx
+        run: docfx Documentation~/docfx.json -t default,templates/darkfx
 
       # Upload the generated documentation
       - name: Upload site artifact
