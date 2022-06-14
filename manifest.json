@@ -204,11 +204,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Utilities.Linql.yml",
+      "source_relative_path": "api/Lachee.Utilities.Linq.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Lachee.Utilities.Linql.html",
-          "hash": "w6HRmR0fRZ25jwHYSTbMc5c1d5n4tZ6E3HEYyDHb7uk="
+          "relative_path": "api/Lachee.Utilities.Linq.html",
+          "hash": "mx3J7fJjlsHQmjA+SwL0VJeKRCqy3WoACmWEN1eQqdk="
         }
       },
       "is_incremental": false,
@@ -316,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.html",
-          "hash": "D27EaUbiDpwRltC/kXwLl0dVhdaBcsg12zPOPLwM0so="
+          "hash": "V9G/gCRBIOugP8IawgKn+zxd+WbCUL8s0/8C+AHY94I="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bn22IAJQQT2lB3NBcJrAvrwUe0EwswdV2SlniVJcNYg="
+          "hash": "73gODL0L9CCaMnqkk9e+V2ryRtGMk9OTdFxpJq120AE="
         }
       },
       "is_incremental": false,

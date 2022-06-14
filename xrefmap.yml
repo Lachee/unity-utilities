@@ -655,126 +655,126 @@ references:
   fullName.vb: Lachee.Utilities.Lazy(Of T).Value
   nameWithType: Lazy<T>.Value
   nameWithType.vb: Lazy(Of T).Value
-- uid: Lachee.Utilities.Linql
-  name: Linql
-  href: api/Lachee.Utilities.Linql.html
-  commentId: T:Lachee.Utilities.Linql
-  fullName: Lachee.Utilities.Linql
-  nameWithType: Linql
-- uid: Lachee.Utilities.Linql.AddRange*
+- uid: Lachee.Utilities.Linq
+  name: Linq
+  href: api/Lachee.Utilities.Linq.html
+  commentId: T:Lachee.Utilities.Linq
+  fullName: Lachee.Utilities.Linq
+  nameWithType: Linq
+- uid: Lachee.Utilities.Linq.AddRange*
   name: AddRange
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AddRange_
-  commentId: Overload:Lachee.Utilities.Linql.AddRange
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_AddRange_
+  commentId: Overload:Lachee.Utilities.Linq.AddRange
   isSpec: "True"
-  fullName: Lachee.Utilities.Linql.AddRange
-  nameWithType: Linql.AddRange
-- uid: Lachee.Utilities.Linql.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})
+  fullName: Lachee.Utilities.Linq.AddRange
+  nameWithType: Linq.AddRange
+- uid: Lachee.Utilities.Linq.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})
   name: AddRange<T>(HashSet<T>, IEnumerable<T>)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AddRange__1_HashSet___0__System_Collections_Generic_IEnumerable___0__
-  commentId: M:Lachee.Utilities.Linql.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_AddRange__1_HashSet___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:Lachee.Utilities.Linq.AddRange``1(HashSet{``0},System.Collections.Generic.IEnumerable{``0})
   name.vb: AddRange(Of T)(HashSet(Of T), IEnumerable(Of T))
-  fullName: Lachee.Utilities.Linql.AddRange<T>(HashSet<T>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Lachee.Utilities.Linql.AddRange(Of T)(HashSet(Of T), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: Linql.AddRange<T>(HashSet<T>, IEnumerable<T>)
-  nameWithType.vb: Linql.AddRange(Of T)(HashSet(Of T), IEnumerable(Of T))
-- uid: Lachee.Utilities.Linql.AsEnumerable*
+  fullName: Lachee.Utilities.Linq.AddRange<T>(HashSet<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Lachee.Utilities.Linq.AddRange(Of T)(HashSet(Of T), System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: Linq.AddRange<T>(HashSet<T>, IEnumerable<T>)
+  nameWithType.vb: Linq.AddRange(Of T)(HashSet(Of T), IEnumerable(Of T))
+- uid: Lachee.Utilities.Linq.AsEnumerable*
   name: AsEnumerable
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AsEnumerable_
-  commentId: Overload:Lachee.Utilities.Linql.AsEnumerable
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_AsEnumerable_
+  commentId: Overload:Lachee.Utilities.Linq.AsEnumerable
   isSpec: "True"
-  fullName: Lachee.Utilities.Linql.AsEnumerable
-  nameWithType: Linql.AsEnumerable
-- uid: Lachee.Utilities.Linql.AsEnumerable``1(ArraySegment{``0})
+  fullName: Lachee.Utilities.Linq.AsEnumerable
+  nameWithType: Linq.AsEnumerable
+- uid: Lachee.Utilities.Linq.AsEnumerable``1(ArraySegment{``0})
   name: AsEnumerable<T>(ArraySegment<T>)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_AsEnumerable__1_ArraySegment___0__
-  commentId: M:Lachee.Utilities.Linql.AsEnumerable``1(ArraySegment{``0})
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_AsEnumerable__1_ArraySegment___0__
+  commentId: M:Lachee.Utilities.Linq.AsEnumerable``1(ArraySegment{``0})
   name.vb: AsEnumerable(Of T)(ArraySegment(Of T))
-  fullName: Lachee.Utilities.Linql.AsEnumerable<T>(ArraySegment<T>)
-  fullName.vb: Lachee.Utilities.Linql.AsEnumerable(Of T)(ArraySegment(Of T))
-  nameWithType: Linql.AsEnumerable<T>(ArraySegment<T>)
-  nameWithType.vb: Linql.AsEnumerable(Of T)(ArraySegment(Of T))
-- uid: Lachee.Utilities.Linql.Cut*
+  fullName: Lachee.Utilities.Linq.AsEnumerable<T>(ArraySegment<T>)
+  fullName.vb: Lachee.Utilities.Linq.AsEnumerable(Of T)(ArraySegment(Of T))
+  nameWithType: Linq.AsEnumerable<T>(ArraySegment<T>)
+  nameWithType.vb: Linq.AsEnumerable(Of T)(ArraySegment(Of T))
+- uid: Lachee.Utilities.Linq.Cut*
   name: Cut
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Cut_
-  commentId: Overload:Lachee.Utilities.Linql.Cut
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Cut_
+  commentId: Overload:Lachee.Utilities.Linq.Cut
   isSpec: "True"
-  fullName: Lachee.Utilities.Linql.Cut
-  nameWithType: Linql.Cut
-- uid: Lachee.Utilities.Linql.Cut``1(``0[],System.Int32,System.Int32)
+  fullName: Lachee.Utilities.Linq.Cut
+  nameWithType: Linq.Cut
+- uid: Lachee.Utilities.Linq.Cut``1(``0[],System.Int32,System.Int32)
   name: Cut<T>(T[], Int32, Int32)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Cut__1___0___System_Int32_System_Int32_
-  commentId: M:Lachee.Utilities.Linql.Cut``1(``0[],System.Int32,System.Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Cut__1___0___System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Linq.Cut``1(``0[],System.Int32,System.Int32)
   name.vb: Cut(Of T)(T(), Int32, Int32)
-  fullName: Lachee.Utilities.Linql.Cut<T>(T[], System.Int32, System.Int32)
-  fullName.vb: Lachee.Utilities.Linql.Cut(Of T)(T(), System.Int32, System.Int32)
-  nameWithType: Linql.Cut<T>(T[], Int32, Int32)
-  nameWithType.vb: Linql.Cut(Of T)(T(), Int32, Int32)
-- uid: Lachee.Utilities.Linql.GetSegment*
+  fullName: Lachee.Utilities.Linq.Cut<T>(T[], System.Int32, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.Cut(Of T)(T(), System.Int32, System.Int32)
+  nameWithType: Linq.Cut<T>(T[], Int32, Int32)
+  nameWithType.vb: Linq.Cut(Of T)(T(), Int32, Int32)
+- uid: Lachee.Utilities.Linq.GetSegment*
   name: GetSegment
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment_
-  commentId: Overload:Lachee.Utilities.Linql.GetSegment
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_GetSegment_
+  commentId: Overload:Lachee.Utilities.Linq.GetSegment
   isSpec: "True"
-  fullName: Lachee.Utilities.Linql.GetSegment
-  nameWithType: Linql.GetSegment
-- uid: Lachee.Utilities.Linql.GetSegment``1(``0[])
+  fullName: Lachee.Utilities.Linq.GetSegment
+  nameWithType: Linq.GetSegment
+- uid: Lachee.Utilities.Linq.GetSegment``1(``0[])
   name: GetSegment<T>(T[])
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment__1___0___
-  commentId: M:Lachee.Utilities.Linql.GetSegment``1(``0[])
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_GetSegment__1___0___
+  commentId: M:Lachee.Utilities.Linq.GetSegment``1(``0[])
   name.vb: GetSegment(Of T)(T())
-  fullName: Lachee.Utilities.Linql.GetSegment<T>(T[])
-  fullName.vb: Lachee.Utilities.Linql.GetSegment(Of T)(T())
-  nameWithType: Linql.GetSegment<T>(T[])
-  nameWithType.vb: Linql.GetSegment(Of T)(T())
-- uid: Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32)
+  fullName: Lachee.Utilities.Linq.GetSegment<T>(T[])
+  fullName.vb: Lachee.Utilities.Linq.GetSegment(Of T)(T())
+  nameWithType: Linq.GetSegment<T>(T[])
+  nameWithType.vb: Linq.GetSegment(Of T)(T())
+- uid: Lachee.Utilities.Linq.GetSegment``1(``0[],System.Int32)
   name: GetSegment<T>(T[], Int32)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment__1___0___System_Int32_
-  commentId: M:Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_GetSegment__1___0___System_Int32_
+  commentId: M:Lachee.Utilities.Linq.GetSegment``1(``0[],System.Int32)
   name.vb: GetSegment(Of T)(T(), Int32)
-  fullName: Lachee.Utilities.Linql.GetSegment<T>(T[], System.Int32)
-  fullName.vb: Lachee.Utilities.Linql.GetSegment(Of T)(T(), System.Int32)
-  nameWithType: Linql.GetSegment<T>(T[], Int32)
-  nameWithType.vb: Linql.GetSegment(Of T)(T(), Int32)
-- uid: Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32,System.Int32)
+  fullName: Lachee.Utilities.Linq.GetSegment<T>(T[], System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.GetSegment(Of T)(T(), System.Int32)
+  nameWithType: Linq.GetSegment<T>(T[], Int32)
+  nameWithType.vb: Linq.GetSegment(Of T)(T(), Int32)
+- uid: Lachee.Utilities.Linq.GetSegment``1(``0[],System.Int32,System.Int32)
   name: GetSegment<T>(T[], Int32, Int32)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_GetSegment__1___0___System_Int32_System_Int32_
-  commentId: M:Lachee.Utilities.Linql.GetSegment``1(``0[],System.Int32,System.Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_GetSegment__1___0___System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Linq.GetSegment``1(``0[],System.Int32,System.Int32)
   name.vb: GetSegment(Of T)(T(), Int32, Int32)
-  fullName: Lachee.Utilities.Linql.GetSegment<T>(T[], System.Int32, System.Int32)
-  fullName.vb: Lachee.Utilities.Linql.GetSegment(Of T)(T(), System.Int32, System.Int32)
-  nameWithType: Linql.GetSegment<T>(T[], Int32, Int32)
-  nameWithType.vb: Linql.GetSegment(Of T)(T(), Int32, Int32)
-- uid: Lachee.Utilities.Linql.Random*
+  fullName: Lachee.Utilities.Linq.GetSegment<T>(T[], System.Int32, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.GetSegment(Of T)(T(), System.Int32, System.Int32)
+  nameWithType: Linq.GetSegment<T>(T[], Int32, Int32)
+  nameWithType.vb: Linq.GetSegment(Of T)(T(), Int32, Int32)
+- uid: Lachee.Utilities.Linq.Random*
   name: Random
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Random_
-  commentId: Overload:Lachee.Utilities.Linql.Random
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Random_
+  commentId: Overload:Lachee.Utilities.Linq.Random
   isSpec: "True"
-  fullName: Lachee.Utilities.Linql.Random
-  nameWithType: Linql.Random
-- uid: Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  fullName: Lachee.Utilities.Linq.Random
+  nameWithType: Linq.Random
+- uid: Lachee.Utilities.Linq.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   name: Random<TSource>(IEnumerable<TSource>, Int32)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_Random__1_System_Collections_Generic_IEnumerable___0__System_Int32_
-  commentId: M:Lachee.Utilities.Linql.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Random__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  commentId: M:Lachee.Utilities.Linq.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   name.vb: Random(Of TSource)(IEnumerable(Of TSource), Int32)
-  fullName: Lachee.Utilities.Linql.Random<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Int32)
-  fullName.vb: Lachee.Utilities.Linql.Random(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Int32)
-  nameWithType: Linql.Random<TSource>(IEnumerable<TSource>, Int32)
-  nameWithType.vb: Linql.Random(Of TSource)(IEnumerable(Of TSource), Int32)
-- uid: Lachee.Utilities.Linql.ToArray*
+  fullName: Lachee.Utilities.Linq.Random<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.Random(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Int32)
+  nameWithType: Linq.Random<TSource>(IEnumerable<TSource>, Int32)
+  nameWithType.vb: Linq.Random(Of TSource)(IEnumerable(Of TSource), Int32)
+- uid: Lachee.Utilities.Linq.ToArray*
   name: ToArray
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_ToArray_
-  commentId: Overload:Lachee.Utilities.Linql.ToArray
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_ToArray_
+  commentId: Overload:Lachee.Utilities.Linq.ToArray
   isSpec: "True"
-  fullName: Lachee.Utilities.Linql.ToArray
-  nameWithType: Linql.ToArray
-- uid: Lachee.Utilities.Linql.ToArray``1(ArraySegment{``0})
+  fullName: Lachee.Utilities.Linq.ToArray
+  nameWithType: Linq.ToArray
+- uid: Lachee.Utilities.Linq.ToArray``1(ArraySegment{``0})
   name: ToArray<T>(ArraySegment<T>)
-  href: api/Lachee.Utilities.Linql.html#Lachee_Utilities_Linql_ToArray__1_ArraySegment___0__
-  commentId: M:Lachee.Utilities.Linql.ToArray``1(ArraySegment{``0})
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_ToArray__1_ArraySegment___0__
+  commentId: M:Lachee.Utilities.Linq.ToArray``1(ArraySegment{``0})
   name.vb: ToArray(Of T)(ArraySegment(Of T))
-  fullName: Lachee.Utilities.Linql.ToArray<T>(ArraySegment<T>)
-  fullName.vb: Lachee.Utilities.Linql.ToArray(Of T)(ArraySegment(Of T))
-  nameWithType: Linql.ToArray<T>(ArraySegment<T>)
-  nameWithType.vb: Linql.ToArray(Of T)(ArraySegment(Of T))
+  fullName: Lachee.Utilities.Linq.ToArray<T>(ArraySegment<T>)
+  fullName.vb: Lachee.Utilities.Linq.ToArray(Of T)(ArraySegment(Of T))
+  nameWithType: Linq.ToArray<T>(ArraySegment<T>)
+  nameWithType.vb: Linq.ToArray(Of T)(ArraySegment(Of T))
 - uid: Lachee.Utilities.Logger
   name: Logger
   href: api/Lachee.Utilities.Logger.html
