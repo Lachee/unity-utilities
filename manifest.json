@@ -10,7 +10,7 @@
     "changefreq": "yearly"
   },
   "homepages": [],
-  "source_base_path": "D:/a/unity-utilities/unity-utilities/Documentation",
+  "source_base_path": "D:/a/unity-utilities/unity-utilities/Documentation~",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -340,7 +340,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "xrdOnrfXXkU/yXgRqgDZz6TxLbH6l2vyjGAWDAj5MUo="
+          "hash": "lXsKL9QXeMrtH1jYAD1lcdBcVTpihjyLRBOvejofjQM="
         }
       },
       "is_incremental": false,
