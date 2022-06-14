@@ -264,6 +264,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.RandomList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.RandomList-1.html",
+          "hash": "8iNJyrbhsSahSJdbtkJFSVp6+++LZYiO1z1fuJt2zbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Utilities.RectTransformExtension.yml",
       "output": {
         ".html": {
@@ -280,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Rist-1.html",
-          "hash": "LkUX8gx5wacpaWWGRvICBXzaks5moLok5jk3BdENbN0="
+          "hash": "jK5xC621soSEsaqYkCMqnUPxOsCiEYy7zaSgKIiyAFM="
         }
       },
       "is_incremental": false,
@@ -316,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.html",
-          "hash": "V9G/gCRBIOugP8IawgKn+zxd+WbCUL8s0/8C+AHY94I="
+          "hash": "+XCjxVZHkaaKN/nQTGuN3+JhIZzVEsJCU0zUHII5nz4="
         }
       },
       "is_incremental": false,
@@ -328,7 +340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "73gODL0L9CCaMnqkk9e+V2ryRtGMk9OTdFxpJq120AE="
+          "hash": "JsiWEVABaeQ50l/tRXlUhdIlYA2d6Y+D4Rxwwz1zIFs="
         }
       },
       "is_incremental": false,
@@ -394,7 +406,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 25,
+          "total_file_count": 26,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

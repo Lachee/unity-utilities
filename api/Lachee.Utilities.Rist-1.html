@@ -82,13 +82,14 @@
   
   <h1 id="Lachee_Utilities_Rist_1" data-uid="Lachee.Utilities.Rist`1" class="text-break">Class Rist&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>A randomised list. It will store a collection of values with specified weights and provide functionallity to select randomly from the list.</p>
+  <div class="markdown level0 summary"><p>Weighted randomised list of items.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">Rist&lt;T&gt;</span></div>
+    <div class="level1"><a class="xref" href="Lachee.Utilities.RandomList-1.html">RandomList</a>&lt;T&gt;</div>
+    <div class="level2"><span class="xref">Rist&lt;T&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -97,6 +98,39 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Count">RandomList&lt;T&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_TotalWeight">RandomList&lt;T&gt;.TotalWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Clear">RandomList&lt;T&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Add__0_System_Single_">RandomList&lt;T&gt;.Add(T, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Remove__0_">RandomList&lt;T&gt;.Remove(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_SetWeight__0_System_Single_">RandomList&lt;T&gt;.SetWeight(T, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_GetWeight__0_">RandomList&lt;T&gt;.GetWeight(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_TryGetWeight__0_System_Single__">RandomList&lt;T&gt;.TryGetWeight(T, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Randomise_System_Single__0__">RandomList&lt;T&gt;.Randomise(Single, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_RecalculateWeights">RandomList&lt;T&gt;.RecalculateWeights()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_GetEnumerator">RandomList&lt;T&gt;.GetEnumerator()</a>
+    </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
     </div>
@@ -123,7 +157,8 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Lachee_Utilities_Rist_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Rist&lt;T&gt; : IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Rist has been renamed to RandomList&quot;)]
+public class Rist&lt;T&gt; : RandomList&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,253 +171,6 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>Type to store as the value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Lachee_Utilities_Rist_1__ctor_" data-uid="Lachee.Utilities.Rist`1.#ctor*"></a>
-  <h4 id="Lachee_Utilities_Rist_1__ctor" data-uid="Lachee.Utilities.Rist`1.#ctor">Rist()</h4>
-  <div class="markdown level1 summary"><p>Creates a new Random List</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rist()</code></pre>
-  </div>
-  
-  
-  <a id="Lachee_Utilities_Rist_1__ctor_" data-uid="Lachee.Utilities.Rist`1.#ctor*"></a>
-  <h4 id="Lachee_Utilities_Rist_1__ctor_System_Int32_" data-uid="Lachee.Utilities.Rist`1.#ctor(System.Int32)">Rist(Int32)</h4>
-  <div class="markdown level1 summary"><p>Creates a new Random List with a set capacity.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rist(int capacity)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">capacity</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_Count_" data-uid="Lachee.Utilities.Rist`1.Count*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_Count" data-uid="Lachee.Utilities.Rist`1.Count">Count</h4>
-  <div class="markdown level1 summary"><p>Number of elements currently in the table.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_TotalWeight_" data-uid="Lachee.Utilities.Rist`1.TotalWeight*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_TotalWeight" data-uid="Lachee.Utilities.Rist`1.TotalWeight">TotalWeight</h4>
-  <div class="markdown level1 summary"><p>The total tally of the weights. Use RecalculateWeights(); to update this value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float TotalWeight { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_Add_" data-uid="Lachee.Utilities.Rist`1.Add*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_Add__0_System_Single_" data-uid="Lachee.Utilities.Rist`1.Add(`0,System.Single)">Add(T, Single)</h4>
-  <div class="markdown level1 summary"><p>Adds a new item with a specified weight to the table and increments the total weight.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(T item, float weight = 1F)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">item</span></td>
-        <td><p>Item to add</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">weight</span></td>
-        <td><p>Weight this item has</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_Clear_" data-uid="Lachee.Utilities.Rist`1.Clear*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_Clear" data-uid="Lachee.Utilities.Rist`1.Clear">Clear()</h4>
-  <div class="markdown level1 summary"><p>Clears the random table. </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
-  </div>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_GetEnumerator_" data-uid="Lachee.Utilities.Rist`1.GetEnumerator*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_GetEnumerator" data-uid="Lachee.Utilities.Rist`1.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Gets a enumerator of items in the Rist. Does not apply the random function too it.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_Randomise_" data-uid="Lachee.Utilities.Rist`1.Randomise*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_Randomise_System_Single__0__" data-uid="Lachee.Utilities.Rist`1.Randomise(System.Single,`0@)">Randomise(Single, out T)</h4>
-  <div class="markdown level1 summary"><p>Attempts to pick a random element from the table based of weighting.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Randomise(float random, out T result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">random</span></td>
-        <td><p>A random value between 0 and 1. This is done so System.Random or Unity.Random can be used.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>The random element that was fetched.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>false if we are unable to find a random element.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Lachee_Utilities_Rist_1_RecalculateWeights_" data-uid="Lachee.Utilities.Rist`1.RecalculateWeights*"></a>
-  <h4 id="Lachee_Utilities_Rist_1_RecalculateWeights" data-uid="Lachee.Utilities.Rist`1.RecalculateWeights">RecalculateWeights()</h4>
-  <div class="markdown level1 summary"><p>Recalculates the total weights</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float RecalculateWeights()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -393,6 +181,10 @@
   </div>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Lachee.Utilities.RandomList-1.html">RandomList</a>&lt;T&gt;</div>
   </div>
 </article>
           </div>

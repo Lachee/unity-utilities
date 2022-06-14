@@ -1506,6 +1506,229 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.ParticleSystemExtension.SetMaxParticles
   nameWithType: ParticleSystemExtension.SetMaxParticles
+- uid: Lachee.Utilities.RandomList`1
+  name: RandomList<T>
+  href: api/Lachee.Utilities.RandomList-1.html
+  commentId: T:Lachee.Utilities.RandomList`1
+  name.vb: RandomList(Of T)
+  fullName: Lachee.Utilities.RandomList<T>
+  fullName.vb: Lachee.Utilities.RandomList(Of T)
+  nameWithType: RandomList<T>
+  nameWithType.vb: RandomList(Of T)
+- uid: Lachee.Utilities.RandomList`1.#ctor
+  name: RandomList()
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1__ctor
+  commentId: M:Lachee.Utilities.RandomList`1.#ctor
+  fullName: Lachee.Utilities.RandomList<T>.RandomList()
+  fullName.vb: Lachee.Utilities.RandomList(Of T).RandomList()
+  nameWithType: RandomList<T>.RandomList()
+  nameWithType.vb: RandomList(Of T).RandomList()
+- uid: Lachee.Utilities.RandomList`1.#ctor(System.Int32)
+  name: RandomList(Int32)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1__ctor_System_Int32_
+  commentId: M:Lachee.Utilities.RandomList`1.#ctor(System.Int32)
+  fullName: Lachee.Utilities.RandomList<T>.RandomList(System.Int32)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).RandomList(System.Int32)
+  nameWithType: RandomList<T>.RandomList(Int32)
+  nameWithType.vb: RandomList(Of T).RandomList(Int32)
+- uid: Lachee.Utilities.RandomList`1.#ctor*
+  name: RandomList
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1__ctor_
+  commentId: Overload:Lachee.Utilities.RandomList`1.#ctor
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.RandomList
+  fullName.vb: Lachee.Utilities.RandomList(Of T).RandomList
+  nameWithType: RandomList<T>.RandomList
+  nameWithType.vb: RandomList(Of T).RandomList
+- uid: Lachee.Utilities.RandomList`1.Add(`0,System.Single)
+  name: Add(T, Single)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Add__0_System_Single_
+  commentId: M:Lachee.Utilities.RandomList`1.Add(`0,System.Single)
+  fullName: Lachee.Utilities.RandomList<T>.Add(T, System.Single)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Add(T, System.Single)
+  nameWithType: RandomList<T>.Add(T, Single)
+  nameWithType.vb: RandomList(Of T).Add(T, Single)
+- uid: Lachee.Utilities.RandomList`1.Add*
+  name: Add
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Add_
+  commentId: Overload:Lachee.Utilities.RandomList`1.Add
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.Add
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Add
+  nameWithType: RandomList<T>.Add
+  nameWithType.vb: RandomList(Of T).Add
+- uid: Lachee.Utilities.RandomList`1.Clear
+  name: Clear()
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Clear
+  commentId: M:Lachee.Utilities.RandomList`1.Clear
+  fullName: Lachee.Utilities.RandomList<T>.Clear()
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Clear()
+  nameWithType: RandomList<T>.Clear()
+  nameWithType.vb: RandomList(Of T).Clear()
+- uid: Lachee.Utilities.RandomList`1.Clear*
+  name: Clear
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Clear_
+  commentId: Overload:Lachee.Utilities.RandomList`1.Clear
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.Clear
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Clear
+  nameWithType: RandomList<T>.Clear
+  nameWithType.vb: RandomList(Of T).Clear
+- uid: Lachee.Utilities.RandomList`1.Count
+  name: Count
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Count
+  commentId: P:Lachee.Utilities.RandomList`1.Count
+  fullName: Lachee.Utilities.RandomList<T>.Count
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Count
+  nameWithType: RandomList<T>.Count
+  nameWithType.vb: RandomList(Of T).Count
+- uid: Lachee.Utilities.RandomList`1.Count*
+  name: Count
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Count_
+  commentId: Overload:Lachee.Utilities.RandomList`1.Count
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.Count
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Count
+  nameWithType: RandomList<T>.Count
+  nameWithType.vb: RandomList(Of T).Count
+- uid: Lachee.Utilities.RandomList`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_GetEnumerator
+  commentId: M:Lachee.Utilities.RandomList`1.GetEnumerator
+  fullName: Lachee.Utilities.RandomList<T>.GetEnumerator()
+  fullName.vb: Lachee.Utilities.RandomList(Of T).GetEnumerator()
+  nameWithType: RandomList<T>.GetEnumerator()
+  nameWithType.vb: RandomList(Of T).GetEnumerator()
+- uid: Lachee.Utilities.RandomList`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_GetEnumerator_
+  commentId: Overload:Lachee.Utilities.RandomList`1.GetEnumerator
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.GetEnumerator
+  fullName.vb: Lachee.Utilities.RandomList(Of T).GetEnumerator
+  nameWithType: RandomList<T>.GetEnumerator
+  nameWithType.vb: RandomList(Of T).GetEnumerator
+- uid: Lachee.Utilities.RandomList`1.GetWeight(`0)
+  name: GetWeight(T)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_GetWeight__0_
+  commentId: M:Lachee.Utilities.RandomList`1.GetWeight(`0)
+  fullName: Lachee.Utilities.RandomList<T>.GetWeight(T)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).GetWeight(T)
+  nameWithType: RandomList<T>.GetWeight(T)
+  nameWithType.vb: RandomList(Of T).GetWeight(T)
+- uid: Lachee.Utilities.RandomList`1.GetWeight*
+  name: GetWeight
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_GetWeight_
+  commentId: Overload:Lachee.Utilities.RandomList`1.GetWeight
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.GetWeight
+  fullName.vb: Lachee.Utilities.RandomList(Of T).GetWeight
+  nameWithType: RandomList<T>.GetWeight
+  nameWithType.vb: RandomList(Of T).GetWeight
+- uid: Lachee.Utilities.RandomList`1.Randomise(System.Single,`0@)
+  name: Randomise(Single, out T)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Randomise_System_Single__0__
+  commentId: M:Lachee.Utilities.RandomList`1.Randomise(System.Single,`0@)
+  name.vb: Randomise(Single, ByRef T)
+  fullName: Lachee.Utilities.RandomList<T>.Randomise(System.Single, out T)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Randomise(System.Single, ByRef T)
+  nameWithType: RandomList<T>.Randomise(Single, out T)
+  nameWithType.vb: RandomList(Of T).Randomise(Single, ByRef T)
+- uid: Lachee.Utilities.RandomList`1.Randomise*
+  name: Randomise
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Randomise_
+  commentId: Overload:Lachee.Utilities.RandomList`1.Randomise
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.Randomise
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Randomise
+  nameWithType: RandomList<T>.Randomise
+  nameWithType.vb: RandomList(Of T).Randomise
+- uid: Lachee.Utilities.RandomList`1.RecalculateWeights
+  name: RecalculateWeights()
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_RecalculateWeights
+  commentId: M:Lachee.Utilities.RandomList`1.RecalculateWeights
+  fullName: Lachee.Utilities.RandomList<T>.RecalculateWeights()
+  fullName.vb: Lachee.Utilities.RandomList(Of T).RecalculateWeights()
+  nameWithType: RandomList<T>.RecalculateWeights()
+  nameWithType.vb: RandomList(Of T).RecalculateWeights()
+- uid: Lachee.Utilities.RandomList`1.RecalculateWeights*
+  name: RecalculateWeights
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_RecalculateWeights_
+  commentId: Overload:Lachee.Utilities.RandomList`1.RecalculateWeights
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.RecalculateWeights
+  fullName.vb: Lachee.Utilities.RandomList(Of T).RecalculateWeights
+  nameWithType: RandomList<T>.RecalculateWeights
+  nameWithType.vb: RandomList(Of T).RecalculateWeights
+- uid: Lachee.Utilities.RandomList`1.Remove(`0)
+  name: Remove(T)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Remove__0_
+  commentId: M:Lachee.Utilities.RandomList`1.Remove(`0)
+  fullName: Lachee.Utilities.RandomList<T>.Remove(T)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Remove(T)
+  nameWithType: RandomList<T>.Remove(T)
+  nameWithType.vb: RandomList(Of T).Remove(T)
+- uid: Lachee.Utilities.RandomList`1.Remove*
+  name: Remove
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Remove_
+  commentId: Overload:Lachee.Utilities.RandomList`1.Remove
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.Remove
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Remove
+  nameWithType: RandomList<T>.Remove
+  nameWithType.vb: RandomList(Of T).Remove
+- uid: Lachee.Utilities.RandomList`1.SetWeight(`0,System.Single)
+  name: SetWeight(T, Single)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_SetWeight__0_System_Single_
+  commentId: M:Lachee.Utilities.RandomList`1.SetWeight(`0,System.Single)
+  fullName: Lachee.Utilities.RandomList<T>.SetWeight(T, System.Single)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).SetWeight(T, System.Single)
+  nameWithType: RandomList<T>.SetWeight(T, Single)
+  nameWithType.vb: RandomList(Of T).SetWeight(T, Single)
+- uid: Lachee.Utilities.RandomList`1.SetWeight*
+  name: SetWeight
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_SetWeight_
+  commentId: Overload:Lachee.Utilities.RandomList`1.SetWeight
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.SetWeight
+  fullName.vb: Lachee.Utilities.RandomList(Of T).SetWeight
+  nameWithType: RandomList<T>.SetWeight
+  nameWithType.vb: RandomList(Of T).SetWeight
+- uid: Lachee.Utilities.RandomList`1.TotalWeight
+  name: TotalWeight
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_TotalWeight
+  commentId: P:Lachee.Utilities.RandomList`1.TotalWeight
+  fullName: Lachee.Utilities.RandomList<T>.TotalWeight
+  fullName.vb: Lachee.Utilities.RandomList(Of T).TotalWeight
+  nameWithType: RandomList<T>.TotalWeight
+  nameWithType.vb: RandomList(Of T).TotalWeight
+- uid: Lachee.Utilities.RandomList`1.TotalWeight*
+  name: TotalWeight
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_TotalWeight_
+  commentId: Overload:Lachee.Utilities.RandomList`1.TotalWeight
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.TotalWeight
+  fullName.vb: Lachee.Utilities.RandomList(Of T).TotalWeight
+  nameWithType: RandomList<T>.TotalWeight
+  nameWithType.vb: RandomList(Of T).TotalWeight
+- uid: Lachee.Utilities.RandomList`1.TryGetWeight(`0,System.Single@)
+  name: TryGetWeight(T, out Single)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_TryGetWeight__0_System_Single__
+  commentId: M:Lachee.Utilities.RandomList`1.TryGetWeight(`0,System.Single@)
+  name.vb: TryGetWeight(T, ByRef Single)
+  fullName: Lachee.Utilities.RandomList<T>.TryGetWeight(T, out System.Single)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).TryGetWeight(T, ByRef System.Single)
+  nameWithType: RandomList<T>.TryGetWeight(T, out Single)
+  nameWithType.vb: RandomList(Of T).TryGetWeight(T, ByRef Single)
+- uid: Lachee.Utilities.RandomList`1.TryGetWeight*
+  name: TryGetWeight
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_TryGetWeight_
+  commentId: Overload:Lachee.Utilities.RandomList`1.TryGetWeight
+  isSpec: "True"
+  fullName: Lachee.Utilities.RandomList<T>.TryGetWeight
+  fullName.vb: Lachee.Utilities.RandomList(Of T).TryGetWeight
+  nameWithType: RandomList<T>.TryGetWeight
+  nameWithType.vb: RandomList(Of T).TryGetWeight
 - uid: Lachee.Utilities.RectTransformExtension
   name: RectTransformExtension
   href: api/Lachee.Utilities.RectTransformExtension.html
@@ -1534,151 +1757,6 @@ references:
   fullName.vb: Lachee.Utilities.Rist(Of T)
   nameWithType: Rist<T>
   nameWithType.vb: Rist(Of T)
-- uid: Lachee.Utilities.Rist`1.#ctor
-  name: Rist()
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1__ctor
-  commentId: M:Lachee.Utilities.Rist`1.#ctor
-  fullName: Lachee.Utilities.Rist<T>.Rist()
-  fullName.vb: Lachee.Utilities.Rist(Of T).Rist()
-  nameWithType: Rist<T>.Rist()
-  nameWithType.vb: Rist(Of T).Rist()
-- uid: Lachee.Utilities.Rist`1.#ctor(System.Int32)
-  name: Rist(Int32)
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1__ctor_System_Int32_
-  commentId: M:Lachee.Utilities.Rist`1.#ctor(System.Int32)
-  fullName: Lachee.Utilities.Rist<T>.Rist(System.Int32)
-  fullName.vb: Lachee.Utilities.Rist(Of T).Rist(System.Int32)
-  nameWithType: Rist<T>.Rist(Int32)
-  nameWithType.vb: Rist(Of T).Rist(Int32)
-- uid: Lachee.Utilities.Rist`1.#ctor*
-  name: Rist
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1__ctor_
-  commentId: Overload:Lachee.Utilities.Rist`1.#ctor
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.Rist
-  fullName.vb: Lachee.Utilities.Rist(Of T).Rist
-  nameWithType: Rist<T>.Rist
-  nameWithType.vb: Rist(Of T).Rist
-- uid: Lachee.Utilities.Rist`1.Add(`0,System.Single)
-  name: Add(T, Single)
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Add__0_System_Single_
-  commentId: M:Lachee.Utilities.Rist`1.Add(`0,System.Single)
-  fullName: Lachee.Utilities.Rist<T>.Add(T, System.Single)
-  fullName.vb: Lachee.Utilities.Rist(Of T).Add(T, System.Single)
-  nameWithType: Rist<T>.Add(T, Single)
-  nameWithType.vb: Rist(Of T).Add(T, Single)
-- uid: Lachee.Utilities.Rist`1.Add*
-  name: Add
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Add_
-  commentId: Overload:Lachee.Utilities.Rist`1.Add
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.Add
-  fullName.vb: Lachee.Utilities.Rist(Of T).Add
-  nameWithType: Rist<T>.Add
-  nameWithType.vb: Rist(Of T).Add
-- uid: Lachee.Utilities.Rist`1.Clear
-  name: Clear()
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Clear
-  commentId: M:Lachee.Utilities.Rist`1.Clear
-  fullName: Lachee.Utilities.Rist<T>.Clear()
-  fullName.vb: Lachee.Utilities.Rist(Of T).Clear()
-  nameWithType: Rist<T>.Clear()
-  nameWithType.vb: Rist(Of T).Clear()
-- uid: Lachee.Utilities.Rist`1.Clear*
-  name: Clear
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Clear_
-  commentId: Overload:Lachee.Utilities.Rist`1.Clear
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.Clear
-  fullName.vb: Lachee.Utilities.Rist(Of T).Clear
-  nameWithType: Rist<T>.Clear
-  nameWithType.vb: Rist(Of T).Clear
-- uid: Lachee.Utilities.Rist`1.Count
-  name: Count
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Count
-  commentId: P:Lachee.Utilities.Rist`1.Count
-  fullName: Lachee.Utilities.Rist<T>.Count
-  fullName.vb: Lachee.Utilities.Rist(Of T).Count
-  nameWithType: Rist<T>.Count
-  nameWithType.vb: Rist(Of T).Count
-- uid: Lachee.Utilities.Rist`1.Count*
-  name: Count
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Count_
-  commentId: Overload:Lachee.Utilities.Rist`1.Count
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.Count
-  fullName.vb: Lachee.Utilities.Rist(Of T).Count
-  nameWithType: Rist<T>.Count
-  nameWithType.vb: Rist(Of T).Count
-- uid: Lachee.Utilities.Rist`1.GetEnumerator
-  name: GetEnumerator()
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_GetEnumerator
-  commentId: M:Lachee.Utilities.Rist`1.GetEnumerator
-  fullName: Lachee.Utilities.Rist<T>.GetEnumerator()
-  fullName.vb: Lachee.Utilities.Rist(Of T).GetEnumerator()
-  nameWithType: Rist<T>.GetEnumerator()
-  nameWithType.vb: Rist(Of T).GetEnumerator()
-- uid: Lachee.Utilities.Rist`1.GetEnumerator*
-  name: GetEnumerator
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_GetEnumerator_
-  commentId: Overload:Lachee.Utilities.Rist`1.GetEnumerator
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.GetEnumerator
-  fullName.vb: Lachee.Utilities.Rist(Of T).GetEnumerator
-  nameWithType: Rist<T>.GetEnumerator
-  nameWithType.vb: Rist(Of T).GetEnumerator
-- uid: Lachee.Utilities.Rist`1.Randomise(System.Single,`0@)
-  name: Randomise(Single, out T)
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Randomise_System_Single__0__
-  commentId: M:Lachee.Utilities.Rist`1.Randomise(System.Single,`0@)
-  name.vb: Randomise(Single, ByRef T)
-  fullName: Lachee.Utilities.Rist<T>.Randomise(System.Single, out T)
-  fullName.vb: Lachee.Utilities.Rist(Of T).Randomise(System.Single, ByRef T)
-  nameWithType: Rist<T>.Randomise(Single, out T)
-  nameWithType.vb: Rist(Of T).Randomise(Single, ByRef T)
-- uid: Lachee.Utilities.Rist`1.Randomise*
-  name: Randomise
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_Randomise_
-  commentId: Overload:Lachee.Utilities.Rist`1.Randomise
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.Randomise
-  fullName.vb: Lachee.Utilities.Rist(Of T).Randomise
-  nameWithType: Rist<T>.Randomise
-  nameWithType.vb: Rist(Of T).Randomise
-- uid: Lachee.Utilities.Rist`1.RecalculateWeights
-  name: RecalculateWeights()
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_RecalculateWeights
-  commentId: M:Lachee.Utilities.Rist`1.RecalculateWeights
-  fullName: Lachee.Utilities.Rist<T>.RecalculateWeights()
-  fullName.vb: Lachee.Utilities.Rist(Of T).RecalculateWeights()
-  nameWithType: Rist<T>.RecalculateWeights()
-  nameWithType.vb: Rist(Of T).RecalculateWeights()
-- uid: Lachee.Utilities.Rist`1.RecalculateWeights*
-  name: RecalculateWeights
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_RecalculateWeights_
-  commentId: Overload:Lachee.Utilities.Rist`1.RecalculateWeights
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.RecalculateWeights
-  fullName.vb: Lachee.Utilities.Rist(Of T).RecalculateWeights
-  nameWithType: Rist<T>.RecalculateWeights
-  nameWithType.vb: Rist(Of T).RecalculateWeights
-- uid: Lachee.Utilities.Rist`1.TotalWeight
-  name: TotalWeight
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_TotalWeight
-  commentId: P:Lachee.Utilities.Rist`1.TotalWeight
-  fullName: Lachee.Utilities.Rist<T>.TotalWeight
-  fullName.vb: Lachee.Utilities.Rist(Of T).TotalWeight
-  nameWithType: Rist<T>.TotalWeight
-  nameWithType.vb: Rist(Of T).TotalWeight
-- uid: Lachee.Utilities.Rist`1.TotalWeight*
-  name: TotalWeight
-  href: api/Lachee.Utilities.Rist-1.html#Lachee_Utilities_Rist_1_TotalWeight_
-  commentId: Overload:Lachee.Utilities.Rist`1.TotalWeight
-  isSpec: "True"
-  fullName: Lachee.Utilities.Rist<T>.TotalWeight
-  fullName.vb: Lachee.Utilities.Rist(Of T).TotalWeight
-  nameWithType: Rist<T>.TotalWeight
-  nameWithType.vb: Rist(Of T).TotalWeight
 - uid: Lachee.Utilities.Singleton`1
   name: Singleton<T>
   href: api/Lachee.Utilities.Singleton-1.html
