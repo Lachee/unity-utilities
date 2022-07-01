@@ -23,7 +23,7 @@ namespace Lachee.Utilities
     /// }
     /// </example>
     /// <typeparam name="T"></typeparam>
-    public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+    public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         internal static T _instance;
         private static bool _isquitting = false;
