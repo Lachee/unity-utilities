@@ -53,6 +53,10 @@ jobs:
             package: lachee-utilities-only-eol-converter.unitypackage
             assets: [ "Scripts/Tools/Editor/EOLConversion.cs" ]
             exclude: [ ]
+          - name: Binary Formatter Surrogate
+            package: lachee-utilties-only-bf-surrogate.unitypackage
+            assets: [ "Scripts/Utilities/Serialization/**/*.cs" ]
+            exclude: [ ]
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
