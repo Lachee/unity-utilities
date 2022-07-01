@@ -29,3 +29,11 @@ There are 3 methods you can use to importing this package:
 3. You can add the package to unity via Unity Package Manager, under the "add git package"
 
 
+# TODO
+List of things I wish to implement:
+
+  - More Surrogates for Binary Formatter
+  - My PlayerPrefs from Cross-Platform as it supports Serialization / Deserialization
+  - Fix to my Automatic Namespacer with better support for rules
+    - I should rewrite this
+  - Configuration panel for stuff? Probably not required
