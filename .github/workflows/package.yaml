@@ -73,8 +73,8 @@ jobs:
         run: |
           echo "Creating package ${{matrix.feature.name}} at ${{matrix.feature.package}}"
           dotnet tools/UnityPackageExporter.dll \
-            --project ./ \
-            --output ${{matrix.feature.package}} \
+            ./ \
+            ${{matrix.feature.package}} \
             --exclude "${{ join(matrix.feature.exclude, '" --exclude "')}}" \
             --assets "${{ join(matrix.feature.assets, '" --assets "')}}" \
             --assets "Scripts/Tools/Editor/HelpContext.cs"
