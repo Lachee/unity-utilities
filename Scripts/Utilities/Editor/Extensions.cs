@@ -1,4 +1,5 @@
 ﻿#if UNITY_EDITOR
+using System.Reflection;
 using UnityEditor;
 
 namespace Lachee.Utilities.Editor
@@ -12,8 +13,10 @@ namespace Lachee.Utilities.Editor
         /// <returns></returns>
         public static System.Type GetSerializedType(this SerializedProperty property)
         {
+            BindingFlags flag = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField;
+
             System.Type parentType = property.serializedObject.targetObject.GetType();
-            System.Reflection.FieldInfo fi = parentType.GetField(property.propertyPath);
+            FieldInfo fi = parentType.GetField(property.propertyPath, flag);
             return fi.FieldType;
         }
     }
