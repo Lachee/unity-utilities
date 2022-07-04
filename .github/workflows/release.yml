@@ -80,7 +80,7 @@ jobs:
   # Update the release
   release:
     runs-on: ubuntu-latest
-    needs: [ package, tag ]
+    needs: [ build, tag ]
     if: ${{ startsWith(needs.tag.outputs.tag, 'v') }}
     steps:
       - uses: actions/checkout@v3
