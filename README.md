@@ -23,6 +23,9 @@ Since this is just a folder of scripts, you can use it how you need it. Check ou
 [https://lachee.github.io/unity-utilities/](https://lachee.github.io/unity-utilities/) 
 
 # Installation
+
+[![latest](https://github.com/Lachee/unity-utilities/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/Lachee/unity-utilities/actions/workflows/release.yml)
+
 There are 3 methods you can use to importing this package:
 1. You can download this as a zip and import it directly into unity
 2. You can download the `.unitypackage` artifacts in the [latest build pre-release](https://github.com/Lachee/unity-utilities/releases/tag/latest)
