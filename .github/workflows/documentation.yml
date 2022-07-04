@@ -1,4 +1,4 @@
-name: Generate Documentation
+name: Create Documentation 📚
 
 on:
   push:
