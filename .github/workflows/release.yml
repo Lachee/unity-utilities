@@ -3,7 +3,7 @@ name: Create Release 📦
 on:
   push:
     tags:
-      - "*.*.*"
+      - "v*.*.*"
 
 env:
   package_path: "lachee-utilities.unitypackage"
