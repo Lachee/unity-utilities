@@ -4,7 +4,7 @@
             "src": [
                 {
                     "src": "..",
-                    "files": [ "Scripts/**/*.cs" ]
+                    "files": [ "Runtime/**/*.cs", "Editor/**/*.cs" ]
                 }
             ],
             "globalNamespaceId": "Global",
@@ -46,7 +46,7 @@
         "overwrite": [
             {
                 "src": "..",
-                "files": [ "Utilities/**/*.md", "Editor/**/*.md" ]
+                "files": [ "Runtime/**/*.md", "Editor/**/*.md" ]
             }
         ],
         "resource": [
