@@ -31,6 +31,13 @@ There are 3 methods you can use to importing this package:
 2. You can download the `.unitypackage` artifacts in the [latest build pre-release](https://github.com/Lachee/unity-utilities/releases/tag/latest)
 3. You can add the package to unity via Unity Package Manager, under the "add git package"
 
+**Via the Package Manager wont notify you of updates, its Unity being dumb.**
+
+## Manual Git Installation
+This allows you to make changes and commit them back to the project:
+```
+git clone https://github.com/Lachee/unity-utilities.git Packages/com.lachee.utilties
+```
 
 # TODO
 List of things I wish to implement:
