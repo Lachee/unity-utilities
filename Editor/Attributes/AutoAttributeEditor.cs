@@ -6,6 +6,8 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
+using Lachee.Utilities;
+
 namespace Lachee.Attributes.Editor
 {
 
@@ -122,7 +124,7 @@ namespace Lachee.Attributes.Editor
         /// <returns></returns>
         public static bool ApplyAttributeToSerializedProperty(SerializedProperty property, AutoAttribute attribute)
         {
-            var component = attribute.FindReferenceForProperty(property);
+            var component = FindReferenceForProperty(attribute, property);
             if (component is Object comObject)
             {
                 property.objectReferenceValue = comObject;
@@ -250,6 +252,91 @@ namespace Lachee.Attributes.Editor
             // Tell the window we shoudl repaint if its open
             if (AutoAttributeWindow.Instance)
                 AutoAttributeWindow.Instance.Repaint();
+        }
+
+
+
+        /// <summary>
+        /// Gets the component to link back to the serialized property
+        /// </summary>
+        /// <param name="property"></param>
+        /// <returns></returns>
+        private static dynamic FindReferenceForProperty(AutoAttribute attribute, SerializedProperty property)
+        {
+            // Get the base component attached to this property
+            var component = property.serializedObject.targetObject as Component;
+            if (component == null)
+                throw new System.InvalidOperationException("Cannot find a component on a non-component object");
+
+            // Get the component type.
+            // Calling the extension directly here to avoid having to put scripting defines in the top
+            var propertyType = Utilities.Editor.SerializedPropertyExtensions.GetSerializedType(property);
+            if (propertyType.IsArray)
+            {
+                // This version will pull all the components we find and unions them in a hashset first to avoid duplicates
+
+                // Validate it is an array of components
+                if (!typeof(Component).IsAssignableFrom(propertyType.GetElementType()))
+                    throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
+
+                HashSet<Object> results = new HashSet<Object>();
+
+                // Find all the results
+                Object[] found;
+                if ((attribute.SearchFlag & AutoSearchFlag.GameObject) != 0)
+                {
+                    found = component.GetComponents(propertyType);
+                    results.AddRange(found);
+                }
+
+                if ((attribute.SearchFlag & AutoSearchFlag.Children) != 0)
+                {
+                    found = component.GetComponentsInChildren(propertyType);
+                    results.AddRange(found);
+                }
+
+                if ((attribute.SearchFlag & AutoSearchFlag.Scene) != 0)
+                {
+                    found = GameObject.FindObjectsOfType(propertyType);
+                    results.AddRange(found);
+                }
+
+                // Convert to array
+                return results.ToArray();
+            }
+            else
+            {
+
+                // This is a more optimised version.
+                // Duplicated code for the most part, but it is done so we only call GetComponent once for non-arrrays
+
+
+                // Validate it is a component
+                if (!typeof(Component).IsAssignableFrom(propertyType))
+                    throw new System.InvalidOperationException("Type is not a componet and cannot be looked up");
+
+                Object found = null;
+                if ((attribute.SearchFlag & AutoSearchFlag.GameObject) != 0)
+                {
+                    found = component.GetComponent(propertyType);
+                    if (found) return found;
+                }
+
+                if ((attribute.SearchFlag & AutoSearchFlag.Children) != 0)
+                {
+                    found = component.GetComponentInChildren(propertyType);
+                    if (found) return found;
+                }
+
+                if ((attribute.SearchFlag & AutoSearchFlag.Scene) != 0)
+                {
+                    found = GameObject.FindObjectOfType(propertyType);
+                    if (found) return found;
+                }
+            }
+
+            // We found nothing
+            return null;
         }
     }
 }

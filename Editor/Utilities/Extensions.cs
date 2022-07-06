@@ -1,5 +1,4 @@
-﻿#if UNITY_EDITOR
-using System.Reflection;
+﻿using System.Reflection;
 using UnityEditor;
 
 namespace Lachee.Utilities.Editor
@@ -21,4 +20,3 @@ namespace Lachee.Utilities.Editor
         }
     }
 }
-#endif

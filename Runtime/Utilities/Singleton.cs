@@ -4,25 +4,20 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
+
     /// <summary>
     /// This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or, grabbed from the scene if an instance already exists.
-    /// <para>It derives from MonoBehaviour allowing for all of the usual Unity systems to be used.</para>
-    /// <para>NOTE: A subclasses must pass in its own Type as the T parameter, this is so the singleton can typecast the instance member variable to the corrent class.</para>
     /// </summary>
+    /// <remarks>Singleton inherits a <see cref="MonoBehaviour"/>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.</remarks>
+    /// <typeparam name="T">The class that is to inherit Singleton</typeparam>
     /// <example>
-    /// public class GameManager : Singleton<GameManager>
-    /// {
-    ///     public void StartGame() { }
-    /// }
-    /// 
-    /// public class UIButton : MonoBehaviour 
-    /// {
-    ///     public void OnButtonPress() {
-    ///         GameManager.instance.StartGame();
+    /// This shows how to increment an integer.
+    /// <code>
+    ///     public class GameManager : Singleton&lt;GameManager&gt;
+    ///     {
     ///     }
-    /// }
+    /// </code>
     /// </example>
-    /// <typeparam name="T"></typeparam>
     public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         internal static T _instance;
