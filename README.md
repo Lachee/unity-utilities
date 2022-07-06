@@ -2,7 +2,7 @@
 <table frame="void">
     <tr>
       <td width="200px">
-        <img src="https://raw.githubusercontent.com/Lachee/unity-utilities/master/Editor%20Resources/logo.png" align="center" width="100%" />
+        <img src="https://raw.githubusercontent.com/Lachee/unity-utilities/master/Editor/Icons/logo.png" align="center" width="100%" />
       </td>
       <td>
         <h1>Lachee's Utilities</h1>
