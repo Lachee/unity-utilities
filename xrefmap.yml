@@ -985,6 +985,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Mathl.BitsSet
   nameWithType: Mathl.BitsSet
+- uid: Lachee.Utilities.Mathl.Extrude(Vector3,Vector3,System.Single)
+  name: Extrude(Vector3, Vector3, Single)
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Extrude_Vector3_Vector3_System_Single_
+  commentId: M:Lachee.Utilities.Mathl.Extrude(Vector3,Vector3,System.Single)
+  fullName: Lachee.Utilities.Mathl.Extrude(Vector3, Vector3, System.Single)
+  nameWithType: Mathl.Extrude(Vector3, Vector3, Single)
+- uid: Lachee.Utilities.Mathl.Extrude*
+  name: Extrude
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Extrude_
+  commentId: Overload:Lachee.Utilities.Mathl.Extrude
+  isSpec: "True"
+  fullName: Lachee.Utilities.Mathl.Extrude
+  nameWithType: Mathl.Extrude
 - uid: Lachee.Utilities.Mathl.Mod(System.Int32,System.Int32)
   name: Mod(Int32, Int32)
   href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Mod_System_Int32_System_Int32_
@@ -2172,3 +2185,22 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.SortedGizmos.DrawWireSphere
   nameWithType: SortedGizmos.DrawWireSphere
+- uid: Lachee.Utilities.TransformExtension
+  name: TransformExtension
+  href: api/Lachee.Utilities.TransformExtension.html
+  commentId: T:Lachee.Utilities.TransformExtension
+  fullName: Lachee.Utilities.TransformExtension
+  nameWithType: TransformExtension
+- uid: Lachee.Utilities.TransformExtension.RotateAround(Transform,Vector3,Quaternion)
+  name: RotateAround(Transform, Vector3, Quaternion)
+  href: api/Lachee.Utilities.TransformExtension.html#Lachee_Utilities_TransformExtension_RotateAround_Transform_Vector3_Quaternion_
+  commentId: M:Lachee.Utilities.TransformExtension.RotateAround(Transform,Vector3,Quaternion)
+  fullName: Lachee.Utilities.TransformExtension.RotateAround(Transform, Vector3, Quaternion)
+  nameWithType: TransformExtension.RotateAround(Transform, Vector3, Quaternion)
+- uid: Lachee.Utilities.TransformExtension.RotateAround*
+  name: RotateAround
+  href: api/Lachee.Utilities.TransformExtension.html#Lachee_Utilities_TransformExtension_RotateAround_
+  commentId: Overload:Lachee.Utilities.TransformExtension.RotateAround
+  isSpec: "True"
+  fullName: Lachee.Utilities.TransformExtension.RotateAround
+  nameWithType: TransformExtension.RotateAround

@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.AutoAttribute.html",
-          "hash": "wUOpE02tdHG2wCZbSJgiPx5VSkX9UW62hXSVG84dpMw="
+          "hash": "bBavBKWVPg3TW6az0teK3fOBh/fKrTEX9oNKNusBqCY="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.AutoSearchFlag.html",
-          "hash": "0H2KvFDLyzLOeCA8tNYiBwoUEy1ZB91VVHCPKhV7tLw="
+          "hash": "udwm3J7apTQBmzO8O4WTjXZdaFH6ng8flpoLZHlNSAM="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.ButtonAttribute.html",
-          "hash": "U1iPPw2GQoT2ZUPcLuv3Vrk+xDeIVNT6PnCKyTXeqGU="
+          "hash": "xD03FjP7gV+nA0pTbRs7GsjJdkR72OmrreW/lG/g5uI="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.EnumFlagAttribute.html",
-          "hash": "nJdX7r77Em5o29KPF0PKsLzRTkS2SBR+J6Cc16v0LjI="
+          "hash": "TxVc3dpKlTqKg5BAbNq4e7MCoeRdKrJ7h3tnmGN2X5M="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.ReadonlyAttribute.html",
-          "hash": "cBdJQUCt7+/CPZXjpLdKP5rM27/+Xq3kPGJOEqiG4jw="
+          "hash": "yRC1IhvoRkZpSrDyI2CQizchAqCIhnM0ElLHg+2avkM="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "+GPuiSr9snIzPoKqJNskI1Kvx3EdQBGwmoEBCS3BpmU="
+          "hash": "4UJ460ouYteRfEwv51rEYQyyEwWZuwrpNMGQ/EypSY4="
         }
       },
       "is_incremental": false,
@@ -100,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Behaviours.Rotate.html",
-          "hash": "YlkOYEmfU4L59Mr+Or8ZAsznuN2f0d3mdQfxHt5VTvc="
+          "hash": "6MP6Y1XkU0eLaCqkQF07AKUCakxVBJz9htusIuMwAJY="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Behaviours.html",
-          "hash": "pIROjvye//v9RgGwThuJfgwyHMy/+oaql4j9aUB5A9U="
+          "hash": "X5w5sCErfUAzMZR9uhfsnjfJXb95BB7DxTXQD06bjSo="
         }
       },
       "is_incremental": false,
@@ -124,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Circle.Mode.html",
-          "hash": "gT716MsI0YJLpwpdyHlpEBO9Mk/BUyHGlTpb9CWeLgk="
+          "hash": "dxS/KcO+R3ff6X73tVuhIMEnqrd6sFOBIKd4iJXmlhg="
         }
       },
       "is_incremental": false,
@@ -136,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Circle.html",
-          "hash": "2nc8onksFPaOCXLlD3WkGg7Xe1Y1/P7Hl/ZbXJXlmRQ="
+          "hash": "Mklqbam8iiE0rRIoHFpVNNlKixOdYsDUMJChdKhaxtc="
         }
       },
       "is_incremental": false,
@@ -148,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.GLUtils.html",
-          "hash": "ADCBt32qwZ7Hgr+WKjejpIIxts0TRebBnDdHGSSMeK4="
+          "hash": "688lszdYdO/EVRhmQg75b79oVVA90Itn1FkJ0EdyFK4="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.GameObjectExtension.html",
-          "hash": "/UgsFCx8wwVGBsvLNkSjxsJRaNjsc6Pq8DyXrJJbwGk="
+          "hash": "xTjp1dWbFqadDf0v9IiYQ85bPnl2m6hBUbv39iJIW0g="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Gizmol.html",
-          "hash": "6DOIdC+GNyla9WyNhukuabQjxXqLEP2eizfUmv/jnDc="
+          "hash": "BUBfZpphETMm+v3J+dkdcQ6MuKGZLyRSCXODphgMSOQ="
         }
       },
       "is_incremental": false,
@@ -184,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Instantiator-1.html",
-          "hash": "CshlpILl1yyLWJlcG1WdCblsngCFc570sYnZi28Fupo="
+          "hash": "9p6B3BzZHXZW+IEJENmorbMx4XYPwZk4ampJWZ834mk="
         }
       },
       "is_incremental": false,
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Lazy-1.html",
-          "hash": "kEPcJKYnSlplSFnnhdpsp+Y6U8miOgws6WzUBkRePpw="
+          "hash": "QStWRt6pTTiJKUZ/zrUsvwae/dgihQ+ZlrcSPUTa5wI="
         }
       },
       "is_incremental": false,
@@ -208,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Linq.html",
-          "hash": "mx3J7fJjlsHQmjA+SwL0VJeKRCqy3WoACmWEN1eQqdk="
+          "hash": "2E2V5oUQcsh/bu7ZmF6zXNXOipxEa8j3jSJZ9QnVUI0="
         }
       },
       "is_incremental": false,
@@ -220,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Logger.html",
-          "hash": "PWRbWuy0FF8lDQDmBA42mX4xygKTVZugaPWFRcUu1D0="
+          "hash": "Ul5CWEaahNWSSWirs2SEEW9KifwPZ+gDKvQrpFFIfj8="
         }
       },
       "is_incremental": false,
@@ -232,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Mathl.html",
-          "hash": "QTymwJOdXE94m/i6ulCsdoH21GDImnUk3+7uwWg52FQ="
+          "hash": "8sSX7nmbqpBMhCSMR9bica5HZt/sfmdb2E5SVu8oySA="
         }
       },
       "is_incremental": false,
@@ -244,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.MeshBuilder.html",
-          "hash": "WuW7TYWGojuEg+5U49mCp3JSAFWgLS0mMg+A1tXPA9A="
+          "hash": "3LTx+LWEOM8G5tf1VnTXxky4Eq28RK2KlBKN48WQpUI="
         }
       },
       "is_incremental": false,
@@ -256,7 +256,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.ParticleSystemExtension.html",
-          "hash": "f9VLVfvsaUDQFHwiES62LSpBKuWbuBY+SUMQM5zzBHI="
+          "hash": "t67z+uDwdkAW5SPbDLaSKtqqEuAK0dyl/lyjMKbaZnM="
         }
       },
       "is_incremental": false,
@@ -268,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.RandomList-1.html",
-          "hash": "8iNJyrbhsSahSJdbtkJFSVp6+++LZYiO1z1fuJt2zbw="
+          "hash": "JZzfFt0+sMetwN4sXPyfrKKzaceN37U4e5p649F1h/E="
         }
       },
       "is_incremental": false,
@@ -280,7 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.RectTransformExtension.html",
-          "hash": "g5yJh6CmuLmmhsD91OqXmYmt8Cp3z2L4eYtMWvtOE8o="
+          "hash": "2lOLuCefrRvE532xJNROJ4q7+TSIinI3KSp8/AQre50="
         }
       },
       "is_incremental": false,
@@ -292,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Rist-1.html",
-          "hash": "jK5xC621soSEsaqYkCMqnUPxOsCiEYy7zaSgKIiyAFM="
+          "hash": "lwUabgOyxl5Sziof5fcJ1wNd1zzFDIP6X2q4zhnX6PQ="
         }
       },
       "is_incremental": false,
@@ -304,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Serialization.BinaryFormatterSurrogate.html",
-          "hash": "oeRgt1TYbrNAEjjaKHJBCARPNCzwrloXWqn/MmIgG08="
+          "hash": "VdaWBOWvGu6mRlpHF9K/ZffnbOA+NSPnCKLkfcYu/Bo="
         }
       },
       "is_incremental": false,
@@ -316,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Serialization.ColorSurrogate.html",
-          "hash": "phPSK8FooT5bJ7PloZhlbvS1cWV0mtSe7vC7FXE9alU="
+          "hash": "SMM222xz8EXE1fyOsOpCZX0dWzcklgRKbRfqwG6Geog="
         }
       },
       "is_incremental": false,
@@ -328,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Serialization.Texture2DSurrogate.html",
-          "hash": "FaN+ix8g7fHI5plJvp9otI9xwtfzaPZq2G1RJWSoHE8="
+          "hash": "QMCOAGS7hffJejefzS1YCjSNKcIVA6XLmqmVWAgZTAo="
         }
       },
       "is_incremental": false,
@@ -340,7 +340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Serialization.VectorSurrogate.html",
-          "hash": "FEEq6n75ahaV3hodORLfL8+tkiWwx43CDMcr/A0Mp3A="
+          "hash": "EUFWlz0gr0SbrxblbrkxERwWv5WyBvEQpEBhyfJMXrg="
         }
       },
       "is_incremental": false,
@@ -352,7 +352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Serialization.html",
-          "hash": "/DoeTCubOMYAgp9tfjPyVt7OgiWT9C8wSjIn7Qh2iO8="
+          "hash": "WtIduve/7lHKcwPmfRCskD7FfBPvcT5swuWkD4XT4OY="
         }
       },
       "is_incremental": false,
@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Singleton-1.html",
-          "hash": "0dGveBFJf47bBP4xVMheqEuRNbDLz8/W/IuXV0m35Es="
+          "hash": "I65MJbpVC0b1FEVeCFLDO3HymOwiivbl2L9McZcSeuE="
         }
       },
       "is_incremental": false,
@@ -376,7 +376,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.SortedGizmos.html",
-          "hash": "+8C5D1MtPtpstH7/updaXRjV+k+T3hd7RwwMwuOJCPU="
+          "hash": "dJySqJg5qkpiwCZDfbdHwz7H0feiaDkJia5CQul/nWM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.TransformExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.TransformExtension.html",
+          "hash": "I1b0YFqUdaSW3pwjaM6c0GoeZdCORWkdU9Mwt9C/w2o="
         }
       },
       "is_incremental": false,
@@ -388,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.html",
-          "hash": "+XCjxVZHkaaKN/nQTGuN3+JhIZzVEsJCU0zUHII5nz4="
+          "hash": "35oFvlvmDHz5arg2fvCKPLYdpKW1GGgegoOupTWxhYE="
         }
       },
       "is_incremental": false,
@@ -400,7 +412,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dt22D4sYuvczLFRtFIhXbq7NjMA1O+W0MKiStx7fSDk="
+          "hash": "F+GheiiYLhE/LQk6SfJQ9JPld3GnmeKvExH9qdWvFy0="
         }
       },
       "is_incremental": false,
@@ -412,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "SpN4cvstldn37rmxGJ8peYEoBtmo0GLXk4/6PUt6OXs="
+          "hash": "3YxFUqJlZzteHahzltDNLTqPNWpOQ7ppO4mximTgJJo="
         }
       },
       "is_incremental": false,
@@ -466,7 +478,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 31,
+          "total_file_count": 32,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
