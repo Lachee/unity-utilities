@@ -158,6 +158,9 @@ namespace Lachee.Utilities
         /// </summary>
         protected virtual void Awake()
         {
+            #if UNITY_EDITOR
+            if (Application.isPlaying)
+            #endif
             DontDestroyOnLoad(gameObject);
         }
     }

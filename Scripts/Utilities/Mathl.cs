@@ -54,6 +54,19 @@ namespace Lachee.Utilities
             overlap = new Rect(left, top, width, height);
             return true;
         }
+    
+        /// <summary>
+        /// Extrudes the vector a distance away from the center
+        /// </summary>
+        /// <param name="vector">The starting vector</param>
+        /// <param name="center">The center to extrude away from</param>
+        /// <param name="distance">The distance to exture</param>
+        /// <returns></returns>
+        public static Vector3 Extrude(this Vector3 vector, Vector3 center, float distance) {
+            if (distance == 0) return vector;
+            Vector3 norm = (vector-center).normalized;
+            return vector + (norm * distance);
+        }
     }
 
 }

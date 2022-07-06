@@ -55,6 +55,24 @@ namespace Lachee.Utilities
     }
 
     /// <summary>
+    /// Extends Transform
+    /// </summary>
+    public static class TransformExtension 
+    {
+        /// <summary>
+        /// Rotates around a pivot with the given rotation
+        /// </summary>
+        /// <param name="transform"></param>
+        /// <param name="pivotPoint"></param>
+        /// <param name="rotation"></param>
+        public static void RotateAround (this Transform transform, Vector3 pivotPoint, Quaternion rotation)
+        {
+            transform.position = rotation * (transform.position - pivotPoint) + pivotPoint;
+            transform.rotation = rotation * transform.rotation;
+        }
+    }
+
+    /// <summary>
     /// Extends Particle Systems
     /// </summary>
     public static class ParticleSystemExtension
