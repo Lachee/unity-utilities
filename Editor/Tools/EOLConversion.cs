@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEditor;
@@ -53,4 +52,3 @@ namespace Lachee.Tools.Editor
     }
 
 }
-#endif

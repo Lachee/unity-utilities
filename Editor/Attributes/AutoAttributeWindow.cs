@@ -1,5 +1,4 @@
-﻿#if UNITY_EDITOR
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
 
 namespace Lachee.Attributes.Editor
@@ -99,4 +98,3 @@ namespace Lachee.Attributes.Editor
         }
     }
 }
-#endif

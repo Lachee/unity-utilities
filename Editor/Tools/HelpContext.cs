@@ -1,5 +1,3 @@
-#if UNITY_EDITOR
-
 using System.Diagnostics;
 using UnityEditor;
 
@@ -14,4 +12,3 @@ namespace Lachee.Tools.Editor
         }        
     }
 }
-#endif

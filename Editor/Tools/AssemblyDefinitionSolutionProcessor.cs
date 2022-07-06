@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using UnityEditor;
 
 namespace Lachee.Tools.Editor
@@ -17,4 +16,3 @@ namespace Lachee.Tools.Editor
         }
     }
 }
-#endif

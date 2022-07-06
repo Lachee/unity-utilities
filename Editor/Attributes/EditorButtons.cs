@@ -1,6 +1,4 @@
-﻿#if UNITY_EDITOR
-
-// Initial Concept by http://www.reddit.com/user/zaikman
+﻿// Initial Concept by http://www.reddit.com/user/zaikman
 // Revised by http://www.reddit.com/user/quarkism
 
 using System;
@@ -63,4 +61,3 @@ namespace Lachee.Attributes.Editor
         }
     }
 }
-#endif

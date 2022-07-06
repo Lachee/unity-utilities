@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,4 +62,3 @@ namespace Lachee.Attributes.Editor
         }
     }
 }
-#endif
