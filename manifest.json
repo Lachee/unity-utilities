@@ -2,6 +2,7 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
+        "baseUrl": "https://lachee.github.io/unity-utilities/",
         "changefreq": "daily"
       }
     },
@@ -20,6 +21,642 @@
         }
       },
       "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ReferenceFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ReferenceFilter.html",
+          "hash": "pjMD6U5UbrV+OXSpCuGNdZiEtutLIoFbAqejl1UefWs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html",
+          "hash": "xOR0VgZZpO8y0tObnqDgBPVASV2quoZvNymTpD45jjo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.AutoAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.AutoAttribute.html",
+          "hash": "bBavBKWVPg3TW6az0teK3fOBh/fKrTEX9oNKNusBqCY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.AutoSearchFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.AutoSearchFlag.html",
+          "hash": "udwm3J7apTQBmzO8O4WTjXZdaFH6ng8flpoLZHlNSAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.ButtonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.ButtonAttribute.html",
+          "hash": "xD03FjP7gV+nA0pTbRs7GsjJdkR72OmrreW/lG/g5uI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.AutoAttributeDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeDrawer.html",
+          "hash": "nmsFbEr6E5hl1ZYUCgL2Sn4eao+qQVmXMFcT9tcfln0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.AttributeProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.AttributeProperty.html",
+          "hash": "CzxXEdG1FzqI+ksqz0dOsnsNWMyuGagfWdIcL2nOw5s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.Error.html",
+          "hash": "1/e0bZn3wn9Mc8a3rJiQFW7G0bSI1Dca9xQj2hMkXcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.ObjectErrors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.ObjectErrors.html",
+          "hash": "lCTBJA8HoXrUlcfZhNg9QTPn7wf/Wl7oqxn9ZVDyDv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.html",
+          "hash": "Cq+SAASBIOW1na02SPfp/0CbP5uDLwbqi/iFK5sNEg4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.AutoAttributeWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeWindow.html",
+          "hash": "ux1lCuMgeU6vHeYq99yjOuMy+2XVKNxEzcPLnMgDA6I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.EditorButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.EditorButton.html",
+          "hash": "3hlQz3Ar3PQy4ZleWvrjf0q/8bNPHG6Q7GZGk8HduHw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.EnumFlagDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.EnumFlagDrawer.html",
+          "hash": "USeFViF/tMpheKFdPtsuuocTEOZ1blA+LtCDZQnGpOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.ReadonlyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.ReadonlyDrawer.html",
+          "hash": "sHAyVZhu363UuujUFlMHTn+thponV/1GRDEpnMtKXl8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.html",
+          "hash": "W/RM0WduMgO0MSI479pJrVBlRjR9inDeT8dqaOf77ys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.EnumFlagAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.EnumFlagAttribute.html",
+          "hash": "TxVc3dpKlTqKg5BAbNq4e7MCoeRdKrJ7h3tnmGN2X5M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.ReadonlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.ReadonlyAttribute.html",
+          "hash": "yRC1IhvoRkZpSrDyI2CQizchAqCIhnM0ElLHg+2avkM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.html",
+          "hash": "4UJ460ouYteRfEwv51rEYQyyEwWZuwrpNMGQ/EypSY4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.Rotate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.Rotate.html",
+          "hash": "6MP6Y1XkU0eLaCqkQF07AKUCakxVBJz9htusIuMwAJY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.html",
+          "hash": "X5w5sCErfUAzMZR9uhfsnjfJXb95BB7DxTXQD06bjSo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.AssemblyDefinitionSolutionProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.AssemblyDefinitionSolutionProcessor.html",
+          "hash": "WSf3tYZBeL/sklcLWrk3o0DTVM0kdqeBSgiI61V8xHg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.BoneViewer.BoneStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.BoneViewer.BoneStyle.html",
+          "hash": "biCKQE6xpE17PwWeqYvrZFMqmW88ymhgTfNILIiAWF4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.BoneViewer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.BoneViewer.html",
+          "hash": "vYv2GVAjz+FyEcXTacT8Ypiii+a9aqEf69MMcT5xsbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.EOLConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.EOLConversion.html",
+          "hash": "OyBr2GIzQdI3o43oKSsMgyNSde2gMAxMLMe4Io53p3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.HelpContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.HelpContext.html",
+          "hash": "6wqL3yMSqsj0xD7u7W2nyyDHtK7zqj4qL6Sk7dY6IxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.html",
+          "hash": "sqrX3aZjNT2fdC6dD5SHoai0mAbFSibz54ZfCMc1oO0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Circle.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Circle.Mode.html",
+          "hash": "dxS/KcO+R3ff6X73tVuhIMEnqrd6sFOBIKd4iJXmlhg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Circle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Circle.html",
+          "hash": "Mklqbam8iiE0rRIoHFpVNNlKixOdYsDUMJChdKhaxtc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Editor.SerializedPropertyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html",
+          "hash": "4jCMMpMB5MZTu3C2DzZQuqOz6VRYt5GInSjrp28iSP4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Editor.html",
+          "hash": "m9FoExKkyVZCDu5GkLL0OAe0TUQa8wk7VXL7H09GaGE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.GLUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.GLUtils.html",
+          "hash": "688lszdYdO/EVRhmQg75b79oVVA90Itn1FkJ0EdyFK4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.GameObjectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.GameObjectExtension.html",
+          "hash": "xTjp1dWbFqadDf0v9IiYQ85bPnl2m6hBUbv39iJIW0g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Gizmol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Gizmol.html",
+          "hash": "BUBfZpphETMm+v3J+dkdcQ6MuKGZLyRSCXODphgMSOQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Instantiator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Instantiator-1.html",
+          "hash": "9p6B3BzZHXZW+IEJENmorbMx4XYPwZk4ampJWZ834mk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Lazy-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Lazy-1.html",
+          "hash": "QStWRt6pTTiJKUZ/zrUsvwae/dgihQ+ZlrcSPUTa5wI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Linq.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Linq.html",
+          "hash": "2E2V5oUQcsh/bu7ZmF6zXNXOipxEa8j3jSJZ9QnVUI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Logger.html",
+          "hash": "Ul5CWEaahNWSSWirs2SEEW9KifwPZ+gDKvQrpFFIfj8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Mathl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Mathl.html",
+          "hash": "8sSX7nmbqpBMhCSMR9bica5HZt/sfmdb2E5SVu8oySA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.MeshBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.MeshBuilder.html",
+          "hash": "3LTx+LWEOM8G5tf1VnTXxky4Eq28RK2KlBKN48WQpUI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.ParticleSystemExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.ParticleSystemExtension.html",
+          "hash": "t67z+uDwdkAW5SPbDLaSKtqqEuAK0dyl/lyjMKbaZnM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.RandomList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.RandomList-1.html",
+          "hash": "JdhhvIn0Du/CwCvYWt89s5pO3sZXnjqki1QWF7Tca+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.RectTransformExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.RectTransformExtension.html",
+          "hash": "2lOLuCefrRvE532xJNROJ4q7+TSIinI3KSp8/AQre50="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Rist-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Rist-1.html",
+          "hash": "aw8vJwAJ9Kp7VrDvLIcN+PDtIlNQT7J09OFsY6LVH/E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Serialization.BinaryFormatterSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Serialization.BinaryFormatterSurrogate.html",
+          "hash": "VdaWBOWvGu6mRlpHF9K/ZffnbOA+NSPnCKLkfcYu/Bo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Serialization.ColorSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Serialization.ColorSurrogate.html",
+          "hash": "SMM222xz8EXE1fyOsOpCZX0dWzcklgRKbRfqwG6Geog="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Serialization.Texture2DSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Serialization.Texture2DSurrogate.html",
+          "hash": "QMCOAGS7hffJejefzS1YCjSNKcIVA6XLmqmVWAgZTAo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Serialization.VectorSurrogate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Serialization.VectorSurrogate.html",
+          "hash": "EUFWlz0gr0SbrxblbrkxERwWv5WyBvEQpEBhyfJMXrg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Serialization.html",
+          "hash": "WtIduve/7lHKcwPmfRCskD7FfBPvcT5swuWkD4XT4OY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Singleton-1.html",
+          "hash": "b6J4CnCmHwAjm2JfeE89kYVTPhSHutsQRLNoCCik3/8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.SortedGizmos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.SortedGizmos.html",
+          "hash": "dJySqJg5qkpiwCZDfbdHwz7H0feiaDkJia5CQul/nWM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.TransformExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.TransformExtension.html",
+          "hash": "I1b0YFqUdaSW3pwjaM6c0GoeZdCORWkdU9Mwt9C/w2o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.html",
+          "hash": "pc86eLJqv8F3/Hf3poC60vpmgfwaaln5q1qXnLFI+z0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "dsOMTRbZJ0xe61yj5ZArVuOTqHFPT/YZ6Cxcb1++Ix0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
     },
     {
       "type": "Conceptual",
@@ -54,7 +691,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "q3iN16EbJ5sLeQXXCa9wLBzoi4+yEy0vlKyDzODhsFE="
+          "hash": "fkeKuMuSTv8mRD38tNqo/2nWa6wZgQElmx0F3Y0rBcE="
         }
       },
       "is_incremental": false,
@@ -76,6 +713,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 52,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
