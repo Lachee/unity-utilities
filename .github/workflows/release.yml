@@ -21,19 +21,19 @@ jobs:
             exclude: [ "Documentation", "tools", ".*" ]
           - name: Auto Attribute
             package: lachee-utilities-only-auto-attributes.unitypackage
-            assets: [ "Scripts/Attributes/**/AutoAttribute*.cs"]
+            assets: [ "Runtime/Attributes/**/AutoAttribute*.cs", "Editor/Attributes/**/AutoAttribute*.cs" ]
             exclude: [ ]
           - name: Singletons
             package: lachee-utilities-only-singletons.unitypackage
-            assets: [ "Scripts/Utilities/Singleton.cs", "Scripts/Utilities/Logger.cs" ]
+            assets: [ "Runtime/Utilities/Singleton.cs" ]
             exclude: [ ]
           - name: End Of Line Converter
             package: lachee-utilities-only-eol-converter.unitypackage
-            assets: [ "Scripts/Tools/Editor/EOLConversion.cs" ]
+            assets: [ "Editor/Tools/EOLConversion.cs" ]
             exclude: [ ]
           - name: Binary Formatter Surrogate
             package: lachee-utilties-only-bf-surrogate.unitypackage
-            assets: [ "Scripts/Utilities/Serialization/**/*.cs" ]
+            assets: [ "Runtime/Utilities/Serialization/**/*.cs" ]
             exclude: [ ]
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -55,7 +55,7 @@ jobs:
             ${{matrix.feature.package}} \
             --exclude "${{ join(matrix.feature.exclude, '" --exclude "')}}" \
             --assets "${{ join(matrix.feature.assets, '" --assets "')}}" \
-            --assets "Scripts/Tools/Editor/HelpContext.cs"
+            --assets "Editor/Tools/HelpContext.cs"
         
       # Upload artifact
       - name: Upload Artifact
