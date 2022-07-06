@@ -55,7 +55,8 @@ jobs:
             ${{matrix.feature.package}} \
             --exclude "${{ join(matrix.feature.exclude, '" --exclude "')}}" \
             --assets "${{ join(matrix.feature.assets, '" --assets "')}}" \
-            --assets "Editor/Tools/HelpContext.cs"
+            --assets "Editor/Tools/HelpContext.cs" \
+            -r .
         
       # Upload artifact
       - name: Upload Artifact
