@@ -16,6 +16,8 @@ namespace Lachee.Attributes
         Children = 2,
         /// <summary>Search the scene for the component</summary>
         Scene = 4,
+        /// <summary>Searches the parent for the component</summary>
+        Parent = 8
     }
 
     /// <summary>

@@ -299,6 +299,12 @@ namespace Lachee.Attributes.Editor
                     results.AddRange(found);
                 }
 
+                if ((attribute.SearchFlag & AutoSearchFlag.Parent) != 0)
+                {
+                    found = component.GetComponentsInParent(propertyType);
+                    results.AddRange(found);
+                }
+
                 // Convert to array
                 return results.ToArray();
             }
@@ -329,6 +335,12 @@ namespace Lachee.Attributes.Editor
                 if ((attribute.SearchFlag & AutoSearchFlag.Scene) != 0)
                 {
                     found = GameObject.FindObjectOfType(propertyType);
+                    if (found) return found;
+                }
+
+                if ((attribute.SearchFlag & AutoSearchFlag.Parent) != 0)
+                {
+                    found = component.GetComponentInParent(propertyType);
                     if (found) return found;
                 }
             }
