@@ -2673,6 +2673,23 @@ references:
   fullName.vb: Lachee.Utilities.Singleton(Of T).Awake
   nameWithType: Singleton<T>.Awake
   nameWithType.vb: Singleton(Of T).Awake
+- uid: Lachee.Utilities.Singleton`1.dontDestroyOnLoad
+  name: dontDestroyOnLoad
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_dontDestroyOnLoad
+  commentId: P:Lachee.Utilities.Singleton`1.dontDestroyOnLoad
+  fullName: Lachee.Utilities.Singleton<T>.dontDestroyOnLoad
+  fullName.vb: Lachee.Utilities.Singleton(Of T).dontDestroyOnLoad
+  nameWithType: Singleton<T>.dontDestroyOnLoad
+  nameWithType.vb: Singleton(Of T).dontDestroyOnLoad
+- uid: Lachee.Utilities.Singleton`1.dontDestroyOnLoad*
+  name: dontDestroyOnLoad
+  href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_dontDestroyOnLoad_
+  commentId: Overload:Lachee.Utilities.Singleton`1.dontDestroyOnLoad
+  isSpec: "True"
+  fullName: Lachee.Utilities.Singleton<T>.dontDestroyOnLoad
+  fullName.vb: Lachee.Utilities.Singleton(Of T).dontDestroyOnLoad
+  nameWithType: Singleton<T>.dontDestroyOnLoad
+  nameWithType.vb: Singleton(Of T).dontDestroyOnLoad
 - uid: Lachee.Utilities.Singleton`1.exists
   name: exists
   href: api/Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_exists
