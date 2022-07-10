@@ -38,6 +38,10 @@ namespace Lachee.Utilities
         /// <summary>The current logger</summary>
         public static readonly Logger logger = new Logger(typeof(T).Name);
 
+        /// <summary>Don't destroy the singleton on load.</summary>
+        /// <remarks>By default, this is set to true. Disabling this allows for scene-specific singletons</remarks>
+        protected virtual bool dontDestroyOnLoad { get { return true; } }
+
         /// <summary>
         /// The singleton instance of the type. Will create a new object with type if it is not available within the scene.
         /// </summary>    
@@ -45,10 +49,7 @@ namespace Lachee.Utilities
         {
             get
             {
-
-                //Util.Assert(Object.FindObjectsOfType<T>().Length <= 1); // there should not be more than one instance of any manager component
-
-                if (!available)
+               if (!available)
                 {
                     if (_isquitting)
                         Debug.LogError("Creating a new instance of " + type + " while a OnApplicationQuit has been detected.");
@@ -56,9 +57,17 @@ namespace Lachee.Utilities
                     //We do not have one available, lets create it as a new gameobject.
                     if (Application.isPlaying)
                     {
+                        #if !DONT_CREATE_SINGLETONS
                         GameObject obj = new GameObject($"[ {type} INSTANCE ]");
                         _instance = obj.AddComponent<T>();
                         Debug.LogWarning("Singleton " + type + " does not exist. A new instance has been created instead.", _instance);
+                        #else
+                        Debug.LogError($"Singleton {type} cannot be created because DONT_CREATE_SINGLETONS is defined");
+                        #endif
+                    } 
+                    else 
+                    {
+                        Debug.LogError($"Singleton {type} cannot be created while not in Play Mode.");
                     }
                 }
 
@@ -100,7 +109,7 @@ namespace Lachee.Utilities
                         //Make sure we only got one result
                         if (objects.Length > 1)
                         {
-                            Debug.LogError("Singleton " + type + " has multiple instances.", _instance);
+                            Debug.LogError($"Singleton {type} has multiple instances.", _instance);
                             Debug.Break();
                         }
                     }
@@ -156,7 +165,8 @@ namespace Lachee.Utilities
             #if UNITY_EDITOR
             if (Application.isPlaying)
             #endif
-            DontDestroyOnLoad(gameObject);
+            if (dontDestroyOnLoad)
+                DontDestroyOnLoad(gameObject);
         }
     }
 }
