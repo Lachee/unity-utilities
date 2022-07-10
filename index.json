@@ -17,7 +17,7 @@
   "api/Lachee.Attributes.AutoSearchFlag.html": {
     "href": "api/Lachee.Attributes.AutoSearchFlag.html",
     "title": "Enum AutoSearchFlag | Utilities",
-    "keywords": "Enum AutoSearchFlag Flag that controls how searching is handled within the AutoAttribute Namespace : Lachee.Attributes Assembly : cs.temp.dll.dll Syntax [Flags] public enum AutoSearchFlag Fields Name Description Children Search the children for the component GameObject Search the GameObject Scene Search the scene for the component"
+    "keywords": "Enum AutoSearchFlag Flag that controls how searching is handled within the AutoAttribute Namespace : Lachee.Attributes Assembly : cs.temp.dll.dll Syntax [Flags] public enum AutoSearchFlag Fields Name Description Children Search the children for the component GameObject Search the GameObject Parent Searches the parent for the component Scene Search the scene for the component"
   },
   "api/Lachee.Attributes.ButtonAttribute.html": {
     "href": "api/Lachee.Attributes.ButtonAttribute.html",

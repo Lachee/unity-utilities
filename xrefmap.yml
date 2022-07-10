@@ -102,6 +102,12 @@ references:
   commentId: F:Lachee.Attributes.AutoSearchFlag.GameObject
   fullName: Lachee.Attributes.AutoSearchFlag.GameObject
   nameWithType: AutoSearchFlag.GameObject
+- uid: Lachee.Attributes.AutoSearchFlag.Parent
+  name: Parent
+  href: api/Lachee.Attributes.AutoSearchFlag.html#Lachee_Attributes_AutoSearchFlag_Parent
+  commentId: F:Lachee.Attributes.AutoSearchFlag.Parent
+  fullName: Lachee.Attributes.AutoSearchFlag.Parent
+  nameWithType: AutoSearchFlag.Parent
 - uid: Lachee.Attributes.AutoSearchFlag.Scene
   name: Scene
   href: api/Lachee.Attributes.AutoSearchFlag.html#Lachee_Attributes_AutoSearchFlag_Scene
