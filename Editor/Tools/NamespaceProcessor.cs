@@ -216,7 +216,6 @@ namespace Lachee.Tools.Editor
         {
             //Run dotnet format on everything
             var args = "format --include " + string.Join(" ", assets.Select(a => '"' + GetRelativeDirectory("Assets/", a) + '"')) + " -f";
-            UnityEngine.Debug.Log("Formatting Documents: dotnet " + args);
             using (var process = Process.Start(new ProcessStartInfo()
             {
                 FileName = "dotnet",
