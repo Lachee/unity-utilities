@@ -27,6 +27,9 @@ jobs:
             package: lachee-utilities-only-singletons.unitypackage
             assets: [ "Runtime/Utilities/Singleton.cs" ]
             exclude: [ ]
+          - name: Auto Namespace
+            package: lachee-utilities-only-auto-namespace.unitypackage
+            assets: [ "Editor/Tools/Namespace*.cs", "Editor/Icons/Namespace*.png" ]
           - name: End Of Line Converter
             package: lachee-utilities-only-eol-converter.unitypackage
             assets: [ "Editor/Tools/EOLConversion.cs" ]
