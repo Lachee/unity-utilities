@@ -10,6 +10,9 @@ using System.Diagnostics;
 
 namespace Lachee.Tools.Editor
 {
+    /// <summary>
+    /// Processes C# scripts to add namespaces automatically
+    /// </summary>
     public class NamespaceProcessor : UnityEditor.AssetModificationProcessor
     {
 

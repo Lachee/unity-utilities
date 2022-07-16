@@ -6,7 +6,10 @@ using System.Linq;
 
 
 namespace Lachee.Tools.Editor
-    {
+{
+    /// <summary>
+    /// Handles context menus for the auto namespace 
+    /// </summary>
     public class NamespaceEditor : UnityEditor.Editor
     {
         [MenuItem("Assets/Create/C# Script Namespace", false, 100)]
