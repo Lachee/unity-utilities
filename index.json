@@ -127,7 +127,22 @@
   "api/Lachee.Tools.Editor.html": {
     "href": "api/Lachee.Tools.Editor.html",
     "title": "Namespace Lachee.Tools.Editor | Utilities",
-    "keywords": "Namespace Lachee.Tools.Editor Classes AssemblyDefinitionSolutionProcessor Fixes Unity generating incorrect solutions for Assembly Definitions. Solution provided by Unity Forums . BoneViewer Previews bones on a skinned mesh. Originally designed for VRChat Avatars, it will automatically select the first SkinnedMesh to preview. EOLConversion Provides tools to convert line endings HelpContext Enums BoneViewer.BoneStyle"
+    "keywords": "Namespace Lachee.Tools.Editor Classes AssemblyDefinitionSolutionProcessor Fixes Unity generating incorrect solutions for Assembly Definitions. Solution provided by Unity Forums . BoneViewer Previews bones on a skinned mesh. Originally designed for VRChat Avatars, it will automatically select the first SkinnedMesh to preview. EOLConversion Provides tools to convert line endings HelpContext NamespaceConfiguration NamespaceEditor NamespaceProcessor Enums BoneViewer.BoneStyle"
+  },
+  "api/Lachee.Tools.Editor.NamespaceConfiguration.html": {
+    "href": "api/Lachee.Tools.Editor.NamespaceConfiguration.html",
+    "title": "Class NamespaceConfiguration | Utilities",
+    "keywords": "Class NamespaceConfiguration Inheritance Object NamespaceConfiguration Namespace : Lachee.Tools.Editor Assembly : cs.temp.dll.dll Syntax public class NamespaceConfiguration : ScriptableObject Properties FormatDocument Declaration public bool FormatDocument { get; set; } Property Value Type Description Boolean IncludeSubDirectories Declaration public bool IncludeSubDirectories { get; set; } Property Value Type Description Boolean IsAutomatic Declaration public bool IsAutomatic { get; set; } Property Value Type Description Boolean RootNamespace Declaration public string RootNamespace { get; set; } Property Value Type Description String Methods Reset() Declaration public void Reset()"
+  },
+  "api/Lachee.Tools.Editor.NamespaceEditor.html": {
+    "href": "api/Lachee.Tools.Editor.NamespaceEditor.html",
+    "title": "Class NamespaceEditor | Utilities",
+    "keywords": "Class NamespaceEditor Inheritance Object NamespaceEditor Namespace : Lachee.Tools.Editor Assembly : cs.temp.dll.dll Syntax public class NamespaceEditor : UnityEditor.Editor Methods CreateNamespaceConfiguration() Declaration public static void CreateNamespaceConfiguration()"
+  },
+  "api/Lachee.Tools.Editor.NamespaceProcessor.html": {
+    "href": "api/Lachee.Tools.Editor.NamespaceProcessor.html",
+    "title": "Class NamespaceProcessor | Utilities",
+    "keywords": "Class NamespaceProcessor Inheritance Object NamespaceProcessor Namespace : Lachee.Tools.Editor Assembly : cs.temp.dll.dll Syntax public class NamespaceProcessor : UnityEditor.AssetModificationProcessor Methods FormatScripts(IEnumerable<String>) Spawns a Dotnet process to format a list of assets Declaration public static void FormatScripts(IEnumerable<string> assets) Parameters Type Name Description IEnumerable < String > assets FormatScripts(String[]) Declaration public static void FormatScripts(params string[] assets) Parameters Type Name Description String [] assets GetNamespace(String, out NamespaceConfiguration, String) Gets the best namespace for the given file. Declaration public static string GetNamespace(string filePath, out NamespaceConfiguration configuration, string excludePath = \"\") Parameters Type Name Description String filePath The path of the file NamespaceConfiguration configuration The configuration that was used to create the namespace. It will be null if it was created using other means. String excludePath Returns Type Description String GetRootNamespaceConfigurations() Maps the path of a namespace with the actual namespace Declaration public static IReadOnlyDictionary<string, NamespaceConfiguration> GetRootNamespaceConfigurations() Returns Type Description IReadOnlyDictionary < String , NamespaceConfiguration > OnWillCreateAsset(String) This gets called for every .meta file created by the Editor. Declaration public static void OnWillCreateAsset(string path) Parameters Type Name Description String path SetNamespace(String, String) Sets / Replaces the namespace of a given file Declaration public static void SetNamespace(string asset, string namespace) Parameters Type Name Description String asset String namespace"
   },
   "api/Lachee.Utilities.Circle.html": {
     "href": "api/Lachee.Utilities.Circle.html",

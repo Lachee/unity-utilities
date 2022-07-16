@@ -324,11 +324,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.NamespaceConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.NamespaceConfiguration.html",
+          "hash": "Qq4gBgvReiHcDAAE4lyIjYcW0iuGOMjcmyQ4o7eST60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.NamespaceEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.NamespaceEditor.html",
+          "hash": "OLDJusu75KPkxA8ceGoTMcdJqUghktl1zNaUHVhsj3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Tools.Editor.NamespaceProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Tools.Editor.NamespaceProcessor.html",
+          "hash": "/9vCY40sHcYUlABBlD3zrIYjgxUielUty1zM8R2Cx6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Tools.Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Tools.Editor.html",
-          "hash": "sqrX3aZjNT2fdC6dD5SHoai0mAbFSibz54ZfCMc1oO0="
+          "hash": "vz0LdSCwv5JLpv5zL4Fp85DQsbX9aoPyiBsJuhOj4NY="
         }
       },
       "is_incremental": false,
@@ -652,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dsOMTRbZJ0xe61yj5ZArVuOTqHFPT/YZ6Cxcb1++Ix0="
+          "hash": "QcvwKaV0oELp9QYeE7CiLY9Dsq5o+Ma+/TRVY9yOT0E="
         }
       },
       "is_incremental": false,
@@ -718,7 +754,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 52,
+          "total_file_count": 55,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

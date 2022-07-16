@@ -892,6 +892,182 @@ references:
   isSpec: "True"
   fullName: Lachee.Tools.Editor.HelpContext.HelpContextMenu
   nameWithType: HelpContext.HelpContextMenu
+- uid: Lachee.Tools.Editor.NamespaceConfiguration
+  name: NamespaceConfiguration
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html
+  commentId: T:Lachee.Tools.Editor.NamespaceConfiguration
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration
+  nameWithType: NamespaceConfiguration
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.FormatDocument
+  name: FormatDocument
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_FormatDocument
+  commentId: P:Lachee.Tools.Editor.NamespaceConfiguration.FormatDocument
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.FormatDocument
+  nameWithType: NamespaceConfiguration.FormatDocument
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.FormatDocument*
+  name: FormatDocument
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_FormatDocument_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceConfiguration.FormatDocument
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.FormatDocument
+  nameWithType: NamespaceConfiguration.FormatDocument
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.IncludeSubDirectories
+  name: IncludeSubDirectories
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_IncludeSubDirectories
+  commentId: P:Lachee.Tools.Editor.NamespaceConfiguration.IncludeSubDirectories
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.IncludeSubDirectories
+  nameWithType: NamespaceConfiguration.IncludeSubDirectories
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.IncludeSubDirectories*
+  name: IncludeSubDirectories
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_IncludeSubDirectories_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceConfiguration.IncludeSubDirectories
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.IncludeSubDirectories
+  nameWithType: NamespaceConfiguration.IncludeSubDirectories
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.IsAutomatic
+  name: IsAutomatic
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_IsAutomatic
+  commentId: P:Lachee.Tools.Editor.NamespaceConfiguration.IsAutomatic
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.IsAutomatic
+  nameWithType: NamespaceConfiguration.IsAutomatic
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.IsAutomatic*
+  name: IsAutomatic
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_IsAutomatic_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceConfiguration.IsAutomatic
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.IsAutomatic
+  nameWithType: NamespaceConfiguration.IsAutomatic
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.Reset
+  name: Reset()
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_Reset
+  commentId: M:Lachee.Tools.Editor.NamespaceConfiguration.Reset
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.Reset()
+  nameWithType: NamespaceConfiguration.Reset()
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.Reset*
+  name: Reset
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_Reset_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceConfiguration.Reset
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.Reset
+  nameWithType: NamespaceConfiguration.Reset
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.RootNamespace
+  name: RootNamespace
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_RootNamespace
+  commentId: P:Lachee.Tools.Editor.NamespaceConfiguration.RootNamespace
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.RootNamespace
+  nameWithType: NamespaceConfiguration.RootNamespace
+- uid: Lachee.Tools.Editor.NamespaceConfiguration.RootNamespace*
+  name: RootNamespace
+  href: api/Lachee.Tools.Editor.NamespaceConfiguration.html#Lachee_Tools_Editor_NamespaceConfiguration_RootNamespace_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceConfiguration.RootNamespace
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceConfiguration.RootNamespace
+  nameWithType: NamespaceConfiguration.RootNamespace
+- uid: Lachee.Tools.Editor.NamespaceEditor
+  name: NamespaceEditor
+  href: api/Lachee.Tools.Editor.NamespaceEditor.html
+  commentId: T:Lachee.Tools.Editor.NamespaceEditor
+  fullName: Lachee.Tools.Editor.NamespaceEditor
+  nameWithType: NamespaceEditor
+- uid: Lachee.Tools.Editor.NamespaceEditor.CreateNamespaceConfiguration
+  name: CreateNamespaceConfiguration()
+  href: api/Lachee.Tools.Editor.NamespaceEditor.html#Lachee_Tools_Editor_NamespaceEditor_CreateNamespaceConfiguration
+  commentId: M:Lachee.Tools.Editor.NamespaceEditor.CreateNamespaceConfiguration
+  fullName: Lachee.Tools.Editor.NamespaceEditor.CreateNamespaceConfiguration()
+  nameWithType: NamespaceEditor.CreateNamespaceConfiguration()
+- uid: Lachee.Tools.Editor.NamespaceEditor.CreateNamespaceConfiguration*
+  name: CreateNamespaceConfiguration
+  href: api/Lachee.Tools.Editor.NamespaceEditor.html#Lachee_Tools_Editor_NamespaceEditor_CreateNamespaceConfiguration_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceEditor.CreateNamespaceConfiguration
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceEditor.CreateNamespaceConfiguration
+  nameWithType: NamespaceEditor.CreateNamespaceConfiguration
+- uid: Lachee.Tools.Editor.NamespaceProcessor
+  name: NamespaceProcessor
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html
+  commentId: T:Lachee.Tools.Editor.NamespaceProcessor
+  fullName: Lachee.Tools.Editor.NamespaceProcessor
+  nameWithType: NamespaceProcessor
+- uid: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.Collections.Generic.IEnumerable{System.String})
+  name: FormatScripts(IEnumerable<String>)
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_FormatScripts_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: FormatScripts(IEnumerable(Of String))
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: NamespaceProcessor.FormatScripts(IEnumerable<String>)
+  nameWithType.vb: NamespaceProcessor.FormatScripts(IEnumerable(Of String))
+- uid: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.String[])
+  name: FormatScripts(String[])
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_FormatScripts_System_String___
+  commentId: M:Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.String[])
+  name.vb: FormatScripts(String())
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.String[])
+  fullName.vb: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts(System.String())
+  nameWithType: NamespaceProcessor.FormatScripts(String[])
+  nameWithType.vb: NamespaceProcessor.FormatScripts(String())
+- uid: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts*
+  name: FormatScripts
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_FormatScripts_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceProcessor.FormatScripts
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.FormatScripts
+  nameWithType: NamespaceProcessor.FormatScripts
+- uid: Lachee.Tools.Editor.NamespaceProcessor.GetNamespace(System.String,Lachee.Tools.Editor.NamespaceConfiguration@,System.String)
+  name: GetNamespace(String, out NamespaceConfiguration, String)
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_GetNamespace_System_String_Lachee_Tools_Editor_NamespaceConfiguration__System_String_
+  commentId: M:Lachee.Tools.Editor.NamespaceProcessor.GetNamespace(System.String,Lachee.Tools.Editor.NamespaceConfiguration@,System.String)
+  name.vb: GetNamespace(String, ByRef NamespaceConfiguration, String)
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.GetNamespace(System.String, out Lachee.Tools.Editor.NamespaceConfiguration, System.String)
+  fullName.vb: Lachee.Tools.Editor.NamespaceProcessor.GetNamespace(System.String, ByRef Lachee.Tools.Editor.NamespaceConfiguration, System.String)
+  nameWithType: NamespaceProcessor.GetNamespace(String, out NamespaceConfiguration, String)
+  nameWithType.vb: NamespaceProcessor.GetNamespace(String, ByRef NamespaceConfiguration, String)
+- uid: Lachee.Tools.Editor.NamespaceProcessor.GetNamespace*
+  name: GetNamespace
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_GetNamespace_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceProcessor.GetNamespace
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.GetNamespace
+  nameWithType: NamespaceProcessor.GetNamespace
+- uid: Lachee.Tools.Editor.NamespaceProcessor.GetRootNamespaceConfigurations
+  name: GetRootNamespaceConfigurations()
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_GetRootNamespaceConfigurations
+  commentId: M:Lachee.Tools.Editor.NamespaceProcessor.GetRootNamespaceConfigurations
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.GetRootNamespaceConfigurations()
+  nameWithType: NamespaceProcessor.GetRootNamespaceConfigurations()
+- uid: Lachee.Tools.Editor.NamespaceProcessor.GetRootNamespaceConfigurations*
+  name: GetRootNamespaceConfigurations
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_GetRootNamespaceConfigurations_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceProcessor.GetRootNamespaceConfigurations
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.GetRootNamespaceConfigurations
+  nameWithType: NamespaceProcessor.GetRootNamespaceConfigurations
+- uid: Lachee.Tools.Editor.NamespaceProcessor.OnWillCreateAsset(System.String)
+  name: OnWillCreateAsset(String)
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_OnWillCreateAsset_System_String_
+  commentId: M:Lachee.Tools.Editor.NamespaceProcessor.OnWillCreateAsset(System.String)
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.OnWillCreateAsset(System.String)
+  nameWithType: NamespaceProcessor.OnWillCreateAsset(String)
+- uid: Lachee.Tools.Editor.NamespaceProcessor.OnWillCreateAsset*
+  name: OnWillCreateAsset
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_OnWillCreateAsset_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceProcessor.OnWillCreateAsset
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.OnWillCreateAsset
+  nameWithType: NamespaceProcessor.OnWillCreateAsset
+- uid: Lachee.Tools.Editor.NamespaceProcessor.SetNamespace(System.String,System.String)
+  name: SetNamespace(String, String)
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_SetNamespace_System_String_System_String_
+  commentId: M:Lachee.Tools.Editor.NamespaceProcessor.SetNamespace(System.String,System.String)
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.SetNamespace(System.String, System.String)
+  nameWithType: NamespaceProcessor.SetNamespace(String, String)
+- uid: Lachee.Tools.Editor.NamespaceProcessor.SetNamespace*
+  name: SetNamespace
+  href: api/Lachee.Tools.Editor.NamespaceProcessor.html#Lachee_Tools_Editor_NamespaceProcessor_SetNamespace_
+  commentId: Overload:Lachee.Tools.Editor.NamespaceProcessor.SetNamespace
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.NamespaceProcessor.SetNamespace
+  nameWithType: NamespaceProcessor.SetNamespace
 - uid: Lachee.Utilities
   name: Lachee.Utilities
   href: api/Lachee.Utilities.html
