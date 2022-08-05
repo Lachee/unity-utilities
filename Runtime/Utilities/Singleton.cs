@@ -23,6 +23,14 @@ namespace Lachee.Utilities
         internal static T _instance;
         private static bool _isquitting = false;
 
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void Init()
+        {
+            _instance = null;
+            _isquitting = false;
+        }
+
+
         /// <summary>
         /// The current type that belongs to this singleton. Alias of <code>typeof(T)</code>.
         /// </summary>

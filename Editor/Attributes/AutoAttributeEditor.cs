@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 
 using Lachee.Utilities;
+using Lachee.Editor.Icons;
 
 namespace Lachee.Attributes.Editor
 {
@@ -61,16 +62,13 @@ namespace Lachee.Attributes.Editor
         public static IReadOnlyList<ObjectErrors> Errors => _errors;
         private static List<ObjectErrors> _errors = new List<ObjectErrors>();
 
-        public static Texture2D IconAuto_32 { get; private set; }
-        public static Texture2D IconAuto_16 { get; private set; }
+        public static Texture IconAuto_32 => Icon.link;
+        public static Texture IconAuto_16 => Icon.link_sm;
 
         static AutoAttributeEditor()
         {
             EditorApplication.hierarchyChanged += OnHierarchyChanged;
             EditorApplication.playModeStateChanged += OnPlayModeChange;
-
-            IconAuto_32 = (Texture2D)AssetDatabase.LoadAssetAtPath("Packages/com.lachee.utilities/Editor Resources/auto_32.png", typeof(Texture2D));
-            IconAuto_16 = (Texture2D)AssetDatabase.LoadAssetAtPath("Packages/com.lachee.utilities/Editor Resources/auto_16.png", typeof(Texture2D));
         }
 
         #region Event Listeners

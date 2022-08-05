@@ -12,11 +12,47 @@ namespace Lachee.Utilities.Editor
         /// <returns></returns>
         public static System.Type GetSerializedType(this SerializedProperty property)
         {
-            BindingFlags flag = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField;
+            var fi = property.GetSerializedFieldInfo();
+            return fi?.FieldType;
+        }
 
+        /// <summary>
+        /// Gets the FieldInfo of the underlying field
+        /// </summary>
+        /// <param name="property">The property to get the FieldInfo off</param>
+        /// <returns></returns>
+        public static FieldInfo GetSerializedFieldInfo(this SerializedProperty property)
+        {
+            BindingFlags flag = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField;
             System.Type parentType = property.serializedObject.targetObject.GetType();
-            FieldInfo fi = parentType.GetField(property.propertyPath, flag);
-            return fi.FieldType;
+            return parentType.GetFieldInfoFromPath(property.propertyPath, flag);
+        }
+
+        /// <summary>
+        /// Gets the field info from the given property path
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="path"></param>
+        /// <param name="flag"></param>
+        /// <returns></returns>
+        public static FieldInfo GetFieldInfoFromPath(this System.Type type, string path, BindingFlags flag = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField)
+        {
+            System.Type parentType = type;
+            FieldInfo fi = type.GetField(path, flag);
+            if (fi != null) return fi;
+
+            string[] perDot = path.Split('.');
+            foreach (string fieldName in perDot)
+            {
+                fi = parentType.GetField(fieldName, flag);
+                if (fi != null)
+                    parentType = fi.FieldType;
+                else
+                    return null;
+            }
+            if (fi != null)
+                return fi;
+            else return null;
         }
     }
 }
