@@ -658,6 +658,25 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.Editor.ReadonlyDrawer.OnGUI
   nameWithType: ReadonlyDrawer.OnGUI
+- uid: Lachee.Attributes.Editor.ToggleDrawer
+  name: ToggleDrawer
+  href: api/Lachee.Attributes.Editor.ToggleDrawer.html
+  commentId: T:Lachee.Attributes.Editor.ToggleDrawer
+  fullName: Lachee.Attributes.Editor.ToggleDrawer
+  nameWithType: ToggleDrawer
+- uid: Lachee.Attributes.Editor.ToggleDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/Lachee.Attributes.Editor.ToggleDrawer.html#Lachee_Attributes_Editor_ToggleDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Attributes.Editor.ToggleDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: Lachee.Attributes.Editor.ToggleDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: ToggleDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Lachee.Attributes.Editor.ToggleDrawer.OnGUI*
+  name: OnGUI
+  href: api/Lachee.Attributes.Editor.ToggleDrawer.html#Lachee_Attributes_Editor_ToggleDrawer_OnGUI_
+  commentId: Overload:Lachee.Attributes.Editor.ToggleDrawer.OnGUI
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.ToggleDrawer.OnGUI
+  nameWithType: ToggleDrawer.OnGUI
 - uid: Lachee.Attributes.EnumFlagAttribute
   name: EnumFlagAttribute
   href: api/Lachee.Attributes.EnumFlagAttribute.html
@@ -732,12 +751,272 @@ references:
   commentId: F:Lachee.Attributes.ReadonlyAttribute.hideInEditmode
   fullName: Lachee.Attributes.ReadonlyAttribute.hideInEditmode
   nameWithType: ReadonlyAttribute.hideInEditmode
+- uid: Lachee.Attributes.ToggleAttribute
+  name: ToggleAttribute
+  href: api/Lachee.Attributes.ToggleAttribute.html
+  commentId: T:Lachee.Attributes.ToggleAttribute
+  fullName: Lachee.Attributes.ToggleAttribute
+  nameWithType: ToggleAttribute
+- uid: Lachee.Attributes.ToggleAttribute.#ctor
+  name: ToggleAttribute()
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute__ctor
+  commentId: M:Lachee.Attributes.ToggleAttribute.#ctor
+  fullName: Lachee.Attributes.ToggleAttribute.ToggleAttribute()
+  nameWithType: ToggleAttribute.ToggleAttribute()
+- uid: Lachee.Attributes.ToggleAttribute.#ctor(System.String)
+  name: ToggleAttribute(String)
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute__ctor_System_String_
+  commentId: M:Lachee.Attributes.ToggleAttribute.#ctor(System.String)
+  fullName: Lachee.Attributes.ToggleAttribute.ToggleAttribute(System.String)
+  nameWithType: ToggleAttribute.ToggleAttribute(String)
+- uid: Lachee.Attributes.ToggleAttribute.#ctor(System.String,System.String)
+  name: ToggleAttribute(String, String)
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute__ctor_System_String_System_String_
+  commentId: M:Lachee.Attributes.ToggleAttribute.#ctor(System.String,System.String)
+  fullName: Lachee.Attributes.ToggleAttribute.ToggleAttribute(System.String, System.String)
+  nameWithType: ToggleAttribute.ToggleAttribute(String, String)
+- uid: Lachee.Attributes.ToggleAttribute.#ctor(System.String,System.String,System.Boolean)
+  name: ToggleAttribute(String, String, Boolean)
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute__ctor_System_String_System_String_System_Boolean_
+  commentId: M:Lachee.Attributes.ToggleAttribute.#ctor(System.String,System.String,System.Boolean)
+  fullName: Lachee.Attributes.ToggleAttribute.ToggleAttribute(System.String, System.String, System.Boolean)
+  nameWithType: ToggleAttribute.ToggleAttribute(String, String, Boolean)
+- uid: Lachee.Attributes.ToggleAttribute.#ctor*
+  name: ToggleAttribute
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute__ctor_
+  commentId: Overload:Lachee.Attributes.ToggleAttribute.#ctor
+  isSpec: "True"
+  fullName: Lachee.Attributes.ToggleAttribute.ToggleAttribute
+  nameWithType: ToggleAttribute.ToggleAttribute
+- uid: Lachee.Attributes.ToggleAttribute.Field
+  name: Field
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Field
+  commentId: P:Lachee.Attributes.ToggleAttribute.Field
+  fullName: Lachee.Attributes.ToggleAttribute.Field
+  nameWithType: ToggleAttribute.Field
+- uid: Lachee.Attributes.ToggleAttribute.Field*
+  name: Field
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Field_
+  commentId: Overload:Lachee.Attributes.ToggleAttribute.Field
+  isSpec: "True"
+  fullName: Lachee.Attributes.ToggleAttribute.Field
+  nameWithType: ToggleAttribute.Field
+- uid: Lachee.Attributes.ToggleAttribute.Invert
+  name: Invert
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Invert
+  commentId: P:Lachee.Attributes.ToggleAttribute.Invert
+  fullName: Lachee.Attributes.ToggleAttribute.Invert
+  nameWithType: ToggleAttribute.Invert
+- uid: Lachee.Attributes.ToggleAttribute.Invert*
+  name: Invert
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Invert_
+  commentId: Overload:Lachee.Attributes.ToggleAttribute.Invert
+  isSpec: "True"
+  fullName: Lachee.Attributes.ToggleAttribute.Invert
+  nameWithType: ToggleAttribute.Invert
+- uid: Lachee.Attributes.ToggleAttribute.Tooltip
+  name: Tooltip
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Tooltip
+  commentId: P:Lachee.Attributes.ToggleAttribute.Tooltip
+  fullName: Lachee.Attributes.ToggleAttribute.Tooltip
+  nameWithType: ToggleAttribute.Tooltip
+- uid: Lachee.Attributes.ToggleAttribute.Tooltip*
+  name: Tooltip
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Tooltip_
+  commentId: Overload:Lachee.Attributes.ToggleAttribute.Tooltip
+  isSpec: "True"
+  fullName: Lachee.Attributes.ToggleAttribute.Tooltip
+  nameWithType: ToggleAttribute.Tooltip
 - uid: Lachee.Behaviours
   name: Lachee.Behaviours
   href: api/Lachee.Behaviours.html
   commentId: N:Lachee.Behaviours
   fullName: Lachee.Behaviours
   nameWithType: Lachee.Behaviours
+- uid: Lachee.Behaviours.PerCameraSettings
+  name: PerCameraSettings
+  href: api/Lachee.Behaviours.PerCameraSettings.html
+  commentId: T:Lachee.Behaviours.PerCameraSettings
+  fullName: Lachee.Behaviours.PerCameraSettings
+  nameWithType: PerCameraSettings
+- uid: Lachee.Behaviours.PerCameraSettings.enabled
+  name: enabled
+  href: api/Lachee.Behaviours.PerCameraSettings.html#Lachee_Behaviours_PerCameraSettings_enabled
+  commentId: F:Lachee.Behaviours.PerCameraSettings.enabled
+  fullName: Lachee.Behaviours.PerCameraSettings.enabled
+  nameWithType: PerCameraSettings.enabled
+- uid: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty
+  name: PerCameraSettings.GlobalShaderProperty
+  href: api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html
+  commentId: T:Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty
+  fullName: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty
+  nameWithType: PerCameraSettings.GlobalShaderProperty
+- uid: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.name
+  name: name
+  href: api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html#Lachee_Behaviours_PerCameraSettings_GlobalShaderProperty_name
+  commentId: F:Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.name
+  fullName: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.name
+  nameWithType: PerCameraSettings.GlobalShaderProperty.name
+- uid: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.revert
+  name: revert
+  href: api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html#Lachee_Behaviours_PerCameraSettings_GlobalShaderProperty_revert
+  commentId: F:Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.revert
+  fullName: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.revert
+  nameWithType: PerCameraSettings.GlobalShaderProperty.revert
+- uid: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.revertValue
+  name: revertValue
+  href: api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html#Lachee_Behaviours_PerCameraSettings_GlobalShaderProperty_revertValue
+  commentId: F:Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.revertValue
+  fullName: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.revertValue
+  nameWithType: PerCameraSettings.GlobalShaderProperty.revertValue
+- uid: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.value
+  name: value
+  href: api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html#Lachee_Behaviours_PerCameraSettings_GlobalShaderProperty_value
+  commentId: F:Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.value
+  fullName: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.value
+  nameWithType: PerCameraSettings.GlobalShaderProperty.value
+- uid: Lachee.Behaviours.PerCameraSettings.properties
+  name: properties
+  href: api/Lachee.Behaviours.PerCameraSettings.html#Lachee_Behaviours_PerCameraSettings_properties
+  commentId: F:Lachee.Behaviours.PerCameraSettings.properties
+  fullName: Lachee.Behaviours.PerCameraSettings.properties
+  nameWithType: PerCameraSettings.properties
+- uid: Lachee.Behaviours.PerCameraSettings.renderSettings
+  name: renderSettings
+  href: api/Lachee.Behaviours.PerCameraSettings.html#Lachee_Behaviours_PerCameraSettings_renderSettings
+  commentId: F:Lachee.Behaviours.PerCameraSettings.renderSettings
+  fullName: Lachee.Behaviours.PerCameraSettings.renderSettings
+  nameWithType: PerCameraSettings.renderSettings
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState
+  name: PerCameraSettings.RenderSettingsState
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html
+  commentId: T:Lachee.Behaviours.PerCameraSettings.RenderSettingsState
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState
+  nameWithType: PerCameraSettings.RenderSettingsState
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Apply
+  name: Apply()
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_Apply
+  commentId: M:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Apply
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Apply()
+  nameWithType: PerCameraSettings.RenderSettingsState.Apply()
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Apply*
+  name: Apply
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_Apply_
+  commentId: Overload:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Apply
+  isSpec: "True"
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Apply
+  nameWithType: PerCameraSettings.RenderSettingsState.Apply
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.CreateState
+  name: CreateState()
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_CreateState
+  commentId: M:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.CreateState
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.CreateState()
+  nameWithType: PerCameraSettings.RenderSettingsState.CreateState()
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.CreateState*
+  name: CreateState
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_CreateState_
+  commentId: Overload:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.CreateState
+  isSpec: "True"
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.CreateState
+  nameWithType: PerCameraSettings.RenderSettingsState.CreateState
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fog
+  name: fog
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fog
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fog
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fog
+  nameWithType: PerCameraSettings.RenderSettingsState.fog
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogColor
+  name: fogColor
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogColor
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogColor
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogColor
+  nameWithType: PerCameraSettings.RenderSettingsState.fogColor
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogColorInherit
+  name: fogColorInherit
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogColorInherit
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogColorInherit
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogColorInherit
+  nameWithType: PerCameraSettings.RenderSettingsState.fogColorInherit
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogDensity
+  name: fogDensity
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogDensity
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogDensity
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogDensity
+  nameWithType: PerCameraSettings.RenderSettingsState.fogDensity
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogDensityInherit
+  name: fogDensityInherit
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogDensityInherit
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogDensityInherit
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogDensityInherit
+  nameWithType: PerCameraSettings.RenderSettingsState.fogDensityInherit
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogEndDistance
+  name: fogEndDistance
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogEndDistance
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogEndDistance
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogEndDistance
+  nameWithType: PerCameraSettings.RenderSettingsState.fogEndDistance
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogEndDistanceInherit
+  name: fogEndDistanceInherit
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogEndDistanceInherit
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogEndDistanceInherit
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogEndDistanceInherit
+  nameWithType: PerCameraSettings.RenderSettingsState.fogEndDistanceInherit
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogInherit
+  name: fogInherit
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogInherit
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogInherit
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogInherit
+  nameWithType: PerCameraSettings.RenderSettingsState.fogInherit
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogMode
+  name: fogMode
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogMode
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogMode
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogMode
+  nameWithType: PerCameraSettings.RenderSettingsState.fogMode
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogModeInherit
+  name: fogModeInherit
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogModeInherit
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogModeInherit
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogModeInherit
+  nameWithType: PerCameraSettings.RenderSettingsState.fogModeInherit
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogStartDistance
+  name: fogStartDistance
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogStartDistance
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogStartDistance
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogStartDistance
+  nameWithType: PerCameraSettings.RenderSettingsState.fogStartDistance
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogStartDistanceInherit
+  name: fogStartDistanceInherit
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_fogStartDistanceInherit
+  commentId: F:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogStartDistanceInherit
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.fogStartDistanceInherit
+  nameWithType: PerCameraSettings.RenderSettingsState.fogStartDistanceInherit
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings
+  name: FromCurrentRenderSettings()
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_FromCurrentRenderSettings
+  commentId: M:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings()
+  nameWithType: PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings()
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings*
+  name: FromCurrentRenderSettings
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_FromCurrentRenderSettings_
+  commentId: Overload:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings
+  isSpec: "True"
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings
+  nameWithType: PerCameraSettings.RenderSettingsState.FromCurrentRenderSettings
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Revert
+  name: Revert()
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_Revert
+  commentId: M:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Revert
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Revert()
+  nameWithType: PerCameraSettings.RenderSettingsState.Revert()
+- uid: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Revert*
+  name: Revert
+  href: api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html#Lachee_Behaviours_PerCameraSettings_RenderSettingsState_Revert_
+  commentId: Overload:Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Revert
+  isSpec: "True"
+  fullName: Lachee.Behaviours.PerCameraSettings.RenderSettingsState.Revert
+  nameWithType: PerCameraSettings.RenderSettingsState.Revert
 - uid: Lachee.Behaviours.Rotate
   name: Rotate
   href: api/Lachee.Behaviours.Rotate.html
@@ -750,6 +1029,31 @@ references:
   commentId: F:Lachee.Behaviours.Rotate.speed
   fullName: Lachee.Behaviours.Rotate.speed
   nameWithType: Rotate.speed
+- uid: Lachee.Editor.Behaviours
+  name: Lachee.Editor.Behaviours
+  href: api/Lachee.Editor.Behaviours.html
+  commentId: N:Lachee.Editor.Behaviours
+  fullName: Lachee.Editor.Behaviours
+  nameWithType: Lachee.Editor.Behaviours
+- uid: Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer
+  name: GlobalShaderPropertyPropertyDrawer
+  href: api/Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.html
+  commentId: T:Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer
+  fullName: Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer
+  nameWithType: GlobalShaderPropertyPropertyDrawer
+- uid: Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.html#Lachee_Editor_Behaviours_GlobalShaderPropertyPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: GlobalShaderPropertyPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.OnGUI*
+  name: OnGUI
+  href: api/Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.html#Lachee_Editor_Behaviours_GlobalShaderPropertyPropertyDrawer_OnGUI_
+  commentId: Overload:Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.OnGUI
+  isSpec: "True"
+  fullName: Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.OnGUI
+  nameWithType: GlobalShaderPropertyPropertyDrawer.OnGUI
 - uid: Lachee.Tools.Editor
   name: Lachee.Tools.Editor
   href: api/Lachee.Tools.Editor.html
@@ -1187,6 +1491,32 @@ references:
   commentId: T:Lachee.Utilities.Editor.SerializedPropertyExtensions
   fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions
   nameWithType: SerializedPropertyExtensions
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath(System.Type,System.String,BindingFlags)
+  name: GetFieldInfoFromPath(Type, String, BindingFlags)
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetFieldInfoFromPath_System_Type_System_String_BindingFlags_
+  commentId: M:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath(System.Type,System.String,BindingFlags)
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath(System.Type, System.String, BindingFlags)
+  nameWithType: SerializedPropertyExtensions.GetFieldInfoFromPath(Type, String, BindingFlags)
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath*
+  name: GetFieldInfoFromPath
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetFieldInfoFromPath_
+  commentId: Overload:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath
+  nameWithType: SerializedPropertyExtensions.GetFieldInfoFromPath
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo(SerializedProperty)
+  name: GetSerializedFieldInfo(SerializedProperty)
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedFieldInfo_SerializedProperty_
+  commentId: M:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo(SerializedProperty)
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo(SerializedProperty)
+  nameWithType: SerializedPropertyExtensions.GetSerializedFieldInfo(SerializedProperty)
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo*
+  name: GetSerializedFieldInfo
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedFieldInfo_
+  commentId: Overload:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo
+  nameWithType: SerializedPropertyExtensions.GetSerializedFieldInfo
 - uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedType(SerializedProperty)
   name: GetSerializedType(SerializedProperty)
   href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedType_SerializedProperty_

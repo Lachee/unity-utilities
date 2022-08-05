@@ -136,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.Editor.AutoAttributeEditor.html",
-          "hash": "Cq+SAASBIOW1na02SPfp/0CbP5uDLwbqi/iFK5sNEg4="
+          "hash": "1UrHftasqnCzSU/Z2oLydY4RkXOktsdU5eSQsosWEfU="
         }
       },
       "is_incremental": false,
@@ -192,11 +192,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.ToggleDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.ToggleDrawer.html",
+          "hash": "jTz0/JOs2+UVLqh49i3k2b45qdY7wM1i2iiG9f264WQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.Editor.html",
-          "hash": "W/RM0WduMgO0MSI479pJrVBlRjR9inDeT8dqaOf77ys="
+          "hash": "qs1aUXFloB5aYtr8bwkFCGzfAf3f61aUxugxKKG1PlU="
         }
       },
       "is_incremental": false,
@@ -228,11 +240,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.ToggleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.ToggleAttribute.html",
+          "hash": "uMlmgYOYCdoLWyaRfP1Te1rNUfbVE0F4FJAeUEOMRI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.yml",
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "4UJ460ouYteRfEwv51rEYQyyEwWZuwrpNMGQ/EypSY4="
+          "hash": "sRM5V0Iwy67JdYFIVrasPHZ0YhsCl/L9G372j9RgJdU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html",
+          "hash": "q0WfpIKJ77VcIGOrSsR3HV6FJvs2zdi8LSlF9kV+avM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html",
+          "hash": "R3Emt4BSlgx6b3QeRnyw1aF0e6edKJa6BKCfLFlmT10="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Behaviours.PerCameraSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Behaviours.PerCameraSettings.html",
+          "hash": "az0YWQamqsPSPEtr5ek8biK26WT+dvOe2wCAH+Bo5eQ="
         }
       },
       "is_incremental": false,
@@ -256,7 +316,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Behaviours.html",
-          "hash": "X5w5sCErfUAzMZR9uhfsnjfJXb95BB7DxTXQD06bjSo="
+          "hash": "iGAq54nk0FlhgrR3qwart1AThgctGqthACuOvtdqHvE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Editor.Behaviours.GlobalShaderPropertyPropertyDrawer.html",
+          "hash": "gyw1VeOB7l/eJh57+Gd50SWYbIzWSt6UMj82Gh8E/sA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Editor.Behaviours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Editor.Behaviours.html",
+          "hash": "SJaakaYIoTqGvp1+t/yblvyRkREVtmTOf3MYGV+Hrc4="
         }
       },
       "is_incremental": false,
@@ -400,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html",
-          "hash": "4jCMMpMB5MZTu3C2DzZQuqOz6VRYt5GInSjrp28iSP4="
+          "hash": "zoFvzzzGwSp5RtuBPakSUJ9USZc4WrsL0gQo7AHccZs="
         }
       },
       "is_incremental": false,
@@ -688,7 +772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QcvwKaV0oELp9QYeE7CiLY9Dsq5o+Ma+/TRVY9yOT0E="
+          "hash": "oMlYQlFN4QMFoCQI6Evd/JFg48Mlw6nTDc7hMTNdvMA="
         }
       },
       "is_incremental": false,
@@ -754,7 +838,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 55,
+          "total_file_count": 62,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
