@@ -17,6 +17,7 @@ namespace Lachee.Editor.Icons
         public static Texture rotate    => Load("rotate");
         public static Texture singleton => Load("singleton");
 
+        public static Texture ristBar    => Load("ristbar");
         public static Texture @namespace => Load("NamespaceConfigurationIcon");
 
         /// <summary>

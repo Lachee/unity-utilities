@@ -54,5 +54,60 @@ namespace Lachee.Utilities.Editor
                 return fi;
             else return null;
         }
+
+        /// <summary>
+        /// Gets the raw value of the property
+        /// </summary>
+        /// <param name="property"></param>
+        /// <returns></returns>
+#if CSHARP_7_3_OR_NEWER && ENABLE_DYNAMIC
+        public static dynamic GetSerializedValue(this SerializedProperty property) {
+            dynamic result;
+#else
+        public static object GetSerializedValue(this SerializedProperty property) {
+            object result;
+#endif
+            BindingFlags flag = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField;
+            result = property.serializedObject.targetObject;
+            System.Type parentType = property.serializedObject.targetObject.GetType();
+
+            // See if we can return the object directly
+            string path     = property.propertyPath;
+            FieldInfo fi    = null;//    = parentType.GetField(path, flag);
+            
+            // We need to delve deeper until we hit the final result.
+            string[] perDot = path.Split('.');
+            foreach (string fieldName in perDot)
+            {
+                fi = parentType.GetField(fieldName, flag);
+                if (fi != null)
+                {
+                    parentType = fi.FieldType;
+                    result = fi.GetValue(result);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Determines the best name for the given property
+        /// </summary>
+        /// <param name="property"></param>
+        /// <returns></returns>
+        public static string GetReadableName(this SerializedProperty property)
+        {
+            switch(property.propertyType)
+            {
+                default:
+                    return property.displayName;
+                case SerializedPropertyType.ObjectReference:
+                    return property.objectReferenceValue ? property.objectReferenceValue.name : "[ NULL ]";
+            }
+        }
     }
 }
