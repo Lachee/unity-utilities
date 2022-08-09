@@ -1504,6 +1504,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath
   nameWithType: SerializedPropertyExtensions.GetFieldInfoFromPath
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName(SerializedProperty)
+  name: GetReadableName(SerializedProperty)
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetReadableName_SerializedProperty_
+  commentId: M:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName(SerializedProperty)
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName(SerializedProperty)
+  nameWithType: SerializedPropertyExtensions.GetReadableName(SerializedProperty)
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName*
+  name: GetReadableName
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetReadableName_
+  commentId: Overload:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName
+  nameWithType: SerializedPropertyExtensions.GetReadableName
 - uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedFieldInfo(SerializedProperty)
   name: GetSerializedFieldInfo(SerializedProperty)
   href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedFieldInfo_SerializedProperty_
@@ -1530,6 +1543,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedType
   nameWithType: SerializedPropertyExtensions.GetSerializedType
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue(SerializedProperty)
+  name: GetSerializedValue(SerializedProperty)
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedValue_SerializedProperty_
+  commentId: M:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue(SerializedProperty)
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue(SerializedProperty)
+  nameWithType: SerializedPropertyExtensions.GetSerializedValue(SerializedProperty)
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue*
+  name: GetSerializedValue
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedValue_
+  commentId: Overload:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue
+  nameWithType: SerializedPropertyExtensions.GetSerializedValue
 - uid: Lachee.Utilities.GameObjectExtension
   name: GameObjectExtension
   href: api/Lachee.Utilities.GameObjectExtension.html
@@ -2716,6 +2742,15 @@ references:
   fullName.vb: Lachee.Utilities.RandomList(Of T).RandomList()
   nameWithType: RandomList<T>.RandomList()
   nameWithType.vb: RandomList(Of T).RandomList()
+- uid: Lachee.Utilities.RandomList`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,System.Single}})
+  name: RandomList(IEnumerable<KeyValuePair<T, Single>>)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair__0_System_Single___
+  commentId: M:Lachee.Utilities.RandomList`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,System.Single}})
+  name.vb: RandomList(IEnumerable(Of KeyValuePair(Of T, Single)))
+  fullName: Lachee.Utilities.RandomList<T>.RandomList(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<T, System.Single>>)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).RandomList(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of T, System.Single)))
+  nameWithType: RandomList<T>.RandomList(IEnumerable<KeyValuePair<T, Single>>)
+  nameWithType.vb: RandomList(Of T).RandomList(IEnumerable(Of KeyValuePair(Of T, Single)))
 - uid: Lachee.Utilities.RandomList`1.#ctor(System.Int32)
   name: RandomList(Int32)
   href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1__ctor_System_Int32_
@@ -2741,6 +2776,15 @@ references:
   fullName.vb: Lachee.Utilities.RandomList(Of T).Add(T, System.Single)
   nameWithType: RandomList<T>.Add(T, Single)
   nameWithType.vb: RandomList(Of T).Add(T, Single)
+- uid: Lachee.Utilities.RandomList`1.Add(System.Collections.Generic.KeyValuePair{`0,System.Single})
+  name: Add(KeyValuePair<T, Single>)
+  href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Add_System_Collections_Generic_KeyValuePair__0_System_Single__
+  commentId: M:Lachee.Utilities.RandomList`1.Add(System.Collections.Generic.KeyValuePair{`0,System.Single})
+  name.vb: Add(KeyValuePair(Of T, Single))
+  fullName: Lachee.Utilities.RandomList<T>.Add(System.Collections.Generic.KeyValuePair<T, System.Single>)
+  fullName.vb: Lachee.Utilities.RandomList(Of T).Add(System.Collections.Generic.KeyValuePair(Of T, System.Single))
+  nameWithType: RandomList<T>.Add(KeyValuePair<T, Single>)
+  nameWithType.vb: RandomList(Of T).Add(KeyValuePair(Of T, Single))
 - uid: Lachee.Utilities.RandomList`1.Add*
   name: Add
   href: api/Lachee.Utilities.RandomList-1.html#Lachee_Utilities_RandomList_1_Add_

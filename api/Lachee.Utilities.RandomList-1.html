@@ -159,6 +159,33 @@ public class RandomList&lt;T&gt; : IEnumerable&lt;T&gt;, IEnumerable</code></pre
   
   
   <a id="Lachee_Utilities_RandomList_1__ctor_" data-uid="Lachee.Utilities.RandomList`1.#ctor*"></a>
+  <h4 id="Lachee_Utilities_RandomList_1__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair__0_System_Single___" data-uid="Lachee.Utilities.RandomList`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,System.Single}})">RandomList(IEnumerable&lt;KeyValuePair&lt;T, Single&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RandomList(IEnumerable&lt;KeyValuePair&lt;T, float&gt;&gt; collection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;T, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;&gt;</td>
+        <td><span class="parametername">collection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_RandomList_1__ctor_" data-uid="Lachee.Utilities.RandomList`1.#ctor*"></a>
   <h4 id="Lachee_Utilities_RandomList_1__ctor_System_Int32_" data-uid="Lachee.Utilities.RandomList`1.#ctor(System.Int32)">RandomList(Int32)</h4>
   <div class="markdown level1 summary"><p>Creates a new Random List with a set capacity.</p>
 </div>
@@ -270,8 +297,36 @@ public class RandomList&lt;T&gt; : IEnumerable&lt;T&gt;, IEnumerable</code></pre
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
         <td><span class="parametername">weight</span></td>
-        <td><p>Weight this item has</p>
+        <td><p>Non-negative weight this item has</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_RandomList_1_Add_" data-uid="Lachee.Utilities.RandomList`1.Add*"></a>
+  <h4 id="Lachee_Utilities_RandomList_1_Add_System_Collections_Generic_KeyValuePair__0_System_Single__" data-uid="Lachee.Utilities.RandomList`1.Add(System.Collections.Generic.KeyValuePair{`0,System.Single})">Add(KeyValuePair&lt;T, Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a new key value pair</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(KeyValuePair&lt;T, float&gt; pair)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;T, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td><span class="parametername">pair</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
