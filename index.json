@@ -194,10 +194,15 @@
     "title": "Class ColorExtension | Utilities",
     "keywords": "Class ColorExtension Extends Color Inheritance Object ColorExtension Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : Lachee.Utilities Assembly : cs.temp.dll.dll Syntax public static class ColorExtension Methods PerceivedBrightness(Color) Declaration public static int PerceivedBrightness(this Color c) Parameters Type Name Description Color c Returns Type Description Int32 PerceivedBrightness(Color32) Declaration public static int PerceivedBrightness(this Color32 c) Parameters Type Name Description Color32 c Returns Type Description Int32 ToHex(Color, Char) Converts the colour into a RGBA hex with the given prefix Declaration public static string ToHex(this Color color, char prefix = '#') Parameters Type Name Description Color color Char prefix Returns Type Description String"
   },
+  "api/Lachee.Utilities.Editor.BasicRistDrawer.html": {
+    "href": "api/Lachee.Utilities.Editor.BasicRistDrawer.html",
+    "title": "Class BasicRistDrawer | Utilities",
+    "keywords": "Class BasicRistDrawer Basic extendable drawer for the Random List Inheritance Object BasicRistDrawer Implements IRistBoxLabelDrawer Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : Lachee.Utilities.Editor Assembly : cs.temp.dll.dll Syntax public class BasicRistDrawer : IRistBoxLabelDrawer Methods DrawLabel(Rect, RandomListDrawerStyle, SerializedProperty, Single, Boolean) Declaration public virtual void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini) Parameters Type Name Description Rect position RandomListDrawerStyle style SerializedProperty property Single weight Boolean isMini Implements IRistBoxLabelDrawer"
+  },
   "api/Lachee.Utilities.Editor.html": {
     "href": "api/Lachee.Utilities.Editor.html",
     "title": "Namespace Lachee.Utilities.Editor | Utilities",
-    "keywords": "Namespace Lachee.Utilities.Editor Classes RandomListDrawer Handles drawing the Random List and its sliders sliders RandomListDrawerStyle Default styling used for the random list SerializedPropertyExtensions Interfaces IRistBoxLabelDrawer Interface used to draw labels on weight sliders"
+    "keywords": "Namespace Lachee.Utilities.Editor Classes BasicRistDrawer Basic extendable drawer for the Random List RandomListDrawer Handles drawing the Random List and its sliders sliders RandomListDrawerStyle Default styling used for the random list SerializedPropertyExtensions Interfaces IRistBoxLabelDrawer Interface used to draw labels on weight sliders"
   },
   "api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.html": {
     "href": "api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.html",

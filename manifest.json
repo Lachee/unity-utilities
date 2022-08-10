@@ -492,6 +492,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Editor.BasicRistDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Editor.BasicRistDrawer.html",
+          "hash": "ZJB1uGx74aiEUybUIV8Nxck2JTP6g/zw+9+lBIH4qGQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.yml",
       "output": {
         ".html": {
@@ -544,7 +556,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Editor.html",
-          "hash": "zfm9RjcZnPKRn5PxzVCk/MOvIEgiHLdpgDR1VzOqHw8="
+          "hash": "TE6NDwnqFLGkiLNcWjx7IeJH/uF8r/xNK/VJj2YEEjc="
         }
       },
       "is_incremental": false,
@@ -820,7 +832,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TqA5HBSZPk5sVJQhhj2rGOBlFhYb0RGKgcgM9Q1SO/8="
+          "hash": "YxJ05ZCX6bJ1mHliuUmWabaCjDLc/gqhwsj9ktr0rSw="
         }
       },
       "is_incremental": false,
@@ -886,7 +898,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 66,
+          "total_file_count": 67,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
