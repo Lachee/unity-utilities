@@ -511,7 +511,7 @@ namespace Lachee.Utilities.Editor
     /// <summary>Draws little sprites</summary>
     internal sealed class SpriteRistDrawer : BasicRistDrawer
     {
-        const float PADDING = 2;
+        const float PADDING = 3;
 
         public bool WithBackground { get; set; } = false;
 
