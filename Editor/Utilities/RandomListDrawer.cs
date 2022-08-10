@@ -14,13 +14,7 @@ namespace Lachee.Utilities.Editor
     public class RandomListDrawerStyle
     {
         /// <summary>Dictionary lookup for custom drawers for the slider labels</summary>
-        public Dictionary<Type, IRistBoxLabelDrawer> Drawers = new Dictionary<Type, IRistBoxLabelDrawer>()
-        {
-            { typeof(void), new BasicRistDrawer() },
-            { typeof(Color), new ColorRistDrawer() },
-            { typeof(AnimationCurve), new AnimationCurveRistDrawer() },
-            { typeof(Sprite), new SpriteRistDrawer() },
-        };
+        public Dictionary<Type, IRistBoxLabelDrawer> Drawers;
 
         public readonly Color[] Colors =
         {
@@ -43,6 +37,23 @@ namespace Lachee.Utilities.Editor
         public readonly GUIStyle listPreButton = "RL FooterButton";
         public readonly GUIContent listIconToolbarMinus = EditorGUIUtility.TrIconContent("Toolbar Minus", "Remove selection from the list");
         public readonly GUIContent listIconToolbarPlus = EditorGUIUtility.TrIconContent("Toolbar Plus", "Add to the list");
+
+        public RandomListDrawerStyle()
+        {
+            SpriteRistDrawer spriteRistDrawer = new SpriteRistDrawer();
+
+            Drawers = new Dictionary<Type, IRistBoxLabelDrawer>()
+            {
+                { typeof(void), new BasicRistDrawer() },
+                { typeof(Color), new ColorRistDrawer() },
+                { typeof(AnimationCurve), new AnimationCurveRistDrawer() },
+
+                // They all reference the same object for efficiency
+                { typeof(Sprite), spriteRistDrawer },
+                { typeof(Texture), spriteRistDrawer },
+                { typeof(Texture2D), spriteRistDrawer },
+            };
+        }
     }
 
     /// <summary>Interface used to draw labels on weight sliders</summary>
