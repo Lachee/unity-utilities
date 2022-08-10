@@ -98,11 +98,23 @@ namespace Lachee.Utilities.Editor
             var list = new ReorderableList(property.serializedObject, itemListProperty, true, false, true, true);
             list.drawElementCallback += (Rect rect, int index, bool isActive, bool isFocused) =>
             {
+                var itemProperty = itemListProperty.GetArrayElementAtIndex(index);
                 Rect objectRect = new Rect(rect.x, rect.y + 2, rect.width * 2 / 3, rect.height - 4);
-                EditorGUI.PropertyField(objectRect, itemListProperty.GetArrayElementAtIndex(index), GUIContent.none);
+                GUIContent label = GUIContent.none;
 
-                Rect weightRect = new Rect(objectRect.xMax + 5, objectRect.y, rect.width - objectRect.width - 5, objectRect.height);
+                if (itemProperty.hasVisibleChildren)
+                {
+                    label = new GUIContent(itemProperty.displayName, itemProperty.tooltip);
+                    objectRect.x += 10;
+                    objectRect.width -= 10;
+                }
+
+                EditorGUI.PropertyField(objectRect, itemProperty, label, true);
+
+                Rect weightRect = new Rect(objectRect.xMax + 5, objectRect.y, rect.width * 1 / 3 - 5, EditorGUIUtility.singleLineHeight);
                 EditorGUI.PropertyField(weightRect, weightListProperty.GetArrayElementAtIndex(index), GUIContent.none);
+
+
             };
 
             list.drawElementBackgroundCallback += (Rect rect, int index, bool isActive, bool isFocused) =>
@@ -116,7 +128,7 @@ namespace Lachee.Utilities.Editor
 
                 if (!isActive)
                     GUI.backgroundColor *= 0.6f;
-
+                
                 Style.sliderRange.Draw(rect, GUIContent.none, false, false, false, false);
                 GUI.backgroundColor = previous;
             };
@@ -138,6 +150,11 @@ namespace Lachee.Utilities.Editor
             list.onCanRemoveCallback += (_) =>
             {
                 return list.selectedIndices.Count == 1;
+            };
+
+            list.elementHeightCallback += (int index) =>
+            {
+                return Mathf.Max(EditorGUIUtility.singleLineHeight+2f, EditorGUI.GetPropertyHeight(itemListProperty.GetArrayElementAtIndex(index)));
             };
 
             // For fancy footer that allows adjustment of the total sum on the fly, see the following gist:
@@ -326,9 +343,10 @@ namespace Lachee.Utilities.Editor
 
         void IRistBoxLabelDrawer.DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
         {
+            var name = property.hasVisibleChildren ? property.displayName : property.GetValueName();
             var label = isMini 
-                            ? property.GetValueName() 
-                            : string.Format("{0}\n{1:0}%", property.GetValueName(), weight * 100);
+                            ? name
+                            : string.Format("{0}\n{1:0}%", name, weight * 100);
 
             style.sliderText.Draw(position, label, false, false, false, false);
         }
