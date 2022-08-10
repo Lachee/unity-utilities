@@ -10,7 +10,8 @@ using UnityEngine;
 
 namespace Lachee.Utilities.Editor
 {
-    internal class RandomListStyle
+    /// <summary>Default styling used for the random list</summary>
+    public sealed class RandomListEditorStyle
     {
         public static readonly Color[] Colors =
         {
@@ -35,9 +36,29 @@ namespace Lachee.Utilities.Editor
         public readonly GUIContent listIconToolbarPlus = EditorGUIUtility.TrIconContent("Toolbar Plus", "Add to the list");
     }
 
-    [CustomPropertyDrawer(typeof(RandomList<>))]
-    class RandomListDrawer : UnityEditor.PropertyDrawer
+    /// <summary>Interface used to draw labels on weight sliders</summary>
+    public interface IRistBoxLabelDrawer
     {
+        public void DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini);
+    }
+
+
+    /// <summary>
+    /// Handles drawing the Random List and its sliders sliders
+    /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [CustomPropertyDrawer(typeof(RandomList<>))]
+    [CustomPropertyDrawer(typeof(Rist<>))]
+#pragma warning restore CS0618 // Type or member is obsolete
+    public sealed class RandomListDrawer : UnityEditor.PropertyDrawer, IRistBoxLabelDrawer
+    {
+        /// <summary>Dictionary lookup for custom drawers for the slider labels</summary>
+        public static Dictionary<System.Type, IRistBoxLabelDrawer> SliderLabelDrawers = new Dictionary<Type, IRistBoxLabelDrawer>()
+        {
+            { typeof(Color), new ColorRistDrawer() },
+            { typeof(AnimationCurve), new AnimationCurveRistDrawer() }
+        };
+
         private const int WEIGHT_HEIGHT = 32;
         private const int WEIGHT_RANGE_PADDING = 2;
         private static readonly int WEIGHT_SLIDER_ID = "RISTSliderIDHash".GetHashCode();
@@ -46,21 +67,26 @@ namespace Lachee.Utilities.Editor
         private int _selectedWeight = -1;
         private ReorderableList _list;
 
-        private static RandomListStyle _style;
-        public static RandomListStyle Style
+        private static RandomListEditorStyle _style;
+        private static RandomListEditorStyle Style
         {
             get
             {
                 if (_style == null)
-                    _style = new RandomListStyle();
+                    _style = new RandomListEditorStyle();
                 return _style;
             }
         }
 
+        private bool? _isFoldOut;
         private bool isListFoldout
         {
-            get => EditorPrefs.GetBool($"com.lachee.utilities.RISTFoldout", false);
-            set => EditorPrefs.SetBool($"com.lachee.utilities.RISTFoldout", value);
+            get => _isFoldOut.GetValueOrDefault(EditorPrefs.GetBool($"com.lachee.utilities.RISTFoldout", false));
+            set
+            {
+                _isFoldOut = value;
+                EditorPrefs.SetBool($"com.lachee.utilities.RISTFoldout", value);
+            }
         }
 
         private static ReorderableList CreateReoderableList(SerializedProperty property)
@@ -86,7 +112,7 @@ namespace Lachee.Utilities.Editor
                 var previous = GUI.backgroundColor;
                 
                 if (index >= 0)
-                    GUI.backgroundColor = RandomListStyle.Colors[index % RandomListStyle.Colors.Length];
+                    GUI.backgroundColor = RandomListEditorStyle.Colors[index % RandomListEditorStyle.Colors.Length];
 
                 if (!isActive)
                     GUI.backgroundColor *= 0.6f;
@@ -137,7 +163,7 @@ namespace Lachee.Utilities.Editor
                 
                 // Draw the regular UI
                 Rect weightRect = EditorGUI.IndentedRect(new Rect(position.x, position.y + EditorGUIUtility.singleLineHeight, position.width, WEIGHT_HEIGHT));
-                List<WeightSlider> sliders = WeightSlider.Create(property, weightRect);
+                List<WeightSlider> sliders = CreateSliders(property, weightRect);
                 OnSliderBoxGUI(weightRect, property, sliders);
 
                 // Draw the list
@@ -156,7 +182,7 @@ namespace Lachee.Utilities.Editor
                 if (evt.type == EventType.Repaint)
                 {
                     Rect miniBoxSliderRect = new Rect(position.x + EditorGUIUtility.labelWidth, position.y, position.width - EditorGUIUtility.labelWidth, position.height);
-                    List<WeightSlider> sliders = WeightSlider.Create(property, miniBoxSliderRect);
+                    List<WeightSlider> sliders = CreateSliders(property, miniBoxSliderRect);
                     DrawSliderBox(miniBoxSliderRect, sliders, -1, true);
                 }
             }
@@ -169,7 +195,6 @@ namespace Lachee.Utilities.Editor
             var method = context.GetType().GetMethod("RecalculateWeights", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.InvokeMethod);
             method.Invoke(context, new object[0]);
         }
-
         private void OnSliderBoxGUI(Rect groupRect, SerializedProperty property, List<WeightSlider> sliders)
         {
             int sliderId = GUIUtility.GetControlID(WEIGHT_SLIDER_ID, FocusType.Passive);
@@ -178,7 +203,7 @@ namespace Lachee.Utilities.Editor
             switch (evt.GetTypeForControl(sliderId))
             {
                 case EventType.Repaint:
-                    DrawSliderBox(groupRect, sliders, _selectedWeight, false);
+                    DrawSliderBox(groupRect, sliders, -10, false);
                     break;
 
                 case EventType.MouseDown:
@@ -206,23 +231,6 @@ namespace Lachee.Utilities.Editor
                                     break;
                                 }
                             }
-
-                            /*
-                            // We dont care about selecting boxes
-                            if (!clickedButton)
-                            {
-                                // Check for range click
-                                foreach (var weight in sliders)
-                                {
-                                    if (weight.rangePosition.Contains(evt.mousePosition))
-                                    {
-                                        _selectedSlider = -1;
-                                        _selectedWeight = weight.index;
-                                        break;
-                                    }
-                                }
-                            }
-                            */
                         }
                         break;
                     }
@@ -274,38 +282,35 @@ namespace Lachee.Utilities.Editor
         private void DrawSliderBox(Rect area, List<WeightSlider> weights, int activeWeight, bool isCompact)
         {
             Style.sliderBG.Draw(area, GUIContent.none, false, false, false, false);
-
             var tempColor = GUI.backgroundColor;
             for (int i = 0; i < weights.Count; i++)
             {
+                // Get the weight and update any missing drawers
                 WeightSlider weight   = weights[i];
-                Color color         = RandomListStyle.Colors[i % RandomListStyle.Colors.Length];
-                string label        = weight.name;
-                if (!isCompact)
-                    label = string.Format("{0}\n{1:0}%", weight.name, weight.weightPercentage * 100);
+                if (weight.labelDrawer == null)
+                    weight.labelDrawer = this;
 
-                if (activeWeight == i)
-                {
-                    var foreground = weight.rangePosition;
-                    foreground.width -= WEIGHT_RANGE_PADDING * 2;
-                    foreground.height -= WEIGHT_RANGE_PADDING * 2;
-                    foreground.center += new Vector2(WEIGHT_RANGE_PADDING, WEIGHT_RANGE_PADDING);
-
-                    GUI.backgroundColor = color;
-                    Style.sliderRangeSelected.Draw(weight.rangePosition, GUIContent.none, false, false, false, false);
-                    if (foreground.width > 0)
-                        Style.sliderRange.Draw(foreground, GUIContent.none, false, false, false, false);
-
-                    if (!isCompact)
-                        Style.sliderText.Draw(weight.rangePosition, label, false, false, false, false);
-                }
-                else
+                Color color = RandomListEditorStyle.Colors[i % RandomListEditorStyle.Colors.Length];
+                // The can no longer be activated
+                // if (activeWeight == i)
+                // {
+                //     var foreground = weight.rangePosition;
+                //     foreground.width -= WEIGHT_RANGE_PADDING * 2;
+                //     foreground.height -= WEIGHT_RANGE_PADDING * 2;
+                //     foreground.center += new Vector2(WEIGHT_RANGE_PADDING, WEIGHT_RANGE_PADDING);
+                   
+                //     GUI.backgroundColor = color;
+                //     Style.sliderRangeSelected.Draw(weight.rangePosition, GUIContent.none, false, false, false, false);
+                //     if (foreground.width > 0)
+                //         Style.sliderRange.Draw(foreground, GUIContent.none, false, false, false, false);
+                //     weight.labelDrawer.DrawLabel(weight.rangePosition, Style, weight.itemProperty, weight.weightPercentage, isCompact);
+                // }
+                // else
                 {
                     //DrawLODRAnge
-                    GUI.backgroundColor = color;
-                    GUI.backgroundColor *= 0.6f;
+                    GUI.backgroundColor = color * 0.6f;
                     Style.sliderRange.Draw(weight.rangePosition, GUIContent.none, false, false, false, false);
-                    Style.sliderText.Draw(weight.rangePosition, label, false, false, false, false);
+                    weight.labelDrawer.DrawLabel(weight.rangePosition, Style, weight.itemProperty, weight.weightPercentage, isCompact);
                 }
 
                 //DrawLODButton
@@ -319,6 +324,15 @@ namespace Lachee.Utilities.Editor
             GUI.backgroundColor = tempColor;
         }
 
+        void IRistBoxLabelDrawer.DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
+        {
+            var label = isMini 
+                            ? property.GetValueName() 
+                            : string.Format("{0}\n{1:0}%", property.GetValueName(), weight * 100);
+
+            style.sliderText.Draw(position, label, false, false, false, false);
+        }
+
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
             if (!isListFoldout) 
@@ -328,22 +342,18 @@ namespace Lachee.Utilities.Editor
                 _list = CreateReoderableList(property);
             return WEIGHT_HEIGHT + EditorGUIUtility.singleLineHeight*2 + _list.GetHeight();
         }
-
         private static float GetMouseProgressThroughRect(Vector2 position, Rect sliderRect)
         {
             var percentage = Mathf.Clamp((position.x - sliderRect.x) / sliderRect.width, 0.01f, 1.0f);
             return percentage;
         }
 
-        class ItemWeightSerializedPair
+        private class ItemWeightSerializedPair
         {
             public SerializedProperty itemProperty;
             public SerializedProperty weightProperty;
-
-            public string name => itemProperty.GetValueName();
         }
-
-        class WeightSlider : ItemWeightSerializedPair
+        private class WeightSlider : ItemWeightSerializedPair
         {
             public int index;
 
@@ -369,54 +379,94 @@ namespace Lachee.Utilities.Editor
             
             public float sumWeight;
 
+            public IRistBoxLabelDrawer labelDrawer;
+
             public void ApplyWeightProperty()
                 => weightProperty.floatValue = weight;
+        }
 
-            public static List<WeightSlider> Create(SerializedProperty property, Rect sliderRect)
+        private static List<WeightSlider> CreateSliders(SerializedProperty property, Rect sliderRect)
+        {
+            var infos = new List<WeightSlider>();
+
+            SerializedProperty totalWeightProperty = property.FindPropertyRelative("_sumWeight");
+            SerializedProperty itemListProperty = property.FindPropertyRelative("_list");
+            SerializedProperty weightListProperty = property.FindPropertyRelative("_weights");
+
+            float weightOffset = 0;
+            for (int i = 0; i < itemListProperty.arraySize; i++)
             {
-                var infos = new List<WeightSlider>();
+                SerializedProperty itemProperty = itemListProperty.GetArrayElementAtIndex(i);
+                SerializedProperty weightProperty = weightListProperty.GetArrayElementAtIndex(i);
 
-                SerializedProperty totalWeightProperty = property.FindPropertyRelative("_sumWeight");
-                SerializedProperty itemListProperty = property.FindPropertyRelative("_list");
-                SerializedProperty weightListProperty = property.FindPropertyRelative("_weights");
-
-                float weightOffset = 0;
-                for (int i = 0; i < itemListProperty.arraySize; i++)
+                // Setup the initial info
+                var info = new WeightSlider()
                 {
-                    SerializedProperty itemProperty = itemListProperty.GetArrayElementAtIndex(i);
-                    SerializedProperty weightProperty = weightListProperty.GetArrayElementAtIndex(i);
-                    
+                    index = i,
+                    itemProperty = itemProperty,
+                    weightProperty = weightProperty,
+                    startWeight = weightOffset,
+                    endWeight = weightOffset + weightProperty.floatValue,
+                    sumWeight = totalWeightProperty.floatValue,
+                };
 
-                    // Setup the initial info
-                    var info = new WeightSlider()
-                    {
-                        index               = i,
-                        itemProperty        = itemProperty,
-                        weightProperty      = weightProperty,
-                        startWeight         = weightOffset,
-                        endWeight           = weightOffset + weightProperty.floatValue,
-                        sumWeight           = totalWeightProperty.floatValue,
-                    };
+                // Calculate the rect
+                float buttonSize = 10;
+                info.rangePosition = new Rect(sliderRect.x + info.startPercentage * sliderRect.width, sliderRect.y, info.weightPercentage * sliderRect.width, sliderRect.height);
+                info.buttonPosition = new Rect(info.rangePosition.x - (buttonSize / 2), info.rangePosition.y, buttonSize, info.rangePosition.height);
+                infos.Add(info);
 
-                    // Calculate the rect
-                    float buttonSize = 10;
-                    info.rangePosition = new Rect(sliderRect.x + info.startPercentage * sliderRect.width, sliderRect.y, info.weightPercentage * sliderRect.width, sliderRect.height);
-                    info.buttonPosition = new Rect(info.rangePosition.x - (buttonSize / 2), info.rangePosition.y, buttonSize, info.rangePosition.height);
-                    infos.Add(info);
+                var type = itemProperty.GetSerializedType();
+                SliderLabelDrawers.TryGetValue(type, out info.labelDrawer);
 
-                    weightOffset += info.weight;
-                }
-
-                return infos;
+                weightOffset += info.weight;
             }
 
+            return infos;
         }
-    
     }
 
+    internal class ColorRistDrawer : IRistBoxLabelDrawer
+    {
+        public void DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
+        {
+            var label = isMini
+                ? property.GetValueName()
+                : string.Format("{0}\n{1:0}%", property.GetValueName(), weight * 100);
 
+            GUI.backgroundColor = property.colorValue;
+            style.sliderRange.Draw(position, GUIContent.none, false, false, false, false);
 
+            if (property.colorValue.PerceivedBrightness() > 130)
+                GUI.color = Color.black;
 
-    [Obsolete, CustomPropertyDrawer(typeof(Rist<>))]
-    class RistDrawer : RandomListDrawer { }
+            style.sliderText.Draw(position, label, false, false, false, false);
+            GUI.color = Color.white;
+        }
+    }
+
+    internal class AnimationCurveRistDrawer : IRistBoxLabelDrawer
+    {
+        const float PADDING = 2;
+
+        public void DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
+        {
+            var label = isMini
+                ? ""
+                : string.Format("{0}\n{1:0}%", "", weight * 100);
+
+            style.sliderText.Draw(position, label, false, false, false, false);
+
+            EditorGUI.indentLevel--;
+            GUI.backgroundColor = Color.white;
+            Rect curveRect = new Rect(position.x + PADDING, position.y + PADDING, position.width - PADDING * 2, position.height - PADDING * 2);
+            var lineColor = new Color(1f, 1f, 1f, 0.5f);
+
+            // We have to skip really small values
+            if (curveRect.width > 4)
+                EditorGUIUtility.DrawCurveSwatch(curveRect, property.animationCurveValue, property, lineColor, Color.clear, Color.clear, Color.clear);
+
+            EditorGUI.indentLevel++;
+        }
+    }
 }

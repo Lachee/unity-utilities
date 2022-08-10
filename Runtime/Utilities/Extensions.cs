@@ -85,4 +85,28 @@ namespace Lachee.Utilities
             module.maxParticles = count;
         }
     }
+
+    /// <summary>
+    /// Extends Color
+    /// </summary>
+    public static class ColorExtension
+    {
+        /// <summary>Converts the colour into a RGBA hex with the given prefix</summary>
+        public static string ToHex(this Color color, char prefix = '#')
+        {
+            return prefix + ColorUtility.ToHtmlStringRGBA(color);
+        }
+
+        public static int PerceivedBrightness(this Color c)
+            => ((Color32)c).PerceivedBrightness();
+
+        public static int PerceivedBrightness(this Color32 c)
+        {
+            // Rec 601 https://en.wikipedia.org/wiki/Rec._601
+            return (int)Mathf.Sqrt(
+                c.r * c.r * .299f +
+                c.g * c.g * .587f +
+                c.b * c.b * .114f);
+        }
+    }
 }

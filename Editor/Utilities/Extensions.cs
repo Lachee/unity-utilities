@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
 using UnityEditor;
+using UnityEngine;
 
 namespace Lachee.Utilities.Editor
 {
@@ -15,8 +16,9 @@ namespace Lachee.Utilities.Editor
         /// <returns></returns>
         public static System.Type GetSerializedType(this SerializedProperty property)
         {
-            var fi = property.GetSerializedFieldInfo();
-            return fi?.FieldType;
+            var value = property.GetSerializedValue();
+            if (value != null) return value.GetType();
+            return property.GetSerializedFieldInfo()?.FieldType;
         }
 
         /// <summary>
@@ -190,6 +192,9 @@ namespace Lachee.Utilities.Editor
 
             if (value is float vFloat)
                 return vFloat.ToString("n3");
+
+            if (value is Color vColor)
+                return vColor.ToHex();
 
             return value.ToString();
         }
