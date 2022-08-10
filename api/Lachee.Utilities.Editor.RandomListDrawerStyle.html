@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RandomListEditorStyle
+    <title>Class RandomListDrawerStyle
    | Utilities </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RandomListEditorStyle
+    <meta name="title" content="Class RandomListDrawerStyle
    | Utilities ">
     <meta name="generator" content="docfx 2.59.3.0">
     
@@ -77,10 +77,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle">
+            <article class="content wrap" id="_content" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle">
   
   
-  <h1 id="Lachee_Utilities_Editor_RandomListEditorStyle" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle" class="text-break">Class RandomListEditorStyle
+  <h1 id="Lachee_Utilities_Editor_RandomListDrawerStyle" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle" class="text-break">Class RandomListDrawerStyle
   </h1>
   <div class="markdown level0 summary"><p>Default styling used for the random list</p>
 </div>
@@ -88,7 +88,7 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">RandomListEditorStyle</span></div>
+    <div class="level1"><span class="xref">RandomListDrawerStyle</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,20 +116,20 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Lachee.Utilities.Editor.html">Lachee.Utilities.Editor</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Lachee_Utilities_Editor_RandomListEditorStyle_syntax">Syntax</h5>
+  <h5 id="Lachee_Utilities_Editor_RandomListDrawerStyle_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class RandomListEditorStyle</code></pre>
+    <pre><code class="lang-csharp hljs">public class RandomListDrawerStyle</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_Colors" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.Colors">Colors</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_Colors" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.Colors">Colors</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Color[] Colors</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Color[] Colors</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,7 +148,32 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_listFooterBackground" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.listFooterBackground">listFooterBackground</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_Drawers" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.Drawers">Drawers</h4>
+  <div class="markdown level1 summary"><p>Dictionary lookup for custom drawers for the slider labels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Type, IRistBoxLabelDrawer&gt; Drawers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">Type</span>, <a class="xref" href="Lachee.Utilities.Editor.IRistBoxLabelDrawer.html">IRistBoxLabelDrawer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listFooterBackground" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listFooterBackground">listFooterBackground</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -172,7 +197,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_listIconToolbarMinus" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarMinus">listIconToolbarMinus</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listIconToolbarMinus" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarMinus">listIconToolbarMinus</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -196,7 +221,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_listIconToolbarPlus" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarPlus">listIconToolbarPlus</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listIconToolbarPlus" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarPlus">listIconToolbarPlus</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -220,7 +245,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_listPreButton" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.listPreButton">listPreButton</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listPreButton" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listPreButton">listPreButton</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -244,7 +269,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_sliderBG" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.sliderBG">sliderBG</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderBG" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderBG">sliderBG</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -268,7 +293,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_sliderRange" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.sliderRange">sliderRange</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderRange" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRange">sliderRange</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -292,7 +317,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_sliderRangeSelected" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.sliderRangeSelected">sliderRangeSelected</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderRangeSelected" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRangeSelected">sliderRangeSelected</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -316,7 +341,7 @@
   </table>
   
   
-  <h4 id="Lachee_Utilities_Editor_RandomListEditorStyle_sliderText" data-uid="Lachee.Utilities.Editor.RandomListEditorStyle.sliderText">sliderText</h4>
+  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderText" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderText">sliderText</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

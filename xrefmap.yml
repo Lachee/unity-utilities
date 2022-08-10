@@ -1529,12 +1529,12 @@ references:
   commentId: T:Lachee.Utilities.Editor.IRistBoxLabelDrawer
   fullName: Lachee.Utilities.Editor.IRistBoxLabelDrawer
   nameWithType: IRistBoxLabelDrawer
-- uid: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect,Lachee.Utilities.Editor.RandomListEditorStyle,SerializedProperty,System.Single,System.Boolean)
-  name: DrawLabel(Rect, RandomListEditorStyle, SerializedProperty, Single, Boolean)
-  href: api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.html#Lachee_Utilities_Editor_IRistBoxLabelDrawer_DrawLabel_Rect_Lachee_Utilities_Editor_RandomListEditorStyle_SerializedProperty_System_Single_System_Boolean_
-  commentId: M:Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect,Lachee.Utilities.Editor.RandomListEditorStyle,SerializedProperty,System.Single,System.Boolean)
-  fullName: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect, Lachee.Utilities.Editor.RandomListEditorStyle, SerializedProperty, System.Single, System.Boolean)
-  nameWithType: IRistBoxLabelDrawer.DrawLabel(Rect, RandomListEditorStyle, SerializedProperty, Single, Boolean)
+- uid: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect,Lachee.Utilities.Editor.RandomListDrawerStyle,SerializedProperty,System.Single,System.Boolean)
+  name: DrawLabel(Rect, RandomListDrawerStyle, SerializedProperty, Single, Boolean)
+  href: api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.html#Lachee_Utilities_Editor_IRistBoxLabelDrawer_DrawLabel_Rect_Lachee_Utilities_Editor_RandomListDrawerStyle_SerializedProperty_System_Single_System_Boolean_
+  commentId: M:Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect,Lachee.Utilities.Editor.RandomListDrawerStyle,SerializedProperty,System.Single,System.Boolean)
+  fullName: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect, Lachee.Utilities.Editor.RandomListDrawerStyle, SerializedProperty, System.Single, System.Boolean)
+  nameWithType: IRistBoxLabelDrawer.DrawLabel(Rect, RandomListDrawerStyle, SerializedProperty, Single, Boolean)
 - uid: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel*
   name: DrawLabel
   href: api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.html#Lachee_Utilities_Editor_IRistBoxLabelDrawer_DrawLabel_
@@ -1561,23 +1561,6 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Editor.RandomListDrawer.GetPropertyHeight
   nameWithType: RandomListDrawer.GetPropertyHeight
-- uid: Lachee.Utilities.Editor.RandomListDrawer.Lachee#Utilities#Editor#IRistBoxLabelDrawer#DrawLabel(Rect,Lachee.Utilities.Editor.RandomListEditorStyle,SerializedProperty,System.Single,System.Boolean)
-  name: IRistBoxLabelDrawer.DrawLabel(Rect, RandomListEditorStyle, SerializedProperty, Single, Boolean)
-  href: api/Lachee.Utilities.Editor.RandomListDrawer.html#Lachee_Utilities_Editor_RandomListDrawer_Lachee_Utilities_Editor_IRistBoxLabelDrawer_DrawLabel_Rect_Lachee_Utilities_Editor_RandomListEditorStyle_SerializedProperty_System_Single_System_Boolean_
-  commentId: M:Lachee.Utilities.Editor.RandomListDrawer.Lachee#Utilities#Editor#IRistBoxLabelDrawer#DrawLabel(Rect,Lachee.Utilities.Editor.RandomListEditorStyle,SerializedProperty,System.Single,System.Boolean)
-  name.vb: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect, RandomListEditorStyle, SerializedProperty, Single, Boolean)
-  fullName: Lachee.Utilities.Editor.RandomListDrawer.Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect, Lachee.Utilities.Editor.RandomListEditorStyle, SerializedProperty, System.Single, System.Boolean)
-  nameWithType: RandomListDrawer.IRistBoxLabelDrawer.DrawLabel(Rect, RandomListEditorStyle, SerializedProperty, Single, Boolean)
-  nameWithType.vb: RandomListDrawer.Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel(Rect, RandomListEditorStyle, SerializedProperty, Single, Boolean)
-- uid: Lachee.Utilities.Editor.RandomListDrawer.Lachee#Utilities#Editor#IRistBoxLabelDrawer#DrawLabel*
-  name: IRistBoxLabelDrawer.DrawLabel
-  href: api/Lachee.Utilities.Editor.RandomListDrawer.html#Lachee_Utilities_Editor_RandomListDrawer_Lachee_Utilities_Editor_IRistBoxLabelDrawer_DrawLabel_
-  commentId: Overload:Lachee.Utilities.Editor.RandomListDrawer.Lachee#Utilities#Editor#IRistBoxLabelDrawer#DrawLabel
-  isSpec: "True"
-  name.vb: Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel
-  fullName: Lachee.Utilities.Editor.RandomListDrawer.Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel
-  nameWithType: RandomListDrawer.IRistBoxLabelDrawer.DrawLabel
-  nameWithType.vb: RandomListDrawer.Lachee.Utilities.Editor.IRistBoxLabelDrawer.DrawLabel
 - uid: Lachee.Utilities.Editor.RandomListDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
   href: api/Lachee.Utilities.Editor.RandomListDrawer.html#Lachee_Utilities_Editor_RandomListDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
@@ -1591,72 +1574,85 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Editor.RandomListDrawer.OnGUI
   nameWithType: RandomListDrawer.OnGUI
-- uid: Lachee.Utilities.Editor.RandomListDrawer.SliderLabelDrawers
-  name: SliderLabelDrawers
-  href: api/Lachee.Utilities.Editor.RandomListDrawer.html#Lachee_Utilities_Editor_RandomListDrawer_SliderLabelDrawers
-  commentId: F:Lachee.Utilities.Editor.RandomListDrawer.SliderLabelDrawers
-  fullName: Lachee.Utilities.Editor.RandomListDrawer.SliderLabelDrawers
-  nameWithType: RandomListDrawer.SliderLabelDrawers
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle
-  name: RandomListEditorStyle
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html
-  commentId: T:Lachee.Utilities.Editor.RandomListEditorStyle
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle
-  nameWithType: RandomListEditorStyle
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.Colors
+- uid: Lachee.Utilities.Editor.RandomListDrawer.style
+  name: style
+  href: api/Lachee.Utilities.Editor.RandomListDrawer.html#Lachee_Utilities_Editor_RandomListDrawer_style
+  commentId: P:Lachee.Utilities.Editor.RandomListDrawer.style
+  fullName: Lachee.Utilities.Editor.RandomListDrawer.style
+  nameWithType: RandomListDrawer.style
+- uid: Lachee.Utilities.Editor.RandomListDrawer.style*
+  name: style
+  href: api/Lachee.Utilities.Editor.RandomListDrawer.html#Lachee_Utilities_Editor_RandomListDrawer_style_
+  commentId: Overload:Lachee.Utilities.Editor.RandomListDrawer.style
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.RandomListDrawer.style
+  nameWithType: RandomListDrawer.style
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle
+  name: RandomListDrawerStyle
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html
+  commentId: T:Lachee.Utilities.Editor.RandomListDrawerStyle
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle
+  nameWithType: RandomListDrawerStyle
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.Colors
   name: Colors
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_Colors
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.Colors
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.Colors
-  nameWithType: RandomListEditorStyle.Colors
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.listFooterBackground
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_Colors
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.Colors
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.Colors
+  nameWithType: RandomListDrawerStyle.Colors
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.Drawers
+  name: Drawers
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_Drawers
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.Drawers
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.Drawers
+  nameWithType: RandomListDrawerStyle.Drawers
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.listFooterBackground
   name: listFooterBackground
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_listFooterBackground
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.listFooterBackground
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.listFooterBackground
-  nameWithType: RandomListEditorStyle.listFooterBackground
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarMinus
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_listFooterBackground
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.listFooterBackground
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.listFooterBackground
+  nameWithType: RandomListDrawerStyle.listFooterBackground
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarMinus
   name: listIconToolbarMinus
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_listIconToolbarMinus
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarMinus
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarMinus
-  nameWithType: RandomListEditorStyle.listIconToolbarMinus
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarPlus
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_listIconToolbarMinus
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarMinus
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarMinus
+  nameWithType: RandomListDrawerStyle.listIconToolbarMinus
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarPlus
   name: listIconToolbarPlus
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_listIconToolbarPlus
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarPlus
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.listIconToolbarPlus
-  nameWithType: RandomListEditorStyle.listIconToolbarPlus
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.listPreButton
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_listIconToolbarPlus
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarPlus
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarPlus
+  nameWithType: RandomListDrawerStyle.listIconToolbarPlus
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.listPreButton
   name: listPreButton
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_listPreButton
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.listPreButton
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.listPreButton
-  nameWithType: RandomListEditorStyle.listPreButton
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.sliderBG
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_listPreButton
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.listPreButton
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.listPreButton
+  nameWithType: RandomListDrawerStyle.listPreButton
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderBG
   name: sliderBG
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_sliderBG
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.sliderBG
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.sliderBG
-  nameWithType: RandomListEditorStyle.sliderBG
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.sliderRange
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_sliderBG
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.sliderBG
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderBG
+  nameWithType: RandomListDrawerStyle.sliderBG
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRange
   name: sliderRange
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_sliderRange
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.sliderRange
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.sliderRange
-  nameWithType: RandomListEditorStyle.sliderRange
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.sliderRangeSelected
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_sliderRange
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRange
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRange
+  nameWithType: RandomListDrawerStyle.sliderRange
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRangeSelected
   name: sliderRangeSelected
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_sliderRangeSelected
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.sliderRangeSelected
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.sliderRangeSelected
-  nameWithType: RandomListEditorStyle.sliderRangeSelected
-- uid: Lachee.Utilities.Editor.RandomListEditorStyle.sliderText
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_sliderRangeSelected
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRangeSelected
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRangeSelected
+  nameWithType: RandomListDrawerStyle.sliderRangeSelected
+- uid: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderText
   name: sliderText
-  href: api/Lachee.Utilities.Editor.RandomListEditorStyle.html#Lachee_Utilities_Editor_RandomListEditorStyle_sliderText
-  commentId: F:Lachee.Utilities.Editor.RandomListEditorStyle.sliderText
-  fullName: Lachee.Utilities.Editor.RandomListEditorStyle.sliderText
-  nameWithType: RandomListEditorStyle.sliderText
+  href: api/Lachee.Utilities.Editor.RandomListDrawerStyle.html#Lachee_Utilities_Editor_RandomListDrawerStyle_sliderText
+  commentId: F:Lachee.Utilities.Editor.RandomListDrawerStyle.sliderText
+  fullName: Lachee.Utilities.Editor.RandomListDrawerStyle.sliderText
+  nameWithType: RandomListDrawerStyle.sliderText
 - uid: Lachee.Utilities.Editor.SerializedPropertyExtensions
   name: SerializedPropertyExtensions
   href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html
