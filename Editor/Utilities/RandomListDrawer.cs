@@ -11,9 +11,17 @@ using UnityEngine;
 namespace Lachee.Utilities.Editor
 {
     /// <summary>Default styling used for the random list</summary>
-    public sealed class RandomListEditorStyle
+    public class RandomListDrawerStyle
     {
-        public static readonly Color[] Colors =
+        /// <summary>Dictionary lookup for custom drawers for the slider labels</summary>
+        public Dictionary<Type, IRistBoxLabelDrawer> Drawers = new Dictionary<Type, IRistBoxLabelDrawer>()
+        {
+            { typeof(void), new BasicRistDrawer() },
+            { typeof(Color), new ColorRistDrawer() },
+            { typeof(AnimationCurve), new AnimationCurveRistDrawer() }
+        };
+
+        public readonly Color[] Colors =
         {
             new Color(0.4831376f, 0.6211768f, 0.0219608f, 1.0f),
             new Color(0.3827448f, 0.2886272f, 0.5239216f, 1.0f),
@@ -39,9 +47,8 @@ namespace Lachee.Utilities.Editor
     /// <summary>Interface used to draw labels on weight sliders</summary>
     public interface IRistBoxLabelDrawer
     {
-        public void DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini);
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini);
     }
-
 
     /// <summary>
     /// Handles drawing the Random List and its sliders sliders
@@ -50,14 +57,12 @@ namespace Lachee.Utilities.Editor
     [CustomPropertyDrawer(typeof(RandomList<>))]
     [CustomPropertyDrawer(typeof(Rist<>))]
 #pragma warning restore CS0618 // Type or member is obsolete
-    public sealed class RandomListDrawer : UnityEditor.PropertyDrawer, IRistBoxLabelDrawer
+    public sealed class RandomListDrawer : UnityEditor.PropertyDrawer
     {
-        /// <summary>Dictionary lookup for custom drawers for the slider labels</summary>
-        public static Dictionary<System.Type, IRistBoxLabelDrawer> SliderLabelDrawers = new Dictionary<Type, IRistBoxLabelDrawer>()
-        {
-            { typeof(Color), new ColorRistDrawer() },
-            { typeof(AnimationCurve), new AnimationCurveRistDrawer() }
-        };
+
+        private static RandomListDrawerStyle _style;
+        public static RandomListDrawerStyle style => _style;
+
 
         private const int WEIGHT_HEIGHT = 32;
         private const int WEIGHT_RANGE_PADDING = 2;
@@ -67,16 +72,6 @@ namespace Lachee.Utilities.Editor
         private int _selectedWeight = -1;
         private ReorderableList _list;
 
-        private static RandomListEditorStyle _style;
-        private static RandomListEditorStyle Style
-        {
-            get
-            {
-                if (_style == null)
-                    _style = new RandomListEditorStyle();
-                return _style;
-            }
-        }
 
         private bool? _isFoldOut;
         private bool isListFoldout
@@ -124,12 +119,12 @@ namespace Lachee.Utilities.Editor
                 var previous = GUI.backgroundColor;
                 
                 if (index >= 0)
-                    GUI.backgroundColor = RandomListEditorStyle.Colors[index % RandomListEditorStyle.Colors.Length];
+                    GUI.backgroundColor = style.Colors[index % style.Colors.Length];
 
                 if (!isActive)
                     GUI.backgroundColor *= 0.6f;
                 
-                Style.sliderRange.Draw(rect, GUIContent.none, false, false, false, false);
+                style.sliderRange.Draw(rect, GUIContent.none, false, false, false, false);
                 GUI.backgroundColor = previous;
             };
 
@@ -172,8 +167,11 @@ namespace Lachee.Utilities.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            isListFoldout = EditorGUI.Foldout(new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight), isListFoldout, label);
+            // Initialize the style the first chance we get
+            if (_style == null)
+                _style = new RandomListDrawerStyle();
 
+            isListFoldout = EditorGUI.Foldout(new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight), isListFoldout, label);
             EditorGUI.indentLevel++;
             if (isListFoldout)
             {
@@ -298,16 +296,14 @@ namespace Lachee.Utilities.Editor
         }
         private void DrawSliderBox(Rect area, List<WeightSlider> weights, int activeWeight, bool isCompact)
         {
-            Style.sliderBG.Draw(area, GUIContent.none, false, false, false, false);
+            style.sliderBG.Draw(area, GUIContent.none, false, false, false, false);
             var tempColor = GUI.backgroundColor;
             for (int i = 0; i < weights.Count; i++)
             {
                 // Get the weight and update any missing drawers
                 WeightSlider weight   = weights[i];
-                if (weight.labelDrawer == null)
-                    weight.labelDrawer = this;
+                Color color = style.Colors[i % style.Colors.Length];
 
-                Color color = RandomListEditorStyle.Colors[i % RandomListEditorStyle.Colors.Length];
                 // The can no longer be activated
                 // if (activeWeight == i)
                 // {
@@ -326,8 +322,9 @@ namespace Lachee.Utilities.Editor
                 {
                     //DrawLODRAnge
                     GUI.backgroundColor = color * 0.6f;
-                    Style.sliderRange.Draw(weight.rangePosition, GUIContent.none, false, false, false, false);
-                    weight.labelDrawer.DrawLabel(weight.rangePosition, Style, weight.itemProperty, weight.weightPercentage, isCompact);
+                    style.sliderRange.Draw(weight.rangePosition, GUIContent.none, false, false, false, false);
+                    if (weight.labelDrawer != null)
+                        weight.labelDrawer.DrawLabel(weight.rangePosition, style, weight.itemProperty, weight.weightPercentage, isCompact);
                 }
 
                 //DrawLODButton
@@ -339,16 +336,6 @@ namespace Lachee.Utilities.Editor
 
             }
             GUI.backgroundColor = tempColor;
-        }
-
-        void IRistBoxLabelDrawer.DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
-        {
-            var name = property.hasVisibleChildren ? property.displayName : property.GetValueName();
-            var label = isMini 
-                            ? name
-                            : string.Format("{0}\n{1:0}%", name, weight * 100);
-
-            style.sliderText.Draw(position, label, false, false, false, false);
         }
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
@@ -411,6 +398,12 @@ namespace Lachee.Utilities.Editor
             SerializedProperty itemListProperty = property.FindPropertyRelative("_list");
             SerializedProperty weightListProperty = property.FindPropertyRelative("_weights");
 
+            var baseType = property.GetSerializedType();
+            var elmType  = baseType.GetGenericArguments()[0];
+            IRistBoxLabelDrawer drawer;
+            if (style.Drawers == null || elmType == null || !style.Drawers.TryGetValue(elmType, out drawer))
+                drawer = style.Drawers[typeof(void)];
+
             float weightOffset = 0;
             for (int i = 0; i < itemListProperty.arraySize; i++)
             {
@@ -426,27 +419,39 @@ namespace Lachee.Utilities.Editor
                     startWeight = weightOffset,
                     endWeight = weightOffset + weightProperty.floatValue,
                     sumWeight = totalWeightProperty.floatValue,
+                    labelDrawer = drawer,
                 };
 
                 // Calculate the rect
                 float buttonSize = 10;
                 info.rangePosition = new Rect(sliderRect.x + info.startPercentage * sliderRect.width, sliderRect.y, info.weightPercentage * sliderRect.width, sliderRect.height);
                 info.buttonPosition = new Rect(info.rangePosition.x - (buttonSize / 2), info.rangePosition.y, buttonSize, info.rangePosition.height);
+                
                 infos.Add(info);
-
-                var type = itemProperty.GetSerializedType();
-                SliderLabelDrawers.TryGetValue(type, out info.labelDrawer);
-
                 weightOffset += info.weight;
             }
+
 
             return infos;
         }
     }
 
-    internal class ColorRistDrawer : IRistBoxLabelDrawer
+    internal sealed class BasicRistDrawer : IRistBoxLabelDrawer
     {
-        public void DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        {
+            var name = property.hasVisibleChildren ? property.displayName : property.GetValueName();
+            var label = isMini
+                            ? name
+                            : string.Format("{0}\n{1:0}%", name, weight * 100);
+
+            style.sliderText.Draw(position, label, false, false, false, false);
+        }
+    }
+
+    internal sealed class ColorRistDrawer : IRistBoxLabelDrawer
+    {
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
         {
             var label = isMini
                 ? property.GetValueName()
@@ -463,11 +468,11 @@ namespace Lachee.Utilities.Editor
         }
     }
 
-    internal class AnimationCurveRistDrawer : IRistBoxLabelDrawer
+    internal sealed class AnimationCurveRistDrawer : IRistBoxLabelDrawer
     {
         const float PADDING = 2;
 
-        public void DrawLabel(Rect position, RandomListEditorStyle style, SerializedProperty property, float weight, bool isMini)
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
         {
             var label = isMini
                 ? ""

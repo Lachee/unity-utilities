@@ -16,8 +16,6 @@ namespace Lachee.Utilities.Editor
         /// <returns></returns>
         public static System.Type GetSerializedType(this SerializedProperty property)
         {
-            var value = property.GetSerializedValue();
-            if (value != null) return value.GetType();
             return property.GetSerializedFieldInfo()?.FieldType;
         }
 
@@ -48,7 +46,7 @@ namespace Lachee.Utilities.Editor
 
                 // Manually get a bunch because its more efficient than looking up serialized values
                 case SerializedPropertyType.ObjectReference:
-                    return property.objectReferenceValue ? property.objectReferenceValue.name : "[ NULL ]";
+                    return property.objectReferenceValue ? property.objectReferenceValue : null;
                 case SerializedPropertyType.Boolean:
                     return property.boolValue;
                 case SerializedPropertyType.Integer:
