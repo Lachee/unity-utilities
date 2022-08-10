@@ -125,7 +125,7 @@
   
   <a id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetFieldInfoFromPath_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath*"></a>
   <h4 id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetFieldInfoFromPath_System_Type_System_String_BindingFlags_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetFieldInfoFromPath(System.Type,System.String,BindingFlags)">GetFieldInfoFromPath(Type, String, BindingFlags)</h4>
-  <div class="markdown level1 summary"><p>Gets the field info from the given property path</p>
+  <div class="markdown level1 summary"><p>Finds the field info for the given type at the given path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -174,6 +174,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetFieldInfoFromPath_System_Type_System_String_BindingFlags__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Does not work with arrays yet as they would return a PropertyInfo instead</p>
+</div>
   
   
   <a id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetReadableName_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetReadableName*"></a>
@@ -309,7 +312,7 @@
   
   <a id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedValue_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue*"></a>
   <h4 id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetSerializedValue_SerializedProperty_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue(SerializedProperty)">GetSerializedValue(SerializedProperty)</h4>
-  <div class="markdown level1 summary"><p>Gets the raw value of the property</p>
+  <div class="markdown level1 summary"><p>Gets the underlying value this property represents</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -344,6 +347,111 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueFromPath_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath*"></a>
+  <h4 id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueFromPath_System_Type_System_Object_System_String_BindingFlags_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath(System.Type,System.Object,System.String,BindingFlags)">GetValueFromPath(Type, Object, String, BindingFlags)</h4>
+  <div class="markdown level1 summary"><p>Gets the field values from the given path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetValueFromPath(this Type type, object context, string path, BindingFlags flag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the root object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The root object to get the value from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The SerializedProperty formatted path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">BindingFlags</span></td>
+        <td><span class="parametername">flag</span></td>
+        <td><p>The flag used to search fields.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueName_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName*"></a>
+  <h4 id="Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueName_SerializedProperty_" data-uid="Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName(SerializedProperty)">GetValueName(SerializedProperty)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the property as a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetValueName(this SerializedProperty property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SerializedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>

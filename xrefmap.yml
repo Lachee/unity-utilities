@@ -1556,6 +1556,32 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetSerializedValue
   nameWithType: SerializedPropertyExtensions.GetSerializedValue
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath(System.Type,System.Object,System.String,BindingFlags)
+  name: GetValueFromPath(Type, Object, String, BindingFlags)
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueFromPath_System_Type_System_Object_System_String_BindingFlags_
+  commentId: M:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath(System.Type,System.Object,System.String,BindingFlags)
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath(System.Type, System.Object, System.String, BindingFlags)
+  nameWithType: SerializedPropertyExtensions.GetValueFromPath(Type, Object, String, BindingFlags)
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath*
+  name: GetValueFromPath
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueFromPath_
+  commentId: Overload:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueFromPath
+  nameWithType: SerializedPropertyExtensions.GetValueFromPath
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName(SerializedProperty)
+  name: GetValueName(SerializedProperty)
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueName_SerializedProperty_
+  commentId: M:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName(SerializedProperty)
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName(SerializedProperty)
+  nameWithType: SerializedPropertyExtensions.GetValueName(SerializedProperty)
+- uid: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName*
+  name: GetValueName
+  href: api/Lachee.Utilities.Editor.SerializedPropertyExtensions.html#Lachee_Utilities_Editor_SerializedPropertyExtensions_GetValueName_
+  commentId: Overload:Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName
+  isSpec: "True"
+  fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName
+  nameWithType: SerializedPropertyExtensions.GetValueName
 - uid: Lachee.Utilities.GameObjectExtension
   name: GameObjectExtension
   href: api/Lachee.Utilities.GameObjectExtension.html
