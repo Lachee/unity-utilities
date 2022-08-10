@@ -480,6 +480,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.ColorExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.ColorExtension.html",
+          "hash": "bLwNualNkVRE7c4NMBikhH3ZedJ1K9F1UPlRuyLaWBo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Editor.IRistBoxLabelDrawer.html",
+          "hash": "DZ+eZuq8KBaJKnIdk67J5kmnY8lAlsfMg0IIEkcALss="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Editor.RandomListDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Editor.RandomListDrawer.html",
+          "hash": "jWVEvv/cYqJCYKDsSkn+Q76M8eHMP3GoNhetvd85Aoo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.Editor.RandomListEditorStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.Editor.RandomListEditorStyle.html",
+          "hash": "U8H/MX8UoA9Se13EKDz7U+GtRcAwDM/x9mTBAG7wnsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Utilities.Editor.SerializedPropertyExtensions.yml",
       "output": {
         ".html": {
@@ -496,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Editor.html",
-          "hash": "m9FoExKkyVZCDu5GkLL0OAe0TUQa8wk7VXL7H09GaGE="
+          "hash": "umbL3lq1Z/RruLHkIitk0KWulakkfCeO2XuF7Ach/1I="
         }
       },
       "is_incremental": false,
@@ -760,7 +808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.html",
-          "hash": "pc86eLJqv8F3/Hf3poC60vpmgfwaaln5q1qXnLFI+z0="
+          "hash": "rSNd1GyayrZEGG23k8D2WeeWwasFdqJZ1ldlHz8OMgg="
         }
       },
       "is_incremental": false,
@@ -772,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "oMlYQlFN4QMFoCQI6Evd/JFg48Mlw6nTDc7hMTNdvMA="
+          "hash": "9rEjDPdU5M4QolAU7J8FkoYQMppyTj6xvTAtzA6RMtA="
         }
       },
       "is_incremental": false,
@@ -838,7 +886,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 62,
+          "total_file_count": 66,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
