@@ -18,7 +18,8 @@ namespace Lachee.Utilities.Editor
         {
             { typeof(void), new BasicRistDrawer() },
             { typeof(Color), new ColorRistDrawer() },
-            { typeof(AnimationCurve), new AnimationCurveRistDrawer() }
+            { typeof(AnimationCurve), new AnimationCurveRistDrawer() },
+            { typeof(Sprite), new SpriteRistDrawer() },
         };
 
         public readonly Color[] Colors =
@@ -436,9 +437,10 @@ namespace Lachee.Utilities.Editor
         }
     }
 
-    internal sealed class BasicRistDrawer : IRistBoxLabelDrawer
+    /// <summary>Basic extendable drawer for the Random List</summary>
+    public class BasicRistDrawer : IRistBoxLabelDrawer
     {
-        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        public virtual void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
         {
             var name = property.hasVisibleChildren ? property.displayName : property.GetValueName();
             var label = isMini
@@ -449,6 +451,7 @@ namespace Lachee.Utilities.Editor
         }
     }
 
+    /// <summary>Makes the box the same colour as the property</summary>
     internal sealed class ColorRistDrawer : IRistBoxLabelDrawer
     {
         public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
@@ -468,6 +471,7 @@ namespace Lachee.Utilities.Editor
         }
     }
 
+    /// <summary>Draws the fancy animation curves</summary>
     internal sealed class AnimationCurveRistDrawer : IRistBoxLabelDrawer
     {
         const float PADDING = 2;
@@ -490,6 +494,53 @@ namespace Lachee.Utilities.Editor
                 EditorGUIUtility.DrawCurveSwatch(curveRect, property.animationCurveValue, property, lineColor, Color.clear, Color.clear, Color.clear);
 
             EditorGUI.indentLevel++;
+        }
+    }
+
+    /// <summary>Draws little sprites</summary>
+    internal sealed class SpriteRistDrawer : BasicRistDrawer
+    {
+        const float PADDING = 2;
+
+        public bool WithBackground { get; set; } = false;
+
+        public override void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        {
+            if (isMini)
+            {
+                base.DrawLabel(position, style, property, weight, isMini);
+            }
+            else
+            {
+                var name = property.GetValueName();
+                var label = string.Format("{0}\n{1:0}%", name, weight * 100);
+
+                float size = Mathf.Min(position.width - PADDING * 2, position.height - PADDING * 2);
+
+                Rect iconRect = new Rect(position.x + PADDING, position.y + PADDING, size, size);
+                if (iconRect.width > 2 || iconRect.height > 2)
+                {
+                    if (WithBackground)
+                        EditorGUI.DrawRect(iconRect, Color.gray);
+
+                    if (property.objectReferenceValue is Texture texture)
+                    {
+                        EditorGUI.DrawPreviewTexture(iconRect, texture);
+                    }
+                    else if (property.objectReferenceValue is Sprite sprite)
+                    {
+                        Icon.DrawSpritePreview(iconRect, sprite);
+                    }
+                } 
+                else
+                {
+                    // Reset so the label can get the most space
+                    iconRect = new Rect();
+                }
+
+                Rect labelRect = new Rect(iconRect.xMax + 5, position.y, position.width - iconRect.width - 10, position.height);
+                style.sliderText.Draw(labelRect, label, false, false, false, false);
+            }
         }
     }
 }
