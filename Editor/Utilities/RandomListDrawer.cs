@@ -83,9 +83,10 @@ namespace Lachee.Utilities.Editor
             {
                 Event evt = Event.current;
                 if (evt.type != EventType.Repaint) return;
-
                 var previous = GUI.backgroundColor;
-                GUI.backgroundColor = RandomListStyle.Colors[index % RandomListStyle.Colors.Length];
+                
+                if (index >= 0)
+                    GUI.backgroundColor = RandomListStyle.Colors[index % RandomListStyle.Colors.Length];
 
                 if (!isActive)
                     GUI.backgroundColor *= 0.6f;
@@ -98,6 +99,7 @@ namespace Lachee.Utilities.Editor
             {
                 itemListProperty.arraySize++;
                 weightListProperty.arraySize++;
+                weightListProperty.GetArrayElementAtIndex(weightListProperty.arraySize-1).floatValue = 1f;
             };
 
             list.onRemoveCallback += (_) =>
@@ -338,7 +340,7 @@ namespace Lachee.Utilities.Editor
             public SerializedProperty itemProperty;
             public SerializedProperty weightProperty;
 
-            public string name => itemProperty.GetReadableName();
+            public string name => itemProperty.GetValueName();
         }
 
         class WeightSlider : ItemWeightSerializedPair
