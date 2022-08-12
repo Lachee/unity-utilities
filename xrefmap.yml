@@ -2430,6 +2430,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Mathl.Extrude
   nameWithType: Mathl.Extrude
+- uid: Lachee.Utilities.Mathl.Map(System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: Map(Single, Single, Single, Single, Single)
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Map_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Lachee.Utilities.Mathl.Map(System.Single,System.Single,System.Single,System.Single,System.Single)
+  fullName: Lachee.Utilities.Mathl.Map(System.Single, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: Mathl.Map(Single, Single, Single, Single, Single)
+- uid: Lachee.Utilities.Mathl.Map*
+  name: Map
+  href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Map_
+  commentId: Overload:Lachee.Utilities.Mathl.Map
+  isSpec: "True"
+  fullName: Lachee.Utilities.Mathl.Map
+  nameWithType: Mathl.Map
 - uid: Lachee.Utilities.Mathl.Mod(System.Int32,System.Int32)
   name: Mod(Int32, Int32)
   href: api/Lachee.Utilities.Mathl.html#Lachee_Utilities_Mathl_Mod_System_Int32_System_Int32_
