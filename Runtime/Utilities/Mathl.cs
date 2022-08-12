@@ -11,6 +11,19 @@ namespace Lachee.Utilities
     public static class Mathl
     {
         /// <summary>
+        /// Maps a value from it a range to a new range
+        /// </summary>
+        /// <param name="value">the value to map</param>
+        /// <param name="fromMin">the minimum the value can be</param>
+        /// <param name="fromMax">the maximum the value can be</param>
+        /// <param name="toMin">the value minimum gets mapped into</param>
+        /// <param name="toMax">the value maximum gets mapped into</param>
+        /// <returns>value mapped from toMin to toMax</returns>
+        public static float Map(float value, float fromMin, float fromMax, float toMin, float toMax) {
+            return ((value - fromMin) * (toMax - toMin)) / (fromMax - fromMin) + toMin;
+        }
+
+        /// <summary>
         /// Cyclic modulo
         /// <para>Thanks SaroVati :3</para>
         /// </summary>
