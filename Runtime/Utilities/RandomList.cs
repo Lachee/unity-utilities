@@ -19,9 +19,9 @@ namespace Lachee.Utilities
     [System.Serializable]
     public class RandomList<T> : IEnumerable<T>
     {
-        private List<T> _list;
-        private List<float> _weights;
-        private float _weight = 0;
+        [SerializeField] private List<T> _list;
+        [SerializeField] private List<float> _weights;
+        [SerializeField] private float _sumWeight = 0;
 
         /// <summary>
         /// Number of elements currently in the table.
@@ -31,7 +31,7 @@ namespace Lachee.Utilities
         /// <summary>
         /// The total tally of the weights.
         /// </summary>
-        public float TotalWeight { get { return _weight; } }
+        public float TotalWeight { get { return _sumWeight; } }
 
         /// <summary>
         /// Creates a new Random List
@@ -52,6 +52,12 @@ namespace Lachee.Utilities
             _weights = new List<float>(capacity);
         }
 
+        public RandomList(IEnumerable<KeyValuePair<T, float>> collection) : this()
+        {
+            foreach (var kp in collection)
+                Add(kp);
+        }
+
         /// <summary>
         /// Clears the random table. 
         /// </summary>
@@ -59,19 +65,31 @@ namespace Lachee.Utilities
         {
             _list.Clear();
             _weights.Clear();
-            _weight = 0;
+            _sumWeight = 0;
         }
 
         /// <summary>
         /// Adds a new item with a specified weight to the table and increments the total weight.
         /// </summary>
         /// <param name="item">Item to add</param>
-        /// <param name="weight">Weight this item has</param>
+        /// <param name="weight">Non-negative weight this item has</param>
         public void Add(T item, float weight = 1.0f)
         {
+            if (weight < 0)
+            {
+                Debug.LogWarning("Weight for item " + item.ToString() + " is negative");
+                weight = 0;
+            }
+
             _list.Add(item);
             _weights.Add(weight);
-            _weight += weight;
+            _sumWeight += weight;
+        }
+
+        /// <summary>Adds a new key value pair</summary>
+        public void Add(KeyValuePair<T, float> pair)
+        {
+            Add(pair.Key, pair.Value);
         }
 
         /// <summary>
@@ -86,7 +104,7 @@ namespace Lachee.Utilities
             if (index >= 0)
             {
                 _list.RemoveAt(index);
-                _weight -= _weights[index];
+                _sumWeight -= _weights[index];
                 _weights.RemoveAt(index);
             }
         }
@@ -104,8 +122,8 @@ namespace Lachee.Utilities
             var index = _list.IndexOf(item);
             if (index < 0) return false;
 
-            _weight -= _weights[index];
-            _weight += weight;
+            _sumWeight -= _weights[index];
+            _sumWeight += weight;
             _weights[index] = weight;
             return true;
         }
@@ -170,11 +188,11 @@ namespace Lachee.Utilities
         {
             Debug.Assert(_list.Count == _weights.Count);
 
-            _weight = 0;
+            _sumWeight = 0;
             for (int i = 0; i < _list.Count; i++) 
-                _weight += _weights[i];
+                _sumWeight += _weights[i];
 
-            return _weight;
+            return _sumWeight;
         }
 
         /// <summary>
