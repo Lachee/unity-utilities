@@ -1,18 +1,12 @@
 {
     "name": "Lachee.Utilities.Editor",
-    "rootNamespace": "",
     "references": [
-        "GUID:aa08d19502347e74bb216b7098a7c7c9"
+        "Lachee.Utilities.Runtime"
     ],
+    "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
     ],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "allowUnsafeCode": false
 }

@@ -19,8 +19,11 @@ namespace Lachee.Utilities.Serialization
         public void GetObjectData(object obj, SerializationInfo info, StreamingContext context)
         {
             Texture2D texture = (Texture2D)obj;
+
+#if UNITY_2018_3_OR_NEWER
             if (!texture.isReadable)
                 throw new System.NotSupportedException("Textures must be readable to serialize");
+#endif
 
             var data = texture.GetRawTextureData();
             info.AddValue(ValueName, texture.name);
@@ -36,6 +39,7 @@ namespace Lachee.Utilities.Serialization
 
         public object SetObjectData(object obj, SerializationInfo info, StreamingContext context, ISurrogateSelector selector)
         {
+#if UNITY_2021_OR_NEWER
             Texture2D texture = new Texture2D(
                 info.GetInt32(ValueWidth),
                 info.GetInt32(ValueHeight),
@@ -43,6 +47,15 @@ namespace Lachee.Utilities.Serialization
                 info.GetInt32(ValueMipmap),
                 false
             );
+#else
+            Texture2D texture = new Texture2D(
+                info.GetInt32(ValueWidth),
+                info.GetInt32(ValueHeight),
+                (TextureFormat)info.GetInt32(ValueFormat),
+                true,
+                false
+            );
+#endif
 
             texture.filterMode = (FilterMode) info.GetInt32(ValueFilter);
             texture.wrapMode = (TextureWrapMode) info.GetInt32(ValueWrap);

@@ -25,7 +25,7 @@ namespace Lachee.Utilities
         public static TSource Random<TSource>(this IEnumerable<TSource> source, int upperBounds = int.MaxValue)
         {
             // The enumerator to iterate over
-            using var enumerator = source.GetEnumerator();
+            var enumerator = source.GetEnumerator();
 
             // The number of items we have found.
             // If we loop over, then we will reset the counter to a random number within this range.

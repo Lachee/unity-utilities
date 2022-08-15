@@ -23,13 +23,14 @@ namespace Lachee.Utilities
         internal static T _instance;
         private static bool _isquitting = false;
 
+#if UNITY_2019_2_OR_NEWER
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         static void Init()
         {
             _instance = null;
             _isquitting = false;
         }
-
+#endif
 
         /// <summary>
         /// The current type that belongs to this singleton. Alias of <code>typeof(T)</code>.
@@ -65,13 +66,13 @@ namespace Lachee.Utilities
                     //We do not have one available, lets create it as a new gameobject.
                     if (Application.isPlaying)
                     {
-                        #if !DONT_CREATE_SINGLETONS
+#if !DONT_CREATE_SINGLETONS
                         GameObject obj = new GameObject($"[ {type} INSTANCE ]");
                         _instance = obj.AddComponent<T>();
                         Debug.LogWarning("Singleton " + type + " does not exist. A new instance has been created instead.", _instance);
-                        #else
+#else
                         Debug.LogError($"Singleton {type} cannot be created because DONT_CREATE_SINGLETONS is defined");
-                        #endif
+#endif
                     } 
                     else 
                     {
@@ -170,9 +171,9 @@ namespace Lachee.Utilities
         /// </summary>
         protected virtual void Awake()
         {
-            #if UNITY_EDITOR
+#if UNITY_EDITOR
             if (Application.isPlaying)
-            #endif
+#endif
             if (dontDestroyOnLoad)
                 DontDestroyOnLoad(gameObject);
         }
