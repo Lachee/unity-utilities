@@ -1,4 +1,5 @@
 
+
 <table frame="void">
     <tr>
       <td width="200px">
@@ -28,21 +29,24 @@ Since this is just a folder of scripts, you can use it how you need it. Check ou
 [https://lachee.github.io/unity-utilities/](https://lachee.github.io/unity-utilities/) 
 
 # Installation
-
-[![latest](https://github.com/Lachee/unity-utilities/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/Lachee/unity-utilities/actions/workflows/release.yml)
-
-There are 3 methods you can use to importing this package:
-1. You can download this as a zip and import it directly into unity
-2. You can download the `.unitypackage` artifacts in the [latest build pre-release](https://github.com/Lachee/unity-utilities/releases/tag/latest)
-3. You can add the package to unity via Unity Package Manager, under the "add git package"
-
-**Via the Package Manager wont notify you of updates, its Unity being dumb.**
-
-## Manual Git Installation
-This allows you to make changes and commit them back to the project:
+#### OpenUPM <a href="https://openupm.com/packages/com.lachee.utilities/"><img src="https://img.shields.io/npm/v/com.lachee.utilities?label=openupm&amp;registry_uri=https://package.openupm.com" /></a>
+The [openupm registry](https://openupm.com)  is a open source package manager for Unity and provides the [openupm-cli](https://github.com/openupm/openupm-cli) to manage your dependencies.
 ```
-git clone https://github.com/Lachee/unity-utilities.git Packages/com.lachee.utilties
+openupm add com.lachee.unity-utilities
 ```
+
+#### Manual UPM             <a href="https://github.com/Lachee/unity-utilities/tags"><img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/lachee/unity-utilities?label=github"></a>
+Use the Unity Package Manager to add a git package. Adding the git to your UPM will limit updates as Unity will not track versioning on git projects (even though they totally could with tags).
+1. Open the Unity Package Manager and `Add Package by git URL...`
+2. `https://github.com/Lachee/unity-utilities.git `
+
+For local editable versions, manually clone the repo into your package folder. Note the exact spelling on destination name.
+1. `git clone https://github.com/Lachee/unity-utilities.git Packages/com.lachee.utilties`
+
+#### Unity Package
+Go old school and download the Unity Package and import it into your project.
+1. Download the `.unitypackage` from the [Releases](releases) or via the last run `Create Release` action.
+2. Import that package into your Unity3D
 
 # TODO
 List of things I wish to implement:
