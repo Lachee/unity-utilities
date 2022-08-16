@@ -839,12 +839,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "aeQ+52oiGXZLu0xzhdtPvfHAqGZr+UfrsGuJ/s2acWI="
+          "hash": "XZPHw5sVkfCrP/65XZG44M2P53iy25zjUse0Gi3nkwg="
         }
       },
       "is_incremental": false,
