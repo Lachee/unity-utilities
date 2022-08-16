@@ -7,6 +7,11 @@
       <td>
         <h1>Lachee's Utilities</h1>
         <p>
+            <a href="https://github.com/Lachee/unity-utilities/actions/workflows/release.yml"><img src="https://github.com/Lachee/unity-utilities/actions/workflows/release.yml/badge.svg" /></a>
+            <a href="https://github.com/Lachee/unity-utilities/tags"><img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/lachee/unity-utilities?label=github"></a>
+            <a href="https://openupm.com/packages/com.lachee.utilities/"><img src="https://img.shields.io/npm/v/com.lachee.utilities?label=openupm&amp;registry_uri=https://package.openupm.com" /></a>
+        </p>
+        <p>
           This package contains a collection of useful classes and tools that I have personally used throughout my games. 
           Originating from Party Crashers, I have been slowly building and involving this kit, and now with Unity Package Manager being "somewhat" stable, I decided to make a github repository so I can better track the changes and synchronise the numerous versions I have.
         </p>
