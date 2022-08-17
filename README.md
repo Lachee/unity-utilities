@@ -56,3 +56,4 @@ List of things I wish to implement:
   - Fix to my Automatic Namespacer with better support for rules
     - I should rewrite this
   - Configuration panel for stuff? Probably not required
+  - Implement https://forum.unity.com/threads/detecting-textmesh-pro.755501/ so i can add Input features
