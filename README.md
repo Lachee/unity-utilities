@@ -57,3 +57,5 @@ List of things I wish to implement:
     - I should rewrite this
   - Configuration panel for stuff? Probably not required
   - Implement https://forum.unity.com/threads/detecting-textmesh-pro.755501/ so i can add Input features
+  - Asset Bin: Allows you to quickly grab and store assets for building stuff
+  - Right Click - Jump to Definition
