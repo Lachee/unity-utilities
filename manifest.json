@@ -720,66 +720,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Utilities.Serialization.BinaryFormatterSurrogate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Lachee.Utilities.Serialization.BinaryFormatterSurrogate.html",
-          "hash": "JDYrrtwHIQeqxMkCphNZ+4B6QFX/DOYcCFl+nb8XH+8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Utilities.Serialization.ColorSurrogate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Lachee.Utilities.Serialization.ColorSurrogate.html",
-          "hash": "dmFHYboiCFyr1we270l4lzAoczPp+aVSe5+99tjSsNI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Utilities.Serialization.Texture2DSurrogate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Lachee.Utilities.Serialization.Texture2DSurrogate.html",
-          "hash": "Xag1Bwuw636UQ0RoIe1c0DtjCJBtksPAoo5uQi2Y02I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Utilities.Serialization.VectorSurrogate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Lachee.Utilities.Serialization.VectorSurrogate.html",
-          "hash": "o+JF+6eUbbRhQq+tYTf1Y396TzYlTRQdw9UsWLXU7po="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Lachee.Utilities.Serialization.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Lachee.Utilities.Serialization.html",
-          "hash": "/q5EIEtOl/DiMXhDdE3Ed8hUJpMaRSX2u3EUuB+vFyM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Utilities.Singleton-1.yml",
       "output": {
         ".html": {
@@ -832,7 +772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "YxJ05ZCX6bJ1mHliuUmWabaCjDLc/gqhwsj9ktr0rSw="
+          "hash": "sdQyjtod9AR6dQSnrfBqI1C6jcgtkAGvVs8vRq6IG8Q="
         }
       },
       "is_incremental": false,
@@ -901,7 +841,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 67,
+          "total_file_count": 62,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
