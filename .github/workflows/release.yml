@@ -29,7 +29,7 @@ jobs:
             exclude: [ ]
           - name: Auto Namespace
             package: lachee-utilities-only-auto-namespace.unitypackage
-            assets: [ "Editor/Tools/Namespace*.cs", "Editor/Icons/Namespace*.png" ]
+            assets: [ "Editor/Tools/Namespace*.cs", "Editor/Icons/Namespace*.png", "Editor/Tools/EOLConversion.cs" ]
           - name: End Of Line Converter
             package: lachee-utilities-only-eol-converter.unitypackage
             assets: [ "Editor/Tools/EOLConversion.cs" ]

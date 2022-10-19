@@ -15,8 +15,14 @@ namespace Lachee.Tools.Editor
     /// </summary>
     public class NamespaceProcessor : UnityEditor.AssetModificationProcessor
     {
-
+        private static string EOL =>  EditorPrefs.GetString("prefered_eol", "\r\n");
         private readonly static Regex _namespaceRegex = new Regex(@"namespace\s(\s?[a-zA-Z]+[0-9]*\.?)*", RegexOptions.Compiled);
+
+        static NamespaceProcessor()
+        {
+            if (!EditorPrefs.HasKey(EOLConversion.PREFS_PROCESS))
+                EditorPrefs.SetBool(EOLConversion.PREFS_PROCESS, false);
+        }
 
         /// <summary>
         ///  This gets called for every .meta file created by the Editor.
@@ -36,6 +42,7 @@ namespace Lachee.Tools.Editor
             if (configuration.FormatDocument)
                 FormatScripts(path);
 
+            EOLConversion.ConvertFile(path);
             AssetDatabase.Refresh();
         }
         
@@ -45,6 +52,7 @@ namespace Lachee.Tools.Editor
             if (Path.GetExtension(asset) != ".cs")
                 throw new System.ArgumentException("Asset must be a cs file", "asset");
 
+            string eol = EOL;
             string contents = File.ReadAllText(asset);
             if (contents.Contains("namespace"))
             {
@@ -54,8 +62,8 @@ namespace Lachee.Tools.Editor
             else
             {
                 int index = FindIndexOfLastImport(contents);
-                contents = contents.Insert(index, "\nnamespace " + @namespace + " {");
-                contents += "\n}";
+                contents = contents.Insert(index, eol + "namespace " + @namespace + " {");
+                contents += eol + "}";
             }
             File.WriteAllText(asset, contents);
         }
