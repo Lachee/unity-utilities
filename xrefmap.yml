@@ -1177,6 +1177,50 @@ references:
   isSpec: "True"
   fullName: Lachee.Tools.Editor.EOLConversion.Convert
   nameWithType: EOLConversion.Convert
+- uid: Lachee.Tools.Editor.EOLConversion.ConvertFile(System.String)
+  name: ConvertFile(String)
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_ConvertFile_System_String_
+  commentId: M:Lachee.Tools.Editor.EOLConversion.ConvertFile(System.String)
+  fullName: Lachee.Tools.Editor.EOLConversion.ConvertFile(System.String)
+  nameWithType: EOLConversion.ConvertFile(String)
+- uid: Lachee.Tools.Editor.EOLConversion.ConvertFile(System.String,System.String)
+  name: ConvertFile(String, String)
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_ConvertFile_System_String_System_String_
+  commentId: M:Lachee.Tools.Editor.EOLConversion.ConvertFile(System.String,System.String)
+  fullName: Lachee.Tools.Editor.EOLConversion.ConvertFile(System.String, System.String)
+  nameWithType: EOLConversion.ConvertFile(String, String)
+- uid: Lachee.Tools.Editor.EOLConversion.ConvertFile*
+  name: ConvertFile
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_ConvertFile_
+  commentId: Overload:Lachee.Tools.Editor.EOLConversion.ConvertFile
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.EOLConversion.ConvertFile
+  nameWithType: EOLConversion.ConvertFile
+- uid: Lachee.Tools.Editor.EOLConversion.OnWillCreateAsset(System.String)
+  name: OnWillCreateAsset(String)
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_OnWillCreateAsset_System_String_
+  commentId: M:Lachee.Tools.Editor.EOLConversion.OnWillCreateAsset(System.String)
+  fullName: Lachee.Tools.Editor.EOLConversion.OnWillCreateAsset(System.String)
+  nameWithType: EOLConversion.OnWillCreateAsset(String)
+- uid: Lachee.Tools.Editor.EOLConversion.OnWillCreateAsset*
+  name: OnWillCreateAsset
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_OnWillCreateAsset_
+  commentId: Overload:Lachee.Tools.Editor.EOLConversion.OnWillCreateAsset
+  isSpec: "True"
+  fullName: Lachee.Tools.Editor.EOLConversion.OnWillCreateAsset
+  nameWithType: EOLConversion.OnWillCreateAsset
+- uid: Lachee.Tools.Editor.EOLConversion.PREFS_PREFERED
+  name: PREFS_PREFERED
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_PREFS_PREFERED
+  commentId: F:Lachee.Tools.Editor.EOLConversion.PREFS_PREFERED
+  fullName: Lachee.Tools.Editor.EOLConversion.PREFS_PREFERED
+  nameWithType: EOLConversion.PREFS_PREFERED
+- uid: Lachee.Tools.Editor.EOLConversion.PREFS_PROCESS
+  name: PREFS_PROCESS
+  href: api/Lachee.Tools.Editor.EOLConversion.html#Lachee_Tools_Editor_EOLConversion_PREFS_PROCESS
+  commentId: F:Lachee.Tools.Editor.EOLConversion.PREFS_PROCESS
+  fullName: Lachee.Tools.Editor.EOLConversion.PREFS_PROCESS
+  nameWithType: EOLConversion.PREFS_PROCESS
 - uid: Lachee.Tools.Editor.HelpContext
   name: HelpContext
   href: api/Lachee.Tools.Editor.HelpContext.html
