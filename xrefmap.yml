@@ -2540,6 +2540,12 @@ references:
   commentId: M:Lachee.Utilities.MeshBuilder.#ctor(Mesh)
   fullName: Lachee.Utilities.MeshBuilder.MeshBuilder(Mesh)
   nameWithType: MeshBuilder.MeshBuilder(Mesh)
+- uid: Lachee.Utilities.MeshBuilder.#ctor(System.Int32,System.Int32)
+  name: MeshBuilder(Int32, Int32)
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder__ctor_System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.MeshBuilder.#ctor(System.Int32,System.Int32)
+  fullName: Lachee.Utilities.MeshBuilder.MeshBuilder(System.Int32, System.Int32)
+  nameWithType: MeshBuilder.MeshBuilder(Int32, Int32)
 - uid: Lachee.Utilities.MeshBuilder.#ctor*
   name: MeshBuilder
   href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder__ctor_
