@@ -2640,6 +2640,12 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.AddUV
   nameWithType: MeshBuilder.AddUV
+- uid: Lachee.Utilities.MeshBuilder.AddVert(Vector2,System.Single)
+  name: AddVert(Vector2, Single)
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_AddVert_Vector2_System_Single_
+  commentId: M:Lachee.Utilities.MeshBuilder.AddVert(Vector2,System.Single)
+  fullName: Lachee.Utilities.MeshBuilder.AddVert(Vector2, System.Single)
+  nameWithType: MeshBuilder.AddVert(Vector2, Single)
 - uid: Lachee.Utilities.MeshBuilder.AddVert(Vector3)
   name: AddVert(Vector3)
   href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_AddVert_Vector3_
@@ -2701,6 +2707,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.CenterMesh
   nameWithType: MeshBuilder.CenterMesh
+- uid: Lachee.Utilities.MeshBuilder.Clear
+  name: Clear()
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_Clear
+  commentId: M:Lachee.Utilities.MeshBuilder.Clear
+  fullName: Lachee.Utilities.MeshBuilder.Clear()
+  nameWithType: MeshBuilder.Clear()
+- uid: Lachee.Utilities.MeshBuilder.Clear*
+  name: Clear
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_Clear_
+  commentId: Overload:Lachee.Utilities.MeshBuilder.Clear
+  isSpec: "True"
+  fullName: Lachee.Utilities.MeshBuilder.Clear
+  nameWithType: MeshBuilder.Clear
 - uid: Lachee.Utilities.MeshBuilder.CountColors
   name: CountColors()
   href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_CountColors
@@ -2766,6 +2785,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.MeshBuilder.Create
   nameWithType: MeshBuilder.Create
+- uid: Lachee.Utilities.MeshBuilder.CreateQuad
+  name: CreateQuad()
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_CreateQuad
+  commentId: M:Lachee.Utilities.MeshBuilder.CreateQuad
+  fullName: Lachee.Utilities.MeshBuilder.CreateQuad()
+  nameWithType: MeshBuilder.CreateQuad()
+- uid: Lachee.Utilities.MeshBuilder.CreateQuad*
+  name: CreateQuad
+  href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_CreateQuad_
+  commentId: Overload:Lachee.Utilities.MeshBuilder.CreateQuad
+  isSpec: "True"
+  fullName: Lachee.Utilities.MeshBuilder.CreateQuad
+  nameWithType: MeshBuilder.CreateQuad
 - uid: Lachee.Utilities.MeshBuilder.CreateTriangle
   name: CreateTriangle()
   href: api/Lachee.Utilities.MeshBuilder.html#Lachee_Utilities_MeshBuilder_CreateTriangle
