@@ -31,6 +31,18 @@ namespace Lachee.Utilities
 
             hasCenter = false;
         }
+    
+        public MeshBuilder(int vertexCount, int triangleCount)
+        {
+            verts = new List<Vector3>(vertexCount);
+            tris = new List<int>(triangleCount);
+            uvs = new List<Vector2>(vertexCount);
+            colors = new List<Color>(vertexCount);
+            submesh = new Dictionary<int, List<int>>();
+
+            hasCenter = false;
+        }
+
         public MeshBuilder(Mesh m)
         {
 
