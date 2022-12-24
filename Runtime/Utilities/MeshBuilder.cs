@@ -103,6 +103,7 @@ namespace Lachee.Utilities
         #endregion
 
         #region Adders
+        public void AddVert(Vector2 v, float z = 0f) { verts.Add(new Vector3(v.x, v.y, z)); hasCenter = false; }
         public void AddVert(Vector3 v) { verts.Add(v); hasCenter = false; }
         public void AddVert(params Vector3[] vectors)
         {
@@ -277,6 +278,15 @@ namespace Lachee.Utilities
             //return the center
             return center;
         }
+        
+        public void CreateQuad()
+        {
+            int c = CountVerts();
+            if (c < 4) return;
+
+            CreateTriangle(c - 1, c - 2, c - 3);
+            CreateTriangle(c - 1, c - 3, c - 4);
+        }
         public void CreateTriangle()
         {
             if (CountVerts() < 3)
@@ -380,6 +390,16 @@ namespace Lachee.Utilities
             return mesh;
         }
 
+
+        public void Clear()
+        {
+            verts.Clear();
+            tris.Clear();
+            colors.Clear();
+            uvs.Clear();
+            submesh.Clear();
+            hasCenter = false;
+        }
         #endregion
     }
 }
