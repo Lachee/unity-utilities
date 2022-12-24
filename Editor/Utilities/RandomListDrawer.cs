@@ -149,14 +149,22 @@ namespace Lachee.Utilities.Editor
 
             list.onRemoveCallback += (_) =>
             {
+                #if UNITY_2021_OR_NEWER
                 int index = list.selectedIndices.First();
+                #else
+                int index = list.index;
+                #endif
                 itemListProperty.DeleteArrayElementAtIndex(index);
                 weightListProperty.DeleteArrayElementAtIndex(index);
             };
 
             list.onCanRemoveCallback += (_) =>
             {
+                #if UNITY_2021_OR_NEWER
                 return list.selectedIndices.Count == 1;
+                #else
+                return list.index >= 0;
+                #endif
             };
 
             list.elementHeightCallback += (int index) =>
