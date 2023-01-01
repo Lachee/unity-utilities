@@ -41,7 +41,7 @@ Use the Unity Package Manager to add a git package. Adding the git to your UPM w
 2. `https://github.com/Lachee/unity-utilities.git `
 
 For local editable versions, manually clone the repo into your package folder. Note the exact spelling on destination name.
-1. `git clone https://github.com/Lachee/unity-utilities.git Packages/com.lachee.utilties`
+1. `git clone https://github.com/Lachee/unity-utilities.git Packages/com.lachee.utilities`
 
 #### Unity Package
 Go old school and download the Unity Package and import it into your project.
