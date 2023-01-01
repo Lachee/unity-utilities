@@ -13,7 +13,7 @@ namespace Lachee.Tools.Editor
         public const string PREFS_PREFERED = "prefered_eol";
         public const string PREFS_PROCESS = "process_eol";
 
-        [MenuItem("Tools/EOL Conversion/Windows")]
+        [MenuItem("Tools/Lachee/EOL Conversion/Windows")]
         private static void ConvertToWindows()
         {
             EditorPrefs.SetString(PREFS_PREFERED, "\r\n");
@@ -21,21 +21,21 @@ namespace Lachee.Tools.Editor
         }
 
 
-        [MenuItem("Tools/EOL Conversion/Unix")]
+        [MenuItem("Tools/Lachee/EOL Conversion/Unix")]
         private static void ConvertToUnix()
         {
             EditorPrefs.SetString(PREFS_PREFERED, "\n");
             Convert("\n");
         }
 
-        [MenuItem("Tools/EOL Conversion/Automaticly Process")]
+        [MenuItem("Tools/Lachee/EOL Conversion/Automaticly Process")]
         private static void ToggleProcessing()
         {
             bool auto = EditorPrefs.GetBool(PREFS_PROCESS, true);
             EditorPrefs.SetBool(PREFS_PROCESS, !auto);
         }
 
-        [MenuItem("Tools/EOL Conversion/Automaticly Process", true)]
+        [MenuItem("Tools/Lachee/EOL Conversion/Automaticly Process", true)]
         private static bool ToogleProcessingValidation()
         {
             bool auto = EditorPrefs.GetBool(PREFS_PROCESS, true);

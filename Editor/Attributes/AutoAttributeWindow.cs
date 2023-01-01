@@ -10,7 +10,7 @@ namespace Lachee.Attributes.Editor
 
         private Vector2 scrollPosition = Vector2.zero;
 
-        [MenuItem("Tools/Auto Errors")]
+        [MenuItem("Tools/Lachee/Auto Errors")]
         public static void ShowWindow()
         {
             if (!_instance)

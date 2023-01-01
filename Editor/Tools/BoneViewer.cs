@@ -34,7 +34,7 @@ namespace Lachee.Tools.Editor
                 .FirstOrDefault(root => root != null);
 
         [MenuItem("Window/Animation/Bone Viewer")]
-        [MenuItem("Tools/Hierarchy Viewer")]
+        [MenuItem("Tools/Lachee/Hierarchy Viewer")]
         public static void OpenWindow()
         {
             BoneViewer.GetWindow<BoneViewer>("Hierarchy Viewer");
