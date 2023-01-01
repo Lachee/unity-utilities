@@ -78,6 +78,8 @@ namespace Lachee.Tools.Editor
             }
 
             EditorUtility.ClearProgressBar();
+
+            UnityEngine.Debug.Log($"Converted {assetsConverted.Count} files");
             return assetsConverted.ToArray();
         }
 
