@@ -112,7 +112,7 @@
   "api/Lachee.Behaviours.PerCameraSettings.html": {
     "href": "api/Lachee.Behaviours.PerCameraSettings.html",
     "title": "Class PerCameraSettings | Utilities",
-    "keywords": "Class PerCameraSettings Inheritance Object PerCameraSettings Namespace : Lachee.Behaviours Assembly : cs.temp.dll.dll Syntax public class PerCameraSettings : MonoBehaviour Fields enabled Declaration public bool enabled Field Value Type Description Boolean properties Declaration public PerCameraSettings.GlobalShaderProperty[] properties Field Value Type Description PerCameraSettings.GlobalShaderProperty [] renderSettings Declaration public PerCameraSettings.RenderSettingsState renderSettings Field Value Type Description PerCameraSettings.RenderSettingsState"
+    "keywords": "Class PerCameraSettings Inheritance Object PerCameraSettings Namespace : Lachee.Behaviours Assembly : cs.temp.dll.dll Syntax public class PerCameraSettings : MonoBehaviour Fields active Declaration public bool active Field Value Type Description Boolean properties Declaration public PerCameraSettings.GlobalShaderProperty[] properties Field Value Type Description PerCameraSettings.GlobalShaderProperty [] renderSettings Declaration public PerCameraSettings.RenderSettingsState renderSettings Field Value Type Description PerCameraSettings.RenderSettingsState"
   },
   "api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html": {
     "href": "api/Lachee.Behaviours.PerCameraSettings.RenderSettingsState.html",

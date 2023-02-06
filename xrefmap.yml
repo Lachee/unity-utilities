@@ -839,12 +839,12 @@ references:
   commentId: T:Lachee.Behaviours.PerCameraSettings
   fullName: Lachee.Behaviours.PerCameraSettings
   nameWithType: PerCameraSettings
-- uid: Lachee.Behaviours.PerCameraSettings.enabled
-  name: enabled
-  href: api/Lachee.Behaviours.PerCameraSettings.html#Lachee_Behaviours_PerCameraSettings_enabled
-  commentId: F:Lachee.Behaviours.PerCameraSettings.enabled
-  fullName: Lachee.Behaviours.PerCameraSettings.enabled
-  nameWithType: PerCameraSettings.enabled
+- uid: Lachee.Behaviours.PerCameraSettings.active
+  name: active
+  href: api/Lachee.Behaviours.PerCameraSettings.html#Lachee_Behaviours_PerCameraSettings_active
+  commentId: F:Lachee.Behaviours.PerCameraSettings.active
+  fullName: Lachee.Behaviours.PerCameraSettings.active
+  nameWithType: PerCameraSettings.active
 - uid: Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty
   name: PerCameraSettings.GlobalShaderProperty
   href: api/Lachee.Behaviours.PerCameraSettings.GlobalShaderProperty.html
