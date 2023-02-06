@@ -17,6 +17,9 @@ namespace Lachee.Tools.Editor
         private static void ConvertToWindows()
         {
             EditorPrefs.SetString(PREFS_PREFERED, "\r\n");
+#if UNITY_2018_1_OR_NEWER
+            EditorSettings.lineEndingsForNewScripts = LineEndingsMode.Windows;
+#endif
             Convert("\r\n");
         }
 
@@ -25,6 +28,9 @@ namespace Lachee.Tools.Editor
         private static void ConvertToUnix()
         {
             EditorPrefs.SetString(PREFS_PREFERED, "\n");
+#if UNITY_2018_1_OR_NEWER
+            EditorSettings.lineEndingsForNewScripts = LineEndingsMode.Unix;
+#endif
             Convert("\n");
         }
 
