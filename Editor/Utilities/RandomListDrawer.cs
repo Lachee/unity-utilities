@@ -77,11 +77,9 @@ namespace Lachee.Utilities.Editor
 
 
         private const int WEIGHT_HEIGHT = 32;
-        private const int WEIGHT_RANGE_PADDING = 2;
         private static readonly int WEIGHT_SLIDER_ID = "RISTSliderIDHash".GetHashCode();
 
         private int _selectedSlider = -1;
-        private int _selectedWeight = -1;
         private ReorderableList _list;
 
 
@@ -253,16 +251,11 @@ namespace Lachee.Utilities.Editor
                             evt.Use();
                             GUIUtility.hotControl = sliderId;
 
-                            // Check for button click
-                            var clickedButton = false;
-
-             
                             foreach (var weight in sliders)
                             {
                                 if (weight.buttonPosition.Contains(evt.mousePosition))
                                 {
                                     _selectedSlider = weight.index;
-                                    clickedButton = true;
                                     break;
                                 }
                             }

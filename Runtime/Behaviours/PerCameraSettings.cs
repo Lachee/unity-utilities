@@ -78,7 +78,7 @@ namespace Lachee.Behaviours
         [Auto, SerializeField]
         private new Camera camera;
 
-        public bool enabled = true;
+        public bool active = true;
         public RenderSettingsState renderSettings;
 
         [System.Serializable]
@@ -95,7 +95,7 @@ namespace Lachee.Behaviours
 
         private void OnPreRender()
         {
-            if (!enabled) return;
+            if (!active) return;
 #if UNITY_EDITOR && false
             if (Application.isPlaying)
 #endif
@@ -112,7 +112,7 @@ namespace Lachee.Behaviours
 
         private void OnPostRender()
         {
-            if (!enabled) return;
+            if (!active) return;
 #if UNITY_EDITOR && false
             if (Application.isPlaying)
 #endif

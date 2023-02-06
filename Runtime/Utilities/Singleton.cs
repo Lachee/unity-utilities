@@ -23,7 +23,7 @@ namespace Lachee.Utilities
         internal static T _instance;
         private static bool _isquitting = false;
 
-#if UNITY_2019_2_OR_NEWER
+#if false && UNITY_2019_2_OR_NEWER
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         static void Init()
         {
