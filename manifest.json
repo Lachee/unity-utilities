@@ -192,6 +192,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.SceneAttributeDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.SceneAttributeDrawer.html",
+          "hash": "t7V1TnthGkEL92nr5iTceFmxVdCS+poRa/lcdqmqCsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.Editor.ToggleDrawer.yml",
       "output": {
         ".html": {
@@ -208,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.Editor.html",
-          "hash": "uT6sfixUwKpQ4hnkz8CGMi91CSGpfnxATKsBizU6aB0="
+          "hash": "Pzq1vHLI+ZcTPJvTTb85LrnrybCAbwCPMIJN6ws4ALo="
         }
       },
       "is_incremental": false,
@@ -240,6 +252,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.SceneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.SceneAttribute.html",
+          "hash": "3JxAN9hihOlG82ickOREmP6tOn2m8GjvsdoggX4YLac="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.ToggleAttribute.yml",
       "output": {
         ".html": {
@@ -256,7 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "zYtmGbqr/bdwt2uLLlR6d2ip99zksxcEtusC5jG4VyQ="
+          "hash": "4ySn3r4yeCeBphapRd3RsN2L7sBtFnHxLm0CjfP9g8M="
         }
       },
       "is_incremental": false,
@@ -772,7 +796,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "sdQyjtod9AR6dQSnrfBqI1C6jcgtkAGvVs8vRq6IG8Q="
+          "hash": "MzxZwjENXlEXjd0EblhpPqKRuy7UGGCpxhZn/hgkzko="
         }
       },
       "is_incremental": false,
@@ -841,7 +865,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 62,
+          "total_file_count": 64,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -658,6 +658,51 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.Editor.ReadonlyDrawer.OnGUI
   nameWithType: ReadonlyDrawer.OnGUI
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer
+  name: SceneAttributeDrawer
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html
+  commentId: T:Lachee.Attributes.Editor.SceneAttributeDrawer
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer
+  nameWithType: SceneAttributeDrawer
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html#Lachee_Attributes_Editor_SceneAttributeDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Attributes.Editor.SceneAttributeDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: SceneAttributeDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html#Lachee_Attributes_Editor_SceneAttributeDrawer_GetPropertyHeight_
+  commentId: Overload:Lachee.Attributes.Editor.SceneAttributeDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.GetPropertyHeight
+  nameWithType: SceneAttributeDrawer.GetPropertyHeight
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html#Lachee_Attributes_Editor_SceneAttributeDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Attributes.Editor.SceneAttributeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: SceneAttributeDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer.OnGUI*
+  name: OnGUI
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html#Lachee_Attributes_Editor_SceneAttributeDrawer_OnGUI_
+  commentId: Overload:Lachee.Attributes.Editor.SceneAttributeDrawer.OnGUI
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.OnGUI
+  nameWithType: SceneAttributeDrawer.OnGUI
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer.Validate(SerializedProperty)
+  name: Validate(SerializedProperty)
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html#Lachee_Attributes_Editor_SceneAttributeDrawer_Validate_SerializedProperty_
+  commentId: M:Lachee.Attributes.Editor.SceneAttributeDrawer.Validate(SerializedProperty)
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.Validate(SerializedProperty)
+  nameWithType: SceneAttributeDrawer.Validate(SerializedProperty)
+- uid: Lachee.Attributes.Editor.SceneAttributeDrawer.Validate*
+  name: Validate
+  href: api/Lachee.Attributes.Editor.SceneAttributeDrawer.html#Lachee_Attributes_Editor_SceneAttributeDrawer_Validate_
+  commentId: Overload:Lachee.Attributes.Editor.SceneAttributeDrawer.Validate
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.Validate
+  nameWithType: SceneAttributeDrawer.Validate
 - uid: Lachee.Attributes.Editor.ToggleDrawer
   name: ToggleDrawer
   href: api/Lachee.Attributes.Editor.ToggleDrawer.html
@@ -751,6 +796,12 @@ references:
   commentId: F:Lachee.Attributes.ReadonlyAttribute.hideInEditmode
   fullName: Lachee.Attributes.ReadonlyAttribute.hideInEditmode
   nameWithType: ReadonlyAttribute.hideInEditmode
+- uid: Lachee.Attributes.SceneAttribute
+  name: SceneAttribute
+  href: api/Lachee.Attributes.SceneAttribute.html
+  commentId: T:Lachee.Attributes.SceneAttribute
+  fullName: Lachee.Attributes.SceneAttribute
+  nameWithType: SceneAttribute
 - uid: Lachee.Attributes.ToggleAttribute
   name: ToggleAttribute
   href: api/Lachee.Attributes.ToggleAttribute.html
