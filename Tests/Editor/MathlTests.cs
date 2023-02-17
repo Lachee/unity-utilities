@@ -9,6 +9,17 @@ using UnityEngine.TestTools.Utils;
 public class MathlTests
 {
     [Test]
+    public void Map()
+    {
+        Assert.That(Mathl.Map(0.5f, 0, 1, -128, 128), Is.EqualTo(0));
+        Assert.That(Mathl.Map(0.75f, 0, 1, -128, 128), Is.EqualTo(64));
+        Assert.That(Mathl.Map(0.25f, 0, 1, -128, 128), Is.EqualTo(-64));
+        Assert.That(Mathl.Map(0, -100, 100, 0, 1), Is.EqualTo(0.5f));
+        Assert.That(Mathl.Map(50, -100, 100, 0, 1), Is.EqualTo(0.75f));
+        Assert.That(Mathl.Map(-50, -100, 100, 0, 1), Is.EqualTo(0.25f));
+    }
+
+    [Test]
     public void Mod()
     {
         Assert.That(Mathl.Mod(5, 10), Is.EqualTo(5), "Modulo doesn't effect small values");
