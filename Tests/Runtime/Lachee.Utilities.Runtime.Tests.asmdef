@@ -1,0 +1,11 @@
+{
+  "name": "Lachee.Utilities.Runtime.Tests",
+  "references": [
+    "Lachee.Utilities.Runtime"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": []
+}

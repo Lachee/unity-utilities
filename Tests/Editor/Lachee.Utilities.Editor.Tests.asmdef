@@ -1,0 +1,14 @@
+{
+  "name": "Lachee.Utilities.Editor.Tests",
+  "references": [
+    "Lachee.Utilities.Editor",
+    "Lachee.Utilities.Runtime"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}

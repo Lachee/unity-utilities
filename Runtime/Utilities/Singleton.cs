@@ -86,7 +86,7 @@ namespace Lachee.Utilities
 
             set
             {
-                Debug.LogError("Someone is trying to manually set the singleton for " + type, _instance);
+                Debug.LogWarning("Someone is trying to manually set the singleton for " + type, _instance);
                 _instance = value;
             }
         }
