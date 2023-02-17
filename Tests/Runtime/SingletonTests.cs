@@ -22,10 +22,11 @@ public class SingletonTests
     public IEnumerator FindInstance()
     {
         GameObject go = new GameObject();
-        go.AddComponent<ExampleSingletonMonobehaviour>();
+        var addedComponent = go.AddComponent<ExampleSingletonMonobehaviour>();
         yield return new WaitForEndOfFrame();
 
         Assert.IsNotNull(ExampleSingletonMonobehaviour.instance);
+        Assert.AreEqual(ExampleSingletonMonobehaviour.instance, addedComponent, "added component is identical");
         Assert.IsTrue(ExampleSingletonMonobehaviour.referenced, "Reference will update with instance");
     }
 
