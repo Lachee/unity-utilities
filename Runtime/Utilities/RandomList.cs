@@ -33,6 +33,7 @@ namespace Lachee.Utilities
         /// </summary>
         public float TotalWeight { get { return _sumWeight; } }
 
+
         /// <summary>
         /// Creates a new Random List
         /// </summary>
@@ -52,11 +53,42 @@ namespace Lachee.Utilities
             _weights = new List<float>(capacity);
         }
 
-        public RandomList(IEnumerable<KeyValuePair<T, float>> collection) : this()
+        /// <summary>
+        /// Creates a random list with a key value pair
+        /// </summary>
+        /// <param name="collection"></param>
+        public RandomList(IEnumerable<KeyValuePair<T, float>> collection) 
+            : this()
         {
             foreach (var kp in collection)
                 Add(kp);
         }
+
+        /// <summary>
+        /// Creates a new random list with a key value pair
+        /// </summary>
+        /// <example>
+        /// new ( 
+        ///     new ("A", 25),
+        ///     new ("B", 20)
+        /// );
+        /// </example>
+        public RandomList(params KeyValuePair<T, float>[] collection)
+            : this((IEnumerable<KeyValuePair<T, float>>)collection) { }
+
+        /// <summary>
+        /// Creates a new random list form a dictionary
+        /// </summary>
+        /// <example>
+        /// new(new Dictionary<string, float> {
+        ///    { "A", 50f },
+        ///    { "B", 25f },
+        ///    { "C", 25f }
+        ///});
+        ///</example>
+        /// <param name="dictionary"></param>
+        public RandomList(IDictionary<T, float> dictionary) 
+            : this((IEnumerable<KeyValuePair<T, float>>) dictionary) { }
 
         /// <summary>
         /// Clears the random table. 
@@ -157,6 +189,16 @@ namespace Lachee.Utilities
         }
 
         /// <summary>
+        /// Enumerates over the weights and returns a key value pair
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<KeyValuePair<T, float>> GetWeights()
+        {
+            for (int i = 0; i < _list.Count; i++)
+                yield return new KeyValuePair<T, float>(_list[i], _weights[i]);
+        }
+
+        /// <summary>
         /// Attempts to pick a random element from the table based of weighting.
         /// </summary>
         /// <param name="random">A random value between 0 and 1. This is done so System.Random or Unity.Random can be used.</param>
@@ -180,6 +222,16 @@ namespace Lachee.Utilities
             result = default(T);
             return false;
         }
+
+#if UNITY_5_3_OR_NEWER
+        /// <summary>
+        /// Attempts to pick a random element from the table based of weighting.
+        /// </summary>
+        /// <param name="result">The random element that was fetched.</param>
+        /// <returns>false if we are unable to find a random element.</returns>
+        public bool Randomise(out T result)
+            => Randomise(Random.value, out result);
+#endif
 
         /// <summary>
         /// Recalculates the total weights
