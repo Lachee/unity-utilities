@@ -33,6 +33,12 @@ namespace Lachee.Utilities
         /// </summary>
         public float TotalWeight { get { return _sumWeight; } }
 
+        /// <summary>The weight for a specific item</summary>
+        public float this[T i]
+        {
+            get => GetWeight(i);
+            set => SetWeight(i, value);
+        }
 
         /// <summary>
         /// Creates a new Random List
@@ -109,7 +115,7 @@ namespace Lachee.Utilities
         {
             if (weight < 0)
             {
-                Debug.LogWarning("Weight for item " + item.ToString() + " is negative");
+                Debug.LogError("Weight for item " + item.ToString() + " is negative");
                 weight = 0;
             }
 
@@ -124,11 +130,19 @@ namespace Lachee.Utilities
             Add(pair.Key, pair.Value);
         }
 
+#if NET_STANDARD_2_0
+        /// <summary>Adds a new touple</summary>
+        public void Add((T, float) touple)
+        {
+            Add(touple.Item1, touple.Item2);
+        }
+#endif
+
         /// <summary>
         /// Removes an item and its weight
         /// </summary>
         /// <param name="item">The item to remove</param>
-        public void Remove(T item)
+        public bool Remove(T item)
         {
             Debug.Assert(_list.Count == _weights.Count);
 
@@ -138,7 +152,10 @@ namespace Lachee.Utilities
                 _list.RemoveAt(index);
                 _sumWeight -= _weights[index];
                 _weights.RemoveAt(index);
+                return true;
             }
+
+            return false;
         }
 
         /// <summary>
@@ -197,6 +214,7 @@ namespace Lachee.Utilities
             for (int i = 0; i < _list.Count; i++)
                 yield return new KeyValuePair<T, float>(_list[i], _weights[i]);
         }
+
 
         /// <summary>
         /// Attempts to pick a random element from the table based of weighting.
