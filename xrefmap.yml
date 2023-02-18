@@ -639,6 +639,25 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.Editor.EnumFlagDrawer.OnGUI
   nameWithType: EnumFlagDrawer.OnGUI
+- uid: Lachee.Attributes.Editor.LabelDrawer
+  name: LabelDrawer
+  href: api/Lachee.Attributes.Editor.LabelDrawer.html
+  commentId: T:Lachee.Attributes.Editor.LabelDrawer
+  fullName: Lachee.Attributes.Editor.LabelDrawer
+  nameWithType: LabelDrawer
+- uid: Lachee.Attributes.Editor.LabelDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/Lachee.Attributes.Editor.LabelDrawer.html#Lachee_Attributes_Editor_LabelDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Attributes.Editor.LabelDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: Lachee.Attributes.Editor.LabelDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: LabelDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Lachee.Attributes.Editor.LabelDrawer.OnGUI*
+  name: OnGUI
+  href: api/Lachee.Attributes.Editor.LabelDrawer.html#Lachee_Attributes_Editor_LabelDrawer_OnGUI_
+  commentId: Overload:Lachee.Attributes.Editor.LabelDrawer.OnGUI
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.LabelDrawer.OnGUI
+  nameWithType: LabelDrawer.OnGUI
 - uid: Lachee.Attributes.Editor.ReadonlyDrawer
   name: ReadonlyDrawer
   href: api/Lachee.Attributes.Editor.ReadonlyDrawer.html
@@ -765,6 +784,37 @@ references:
   commentId: F:Lachee.Attributes.EnumFlagAttribute.isReadonly
   fullName: Lachee.Attributes.EnumFlagAttribute.isReadonly
   nameWithType: EnumFlagAttribute.isReadonly
+- uid: Lachee.Attributes.LabelAttribute
+  name: LabelAttribute
+  href: api/Lachee.Attributes.LabelAttribute.html
+  commentId: T:Lachee.Attributes.LabelAttribute
+  fullName: Lachee.Attributes.LabelAttribute
+  nameWithType: LabelAttribute
+- uid: Lachee.Attributes.LabelAttribute.#ctor(GUIContent)
+  name: LabelAttribute(GUIContent)
+  href: api/Lachee.Attributes.LabelAttribute.html#Lachee_Attributes_LabelAttribute__ctor_GUIContent_
+  commentId: M:Lachee.Attributes.LabelAttribute.#ctor(GUIContent)
+  fullName: Lachee.Attributes.LabelAttribute.LabelAttribute(GUIContent)
+  nameWithType: LabelAttribute.LabelAttribute(GUIContent)
+- uid: Lachee.Attributes.LabelAttribute.#ctor(System.String,System.String)
+  name: LabelAttribute(String, String)
+  href: api/Lachee.Attributes.LabelAttribute.html#Lachee_Attributes_LabelAttribute__ctor_System_String_System_String_
+  commentId: M:Lachee.Attributes.LabelAttribute.#ctor(System.String,System.String)
+  fullName: Lachee.Attributes.LabelAttribute.LabelAttribute(System.String, System.String)
+  nameWithType: LabelAttribute.LabelAttribute(String, String)
+- uid: Lachee.Attributes.LabelAttribute.#ctor*
+  name: LabelAttribute
+  href: api/Lachee.Attributes.LabelAttribute.html#Lachee_Attributes_LabelAttribute__ctor_
+  commentId: Overload:Lachee.Attributes.LabelAttribute.#ctor
+  isSpec: "True"
+  fullName: Lachee.Attributes.LabelAttribute.LabelAttribute
+  nameWithType: LabelAttribute.LabelAttribute
+- uid: Lachee.Attributes.LabelAttribute.label
+  name: label
+  href: api/Lachee.Attributes.LabelAttribute.html#Lachee_Attributes_LabelAttribute_label
+  commentId: F:Lachee.Attributes.LabelAttribute.label
+  fullName: Lachee.Attributes.LabelAttribute.label
+  nameWithType: LabelAttribute.label
 - uid: Lachee.Attributes.ReadonlyAttribute
   name: ReadonlyAttribute
   href: api/Lachee.Attributes.ReadonlyAttribute.html

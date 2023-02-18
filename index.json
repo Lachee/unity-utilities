@@ -67,7 +67,12 @@
   "api/Lachee.Attributes.Editor.html": {
     "href": "api/Lachee.Attributes.Editor.html",
     "title": "Namespace Lachee.Attributes.Editor | Utilities",
-    "keywords": "Namespace Lachee.Attributes.Editor Classes AutoAttributeDrawer AutoAttributeEditor Observes the Auto-Attribute to rebuild lists. AutoAttributeEditor.ObjectErrors AutoAttributeWindow EditorButton EnumFlagDrawer ReadonlyDrawer SceneAttributeDrawer ToggleDrawer Structs AutoAttributeEditor.AttributeProperty Path of the attribute with a reference to the attribute itself AutoAttributeEditor.Error Error state about an attribute"
+    "keywords": "Namespace Lachee.Attributes.Editor Classes AutoAttributeDrawer AutoAttributeEditor Observes the Auto-Attribute to rebuild lists. AutoAttributeEditor.ObjectErrors AutoAttributeWindow EditorButton EnumFlagDrawer LabelDrawer ReadonlyDrawer SceneAttributeDrawer ToggleDrawer Structs AutoAttributeEditor.AttributeProperty Path of the attribute with a reference to the attribute itself AutoAttributeEditor.Error Error state about an attribute"
+  },
+  "api/Lachee.Attributes.Editor.LabelDrawer.html": {
+    "href": "api/Lachee.Attributes.Editor.LabelDrawer.html",
+    "title": "Class LabelDrawer | Utilities",
+    "keywords": "Class LabelDrawer Inheritance Object LabelDrawer Namespace : Lachee.Attributes.Editor Assembly : cs.temp.dll.dll Syntax public class LabelDrawer : PropertyDrawer Methods OnGUI(Rect, SerializedProperty, GUIContent) Declaration public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) Parameters Type Name Description Rect position SerializedProperty property GUIContent label"
   },
   "api/Lachee.Attributes.Editor.ReadonlyDrawer.html": {
     "href": "api/Lachee.Attributes.Editor.ReadonlyDrawer.html",
@@ -92,7 +97,12 @@
   "api/Lachee.Attributes.html": {
     "href": "api/Lachee.Attributes.html",
     "title": "Namespace Lachee.Attributes | Utilities",
-    "keywords": "Namespace Lachee.Attributes Classes AutoAttribute Automatically fetches attached components ButtonAttribute This attribute gives methods buttons within the editor inspector. This will allow for quick execution of the method within the editor. Similar to how ContexMenu works. EnumFlagAttribute Assign this attribute to FlagsAttribute enums to give them a mask popup within unity. ReadonlyAttribute Makes object readonly in the editor. SceneAttribute ToggleAttribute Marks an attribute as togglable. Enums AutoSearchFlag Flag that controls how searching is handled within the AutoAttribute"
+    "keywords": "Namespace Lachee.Attributes Classes AutoAttribute Automatically fetches attached components ButtonAttribute This attribute gives methods buttons within the editor inspector. This will allow for quick execution of the method within the editor. Similar to how ContexMenu works. EnumFlagAttribute Assign this attribute to FlagsAttribute enums to give them a mask popup within unity. LabelAttribute Makes object readonly in the editor. ReadonlyAttribute Makes object readonly in the editor. SceneAttribute ToggleAttribute Marks an attribute as togglable. Enums AutoSearchFlag Flag that controls how searching is handled within the AutoAttribute"
+  },
+  "api/Lachee.Attributes.LabelAttribute.html": {
+    "href": "api/Lachee.Attributes.LabelAttribute.html",
+    "title": "Class LabelAttribute | Utilities",
+    "keywords": "Class LabelAttribute Makes object readonly in the editor. Inheritance Object LabelAttribute Namespace : Lachee.Attributes Assembly : cs.temp.dll.dll Syntax public class LabelAttribute : PropertyAttribute Constructors LabelAttribute(GUIContent) Creates a new label from the GUIContent Declaration public LabelAttribute(GUIContent content) Parameters Type Name Description GUIContent content LabelAttribute(String, String) Creates a label Declaration public LabelAttribute(string label, string tooltip = \"\") Parameters Type Name Description String label The name of the property String tooltip The tooltip for the property Fields label The label and tooltip for the property. Declaration public GUIContent label Field Value Type Description GUIContent"
   },
   "api/Lachee.Attributes.ReadonlyAttribute.html": {
     "href": "api/Lachee.Attributes.ReadonlyAttribute.html",

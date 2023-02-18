@@ -180,6 +180,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.LabelDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.LabelDrawer.html",
+          "hash": "kpFryF3mj2DrUhx2BJRuChJ5wVbl5ERHXZ3lEepkGsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.Editor.ReadonlyDrawer.yml",
       "output": {
         ".html": {
@@ -220,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.Editor.html",
-          "hash": "Pzq1vHLI+ZcTPJvTTb85LrnrybCAbwCPMIJN6ws4ALo="
+          "hash": "SXZ3tDwOojYGYHgBuxIoQIMEg1/rOYfyhvZ6vhhAY+o="
         }
       },
       "is_incremental": false,
@@ -233,6 +245,18 @@
         ".html": {
           "relative_path": "api/Lachee.Attributes.EnumFlagAttribute.html",
           "hash": "j7jvLNPxzkVG9gls5sVciI9DTWoF9YjyyNq8KA+b5VI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.LabelAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.LabelAttribute.html",
+          "hash": "CWYi6/kk60DxO55KWo31SNuAjyOpFHUadh1hK3l25c8="
         }
       },
       "is_incremental": false,
@@ -280,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "4ySn3r4yeCeBphapRd3RsN2L7sBtFnHxLm0CjfP9g8M="
+          "hash": "8q8kNTn+kiXXr9ldRh0zBqNPEueqYY9E1Z8qGUs2lqU="
         }
       },
       "is_incremental": false,
@@ -796,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "MzxZwjENXlEXjd0EblhpPqKRuy7UGGCpxhZn/hgkzko="
+          "hash": "18tILEMtNUi84FQUlDd/TQhlYVEsWew6NNUNhzOv/Fc="
         }
       },
       "is_incremental": false,
@@ -865,7 +889,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 64,
+          "total_file_count": 66,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
