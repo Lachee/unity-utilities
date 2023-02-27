@@ -8,17 +8,30 @@ namespace Lachee.Editor.Icons
 {
     internal static class Icon
     {
-        private const string BASE_PATH = "Packages/com.lachee.utilities/Editor/Icons/";
         private static Dictionary<string, Texture> _cache = new Dictionary<string, Texture>(6);
-
-        public static Texture equals    => Load("equals_100");
-        public static Texture link      => Load("auto_32");
-        public static Texture link_sm   => Load("auto_16");
-        public static Texture rotate    => Load("rotate");
+        public static Texture equals => Load("equals_100");
+        public static Texture link => Load("auto_32");
+        public static Texture link_sm => Load("auto_16");
+        public static Texture rotate => Load("rotate");
         public static Texture singleton => Load("singleton");
 
-        public static Texture ristBar    => Load("ristbar");
+        public static Texture ristBar => Load("ristbar");
         public static Texture @namespace => Load("NamespaceConfigurationIcon");
+
+        private static string _iconDirectory;
+        private static string IconDirectory 
+        {
+            get
+            {
+                if (_iconDirectory != null)
+                    return _iconDirectory;
+                
+                _iconDirectory = "Assets/com.lachee.utilities/Editor/Icons/";
+                if (Directory.Exists("Packages/com.lachee.utilities/Editor/Icons/"))
+                    _iconDirectory = "Packages/com.lachee.utilities/Editor/Icons/";
+                return _iconDirectory;
+            }
+        }
 
         /// <summary>
         /// Gets a texture and stores it in a cache if requried
@@ -34,13 +47,13 @@ namespace Lachee.Editor.Icons
 
 
             //Load the file
-            string filePath = BASE_PATH + name;
+            string filePath = IconDirectory + name;
             if (string.IsNullOrEmpty(Path.GetExtension(filePath)))
                 filePath += ".png";
 
             if (!File.Exists(filePath))
             {
-                Debug.LogError("The icon " + name + " does not exist!");
+                Debug.LogError($"The icon {name} does not exist at {filePath}!");
                 return null;
             }
 
