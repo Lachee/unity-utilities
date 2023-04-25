@@ -16,8 +16,10 @@ namespace Lachee.Attributes.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            SlideAttribute attr = (SlideAttribute)attribute;
+            // Lock the position to the bottom
+            position.y = position.y + position.height - EditorGUIUtility.singleLineHeight;
 
+            SlideAttribute attr = (SlideAttribute)attribute;
 
             // Draw the left and right
             if (attr.LeftLabel != null)
@@ -34,20 +36,19 @@ namespace Lachee.Attributes.Editor
                 EditorGUI.LabelField(new Rect(position.x + EditorGUIUtility.labelWidth, position.y + miniLabelVerticalOffset, position.width - EditorGUIUtility.labelWidth + padding, position.height), attr.RightLabel, miniLabelStyle);
             }
 
-            Rect sliderBox = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
-
             // Draw the slider
+            Rect sliderPosition = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
             switch (property.propertyType)
             {
                 case SerializedPropertyType.Float:
-                    EditorGUI.Slider(sliderBox, property, attr.Min, attr.Max, label);
+                    EditorGUI.Slider(sliderPosition, property, attr.Min, attr.Max, label);
                     break;
                 case SerializedPropertyType.Integer:
-                    EditorGUI.IntSlider(sliderBox, property, (int) attr.Min, (int) attr.Max, label);
+                    EditorGUI.IntSlider(sliderPosition, property, (int) attr.Min, (int) attr.Max, label);
                     break;
                 case SerializedPropertyType.Vector2:
                 case SerializedPropertyType.Vector2Int:
-                    MinMaxSlider(sliderBox, property, attr.Min, attr.Max, label);
+                    MinMaxSlider(sliderPosition, property, attr.Min, attr.Max, label);
                     break;
                 default:
                     EditorGUI.LabelField(position, label, new GUIContent("Slider must be of type float, int, Vector2, or Vector2Int"));
