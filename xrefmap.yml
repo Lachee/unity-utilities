@@ -722,6 +722,38 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.Editor.SceneAttributeDrawer.Validate
   nameWithType: SceneAttributeDrawer.Validate
+- uid: Lachee.Attributes.Editor.SlideDrawer
+  name: SlideDrawer
+  href: api/Lachee.Attributes.Editor.SlideDrawer.html
+  commentId: T:Lachee.Attributes.Editor.SlideDrawer
+  fullName: Lachee.Attributes.Editor.SlideDrawer
+  nameWithType: SlideDrawer
+- uid: Lachee.Attributes.Editor.SlideDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/Lachee.Attributes.Editor.SlideDrawer.html#Lachee_Attributes_Editor_SlideDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Attributes.Editor.SlideDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: Lachee.Attributes.Editor.SlideDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: SlideDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: Lachee.Attributes.Editor.SlideDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/Lachee.Attributes.Editor.SlideDrawer.html#Lachee_Attributes_Editor_SlideDrawer_GetPropertyHeight_
+  commentId: Overload:Lachee.Attributes.Editor.SlideDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.SlideDrawer.GetPropertyHeight
+  nameWithType: SlideDrawer.GetPropertyHeight
+- uid: Lachee.Attributes.Editor.SlideDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/Lachee.Attributes.Editor.SlideDrawer.html#Lachee_Attributes_Editor_SlideDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:Lachee.Attributes.Editor.SlideDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: Lachee.Attributes.Editor.SlideDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: SlideDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: Lachee.Attributes.Editor.SlideDrawer.OnGUI*
+  name: OnGUI
+  href: api/Lachee.Attributes.Editor.SlideDrawer.html#Lachee_Attributes_Editor_SlideDrawer_OnGUI_
+  commentId: Overload:Lachee.Attributes.Editor.SlideDrawer.OnGUI
+  isSpec: "True"
+  fullName: Lachee.Attributes.Editor.SlideDrawer.OnGUI
+  nameWithType: SlideDrawer.OnGUI
 - uid: Lachee.Attributes.Editor.ToggleDrawer
   name: ToggleDrawer
   href: api/Lachee.Attributes.Editor.ToggleDrawer.html
@@ -852,6 +884,89 @@ references:
   commentId: T:Lachee.Attributes.SceneAttribute
   fullName: Lachee.Attributes.SceneAttribute
   nameWithType: SceneAttribute
+- uid: Lachee.Attributes.SlideAttribute
+  name: SlideAttribute
+  href: api/Lachee.Attributes.SlideAttribute.html
+  commentId: T:Lachee.Attributes.SlideAttribute
+  fullName: Lachee.Attributes.SlideAttribute
+  nameWithType: SlideAttribute
+- uid: Lachee.Attributes.SlideAttribute.#ctor(System.Single,System.Single)
+  name: SlideAttribute(Single, Single)
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute__ctor_System_Single_System_Single_
+  commentId: M:Lachee.Attributes.SlideAttribute.#ctor(System.Single,System.Single)
+  fullName: Lachee.Attributes.SlideAttribute.SlideAttribute(System.Single, System.Single)
+  nameWithType: SlideAttribute.SlideAttribute(Single, Single)
+- uid: Lachee.Attributes.SlideAttribute.#ctor(System.Single,System.Single,GUIContent,GUIContent)
+  name: SlideAttribute(Single, Single, GUIContent, GUIContent)
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute__ctor_System_Single_System_Single_GUIContent_GUIContent_
+  commentId: M:Lachee.Attributes.SlideAttribute.#ctor(System.Single,System.Single,GUIContent,GUIContent)
+  fullName: Lachee.Attributes.SlideAttribute.SlideAttribute(System.Single, System.Single, GUIContent, GUIContent)
+  nameWithType: SlideAttribute.SlideAttribute(Single, Single, GUIContent, GUIContent)
+- uid: Lachee.Attributes.SlideAttribute.#ctor(System.Single,System.Single,System.String,System.String)
+  name: SlideAttribute(Single, Single, String, String)
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute__ctor_System_Single_System_Single_System_String_System_String_
+  commentId: M:Lachee.Attributes.SlideAttribute.#ctor(System.Single,System.Single,System.String,System.String)
+  fullName: Lachee.Attributes.SlideAttribute.SlideAttribute(System.Single, System.Single, System.String, System.String)
+  nameWithType: SlideAttribute.SlideAttribute(Single, Single, String, String)
+- uid: Lachee.Attributes.SlideAttribute.#ctor*
+  name: SlideAttribute
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute__ctor_
+  commentId: Overload:Lachee.Attributes.SlideAttribute.#ctor
+  isSpec: "True"
+  fullName: Lachee.Attributes.SlideAttribute.SlideAttribute
+  nameWithType: SlideAttribute.SlideAttribute
+- uid: Lachee.Attributes.SlideAttribute.LeftLabel
+  name: LeftLabel
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_LeftLabel
+  commentId: P:Lachee.Attributes.SlideAttribute.LeftLabel
+  fullName: Lachee.Attributes.SlideAttribute.LeftLabel
+  nameWithType: SlideAttribute.LeftLabel
+- uid: Lachee.Attributes.SlideAttribute.LeftLabel*
+  name: LeftLabel
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_LeftLabel_
+  commentId: Overload:Lachee.Attributes.SlideAttribute.LeftLabel
+  isSpec: "True"
+  fullName: Lachee.Attributes.SlideAttribute.LeftLabel
+  nameWithType: SlideAttribute.LeftLabel
+- uid: Lachee.Attributes.SlideAttribute.Max
+  name: Max
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_Max
+  commentId: P:Lachee.Attributes.SlideAttribute.Max
+  fullName: Lachee.Attributes.SlideAttribute.Max
+  nameWithType: SlideAttribute.Max
+- uid: Lachee.Attributes.SlideAttribute.Max*
+  name: Max
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_Max_
+  commentId: Overload:Lachee.Attributes.SlideAttribute.Max
+  isSpec: "True"
+  fullName: Lachee.Attributes.SlideAttribute.Max
+  nameWithType: SlideAttribute.Max
+- uid: Lachee.Attributes.SlideAttribute.Min
+  name: Min
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_Min
+  commentId: P:Lachee.Attributes.SlideAttribute.Min
+  fullName: Lachee.Attributes.SlideAttribute.Min
+  nameWithType: SlideAttribute.Min
+- uid: Lachee.Attributes.SlideAttribute.Min*
+  name: Min
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_Min_
+  commentId: Overload:Lachee.Attributes.SlideAttribute.Min
+  isSpec: "True"
+  fullName: Lachee.Attributes.SlideAttribute.Min
+  nameWithType: SlideAttribute.Min
+- uid: Lachee.Attributes.SlideAttribute.RightLabel
+  name: RightLabel
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_RightLabel
+  commentId: P:Lachee.Attributes.SlideAttribute.RightLabel
+  fullName: Lachee.Attributes.SlideAttribute.RightLabel
+  nameWithType: SlideAttribute.RightLabel
+- uid: Lachee.Attributes.SlideAttribute.RightLabel*
+  name: RightLabel
+  href: api/Lachee.Attributes.SlideAttribute.html#Lachee_Attributes_SlideAttribute_RightLabel_
+  commentId: Overload:Lachee.Attributes.SlideAttribute.RightLabel
+  isSpec: "True"
+  fullName: Lachee.Attributes.SlideAttribute.RightLabel
+  nameWithType: SlideAttribute.RightLabel
 - uid: Lachee.Attributes.ToggleAttribute
   name: ToggleAttribute
   href: api/Lachee.Attributes.ToggleAttribute.html

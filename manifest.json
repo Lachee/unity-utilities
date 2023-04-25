@@ -216,6 +216,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.Editor.SlideDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.Editor.SlideDrawer.html",
+          "hash": "88Yt2DgTzP0obPlUwCV8uOpMWkGosrolRt8pEQ3dyOg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.Editor.ToggleDrawer.yml",
       "output": {
         ".html": {
@@ -232,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.Editor.html",
-          "hash": "SXZ3tDwOojYGYHgBuxIoQIMEg1/rOYfyhvZ6vhhAY+o="
+          "hash": "Kf8emq2YY3hyw2Qwporyl6xmpODPQYQxXxITxBpcV7w="
         }
       },
       "is_incremental": false,
@@ -288,6 +300,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Attributes.SlideAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Attributes.SlideAttribute.html",
+          "hash": "zWpVWY24A7v4Xffwp+3Hfc4Iu7lS34qOgk4jJ6w90GI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Attributes.ToggleAttribute.yml",
       "output": {
         ".html": {
@@ -304,7 +328,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Attributes.html",
-          "hash": "8q8kNTn+kiXXr9ldRh0zBqNPEueqYY9E1Z8qGUs2lqU="
+          "hash": "Z4e7RFq1FKuxVA6y9RX5ZEEq4FyUYJekrWORImO4WhU="
         }
       },
       "is_incremental": false,
@@ -820,7 +844,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "18tILEMtNUi84FQUlDd/TQhlYVEsWew6NNUNhzOv/Fc="
+          "hash": "7csd5XfJGXLO+gshSEdRguKkxaL+iA3aiT/CTz3gueo="
         }
       },
       "is_incremental": false,
@@ -889,7 +913,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 66,
+          "total_file_count": 68,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
