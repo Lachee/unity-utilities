@@ -31,12 +31,20 @@ namespace Lachee.Attributes.Editor
                 bool wasEnabled = GUI.enabled;
 
                 //Check if we should draw the property
-                Rect iconBox = new Rect(position.x - 20, position.y, 25, position.height);
+                Rect iconBox = new Rect(position.x, position.y, 25, position.height);
                 EditorGUI.PropertyField(iconBox, toggleProperty, new GUIContent("", attr.Tooltip));
 
+                Rect propBox = new Rect(position.x, position.y, position.width, position.height);
                 GUI.enabled = attr.Invert ? !toggleProperty.boolValue : toggleProperty.boolValue;
-                EditorGUI.PropertyField(position, property, label, true);
+                {
+                    EditorGUI.indentLevel += 1;
+                    {
+                        EditorGUI.PropertyField(propBox, property, new GUIContent($" {label.text}", label.tooltip), true);
+                    }
+                    EditorGUI.indentLevel -= 1;
+                }
                 GUI.enabled = wasEnabled;
+
             }
         }
     }
