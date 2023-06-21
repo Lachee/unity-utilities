@@ -109,4 +109,30 @@ namespace Lachee.Utilities
                 c.b * c.b * .114f);
         }
     }
+
+    /// <summary>
+    /// Extends sprites
+    /// </summary>
+    public static class SpriteExtensions
+    {
+        /// <summary>
+        /// Gets the pixel data of the specific sprite.
+        /// <para>This will get the pixels from the base texture that only applies to this specific sprite.</para>
+        /// <para>If the sprite texture is not set to read-write it will throw.</para>
+        /// <para>If the sprite is part of a tightly packed alias it will throw.</para>
+        /// </summary>
+        /// <param name="sprite"></param>
+        /// <returns></returns>
+        public static Color[] GetPixels(this Sprite sprite)
+        {
+            var texture = sprite.texture;
+            var rect = sprite.textureRect;
+            return texture.GetPixels(
+                Mathf.RoundToInt(rect.x),
+                Mathf.RoundToInt(rect.y),
+                Mathf.RoundToInt(rect.width),
+                Mathf.RoundToInt(rect.height)
+            );
+        }
+    }
 }
