@@ -3822,6 +3822,25 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.SortedGizmos.DrawWireSphere
   nameWithType: SortedGizmos.DrawWireSphere
+- uid: Lachee.Utilities.SpriteExtensions
+  name: SpriteExtensions
+  href: api/Lachee.Utilities.SpriteExtensions.html
+  commentId: T:Lachee.Utilities.SpriteExtensions
+  fullName: Lachee.Utilities.SpriteExtensions
+  nameWithType: SpriteExtensions
+- uid: Lachee.Utilities.SpriteExtensions.GetPixels(Sprite)
+  name: GetPixels(Sprite)
+  href: api/Lachee.Utilities.SpriteExtensions.html#Lachee_Utilities_SpriteExtensions_GetPixels_Sprite_
+  commentId: M:Lachee.Utilities.SpriteExtensions.GetPixels(Sprite)
+  fullName: Lachee.Utilities.SpriteExtensions.GetPixels(Sprite)
+  nameWithType: SpriteExtensions.GetPixels(Sprite)
+- uid: Lachee.Utilities.SpriteExtensions.GetPixels*
+  name: GetPixels
+  href: api/Lachee.Utilities.SpriteExtensions.html#Lachee_Utilities_SpriteExtensions_GetPixels_
+  commentId: Overload:Lachee.Utilities.SpriteExtensions.GetPixels
+  isSpec: "True"
+  fullName: Lachee.Utilities.SpriteExtensions.GetPixels
+  nameWithType: SpriteExtensions.GetPixels
 - uid: Lachee.Utilities.TransformExtension
   name: TransformExtension
   href: api/Lachee.Utilities.TransformExtension.html
