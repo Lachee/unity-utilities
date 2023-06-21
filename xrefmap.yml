@@ -1030,6 +1030,19 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.ToggleAttribute.Invert
   nameWithType: ToggleAttribute.Invert
+- uid: Lachee.Attributes.ToggleAttribute.ShowCheckbox
+  name: ShowCheckbox
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_ShowCheckbox
+  commentId: P:Lachee.Attributes.ToggleAttribute.ShowCheckbox
+  fullName: Lachee.Attributes.ToggleAttribute.ShowCheckbox
+  nameWithType: ToggleAttribute.ShowCheckbox
+- uid: Lachee.Attributes.ToggleAttribute.ShowCheckbox*
+  name: ShowCheckbox
+  href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_ShowCheckbox_
+  commentId: Overload:Lachee.Attributes.ToggleAttribute.ShowCheckbox
+  isSpec: "True"
+  fullName: Lachee.Attributes.ToggleAttribute.ShowCheckbox
+  nameWithType: ToggleAttribute.ShowCheckbox
 - uid: Lachee.Attributes.ToggleAttribute.Tooltip
   name: Tooltip
   href: api/Lachee.Attributes.ToggleAttribute.html#Lachee_Attributes_ToggleAttribute_Tooltip
