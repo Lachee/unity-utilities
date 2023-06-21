@@ -9,6 +9,9 @@ using Lachee.Editor.Icons;
 
 namespace Lachee.Attributes.Editor
 {
+    //TODO: Implement this for RequireComponentOfType
+    //  https://github.com/NdubuisiJr/TypeExtender/blob/main/TypeExtender/TypeExtender/TypeExtender.cs#L360-L379
+    //  https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.customattributebuilder?view=net-6.0
 
     /// <summary>Observes the Auto-Attribute to rebuild lists.</summary>
     [InitializeOnLoad]

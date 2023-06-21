@@ -59,6 +59,8 @@ namespace Lachee.Attributes.Editor
 
         private static void MinMaxSlider(Rect position, SerializedProperty property, float min, float max, GUIContent label)
         {
+            //TODO: Look at how unity draws its MinMaxSlider attribute
+
             float minValue = 0;
             float maxValue = 0;
 

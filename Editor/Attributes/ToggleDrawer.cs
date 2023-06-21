@@ -1,13 +1,12 @@
 ﻿using Lachee.Utilities.Editor;
+using System.Configuration;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
 namespace Lachee.Attributes.Editor
 {
-    //TODO: Implement this for HideInInspector
-    //  https://github.com/NdubuisiJr/TypeExtender/blob/main/TypeExtender/TypeExtender/TypeExtender.cs#L360-L379
-    //  https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.customattributebuilder?view=net-6.0                
+    //TODO: Create a Optional<Component> drawer
 
     [CustomPropertyDrawer(typeof(ToggleAttribute))]
     public class ToggleDrawer : PropertyDrawer
@@ -29,19 +28,24 @@ namespace Lachee.Attributes.Editor
             else
             {
                 bool wasEnabled = GUI.enabled;
+                int indentation = 0;
 
                 //Check if we should draw the property
-                Rect iconBox = new Rect(position.x, position.y, 25, position.height);
-                EditorGUI.PropertyField(iconBox, toggleProperty, new GUIContent("", attr.Tooltip));
+                if (attr.ShowCheckbox)
+                {
+                    Rect iconBox = new Rect(position.x, position.y, 25, position.height);
+                    EditorGUI.PropertyField(iconBox, toggleProperty, new GUIContent("", attr.Tooltip));
+                    indentation += 1;
+                }
 
                 Rect propBox = new Rect(position.x, position.y, position.width, position.height);
                 GUI.enabled = attr.Invert ? !toggleProperty.boolValue : toggleProperty.boolValue;
                 {
-                    EditorGUI.indentLevel += 1;
+                    EditorGUI.indentLevel += indentation;
                     {
-                        EditorGUI.PropertyField(propBox, property, new GUIContent($" {label.text}", label.tooltip), true);
+                        EditorGUI.PropertyField(propBox, property, new GUIContent(label.text, label.tooltip), true);
                     }
-                    EditorGUI.indentLevel -= 1;
+                    EditorGUI.indentLevel -= indentation;
                 }
                 GUI.enabled = wasEnabled;
 

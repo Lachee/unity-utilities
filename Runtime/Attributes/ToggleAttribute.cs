@@ -27,6 +27,11 @@ namespace Lachee.Attributes
         /// </summary>
         public bool Invert { get; private set; }
 
+        /// <summary>
+        /// Shows the checkbox to enable/disable he field
+        /// </summary>
+        public bool ShowCheckbox { get; set; } = true;
+
         /// <summary>Creates a toggle attribute with the default prefix of @Enabled</summary>
         public ToggleAttribute() 
         {
