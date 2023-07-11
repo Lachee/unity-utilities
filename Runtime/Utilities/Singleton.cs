@@ -8,7 +8,10 @@ namespace Lachee.Utilities
     /// <summary>
     /// This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or, grabbed from the scene if an instance already exists.
     /// </summary>
-    /// <remarks>Singleton inherits a <see cref="MonoBehaviour"/>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.</remarks>
+    /// <remarks>
+    /// Singleton inherits a <see cref="MonoBehaviour"/>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.
+    /// <para>This object will not be destroyed on load by default. To override this behaviour, either use <see cref="EmphemeralSingleton{T}"/> or override <see cref="dontDestroyOnLoad"/>.</para>
+    /// </remarks>
     /// <typeparam name="T">The class that is to inherit Singleton</typeparam>
     /// <example>
     /// This shows how to increment an integer.
@@ -177,5 +180,16 @@ namespace Lachee.Utilities
             if (dontDestroyOnLoad)
                 DontDestroyOnLoad(gameObject);
         }
+    }
+
+    /// <summary>
+    /// This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or, grabbed from the scene if an instance already exists.
+    /// </summary>
+    /// <remarks>Singleton inherits a <see cref="MonoBehaviour"/>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.</remarks>
+    /// <typeparam name="T">The class that is to inherit Singleton</typeparam>
+    public abstract class EmphemeralSingleton<T> : Singleton<T> 
+        where T : EmphemeralSingleton<T>
+    {
+        protected override bool dontDestroyOnLoad => false;
     }
 }
