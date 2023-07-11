@@ -89,6 +89,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">Singleton&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="Lachee.Utilities.EmphemeralSingleton-1.html">EmphemeralSingleton</a>&lt;T&gt;</div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Lachee.Utilities.html">Lachee.Utilities</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
@@ -113,7 +114,8 @@
     </tbody>
   </table>
   <h5 id="Lachee_Utilities_Singleton_1_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Singleton inherits a <see cref="!:MonoBehaviour"></see>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.</p>
+  <div class="markdown level0 remarks"><p>Singleton inherits a <see cref="!:MonoBehaviour"></see>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.
+<p>This object will not be destroyed on load by default. To override this behaviour, either use <a class="xref" href="Lachee.Utilities.EmphemeralSingleton-1.html">EmphemeralSingleton&lt;T&gt;</a> or override <a class="xref" href="Lachee.Utilities.Singleton-1.html#Lachee_Utilities_Singleton_1_dontDestroyOnLoad">dontDestroyOnLoad</a>.</p></p>
 </div>
   <h5 id="Lachee_Utilities_Singleton_1_examples"><strong>Examples</strong></h5>
   <p>This shows how to increment an integer.</p>

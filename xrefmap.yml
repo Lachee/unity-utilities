@@ -2055,6 +2055,32 @@ references:
   isSpec: "True"
   fullName: Lachee.Utilities.Editor.SerializedPropertyExtensions.GetValueName
   nameWithType: SerializedPropertyExtensions.GetValueName
+- uid: Lachee.Utilities.EmphemeralSingleton`1
+  name: EmphemeralSingleton<T>
+  href: api/Lachee.Utilities.EmphemeralSingleton-1.html
+  commentId: T:Lachee.Utilities.EmphemeralSingleton`1
+  name.vb: EmphemeralSingleton(Of T)
+  fullName: Lachee.Utilities.EmphemeralSingleton<T>
+  fullName.vb: Lachee.Utilities.EmphemeralSingleton(Of T)
+  nameWithType: EmphemeralSingleton<T>
+  nameWithType.vb: EmphemeralSingleton(Of T)
+- uid: Lachee.Utilities.EmphemeralSingleton`1.dontDestroyOnLoad
+  name: dontDestroyOnLoad
+  href: api/Lachee.Utilities.EmphemeralSingleton-1.html#Lachee_Utilities_EmphemeralSingleton_1_dontDestroyOnLoad
+  commentId: P:Lachee.Utilities.EmphemeralSingleton`1.dontDestroyOnLoad
+  fullName: Lachee.Utilities.EmphemeralSingleton<T>.dontDestroyOnLoad
+  fullName.vb: Lachee.Utilities.EmphemeralSingleton(Of T).dontDestroyOnLoad
+  nameWithType: EmphemeralSingleton<T>.dontDestroyOnLoad
+  nameWithType.vb: EmphemeralSingleton(Of T).dontDestroyOnLoad
+- uid: Lachee.Utilities.EmphemeralSingleton`1.dontDestroyOnLoad*
+  name: dontDestroyOnLoad
+  href: api/Lachee.Utilities.EmphemeralSingleton-1.html#Lachee_Utilities_EmphemeralSingleton_1_dontDestroyOnLoad_
+  commentId: Overload:Lachee.Utilities.EmphemeralSingleton`1.dontDestroyOnLoad
+  isSpec: "True"
+  fullName: Lachee.Utilities.EmphemeralSingleton<T>.dontDestroyOnLoad
+  fullName.vb: Lachee.Utilities.EmphemeralSingleton(Of T).dontDestroyOnLoad
+  nameWithType: EmphemeralSingleton<T>.dontDestroyOnLoad
+  nameWithType.vb: EmphemeralSingleton(Of T).dontDestroyOnLoad
 - uid: Lachee.Utilities.GameObjectExtension
   name: GameObjectExtension
   href: api/Lachee.Utilities.GameObjectExtension.html

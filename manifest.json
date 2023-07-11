@@ -636,6 +636,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.Utilities.EmphemeralSingleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.Utilities.EmphemeralSingleton-1.html",
+          "hash": "Q0+c3lhC613rpW2lSeCVyWBeIXeg6ITEMaBE2ZOVNFo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Utilities.GLUtils.yml",
       "output": {
         ".html": {
@@ -796,7 +808,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.Singleton-1.html",
-          "hash": "eZDimdvE0KLnk7LXUhKL4bLCgLOR6hqbD9U/Bs0FMwM="
+          "hash": "OL3ym50+jJ7A9jwnDy1G8Xg6N6elJmZImyug9yZDcoY="
         }
       },
       "is_incremental": false,
@@ -844,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Lachee.Utilities.html",
-          "hash": "SY2YhlkAoUVubGre2pVn+Sn9w/pYltoxfPcTPDTZZ8M="
+          "hash": "3usbM2TsN1xZViPwcmhaIWMj+BkiHy5YtTCAFpiuwHw="
         }
       },
       "is_incremental": false,
@@ -856,7 +868,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vs/96isZmSy+fcxuIY6gu5oiNp3dRPW8G/roA319FG4="
+          "hash": "kzYMwsf1CUCPYeMYHussKFfBaR7QI5QudedQoU7eB3M="
         }
       },
       "is_incremental": false,
@@ -925,7 +937,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 69,
+          "total_file_count": 70,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
