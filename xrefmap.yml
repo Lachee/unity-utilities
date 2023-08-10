@@ -853,12 +853,12 @@ references:
   commentId: T:Lachee.Attributes.ReadonlyAttribute
   fullName: Lachee.Attributes.ReadonlyAttribute
   nameWithType: ReadonlyAttribute
-- uid: Lachee.Attributes.ReadonlyAttribute.#ctor(System.Boolean,System.Boolean)
-  name: ReadonlyAttribute(Boolean, Boolean)
-  href: api/Lachee.Attributes.ReadonlyAttribute.html#Lachee_Attributes_ReadonlyAttribute__ctor_System_Boolean_System_Boolean_
-  commentId: M:Lachee.Attributes.ReadonlyAttribute.#ctor(System.Boolean,System.Boolean)
-  fullName: Lachee.Attributes.ReadonlyAttribute.ReadonlyAttribute(System.Boolean, System.Boolean)
-  nameWithType: ReadonlyAttribute.ReadonlyAttribute(Boolean, Boolean)
+- uid: Lachee.Attributes.ReadonlyAttribute.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  name: ReadonlyAttribute(Boolean, Boolean, Boolean)
+  href: api/Lachee.Attributes.ReadonlyAttribute.html#Lachee_Attributes_ReadonlyAttribute__ctor_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:Lachee.Attributes.ReadonlyAttribute.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  fullName: Lachee.Attributes.ReadonlyAttribute.ReadonlyAttribute(System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: ReadonlyAttribute.ReadonlyAttribute(Boolean, Boolean, Boolean)
 - uid: Lachee.Attributes.ReadonlyAttribute.#ctor*
   name: ReadonlyAttribute
   href: api/Lachee.Attributes.ReadonlyAttribute.html#Lachee_Attributes_ReadonlyAttribute__ctor_
@@ -866,6 +866,12 @@ references:
   isSpec: "True"
   fullName: Lachee.Attributes.ReadonlyAttribute.ReadonlyAttribute
   nameWithType: ReadonlyAttribute.ReadonlyAttribute
+- uid: Lachee.Attributes.ReadonlyAttribute.editableInEditmode
+  name: editableInEditmode
+  href: api/Lachee.Attributes.ReadonlyAttribute.html#Lachee_Attributes_ReadonlyAttribute_editableInEditmode
+  commentId: F:Lachee.Attributes.ReadonlyAttribute.editableInEditmode
+  fullName: Lachee.Attributes.ReadonlyAttribute.editableInEditmode
+  nameWithType: ReadonlyAttribute.editableInEditmode
 - uid: Lachee.Attributes.ReadonlyAttribute.editableInPlaymode
   name: editableInPlaymode
   href: api/Lachee.Attributes.ReadonlyAttribute.html#Lachee_Attributes_ReadonlyAttribute_editableInPlaymode
@@ -3567,6 +3573,58 @@ references:
   commentId: T:Lachee.Utilities.RectTransformExtension
   fullName: Lachee.Utilities.RectTransformExtension
   nameWithType: RectTransformExtension
+- uid: Lachee.Utilities.RectTransformExtension.SetBottom(RectTransform,System.Single)
+  name: SetBottom(RectTransform, Single)
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetBottom_RectTransform_System_Single_
+  commentId: M:Lachee.Utilities.RectTransformExtension.SetBottom(RectTransform,System.Single)
+  fullName: Lachee.Utilities.RectTransformExtension.SetBottom(RectTransform, System.Single)
+  nameWithType: RectTransformExtension.SetBottom(RectTransform, Single)
+- uid: Lachee.Utilities.RectTransformExtension.SetBottom*
+  name: SetBottom
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetBottom_
+  commentId: Overload:Lachee.Utilities.RectTransformExtension.SetBottom
+  isSpec: "True"
+  fullName: Lachee.Utilities.RectTransformExtension.SetBottom
+  nameWithType: RectTransformExtension.SetBottom
+- uid: Lachee.Utilities.RectTransformExtension.SetLeft(RectTransform,System.Single)
+  name: SetLeft(RectTransform, Single)
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetLeft_RectTransform_System_Single_
+  commentId: M:Lachee.Utilities.RectTransformExtension.SetLeft(RectTransform,System.Single)
+  fullName: Lachee.Utilities.RectTransformExtension.SetLeft(RectTransform, System.Single)
+  nameWithType: RectTransformExtension.SetLeft(RectTransform, Single)
+- uid: Lachee.Utilities.RectTransformExtension.SetLeft*
+  name: SetLeft
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetLeft_
+  commentId: Overload:Lachee.Utilities.RectTransformExtension.SetLeft
+  isSpec: "True"
+  fullName: Lachee.Utilities.RectTransformExtension.SetLeft
+  nameWithType: RectTransformExtension.SetLeft
+- uid: Lachee.Utilities.RectTransformExtension.SetRight(RectTransform,System.Single)
+  name: SetRight(RectTransform, Single)
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetRight_RectTransform_System_Single_
+  commentId: M:Lachee.Utilities.RectTransformExtension.SetRight(RectTransform,System.Single)
+  fullName: Lachee.Utilities.RectTransformExtension.SetRight(RectTransform, System.Single)
+  nameWithType: RectTransformExtension.SetRight(RectTransform, Single)
+- uid: Lachee.Utilities.RectTransformExtension.SetRight*
+  name: SetRight
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetRight_
+  commentId: Overload:Lachee.Utilities.RectTransformExtension.SetRight
+  isSpec: "True"
+  fullName: Lachee.Utilities.RectTransformExtension.SetRight
+  nameWithType: RectTransformExtension.SetRight
+- uid: Lachee.Utilities.RectTransformExtension.SetTop(RectTransform,System.Single)
+  name: SetTop(RectTransform, Single)
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetTop_RectTransform_System_Single_
+  commentId: M:Lachee.Utilities.RectTransformExtension.SetTop(RectTransform,System.Single)
+  fullName: Lachee.Utilities.RectTransformExtension.SetTop(RectTransform, System.Single)
+  nameWithType: RectTransformExtension.SetTop(RectTransform, Single)
+- uid: Lachee.Utilities.RectTransformExtension.SetTop*
+  name: SetTop
+  href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_SetTop_
+  commentId: Overload:Lachee.Utilities.RectTransformExtension.SetTop
+  isSpec: "True"
+  fullName: Lachee.Utilities.RectTransformExtension.SetTop
+  nameWithType: RectTransformExtension.SetTop
 - uid: Lachee.Utilities.RectTransformExtension.ToScreenSpace(RectTransform)
   name: ToScreenSpace(RectTransform)
   href: api/Lachee.Utilities.RectTransformExtension.html#Lachee_Utilities_RectTransformExtension_ToScreenSpace_RectTransform_

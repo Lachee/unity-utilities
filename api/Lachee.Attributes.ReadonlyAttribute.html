@@ -101,13 +101,13 @@
   
   
   <a id="Lachee_Attributes_ReadonlyAttribute__ctor_" data-uid="Lachee.Attributes.ReadonlyAttribute.#ctor*"></a>
-  <h4 id="Lachee_Attributes_ReadonlyAttribute__ctor_System_Boolean_System_Boolean_" data-uid="Lachee.Attributes.ReadonlyAttribute.#ctor(System.Boolean,System.Boolean)">ReadonlyAttribute(Boolean, Boolean)</h4>
+  <h4 id="Lachee_Attributes_ReadonlyAttribute__ctor_System_Boolean_System_Boolean_System_Boolean_" data-uid="Lachee.Attributes.ReadonlyAttribute.#ctor(System.Boolean,System.Boolean,System.Boolean)">ReadonlyAttribute(Boolean, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Marks this attribute as readonly in the inspector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ReadonlyAttribute(bool hideInEditmode = false, bool editableInPlaymode = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public ReadonlyAttribute(bool hideInEditmode = false, bool editableInPlaymode = false, bool editableInEditmode = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,10 +131,40 @@
         <td><p>Allow the field to be editable in playmode?</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">editableInEditmode</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="Lachee_Attributes_ReadonlyAttribute_editableInEditmode" data-uid="Lachee.Attributes.ReadonlyAttribute.editableInEditmode">editableInEditmode</h4>
+  <div class="markdown level1 summary"><p>Allow the field to be editable in editmode?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool editableInEditmode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="Lachee_Attributes_ReadonlyAttribute_editableInPlaymode" data-uid="Lachee.Attributes.ReadonlyAttribute.editableInPlaymode">editableInPlaymode</h4>
