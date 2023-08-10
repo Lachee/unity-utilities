@@ -19,15 +19,19 @@ namespace Lachee.Attributes
         /// </summary>
         public bool editableInPlaymode = false;
 
+        /// <summary>Allow the field to be editable in editmode?</summary>
+        public bool editableInEditmode = false;
+
         /// <summary>
         /// Marks this attribute as readonly in the inspector.
         /// </summary>
         /// <param name="hideInEditmode">Hide the property all together while in edit mode?</param>
         /// <param name="editableInPlaymode">Allow the field to be editable in playmode?</param>
-        public ReadonlyAttribute(bool hideInEditmode = false, bool editableInPlaymode = false)
+        public ReadonlyAttribute(bool hideInEditmode = false, bool editableInPlaymode = false, bool editableInEditmode = false)
         {
             this.hideInEditmode = hideInEditmode;
             this.editableInPlaymode = editableInPlaymode;
+            this.editableInEditmode = editableInEditmode;
         }
 
     }

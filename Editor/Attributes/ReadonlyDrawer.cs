@@ -15,7 +15,7 @@ namespace Lachee.Attributes.Editor
             if (attr.hideInEditmode && !playMode) return;
 
             //Is the element enabled?
-            bool enabled = playMode && attr.editableInPlaymode;
+            bool enabled = (playMode && attr.editableInPlaymode) || (!playMode && attr.editableInEditmode);
 
             //Enable/disable the property
             bool wasEnabled = GUI.enabled;
