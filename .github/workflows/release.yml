@@ -54,6 +54,7 @@ jobs:
           dotnet tools/UnityPackageExporter.dll \
             ./ \
             ${{matrix.feature.package}} \
+            --sub-folder "Lachee/Utilities" \
             --exclude "${{ join(matrix.feature.exclude, '" --exclude "')}}" \
             --assets "${{ join(matrix.feature.assets, '" --assets "')}}" \
             --assets "Editor/Tools/HelpContext.cs" \
