@@ -12,6 +12,106 @@ namespace Lachee.Utilities
     ///</summary>
     public static class Linq
     {
+         #region Find
+        /// <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="item">The item to search for</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// <para>The <see cref="object.Equals(object)"/> is used to validate equality</para>
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, T item)
+            => IndexOf<T>(arr, item, 0, int.MaxValue);
+        /// <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="item">The item to search for</param>
+        /// <param name="index">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// <para>The <see cref="object.Equals(object)"/> is used to validate equality</para>
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, T item, int index)
+            => IndexOf<T>(arr, item, index, int.MaxValue);
+        /// <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="item">The item to search for</param>
+        /// <param name="index">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        /// <param name="count">The number of elements in the section to search.</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// <para>The <see cref="object.Equals(object)"/> is used to validate equality</para>
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, T item, int index, int count)
+        {
+            int cnt = 0;
+            foreach (var a in arr.Skip(index))
+            {
+                if ((a == null && item == null) || a.Equals(item))
+                    return cnt + index;
+                
+                if (++cnt >= count) 
+                    break;
+            }
+            return -1;
+
+        }
+
+        /// <summary>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="predicate">Method invoked for each item to check for equality</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, System.Predicate<T> predicate)
+            => IndexOf(arr, predicate, 0, int.MaxValue, out var _);
+        /// <summary>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="predicate">Method invoked for each item to check for equality</param>
+        /// <param name="index">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, System.Predicate<T> predicate, int index)
+            => IndexOf(arr, predicate, index, int.MaxValue, out var _);
+        /// <summary>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="predicate">Method invoked for each item to check for equality</param>
+        /// <param name="index">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        /// <param name="count">The number of elements in the section to search.</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, System.Predicate<T> predicate, int index, int count)
+            => IndexOf(arr, predicate, index, count, out var _);
+        /// <summary>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</summary>
+        /// <param name="predicate">Method invoked for each item to check for equality</param>
+        /// <param name="index">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        /// <param name="count">The number of elements in the section to search.</param>
+        /// <param name="item">The item that is at the given index</param>
+        /// <remarks>
+        /// The enumerable is searched forward starting at the first item.
+        /// </remarks>
+        /// <returns>The index. If none is found then -1.</returns>
+        public static int IndexOf<T>(this IEnumerable<T> arr, System.Predicate<T> predicate, int index, int count, out T item)
+        {
+            item = default;
+            int cnt = 0;
+            foreach (var a in arr.Skip(index))
+            {
+                if (predicate.Invoke(a))
+                {
+                    item = a;
+                    return cnt+index;
+                }
+
+                if (++cnt >= count) 
+                    break;
+            }
+            return -1;
+        }
+        #endregion
+        
+        #region Random
         /// <summary>
         /// Picks a random item from the enumerator by enumerating over a random amount.
         /// Do not use this on fixed length arrays or lists, as it is less efficient than a direct lookup.
@@ -55,6 +155,36 @@ namespace Lachee.Utilities
             // Return the item.
             return enumerator.Current;
         }
+
+        ///<summary>Shuffles the list in place</summary>
+        ///<remarks>The list will be updated</remarks>
+        public static List<T> Shuffle<T>(this List<T> src)
+        {
+            // Knuth shuffle algorithm :: courtesy of Wikipedia :)
+            for (int t = 0; t < src.Count; t++)
+            {
+                T tmp = src[t];
+                int r = UnityEngine.Random.Range(t, src.Count);
+                src[t] = src[r];
+                src[r] = tmp;
+            }
+            return src;
+        }
+        ///<summary>Shuffles the array in place</summary>
+        ///<remarks>The list will be updated</remarks>
+        public static T[] Shuffle<T>(this T[] src)
+        {
+            // Knuth shuffle algorithm :: courtesy of Wikipedia :)
+            for (int t = 0; t < src.Length; t++)
+            {
+                T tmp = src[t];
+                int r = UnityEngine.Random.Range(t, src.Length);
+                src[t] = src[r];
+                src[r] = tmp;
+            }
+            return src;
+        }
+        #endregion
 
         #region HashSet
 
