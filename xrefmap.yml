@@ -2480,6 +2480,76 @@ references:
   fullName.vb: Lachee.Utilities.Linq.GetSegment(Of T)(T(), System.Int32, System.Int32)
   nameWithType: Linq.GetSegment<T>(T[], Int32, Int32)
   nameWithType.vb: Linq.GetSegment(Of T)(T(), Int32, Int32)
+- uid: Lachee.Utilities.Linq.IndexOf*
+  name: IndexOf
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf_
+  commentId: Overload:Lachee.Utilities.Linq.IndexOf
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linq.IndexOf
+  nameWithType: Linq.IndexOf
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)
+  name: IndexOf<T>(IEnumerable<T>, T)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), T)
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, T)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), T)
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, T)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), T)
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32)
+  name: IndexOf<T>(IEnumerable<T>, T, Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_System_Int32_
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), T, Int32)
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, T, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), T, System.Int32)
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, T, Int32)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), T, Int32)
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32,System.Int32)
+  name: IndexOf<T>(IEnumerable<T>, T, Int32, Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32,System.Int32)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), T, Int32, Int32)
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, T, System.Int32, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), T, System.Int32, System.Int32)
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, T, Int32, Int32)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), T, Int32, Int32)
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})
+  name: IndexOf<T>(IEnumerable<T>, Predicate<T>)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T))
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, System.Predicate<T>)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Predicate(Of T))
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, Predicate<T>)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T))
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32)
+  name: IndexOf<T>(IEnumerable<T>, Predicate<T>, Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T), Int32)
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, System.Predicate<T>, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Predicate(Of T), System.Int32)
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, Predicate<T>, Int32)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T), Int32)
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32,System.Int32)
+  name: IndexOf<T>(IEnumerable<T>, Predicate<T>, Int32, Int32)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_System_Int32_
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32,System.Int32)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T), Int32, Int32)
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, System.Predicate<T>, System.Int32, System.Int32)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Predicate(Of T), System.Int32, System.Int32)
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, Predicate<T>, Int32, Int32)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T), Int32, Int32)
+- uid: Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32,System.Int32,``0@)
+  name: IndexOf<T>(IEnumerable<T>, Predicate<T>, Int32, Int32, out T)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_System_Int32___0__
+  commentId: M:Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32,System.Int32,``0@)
+  name.vb: IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T), Int32, Int32, ByRef T)
+  fullName: Lachee.Utilities.Linq.IndexOf<T>(System.Collections.Generic.IEnumerable<T>, System.Predicate<T>, System.Int32, System.Int32, out T)
+  fullName.vb: Lachee.Utilities.Linq.IndexOf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Predicate(Of T), System.Int32, System.Int32, ByRef T)
+  nameWithType: Linq.IndexOf<T>(IEnumerable<T>, Predicate<T>, Int32, Int32, out T)
+  nameWithType.vb: Linq.IndexOf(Of T)(IEnumerable(Of T), Predicate(Of T), Int32, Int32, ByRef T)
 - uid: Lachee.Utilities.Linq.Random*
   name: Random
   href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Random_
@@ -2496,6 +2566,31 @@ references:
   fullName.vb: Lachee.Utilities.Linq.Random(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Int32)
   nameWithType: Linq.Random<TSource>(IEnumerable<TSource>, Int32)
   nameWithType.vb: Linq.Random(Of TSource)(IEnumerable(Of TSource), Int32)
+- uid: Lachee.Utilities.Linq.Shuffle*
+  name: Shuffle
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Shuffle_
+  commentId: Overload:Lachee.Utilities.Linq.Shuffle
+  isSpec: "True"
+  fullName: Lachee.Utilities.Linq.Shuffle
+  nameWithType: Linq.Shuffle
+- uid: Lachee.Utilities.Linq.Shuffle``1(``0[])
+  name: Shuffle<T>(T[])
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Shuffle__1___0___
+  commentId: M:Lachee.Utilities.Linq.Shuffle``1(``0[])
+  name.vb: Shuffle(Of T)(T())
+  fullName: Lachee.Utilities.Linq.Shuffle<T>(T[])
+  fullName.vb: Lachee.Utilities.Linq.Shuffle(Of T)(T())
+  nameWithType: Linq.Shuffle<T>(T[])
+  nameWithType.vb: Linq.Shuffle(Of T)(T())
+- uid: Lachee.Utilities.Linq.Shuffle``1(System.Collections.Generic.List{``0})
+  name: Shuffle<T>(List<T>)
+  href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_Shuffle__1_System_Collections_Generic_List___0__
+  commentId: M:Lachee.Utilities.Linq.Shuffle``1(System.Collections.Generic.List{``0})
+  name.vb: Shuffle(Of T)(List(Of T))
+  fullName: Lachee.Utilities.Linq.Shuffle<T>(System.Collections.Generic.List<T>)
+  fullName.vb: Lachee.Utilities.Linq.Shuffle(Of T)(System.Collections.Generic.List(Of T))
+  nameWithType: Linq.Shuffle<T>(List<T>)
+  nameWithType.vb: Linq.Shuffle(Of T)(List(Of T))
 - uid: Lachee.Utilities.Linq.ToArray*
   name: ToArray
   href: api/Lachee.Utilities.Linq.html#Lachee_Utilities_Linq_ToArray_

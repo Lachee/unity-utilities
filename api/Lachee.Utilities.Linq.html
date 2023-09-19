@@ -488,6 +488,539 @@
   </table>
   
   
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0)">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.
+<p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(Object)</a> is used to validate equality</p></p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_System_Int32_" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32)">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, T, Int32)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, T item, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.
+<p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(Object)</a> is used to validate equality</p></p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_System_Int32_System_Int32_" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Int32,System.Int32)">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, T, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Searches for the specified object and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, T item, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to search for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0____0_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.
+<p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Equals(Object)</a> is used to validate equality</p></p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0})">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, Predicate&lt;T&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>Method invoked for each item to check for equality</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.</p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32)">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, Predicate&lt;T&gt; predicate, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>Method invoked for each item to check for equality</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.</p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_System_Int32_" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32,System.Int32)">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, Predicate&lt;T&gt; predicate, int index, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>Method invoked for each item to check for equality</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.</p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_IndexOf_" data-uid="Lachee.Utilities.Linq.IndexOf*"></a>
+  <h4 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_System_Int32___0__" data-uid="Lachee.Utilities.Linq.IndexOf``1(System.Collections.Generic.IEnumerable{``0},System.Predicate{``0},System.Int32,System.Int32,``0@)">IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;, Int32, Int32, out T)</h4>
+  <div class="markdown level1 summary"><p>Searches untill the predicate is true and returns the zero-based index of the first occurrence within the entire enumeration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this IEnumerable&lt;T&gt; arr, Predicate&lt;T&gt; predicate, int index, int count, out T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;T&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>Method invoked for each item to check for equality</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based starting index of the search. 0 (zero) is valid in an empty list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of elements in the section to search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item that is at the given index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The index. If none is found then -1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0__System_Int32_System_Int32___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The enumerable is searched forward starting at the first item.</p>
+</div>
+  
+  
   <a id="Lachee_Utilities_Linq_Random_" data-uid="Lachee.Utilities.Linq.Random*"></a>
   <h4 id="Lachee_Utilities_Linq_Random__1_System_Collections_Generic_IEnumerable___0__System_Int32_" data-uid="Lachee.Utilities.Linq.Random``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">Random&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Picks a random item from the enumerator by enumerating over a random amount.
@@ -555,6 +1088,128 @@ For more evenly distributed random selection of items, use a Rist</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Lachee_Utilities_Linq_Shuffle_" data-uid="Lachee.Utilities.Linq.Shuffle*"></a>
+  <h4 id="Lachee_Utilities_Linq_Shuffle__1___0___" data-uid="Lachee.Utilities.Linq.Shuffle``1(``0[])">Shuffle&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Shuffles the array in place</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Shuffle&lt;T&gt;(this T[] src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_Shuffle__1___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list will be updated</p>
+</div>
+  
+  
+  <a id="Lachee_Utilities_Linq_Shuffle_" data-uid="Lachee.Utilities.Linq.Shuffle*"></a>
+  <h4 id="Lachee_Utilities_Linq_Shuffle__1_System_Collections_Generic_List___0__" data-uid="Lachee.Utilities.Linq.Shuffle``1(System.Collections.Generic.List{``0})">Shuffle&lt;T&gt;(List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Shuffles the list in place</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; Shuffle&lt;T&gt;(this List&lt;T&gt; src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Lachee_Utilities_Linq_Shuffle__1_System_Collections_Generic_List___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list will be updated</p>
+</div>
   
   
   <a id="Lachee_Utilities_Linq_ToArray_" data-uid="Lachee.Utilities.Linq.ToArray*"></a>
