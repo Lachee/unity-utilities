@@ -1,5 +1,3 @@
-
-
 <table frame="void">
     <tr>
       <td width="200px">
