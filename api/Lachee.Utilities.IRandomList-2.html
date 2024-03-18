@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RandomListDrawerStyle
+    <title>Interface IRandomList&lt;T, K&gt;
    | Utilities </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RandomListDrawerStyle
+    <meta name="title" content="Interface IRandomList&lt;T, K&gt;
    | Utilities ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -77,275 +77,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle">
+            <article class="content wrap" id="_content" data-uid="Lachee.Utilities.IRandomList`2">
   
   
-  <h1 id="Lachee_Utilities_Editor_RandomListDrawerStyle" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle" class="text-break">Class RandomListDrawerStyle
+  <h1 id="Lachee_Utilities_IRandomList_2" data-uid="Lachee.Utilities.IRandomList`2" class="text-break">Interface IRandomList&lt;T, K&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Default styling used for the random list</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">RandomListDrawerStyle</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Lachee.Utilities.Editor.html">Lachee.Utilities.Editor</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Lachee.Utilities.html">Lachee.Utilities</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Lachee_Utilities_Editor_RandomListDrawerStyle_syntax">Syntax</h5>
+  <h5 id="Lachee_Utilities_IRandomList_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RandomListDrawerStyle</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IRandomList&lt;T, K&gt;
+    where K : IComparable&lt;K&gt;</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Lachee_Utilities_Editor_RandomListDrawerStyle__ctor_" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.#ctor*"></a>
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle__ctor" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.#ctor">RandomListDrawerStyle()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RandomListDrawerStyle()</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_Colors" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.Colors">Colors</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Color[] Colors</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Color</span>[]</td>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listFooterBackground" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listFooterBackground">listFooterBackground</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIStyle listFooterBackground</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIStyle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listIconToolbarMinus" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarMinus">listIconToolbarMinus</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIContent listIconToolbarMinus</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIContent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listIconToolbarPlus" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listIconToolbarPlus">listIconToolbarPlus</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIContent listIconToolbarPlus</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIContent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_listPreButton" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.listPreButton">listPreButton</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIStyle listPreButton</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIStyle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderBG" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderBG">sliderBG</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIStyle sliderBG</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIStyle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderRange" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRange">sliderRange</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIStyle sliderRange</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIStyle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderRangeSelected" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderRangeSelected">sliderRangeSelected</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIStyle sliderRangeSelected</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIStyle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_sliderText" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.sliderText">sliderText</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GUIStyle sliderText</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GUIStyle</span></td>
+        <td><span class="parametername">K</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -354,14 +114,13 @@
   </h3>
   
   
-  <a id="Lachee_Utilities_Editor_RandomListDrawerStyle_Drawers_" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.Drawers*"></a>
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_Drawers" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.Drawers">Drawers</h4>
-  <div class="markdown level1 summary"><p>Dictionary lookup for custom drawers for the slider labels</p>
-</div>
+  <a id="Lachee_Utilities_IRandomList_2_Count_" data-uid="Lachee.Utilities.IRandomList`2.Count*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_Count" data-uid="Lachee.Utilities.IRandomList`2.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;Type, IRistBoxLabelDrawer&gt; Drawers { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">int Count { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -373,22 +132,276 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">Type</span>, <a class="xref" href="Lachee.Utilities.Editor.IRistBoxLabelDrawer.html">IRistBoxLabelDrawer</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Lachee_Utilities_Editor_RandomListDrawerStyle_ShowWeights_" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.ShowWeights*"></a>
-  <h4 id="Lachee_Utilities_Editor_RandomListDrawerStyle_ShowWeights" data-uid="Lachee.Utilities.Editor.RandomListDrawerStyle.ShowWeights">ShowWeights</h4>
+  <a id="Lachee_Utilities_IRandomList_2_TotalWeight_" data-uid="Lachee.Utilities.IRandomList`2.TotalWeight*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_TotalWeight" data-uid="Lachee.Utilities.IRandomList`2.TotalWeight">TotalWeight</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ShowWeights { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">K TotalWeight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_Add_" data-uid="Lachee.Utilities.IRandomList`2.Add*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_Add__0__1_" data-uid="Lachee.Utilities.IRandomList`2.Add(`0,`1)">Add(T, K)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Add(T item, K weight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_Clear_" data-uid="Lachee.Utilities.IRandomList`2.Clear*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_Clear" data-uid="Lachee.Utilities.IRandomList`2.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Clear()</code></pre>
+  </div>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_GetWeight_" data-uid="Lachee.Utilities.IRandomList`2.GetWeight*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_GetWeight__0_" data-uid="Lachee.Utilities.IRandomList`2.GetWeight(`0)">GetWeight(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">K GetWeight(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_Randomise_" data-uid="Lachee.Utilities.IRandomList`2.Randomise*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_Randomise_System_Single__0__" data-uid="Lachee.Utilities.IRandomList`2.Randomise(System.Single,`0@)">Randomise(Single, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Randomise(float random, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">random</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_Remove_" data-uid="Lachee.Utilities.IRandomList`2.Remove*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_Remove__0_" data-uid="Lachee.Utilities.IRandomList`2.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_SetWeight_" data-uid="Lachee.Utilities.IRandomList`2.SetWeight*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_SetWeight__0__1_" data-uid="Lachee.Utilities.IRandomList`2.SetWeight(`0,`1)">SetWeight(T, K)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetWeight(T item, K weight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Lachee_Utilities_IRandomList_2_TryGetWeight_" data-uid="Lachee.Utilities.IRandomList`2.TryGetWeight*"></a>
+  <h4 id="Lachee_Utilities_IRandomList_2_TryGetWeight__0__1__" data-uid="Lachee.Utilities.IRandomList`2.TryGetWeight(`0,`1@)">TryGetWeight(T, out K)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetWeight(T item, out K weight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
