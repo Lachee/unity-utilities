@@ -4,33 +4,16 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
-    public interface IRandomList<T, K>
-        where K : System.IComparable<K>
-    {
-        public int Count { get; }
-        public K TotalWeight { get; }
-
-        bool Randomise(float random, out T result);
-        
-        void Add(T item, K weight);
-        void Remove(T item);
-        void Clear();
-
-        K GetWeight(T item);
-        bool TryGetWeight(T item, out K weight);
-        bool SetWeight(T item, K weight);
-    }
-
     /// <summary>
     /// A randomised list. It will store a collection of values with specified weights and provide functionallity to select randomly from the list.
     /// </summary>
     /// <typeparam name="T">Type to store as the value.</typeparam>
     [System.Serializable]
-    public class RandomList<T> : IEnumerable<T>, IRandomList<T, float>
+    public class RandomListInt<T> : IEnumerable<T>, IRandomList<T, int>
     {
         [SerializeField] private List<T> _list;
-        [SerializeField] private List<float> _weights;
-        [SerializeField] private float _sumWeight = 0;
+        [SerializeField] private List<int> _weights;
+        [SerializeField] private int _sumWeight = 0;
 
         /// <summary>
         /// Number of elements currently in the table.
@@ -40,28 +23,33 @@ namespace Lachee.Utilities
         /// <summary>
         /// The total tally of the weights.
         /// </summary>
-        public float TotalWeight { get { return _sumWeight; } }
+        public int TotalWeight { get { return _sumWeight; } }
+
+        /// <summary>
+        /// If false, then the weight will slowly decrement with every random, eventually landing on zero.
+        /// </summary>
+        public bool WithReplacement { get; set; } = true;
 
         /// <summary>
         /// Creates a new Random List
         /// </summary>
-        public RandomList()
+        public RandomListInt()
         {
             _list = new List<T>();
-            _weights = new List<float>();
+            _weights = new List<int>();
         }
 
         /// <summary>
         /// Creates a new Random List with a set capacity.
         /// </summary>
         /// <param name="capacity"></param>
-        public RandomList(int capacity)
+        public RandomListInt(int capacity)
         {
             _list = new List<T>(capacity);
-            _weights = new List<float>(capacity);
+            _weights = new List<int>(capacity);
         }
 
-        public RandomList(IEnumerable<KeyValuePair<T, float>> collection) : this()
+        public RandomListInt(IEnumerable<KeyValuePair<T, int>> collection) : this()
         {
             foreach (var kp in collection)
                 Add(kp);
@@ -82,7 +70,7 @@ namespace Lachee.Utilities
         /// </summary>
         /// <param name="item">Item to add</param>
         /// <param name="weight">Non-negative weight this item has</param>
-        public void Add(T item, float weight = 1.0f)
+        public void Add(T item, int weight = 1)
         {
             if (weight < 0)
             {
@@ -96,13 +84,13 @@ namespace Lachee.Utilities
         }
 
         /// <summary>Adds a new key value pair</summary>
-        public void Add(KeyValuePair<T, float> pair)
+        public void Add(KeyValuePair<T, int> pair)
         {
             Add(pair.Key, pair.Value);
         }
 
         /// Adds a random list to this one
-        public void Add(RandomList<T> other)
+        public void Add(RandomListInt<T> other)
         {
             _list.AddRange(other._list);
             _weights.AddRange(other._weights);
@@ -132,7 +120,7 @@ namespace Lachee.Utilities
         /// <param name="item">The item to update</param>
         /// <param name="weight">Weight of the item</param>
         /// <returns>If the item exists and was updated</returns>
-        public bool SetWeight(T item, float weight)
+        public bool SetWeight(T item, int weight)
         {
             Debug.Assert(_list.Count == _weights.Count);
             
@@ -150,7 +138,7 @@ namespace Lachee.Utilities
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        public float GetWeight(T item)
+        public int GetWeight(T item)
         {
             var index = _list.IndexOf(item);
             if (index < 0)
@@ -164,7 +152,7 @@ namespace Lachee.Utilities
         /// <param name="item"></param>
         /// <param name="weight"></param>
         /// <returns></returns>
-        public bool TryGetWeight(T item, out float weight)
+        public bool TryGetWeight(T item, out int weight)
         {
             weight = 0;
             var index = _list.IndexOf(item);
@@ -190,6 +178,9 @@ namespace Lachee.Utilities
                 if (rand < 0)
                 {
                     result = _list[i];
+                    if (!WithReplacement && _weights[i] > 0)
+                        _weights[i] -= 1;
+                    
                     return true;
                 }
             }
@@ -201,7 +192,7 @@ namespace Lachee.Utilities
         /// <summary>
         /// Recalculates the total weights
         /// </summary>
-        protected float RecalculateWeights()
+        protected int RecalculateWeights()
         {
             Debug.Assert(_list.Count == _weights.Count);
 
@@ -211,6 +202,7 @@ namespace Lachee.Utilities
 
             return _sumWeight;
         }
+
 
         /// <summary>
         /// Gets a enumerator of items in the Rist. Does not apply the random function too it.

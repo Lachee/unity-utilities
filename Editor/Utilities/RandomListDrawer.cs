@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Lachee.Utilities.Editor
 {
@@ -14,7 +15,9 @@ namespace Lachee.Utilities.Editor
     public class RandomListDrawerStyle
     {
         /// <summary>Dictionary lookup for custom drawers for the slider labels</summary>
-        public Dictionary<Type, IRistBoxLabelDrawer> Drawers;
+        public Dictionary<Type, IRistBoxLabelDrawer> Drawers { get; set; }
+
+        public bool ShowWeights { get; set; } = true;
 
         public readonly Color[] Colors =
         {
@@ -59,7 +62,7 @@ namespace Lachee.Utilities.Editor
     /// <summary>Interface used to draw labels on weight sliders</summary>
     public interface IRistBoxLabelDrawer
     {
-        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini);
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, float percentage, bool isMini);
     }
 
     /// <summary>
@@ -67,7 +70,7 @@ namespace Lachee.Utilities.Editor
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
     [CustomPropertyDrawer(typeof(RandomList<>))]
-    [CustomPropertyDrawer(typeof(Rist<>))]
+    [CustomPropertyDrawer(typeof(RandomListInt<>))]
 #pragma warning restore CS0618 // Type or member is obsolete
     public sealed class RandomListDrawer : UnityEditor.PropertyDrawer
     {
@@ -98,6 +101,7 @@ namespace Lachee.Utilities.Editor
         {
             SerializedProperty itemListProperty = property.FindPropertyRelative("_list");
             SerializedProperty weightListProperty = property.FindPropertyRelative("_weights");
+            SerializedProperty sumProperty = property.FindPropertyRelative("_sumWeight");
 
             // Fix lists with this https://answers.unity.com/questions/1479572/how-to-properly-use-reorderablelist-inside-customp.html
             var list = new ReorderableList(property.serializedObject, itemListProperty, true, false, true, true);
@@ -118,8 +122,6 @@ namespace Lachee.Utilities.Editor
 
                 Rect weightRect = new Rect(objectRect.xMax + 5, objectRect.y, rect.width * 1 / 3 - 5, EditorGUIUtility.singleLineHeight);
                 EditorGUI.PropertyField(weightRect, weightListProperty.GetArrayElementAtIndex(index), GUIContent.none);
-
-
             };
 
             list.drawElementBackgroundCallback += (Rect rect, int index, bool isActive, bool isFocused) =>
@@ -142,12 +144,12 @@ namespace Lachee.Utilities.Editor
             {
                 itemListProperty.arraySize++;
                 weightListProperty.arraySize++;
-                weightListProperty.GetArrayElementAtIndex(weightListProperty.arraySize-1).floatValue = 1f;
+                SetPropertyAsFloat(weightListProperty.GetArrayElementAtIndex(weightListProperty.arraySize - 1), 1f);
             };
 
             list.onRemoveCallback += (_) =>
             {
-                #if UNITY_2021_OR_NEWER
+                #if UNITY_2021_1_OR_NEWER
                 int index = list.selectedIndices.First();
                 #else
                 int index = list.index;
@@ -158,7 +160,7 @@ namespace Lachee.Utilities.Editor
 
             list.onCanRemoveCallback += (_) =>
             {
-                #if UNITY_2021_OR_NEWER
+                #if UNITY_2021_1_OR_NEWER
                 return list.selectedIndices.Count == 1;
                 #else
                 return list.index >= 0;
@@ -169,16 +171,78 @@ namespace Lachee.Utilities.Editor
             {
                 return Mathf.Max(EditorGUIUtility.singleLineHeight+2f, EditorGUI.GetPropertyHeight(itemListProperty.GetArrayElementAtIndex(index)));
             };
-
-            // For fancy footer that allows adjustment of the total sum on the fly, see the following gist:
-            // https://i.lu.je/2022/Unity_HoZtERJPs6.png
-            // https://gist.github.com/Lachee/e76299f00b334b741a6bccd82229e907
-
+            
             list.onReorderCallbackWithDetails += (_, from, too) =>
             {
                 //itemListProperty.MoveArrayElement(from, too);
                 weightListProperty.MoveArrayElement(from, too);
             };
+
+            // For fancy footer that allows adjustment of the total sum on the fly, see the following gist:
+            // https://i.lu.je/2022/Unity_HoZtERJPs6.png
+            // https://gist.github.com/Lachee/e76299f00b334b741a6bccd82229e907
+#if UNITY_2021_1_OR_NEWER
+            list.drawFooterCallback += (Rect rect) =>
+            {
+                bool displaySum = sumProperty.propertyType == SerializedPropertyType.Float;
+                float rightEdge = rect.xMax - 10f;
+                float leftEdge = rightEdge - 8f;
+                if (list.displayAdd) leftEdge -= 25;
+                if (list.displayRemove) leftEdge -= 25;
+                if (displaySum) leftEdge -= 200;
+
+                rect = new Rect(leftEdge, rect.y, rightEdge - leftEdge, rect.height);
+                Rect removeRect = new Rect(rightEdge - 29, rect.y, 25, 16);
+                Rect addRect = new Rect(removeRect.xMin - 25, rect.y, 25, 16);
+                Rect tallyRect = new Rect(leftEdge, rect.y, addRect.xMin - leftEdge - 5, 16);
+                if (Event.current.type == EventType.Repaint)
+                    style.listFooterBackground.Draw(rect, false, false, false, false);
+
+                if (displaySum)
+                {
+                    EditorGUIUtility.labelWidth = 30f;
+                    float totalWeight = GetPropertyAsFloat(sumProperty);
+                    float modTotalWeight = EditorGUI.FloatField(tallyRect, new GUIContent("Σ", "The total weight of all items"), totalWeight);
+                    if (modTotalWeight > 0 && modTotalWeight < float.MaxValue && !Mathf.Approximately(totalWeight, modTotalWeight))
+                    {
+                        for (int i = 0; i < weightListProperty.arraySize; i++)
+                        {
+                            var itemProp = weightListProperty.GetArrayElementAtIndex(i);
+                            var weight = GetPropertyAsFloat(itemProp);
+                            SetPropertyAsFloat(itemProp, (weight / totalWeight) * modTotalWeight);
+                        }
+                    }
+                }
+
+                    if (list.displayAdd)
+                {
+                    using (new EditorGUI.DisabledScope(list.onCanAddCallback != null && !list.onCanAddCallback(list)))
+                    {
+                        if (GUI.Button(addRect, style.listIconToolbarPlus, style.listPreButton))
+                        {
+                            list.onAddCallback?.Invoke(list);
+                            list.onChangedCallback?.Invoke(list);
+                            list.Select(list.count - 1);
+                            GUI.changed = true;
+                        }
+                    }
+                }
+
+                if (list.displayRemove)
+                {
+                    using (new EditorGUI.DisabledScope(list.index < 0 || list.index >= list.count || (list.onCanRemoveCallback != null && !list.onCanRemoveCallback(list))))
+                    {
+                        if (GUI.Button(removeRect, style.listIconToolbarMinus, style.listPreButton))
+                        {
+                            list.onRemoveCallback(list);
+                            list.onChangedCallback?.Invoke(list);
+                            list.Select(list.count - 1);
+                            GUI.changed = true;
+                        }
+                    }
+                }
+            };
+#endif
 
             return list;
         }
@@ -337,7 +401,10 @@ namespace Lachee.Utilities.Editor
                     GUI.backgroundColor = color * 0.6f;
                     style.sliderRange.Draw(weight.rangePosition, GUIContent.none, false, false, false, false);
                     if (weight.labelDrawer != null)
-                        weight.labelDrawer.DrawLabel(weight.rangePosition, style, weight.itemProperty, weight.weightPercentage, isCompact);
+                    {
+                        style.ShowWeights = weight.weightProperty.propertyType != SerializedPropertyType.Float;
+                        weight.labelDrawer.DrawLabel(weight.rangePosition, style, weight.itemProperty, GetPropertyAsFloat(weight.weightProperty), weight.weightPercentage, isCompact);
+                    }
                 }
 
                 //DrawLODButton
@@ -400,7 +467,7 @@ namespace Lachee.Utilities.Editor
             public IRistBoxLabelDrawer labelDrawer;
 
             public void ApplyWeightProperty()
-                => weightProperty.floatValue = weight;
+                => SetPropertyAsFloat(weightProperty, weight);
         }
 
         private static List<WeightSlider> CreateSliders(SerializedProperty property, Rect sliderRect)
@@ -430,8 +497,8 @@ namespace Lachee.Utilities.Editor
                     itemProperty = itemProperty,
                     weightProperty = weightProperty,
                     startWeight = weightOffset,
-                    endWeight = weightOffset + weightProperty.floatValue,
-                    sumWeight = totalWeightProperty.floatValue,
+                    endWeight = weightOffset + GetPropertyAsFloat(weightProperty),
+                    sumWeight = GetPropertyAsFloat(totalWeightProperty),
                     labelDrawer = drawer,
                 };
 
@@ -447,18 +514,46 @@ namespace Lachee.Utilities.Editor
 
             return infos;
         }
+    
+        private static float GetPropertyAsFloat(SerializedProperty property)
+        {
+            if (property.propertyType == SerializedPropertyType.Float)
+                return property.floatValue;
+            else if (property.propertyType == SerializedPropertyType.Integer)
+                return (float)property.intValue;
+            else
+                throw new System.ArgumentException("property is cannot be converted into a float");
+        }
+        private static void SetPropertyAsFloat(SerializedProperty property, float value)
+        {
+            if (property.propertyType == SerializedPropertyType.Float)
+                property.floatValue = value;
+            else if (property.propertyType == SerializedPropertyType.Integer)
+                property.intValue = Mathf.RoundToInt(value);
+            else
+                throw new System.ArgumentException("property is cannot be converted into a float");
+        }
     }
 
     /// <summary>Basic extendable drawer for the Random List</summary>
     public class BasicRistDrawer : IRistBoxLabelDrawer
     {
-        public virtual void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        public static string GetLabel(RandomListDrawerStyle style, SerializedProperty property, float weight, float percentage, bool isMini)
         {
-            var name = property.hasVisibleChildren ? property.displayName : property.GetValueName();
-            var label = isMini
-                            ? name
-                            : string.Format("{0}\n{1:0}%", name, weight * 100);
+            string label = property.hasVisibleChildren ? property.displayName : property.GetValueName();
+            if (!isMini)
+            {
+                if (style.ShowWeights)
+                    label += $"\n{percentage:P} ({weight})";
+                else
+                    label += $"\n{percentage:P}";
+            }
+            return label;
+        }
 
+        public virtual void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, float percentage, bool isMini)
+        {
+            string label = GetLabel(style, property, weight, percentage, isMini);
             style.sliderText.Draw(position, label, false, false, false, false);
         }
     }
@@ -466,11 +561,9 @@ namespace Lachee.Utilities.Editor
     /// <summary>Makes the box the same colour as the property</summary>
     internal sealed class ColorRistDrawer : IRistBoxLabelDrawer
     {
-        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, float percentage, bool isMini)
         {
-            var label = isMini
-                ? property.GetValueName()
-                : string.Format("{0}\n{1:0}%", property.GetValueName(), weight * 100);
+            string label = BasicRistDrawer.GetLabel(style, property, weight, percentage, isMini);
 
             GUI.backgroundColor = property.colorValue;
             style.sliderRange.Draw(position, GUIContent.none, false, false, false, false);
@@ -488,11 +581,9 @@ namespace Lachee.Utilities.Editor
     {
         const float PADDING = 2;
 
-        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        public void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, float percentage, bool isMini)
         {
-            var label = isMini
-                ? ""
-                : string.Format("{0}\n{1:0}%", "", weight * 100);
+            string label = BasicRistDrawer.GetLabel(style, property, weight, percentage, isMini);
 
             style.sliderText.Draw(position, label, false, false, false, false);
 
@@ -516,16 +607,15 @@ namespace Lachee.Utilities.Editor
 
         public bool WithBackground { get; set; } = false;
 
-        public override void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, bool isMini)
+        public override void DrawLabel(Rect position, RandomListDrawerStyle style, SerializedProperty property, float weight, float percentage, bool isMini)
         {
             if (isMini)
             {
-                base.DrawLabel(position, style, property, weight, isMini);
+                base.DrawLabel(position, style, property, weight, percentage, isMini);
             }
             else
             {
-                var name = property.GetValueName();
-                var label = string.Format("{0}\n{1:0}%", name, weight * 100);
+                string label = BasicRistDrawer.GetLabel(style, property, weight, percentage, isMini);
 
                 float size = Mathf.Min(position.width - PADDING * 2, position.height - PADDING * 2);
 
