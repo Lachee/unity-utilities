@@ -34,6 +34,10 @@ jobs:
             package: lachee-utilities-only-eol-converter.unitypackage
             assets: [ "Editor/Tools/EOLConversion.cs" ]
             exclude: [ ]
+          - name: UYAML
+            package: lachee-utilities-uyaml.unitypackage
+            assets: [ "Runtime/UYAML/*.cs" ]
+            exclude: [ ]
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
