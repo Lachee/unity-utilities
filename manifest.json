@@ -528,6 +528,150 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.ClassIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.ClassIdentifier.html",
+          "hash": "OD3nnbiXFEeMfXm3ox2U/i5xYmVFNkJf6JNvKe8fC38="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.IUPropertyCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.IUPropertyCollection.html",
+          "hash": "6uz1SHiCVjKusHJ83lBy2bwPDKstA9yeixfSQbL5QW4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.ParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.ParseException.html",
+          "hash": "lElXcA/971mjOuV7ZGeEYYCQx1/KKRLZlcSw17DkeEo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.Parser.html",
+          "hash": "02/d2PN8aGvqMX7kbIy35qmOVa0nszj+JcweN9VPPkQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.UArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.UArray.html",
+          "hash": "Q7V/rnzD3F34pkwjGC7gBaOz7j85t6q8QMny9J8yfjg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.UComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.UComponent.html",
+          "hash": "0zN4Bd7Y/UUbayt39ByCJTXjOWjc9T1IiFAszh4B7Ug="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.UNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.UNode.html",
+          "hash": "w6URV/DhE+sxzbObsEQL1LWmsCUwuIr/i40Pg4JEp80="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.UObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.UObject.html",
+          "hash": "jCtjr8RFoQSHZ5Gfwdfj7MvNxxZYCyGBx2b2cmx+Zgg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.UProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.UProperty.html",
+          "hash": "y6IRna2gU8L7JX29o7LPy8Ni/0gq2N9lfeTP5MHV844="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.UValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.UValue.html",
+          "hash": "h7SUYOoFMnLET/SPQOgx9WN1m6fkozhOaR6lk97hzRg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.Writer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.Writer.html",
+          "hash": "dpdQeZKuygYJxQ9ETKA0KdsP0ujpjc3ubFpdXlZs+gI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lachee.UYAML.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lachee.UYAML.html",
+          "hash": "8jMxVDJrkj7peouy1F2lKjKGUTQp4UT6Gz2YMaijTw0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Lachee.Utilities.Circle.Mode.yml",
       "output": {
         ".html": {
@@ -880,7 +1024,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "q1UzjPbP6+mIPLcDUUJU3yrcuunVKWDdzKWlVNxLjME="
+          "hash": "mMSHyV9/cyIYfoXEZSIIr5cvU1DsW6Y0UIvdkCZi7bs="
         }
       },
       "is_incremental": false,
@@ -949,7 +1093,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 71,
+          "total_file_count": 83,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
