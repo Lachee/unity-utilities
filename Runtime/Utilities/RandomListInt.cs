@@ -49,6 +49,11 @@ namespace Lachee.Utilities
             _weights = new List<int>(capacity);
         }
 
+        public RandomListInt(RandomListInt<T> other) : this(other.Count)
+        {
+            this.Add(other);
+        }
+
         public RandomListInt(IEnumerable<KeyValuePair<T, int>> collection) : this()
         {
             foreach (var kp in collection)
@@ -179,7 +184,10 @@ namespace Lachee.Utilities
                 {
                     result = _list[i];
                     if (!WithReplacement && _weights[i] > 0)
+                    {
                         _weights[i] -= 1;
+                        _sumWeight -= 1;
+                    }
                     
                     return true;
                 }

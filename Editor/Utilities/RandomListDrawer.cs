@@ -184,12 +184,13 @@ namespace Lachee.Utilities.Editor
 #if UNITY_2021_1_OR_NEWER
             list.drawFooterCallback += (Rect rect) =>
             {
-                bool displaySum = sumProperty.propertyType == SerializedPropertyType.Float;
+                bool editableSum = sumProperty.propertyType == SerializedPropertyType.Float;
+                bool displaySum = true;
                 float rightEdge = rect.xMax - 10f;
                 float leftEdge = rightEdge - 8f;
                 if (list.displayAdd) leftEdge -= 25;
                 if (list.displayRemove) leftEdge -= 25;
-                if (displaySum) leftEdge -= 200;
+                if (displaySum) leftEdge -= 75;
 
                 rect = new Rect(leftEdge, rect.y, rightEdge - leftEdge, rect.height);
                 Rect removeRect = new Rect(rightEdge - 29, rect.y, 25, 16);
@@ -201,20 +202,25 @@ namespace Lachee.Utilities.Editor
                 if (displaySum)
                 {
                     EditorGUIUtility.labelWidth = 30f;
-                    float totalWeight = GetPropertyAsFloat(sumProperty);
-                    float modTotalWeight = EditorGUI.FloatField(tallyRect, new GUIContent("Σ", "The total weight of all items"), totalWeight);
-                    if (modTotalWeight > 0 && modTotalWeight < float.MaxValue && !Mathf.Approximately(totalWeight, modTotalWeight))
+                    var totalWeight = GetPropertyAsFloat(sumProperty);
+                    var sumLabel = new GUIContent("Σ", "The total weight of all items");
+                    EditorGUI.BeginDisabledGroup(!editableSum);
                     {
-                        for (int i = 0; i < weightListProperty.arraySize; i++)
+                        var modTotalWeight = EditorGUI.FloatField(tallyRect, sumLabel, totalWeight);
+                        if (editableSum && modTotalWeight > 0 && modTotalWeight < float.MaxValue && !Mathf.Approximately(totalWeight, modTotalWeight))
                         {
-                            var itemProp = weightListProperty.GetArrayElementAtIndex(i);
-                            var weight = GetPropertyAsFloat(itemProp);
-                            SetPropertyAsFloat(itemProp, (weight / totalWeight) * modTotalWeight);
+                            for (int i = 0; i < weightListProperty.arraySize; i++)
+                            {
+                                var itemProp = weightListProperty.GetArrayElementAtIndex(i);
+                                var weight = GetPropertyAsFloat(itemProp);
+                                SetPropertyAsFloat(itemProp, (weight / totalWeight) * modTotalWeight);
+                            }
                         }
                     }
+                    EditorGUI.EndDisabledGroup();
                 }
 
-                    if (list.displayAdd)
+                if (list.displayAdd)
                 {
                     using (new EditorGUI.DisabledScope(list.onCanAddCallback != null && !list.onCanAddCallback(list)))
                     {
