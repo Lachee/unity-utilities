@@ -175,15 +175,19 @@ namespace Lachee.Utilities
         protected virtual void Awake()
         {
 #if UNITY_EDITOR
-            if (Application.isPlaying)
+            if (!Application.isPlaying) return;
 #endif
-            if (dontDestroyOnLoad)
+
+            if (instance != this)
+                Destroy(gameObject);
+            else if (dontDestroyOnLoad)
                 DontDestroyOnLoad(gameObject);
         }
     }
 
     /// <summary>
     /// This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or, grabbed from the scene if an instance already exists.
+    /// <para>Emphemeral Singletons are destroyed on load</para>
     /// </summary>
     /// <remarks>Singleton inherits a <see cref="MonoBehaviour"/>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.</remarks>
     /// <typeparam name="T">The class that is to inherit Singleton</typeparam>
