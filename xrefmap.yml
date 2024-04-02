@@ -3885,6 +3885,15 @@ references:
   fullName.vb: Lachee.Utilities.RandomListInt(Of T).RandomListInt()
   nameWithType: RandomListInt<T>.RandomListInt()
   nameWithType.vb: RandomListInt(Of T).RandomListInt()
+- uid: Lachee.Utilities.RandomListInt`1.#ctor(Lachee.Utilities.RandomListInt{`0})
+  name: RandomListInt(RandomListInt<T>)
+  href: api/Lachee.Utilities.RandomListInt-1.html#Lachee_Utilities_RandomListInt_1__ctor_Lachee_Utilities_RandomListInt__0__
+  commentId: M:Lachee.Utilities.RandomListInt`1.#ctor(Lachee.Utilities.RandomListInt{`0})
+  name.vb: RandomListInt(RandomListInt(Of T))
+  fullName: Lachee.Utilities.RandomListInt<T>.RandomListInt(Lachee.Utilities.RandomListInt<T>)
+  fullName.vb: Lachee.Utilities.RandomListInt(Of T).RandomListInt(Lachee.Utilities.RandomListInt(Of T))
+  nameWithType: RandomListInt<T>.RandomListInt(RandomListInt<T>)
+  nameWithType.vb: RandomListInt(Of T).RandomListInt(RandomListInt(Of T))
 - uid: Lachee.Utilities.RandomListInt`1.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,System.Int32}})
   name: RandomListInt(IEnumerable<KeyValuePair<T, Int32>>)
   href: api/Lachee.Utilities.RandomListInt-1.html#Lachee_Utilities_RandomListInt_1__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair__0_System_Int32___
