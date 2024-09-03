@@ -9,7 +9,8 @@ namespace Lachee.Attributes.Editor
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             LabelAttribute attr = (LabelAttribute)attribute;
-            EditorGUI.PropertyField(position, property, attr.label, true);
+            if (label != GUIContent.none) label = attr.label;
+            EditorGUI.PropertyField(position, property, label, true);
         }
     }
 }
