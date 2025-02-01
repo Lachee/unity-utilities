@@ -4,6 +4,17 @@ using UnityEngine;
 
 namespace Lachee.Utilities
 {
+    /// <summary>
+    /// This interface is used to define a singleton. It is used to define the properties of a singleton.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public interface ISingleton<T>
+    {
+        public static System.Type type { get; }
+        public static T instance { get; }
+        public static T available { get; }
+        public static bool referenced { get; }
+    }
 
     /// <summary>
     /// This class creates a Singleton GameObject that will either be lazily initialized when it is referenced for the first time or, grabbed from the scene if an instance already exists.
@@ -21,7 +32,8 @@ namespace Lachee.Utilities
     ///     }
     /// </code>
     /// </example>
-    public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
+    public abstract class Singleton<T> : MonoBehaviour, ISingleton<T>
+        where T : Singleton<T>
     {
         internal static T _instance;
         private static bool _isquitting = false;
@@ -61,7 +73,7 @@ namespace Lachee.Utilities
         {
             get
             {
-               if (!available)
+                if (!available)
                 {
                     if (_isquitting)
                         Debug.LogError("Creating a new instance of " + type + " while a OnApplicationQuit has been detected.");
@@ -76,8 +88,8 @@ namespace Lachee.Utilities
 #else
                         Debug.LogError($"Singleton {type} cannot be created because DONT_CREATE_SINGLETONS is defined");
 #endif
-                    } 
-                    else 
+                    }
+                    else
                     {
                         Debug.LogError($"Singleton {type} cannot be created while not in Play Mode.");
                     }
@@ -191,7 +203,7 @@ namespace Lachee.Utilities
     /// </summary>
     /// <remarks>Singleton inherits a <see cref="MonoBehaviour"/>, so standard Unity functions apply. However, Awake and OnApplicationQuit have been overriden.</remarks>
     /// <typeparam name="T">The class that is to inherit Singleton</typeparam>
-    public abstract class EmphemeralSingleton<T> : Singleton<T> 
+    public abstract class EmphemeralSingleton<T> : Singleton<T>
         where T : EmphemeralSingleton<T>
     {
         protected override bool dontDestroyOnLoad => false;
