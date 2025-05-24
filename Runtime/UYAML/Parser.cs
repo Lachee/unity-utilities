@@ -165,8 +165,8 @@ namespace Lachee.UYAML
                     throw new ParseException($"Expecting a new block, but got '{line}'", _charPos);
 
                 string[] segs = line.Split(' ');
-                if (segs.Length != 3)
-                    throw new ParseException($"Expecting 3 parts in the block header", _charPos);
+                if (segs.Length < 3)
+                    throw new ParseException($"Expecting at least 3 parts in the block header, but got {segs.Length} ('{line}')", _charPos);
 
                 var identifier = (ClassIdentifier)int.Parse(segs[1].Substring(3));
                 _curObject = new UComponent()
